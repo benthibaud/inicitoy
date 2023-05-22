@@ -1,0 +1,26 @@
+/* Cette feuille de style est en supplément de la feuille de style générale */
+
+body {
+  background: linear-gradient(80deg, #a5c3a1 0%, #b2d9ac 14%, #f2fff0 100%);
+}
+
+h4 {
+  margin: 0;
+  padding: 20px 0 10px;
+}
+
+.gridbox {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  align-items: center;
+}
+
+@media screen and (max-width: 500px) {
+  .gridbox {
+    grid-template-columns: 100%;
+    grid-template-rows: 1fr 1fr;
+  }
+  #map {
+    height: 200px;
+  }
+}

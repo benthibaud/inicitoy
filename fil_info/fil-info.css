@@ -1,0 +1,105 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;1,400;1,600&display=swap");
+
+html {
+  height: 100%;
+}
+
+body {
+  min-height: 100%;
+  position: relative;
+  font-family: Montserrat, sans-serif;
+  font-size: max(0.8rem, 0.9vw);
+  text-align: justify;
+  line-height: max(1.4rem, 1.5vw);
+  margin: 0;
+  background: papayawhip !important;
+}
+
+/* retirer les soulignés sur les liens activés qu'au survol de la souris*/
+body a {
+  text-decoration: none;
+}
+body a:hover {
+  text-decoration: underline;
+}
+
+header {
+  position: relative;
+}
+
+main {
+  position: relative;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: Montserrat, sans-serif;
+  line-height: normal;
+  color: blue;
+}
+
+h1 {
+  font-size: max(1.2rem, 3vw);
+  color: blue;
+  text-shadow: 13px 6px 17px #77a6d2;
+  margin: 5% 0 2%;
+}
+
+h2 {
+  font-size: max(0.9rem, 2vw);
+  text-align: center;
+  color: blue;
+}
+
+h2,
+h3,
+h4 {
+  margin: 2% 0 1%;
+}
+
+p,
+ul {
+  margin: 0 0 2%;
+}
+
+.mainbox {
+  max-width: 900px;
+  width: 92%;
+  /* Centrer une boite */
+  margin: 0 auto 3vw;
+  background: rgba(245, 245, 245, 0.9);
+  border: 1px solid peru;
+  box-shadow: -1px 17px 20px 10px rgba(205, 134, 63, 0.808);
+  padding: 0 2vw 4vw;
+}
+
+img {
+  max-width: 100%;
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+}
+
+.grid50 {
+  display: grid;
+  grid-template-columns: auto auto;
+}
+
+@media screen and (max-width: 550px) {
+  .grid50 {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 2000px) {
+  body {
+    font-size: 1.3vw;
+    line-height: normal;
+  }
+}
