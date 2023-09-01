@@ -2,99 +2,144 @@
 <html lang="fr">
   <head>
     <meta charset="UTF-8" />
-    <title>Initiatives Citoyennes Choletaises</title>
-    <meta name="description" content="association Initiatives Citoyennes Choletaises. Proposition et mise en place de projets qui privilégient une démarche de participation citoyenne."/>
-    <meta name="keywords" content="Initiatives Citoyennes Choletaises, Cholet, association, projets, politique de la ville, participatif, futur, citoyen"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="x-apple-disable-message-reformatting" />
+    <meta name="robots" content="index, follow" />
+    <meta property="og:type" content="website" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="robots" content="index, follow">
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="Initiatives Citoyennes Choletaises">
-    <meta property="og:description" content="Association ayant pour objectif : la proposition et la mise en place de projets qui privilégient une démarche de participation citoyenne."/>
-    <meta property="og:image" content="./assets/images/logo en cours.svg">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="fix-gradient.css">
+    <meta property="og:image" content="/assets/img/logo.svg" />
+    <meta name="description" content="Association ayant pour objectif : la proposition et la mise en place de projets qui privilégient une démarche de participation citoyenne." />
+    <meta name="keywords" content="Initiatives Citoyennes Choletaises, Cholet, association, projets, fil-info, participatif, participatif, citoyen" />
+    <meta
+      name="og:title"
+      content="Initiatives Citoyennes Choletaises | Notre actualité : l'association, les évènements qu'on organise, notre lettre d'information, le lancement d'actions participatives,.." />
+    <meta name="og:descrption" content="Association ayant pour objectif : la proposition et la mise en place de projets qui privilégient une démarche de participation citoyenne." />
+    <title>Initiatives Citoyennes Choletaises | Notre actualité : l'association, les évènements qu'on organise, notre lettre d'information, le lancement d'actions participatives,..</title>
+    <link rel="stylesheet" href="./assets/styles/index.css" />
+    <link rel="stylesheet" href="./assets/img/logo.svg" />
   </head>
   <body>
     <header>
-      <div class="flexbox" style="margin-top: 20px;">
-        <img src="./assets/images/logo en cours.svg" alt="logo de l'association" style="width: 25%; margin: 0 auto 20px auto; min-width: 300px;">
+      <div class="header-container">
+        <nav>
+          <input id="menu-toggle" type="checkbox" />
+          <label class="menu-hamburger-container" for="menu-toggle">
+            <div class="hamburger-icon">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </label>
+          <ul class="menu">
+            <li><a href="index.html">À la une</a></li>
+            <li><a href="focus.html">Dossiers</a></li>
+            <li><a href="event.html">Évènements</a></li>
+            <li><a href="partners.html">Participatif</a></li>
+            <li><a href="quest.html">Interrogations</a></li>
+            <li><a href="about.html">À propos</a></li>
+          </ul>
+        </nav>
+        <div class="site-logo">
+          <div class="img"><a href="https://inicitoy.toile-libre.org" aria-label="accueil"></a></div>
+        </div>
+        <div class="vide"></div>
       </div>
     </header>
+    <!-- <?php include('assets/components/header.php'); ?> -->
     <main>
-      <h2>L'association</h2>
-      <p>
-        Son objet : proposition et mise en place de projets en collaboration avec les acteurs de la société civile dans les domaines économiques et socioculturels. Ces projets contribueront au développement local en privilégiant une démarche de participation citoyenne.
-      </p>
-      <p>
-        Cela peut prendre la forme d'échanges avec des gens de terrain ou des experts, de mise en lumière de ressources disponibles ouvrant à la réflexion, de consultations participatives, de démarrages d'actions concrètes,..
-      </p>
-      <h2>Lieux d'échanges</h2>
-      <p>
-        Nous organisons plusieurs fois par an des rencontres autour d'un thème.
-      </p>
-      <h3>(à venir) 9 mai 2023 - L'engagement des jeunes</h3>
-      <div class="p3">
-        <div class="flexbox" style="margin-block-start: 1rem;">
-          <img src="https://www.hebergeur-image.com/upload/78.114.29.89-642eb6822cc1b.jpg" alt="Invitation à la conférence Engagement des jeunes">
-        </div>
-        <p>
-          Si vous êtes étudiant ou lycéen, vous pouvez participer :
+      <div class="title">
+        <h6>À la une</h6>
+        <h1>Notre actualité</h1>
+      </div>
+      <section id="left">
+        <article id="participatif" class="box grid grid60">
+          <div>
+            <h2>Lancement d'une action participative</h2>
+            <p>
+              <strong>En se servant des outils présentés dans le "Fil info"</strong>, nous organisons une <strong>action participative</strong> pour analyser les
+              <strong>bonnes et mauvaises pratiques</strong> en matière de design urbain.
+            </p>
+            <p>Cela concerne le design des rues mais aussi tous les équipements commerciaux ou industriels de l'agglo. </p>
+            <p>
+              <strong><a title="Buts et modalités de la consultation participative" href="./pg/p001-ecolo-rank.html" target="_blank">Plus d'info ici</a></strong
+              >.
+            </p>
+          </div>
+          <img src="./assets/img/i_001-Façades.gif" alt="Deux types de façades et leur impact" />
+        </article>
+        <article id="lettre" class="box puces">
+          <h2>Notre lettre d'information</h2>
+          <div class="float"><img src="./assets/img/i_001-Fil-info-blur.png" alt="Fil-info" /></div>
+          <div>
+            <p>
+              Le "<strong>Fil info</strong>" est notre lettre d'information.. Régulièrement, nous mettons le <strong>focus sur un thème</strong> et <strong>enrichissons</strong> à cette occasion
+              <strong>notre site web</strong>.
+            </p>
+            <p>D'autre part, cela nous permet d'<strong>interagir avec vous</strong> soit :</p>
+            <ul>
+              <li>en organisant un <strong>échange</strong> avec un ou plusieurs intervenants sur le même thème,</li>
+              <li>en organisant une <strong>action participative</strong> (action concrète immédiate),</li>
+              <li>ou sous d'autres formes.</li>
+            </ul>
+            <p>
+              Le <strong>premier numéro</strong>, que vous avez peut-être reçu portait sur le "<strong>Design urbain</strong>". Il fait partie d'un thème plus vaste sur les
+              <strong>différentes manières de cohabiter en ville</strong>.
+            </p>
+            <p>Pour la recevoir, il suffit de s'inscrire dans l'encadré à droite.</p>
+          </div>
+        </article>
+        <article id="logo" class="box">
+          <h2>Notre logo</h2>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorem magnam cum perspiciatis quod! Corrupti illum, quod, cum officiis est veritatis beatae ex nesciunt facere vitae, ea
+            recusandae voluptatibus reiciendis voluptate.
+          </p>
+        </article>
+        <article id="internet" class="box puces">
+          <h2>Un nouveau site internet</h2>
+          <p>
+            Pour <strong>échanger</strong> avec vous, il nous fallait un outil. Nous avons d'abord pensé à une <strong>lettre d'information</strong> et, un peu en <strong>complément</strong>, un
+            <strong>site internet</strong> nous a semblé pertinent.
+          </p>
+          <p>Nous y présenterons :</p>
           <ul>
-            <li><strong><a href="https://docs.google.com/forms/d/e/1FAIpQLSf3sYBonj-L5kA9x9j1nNP8bqHpoqh5XWzVKKrQiAEqx0uD6w/viewform?vc=0&c=0&w=1&flr=0" title="Rapide questionnaire anonyme sur vos motifs d'engagement" target="_blank">Enquête lycéens</a></strong></li>
-            <li><strong><a href="https://docs.google.com/forms/d/e/1FAIpQLSd5UzRCpsxdOgBBNa-_nx4unrvsF5C4GwMieXb08EDVdvhhpw/viewform?vc=0&c=0&w=1&flr=0" title="Rapide questionnaire anonyme sur vos motifs d'engagement" target="_blank">Enquête étudiants</strong></a></li>
+            <li>Notre <strong>actualité</strong> : notre association et ses activités</li>
+            <li>Des <strong>dossiers</strong> thématiques, des ressources documentaires pour notre action,..</li>
+            <li>Les <strong>évènements</strong> passés et à venir organisés par l'association, les supports et liens fournis par les intervenants,..</li>
+            <li>Les <strong>actions participatives</strong> en cours</li>
+            <li>Des <strong>interrogations</strong> sans réponse : un peu le blog des adhérents</li>
+            <li>À propos : <strong>Qui nous sommes</strong></li>
           </ul>
-        </p>
-        <p>
-          Prompts à vous engager sur les réseaux sociaux, vous délaissez, pour beaucoup d'entre vous, les élections locales contribuant ainsi à garder en place ceux-là même qui ont détruit votre environnement (dérèglement climatique mais aussi des villes moins tournées vers leur jeunesse).
-        </p>
-        <p>
-          Deux sociologues seront là pour faire un état des lieux. Des jeunes ont été conviés aussi pour raconter aussi leur expérience de l'engagement.
-        </p>
-      </div>
-      <h3>03 2023 - Présentation de l'association</h3>
-      <div class="p3">
-        <p>
-          Après une présentation générale de l'association de ses objectifs et son ambition, ont pu adhérer ceux qui le souhaitaient.
-        </p>
-        <p>
-          Parmi, les sujets semblant intéresser une partie de l'auditoire, il y a eu ces changements de fonctionnement d'un certain nombre de rues à Cholet. Ils semblent être faits sans concertation de manière arbitraire et avec des choix contestables aboutissant à des situations ubuesques.. 
-        </p>
-      </div>
-      <h3>12 2022 - Politique de la ville</h3>
-      <div class="p3">
-        <p>
-          La politique de la ville qui avait, dans ses prémisses, pour objectif d'offrir un habitat décent au plus grand nombre a évolué, à partir de 1988, vers des actions ciblées destinées aux quartiers prioritaires.
-        </p>
-        <p>
-          Ce qui était appelé Commissariat Général à l'Égalité du Territoire est devenu Ministère/ Secrétariat d'État à la Ville, Cependant, il y a souvent une grande différence entre l'ambition attendue et les résultats réels obtenus.
-        </p>
-        <p>
-          A partir de nombreux exemples, notre conférencier nous a montré les limites de cette politique. Malgré les réhabilitations, les améliorations, le sentiment d'exclusion, de déconnexion avec le reste de la ville pour ces quartiers reste fort. La mixité sociale prônée par Jean Louis Borloo, par exemple, se heurte au fait que dès qu'on s'en sort mieux financièrement, on quitte le quartier.
-        </p>
-        <p>
-          La pauvreté restant ainsi majoritaire à ces endroits, on a des tensions sociales qui éclatent de temps à autre.
-        </p>
-        <p>
-          En conclusion, de gouvernement en gouvernement, on a parfois détricoté ce que faisait l'autre, on a eu beaucoup trop de réponses plus politiciennes que répondant au besoin, on est souvent passé d'une ambition d'action à grande échelle à un simple saupoudrage,.. Il y a des freins aussi comme la participation très modeste des citoyens, un manque de rationalisation dans la gestion des quartiers, un ascenseur social quasi à l’arrêt,..
-        </p>
-      </div>
-      <h2>Le Fil info</h2>
-      <p>
-        Il s'agit d'une newsletter autour d'un thème. Il met en avant des ressources disponibles sur le net qui permettent d'approfondir notre connaissance du sujet.
-      </p>
-      <p>
-        Pour ce premier numéro, nous avons choisi "la rue". Face aux mutations présentes et à venir (climat, fin des moteurs thermiques, multiplication des vélos et trottinettes électriques,..), comment s'y prépare t'on ?
-      </p>
-      <h3><a href="./fil_info/fil-info_01.html" target="_blank">Fil info 01 - Quelles rues pour demain ?</a></h3>
-      <h2>Consultation participative</h2>
-      <p>
-        <strong>Suite au Fil info 01, une participation citoyenne vous est proposée :</strong>
-      </p>
-      <h3>en savoir plus..</h3>
+          <p>Il évoluera aussi au fil du temps..</p>
+        </article>
+      </section>
+      <section id="right">
+        <article id="sommaire" class="box">
+          <h3>navigation</h3>
+          <ul>
+            <li><a href="#participatif">Lancement d'une action participative</a></li>
+            <li><a href="#lettre">Notre lettre d'information</a></li>
+            <li><a href="#logo">Notre logo</a></li>
+            <li><a href="#internet">Un nouveau site internet</a></li>
+          </ul>
+        </article>
+        <article id="contact" class="box">
+          <h3>contact</h3>
+          <p>
+            <a
+              href="mailto:inicitoy@laposte.net?subject=Suggestions pour le site&amp;body=Bonjour, ..."
+              target="_blank"
+              rel="noopener noreferer"
+              title="N'hésitez pas à nous faire part de vos suggestions ou critiques.."
+              moz-do-not-send="true"
+              >inicitoy@laposte.net</a
+            >
+          </p>
+        </article>
+      </section>
     </main>
-    <footer>      
+    <footer>
+      <div class="copyright-bar">© 2023 Initiatives Citoyennes Choletaises</div>
     </footer>
-    </div>
   </body>
 </html>

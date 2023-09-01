@@ -1,0 +1,75 @@
+header {
+  // remplace la navbar principale pour les pg article
+  .nav-pg-retour {
+    max-width: max(60%, 1200px);
+    margin: 15px auto;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 78% 20%;
+    gap: 2%;
+    align-items: center;
+    box-shadow: inset 0px -1px 0px #08590b;
+  
+    @media screen and (max-width: 1250px) {
+      margin: 15px 4vw;
+    }
+
+    .btn-retour {
+      display: inline-block;
+      background: $navbtn;
+      font-weight: bold;
+      padding: 2px 8px;
+
+      @media screen and (max-width: 700px) {
+        font-size: 0.7rem;
+        padding: 1px 6px;
+      }
+      
+      a {
+        color: $black;
+      }
+
+      &:hover {
+        background: $navbtn-active;
+
+        a {
+          color: $white;
+        }
+      }
+    }
+
+    h1 {
+      padding-bottom: 15px;
+    }
+
+    .site-logo a {
+      display: block;
+      background: $logo center/contain no-repeat;
+      margin: 8px;
+      height: 80px;
+
+      @media screen and (max-width: 700px) {
+        height: 50px;
+        margin: 4px;
+      }
+    }
+  }
+}
+
+// lorsque la nav-sub est en dehors de header
+.nav-sub {
+  max-width: max(60%, 1200px);
+  margin: 0 auto;
+  padding: 0;
+
+  @media screen and (max-width: 1250px) {
+    margin: O 4vw;
+  }
+
+  // sert pour un titre qui explique la page
+  .sous-titre {
+    padding-left: 15px;
+    font-weight: bold;
+    color: $white;
+  }
+}

@@ -1,0 +1,27 @@
+// THEME pour les pages annexes
+
+// BACKGROUND EN DEHORS DES BOX
+$body-bg: #072508;
+
+// COULEURS DES BOX
+@mixin theme_box {
+  background: $dark;
+  color: $white;
+  border-radius: 2px;
+}
+
+// LOGO UTILISÉ
+$logo: $logo_dark;
+
+// COULEURS DES BOUTONS DE NAV
+$navbtn: $gradient;
+$navbtn-active: $gradient2;
+
+// COULEURS par défaut DES TITRES H1 à H6
+$color-title: $green;
+
+// disposition des textes et/ou boxes et espacements
+@mixin mainPattern {
+  display: grid;
+  grid-template-columns: 1fr;
+}

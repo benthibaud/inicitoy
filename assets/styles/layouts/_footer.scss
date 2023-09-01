@@ -1,0 +1,18 @@
+footer {
+  max-width: max(60%, 1200px);
+  margin: 0 auto 30px;
+  // position relative car z-index ne résolvait pas l'ombre des box qui débordait depuis main (theme3).
+  position: relative;
+  @include theme_box;
+
+  .copyright-bar {
+    text-align: center;
+    padding: 1.2vh 0;
+    font-size: smaller;
+    font-variant-caps: petite-caps;
+  }
+
+  @media screen and (max-width: 1200px) {
+    margin: 10px 2vw 30px;
+  }
+}

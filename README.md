@@ -1,2 +1,5 @@
 # inicitoy
-Website of "Initiatives Citoyennes Choletaises"
+
+## Initiatives Citoyennes Choletaises
+
+Site de l'association

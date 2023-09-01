@@ -1,0 +1,31 @@
+@import './layouts/variables';
+@import './layouts/pg_theme1';
+@import 'settings';
+
+.body-container {
+  animation: fadein 2s ease;
+  animation-delay: 0.2s;
+  
+  p {
+    text-align: justify;
+    line-height: 1.8;
+    padding-bottom: 30px;
+  }
+
+  @keyframes fadein {
+    from {
+        opacity:0;
+        scale: 0.7;
+    }
+    to {
+        opacity:1;
+        scale: 1;
+    }
+  }
+}
+
+@import "./layouts/nav-sub";
+
+@import "./layouts/main";
+
+@import "./layouts/footer";

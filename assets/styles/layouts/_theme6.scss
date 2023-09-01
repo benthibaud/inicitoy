@@ -1,0 +1,53 @@
+// THEME BLANC SUR FOND VERT FONCÉ
+
+// BACKGROUND EN DEHORS DES BOX
+$body-bg: $dark;
+
+// COULEURS DES BOX
+@mixin theme_box {
+  background: $white;
+  color: $black;
+  border-radius: 2px;
+}
+
+// LOGO UTILISÉ
+$logo: $logo_classic;
+
+// COULEURS DES BOUTONS DE NAV
+$navbtn: $gradient;
+$navbtn-active: $gradient2;
+
+// COULEURS par défaut DES TITRES H1 à H6
+$color-title: $dark-green;
+
+// aller modifier dans _header l'index du :nth-child() pour le menu actif : 1 - à la une   2 - dossiers etc
+@mixin activeMenu {
+  li:nth-child(6), li:hover {
+    background: $navbtn-active;
+    
+    a {
+      color: $white;
+    }
+  }
+}
+
+@mixin mainPattern {
+  padding: 20px 10px;
+  display: block;
+
+  h2 {
+    color: $green;
+  }
+  p {
+    text-align: justify;
+  }
+}
+
+main ul {
+  padding-left: 50px;
+  padding-bottom: 25px;
+
+  li {
+  list-style: initial;
+  }
+}
