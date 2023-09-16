@@ -1,3 +1,12 @@
+:root {
+  .index, .partners, .quest, .about {
+    --logo: url(/assets/img/logo_dark.svg) center/contain no-repeat;
+  }
+  .focus, .event {
+    --logo: url(/assets/img/logo.svg) center/contain no-repeat;
+  }
+}
+
 header {
   max-width: max(60%, 1200px);
   margin: 20px auto 30px;
@@ -30,8 +39,8 @@ header {
       .menu-hamburger-container {
         display: none;
         position: absolute;
-        left: 10px;
-        bottom: 10px;
+        left: 15px;
+        bottom: 30px;
         background: $gradient;
         height: 30px;
         width: 2rem;
@@ -53,7 +62,7 @@ header {
       // définit les trois traits de l'icône hamburger
       .hamburger-icon span {
         display: block;
-        background-color: $black;
+        background: $black;
         position: absolute;
         left: 0.3rem;
         height: 3px;
@@ -96,25 +105,30 @@ header {
       .menu {
         display: flex;
         position: absolute;
-        left: 5px;
-        bottom: -10px;
+        left: 10px;
+        bottom: -12px;
+        padding: 0;
         
         li {
           margin-left: 5px;
           padding: 2px 13px;
           background: $navbtn;
           border: none;
+          list-style: none;
           cursor: pointer;
           
           a {
             font-variant-caps: petite-caps;
             font-family: $font-title;
             font-size: max(1vw, 0.9rem);
-            color: $black;
+            font-weight: normal;
+            color: #002700;
+
+            &:focus, &:active, &:hover {
+              text-decoration: none;
+            }
           }
         }
-        
-        @include activeMenu;
       }
 
       @media screen and (max-width: 700px) {   
@@ -150,9 +164,9 @@ header {
     
     .site-logo a {
       display: block;
-      background: $logo center/contain no-repeat;
       margin: 8px;
       height: 100px;
+      background: var(--logo);
 
       @media screen and (max-width: 700px) {
         height: 70px;

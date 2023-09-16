@@ -5,30 +5,15 @@
   box-sizing: border-box;
 }
 
-html {
-  scroll-behavior: smooth;
-}
-
-li {
-  list-style: none;
+ul {
+  padding: revert;
 }
 
 body {
   font-family: $font-normal;
   font-size: max(1vw, 0.9rem);
   line-height: 1.6;
-  background: $body-bg;
-  color: $white;
   min-height: 100vh;
-
-  a {
-    color: $link;
-    text-decoration: none;
-  }
-    
-  a:hover, a:focus, a:active {
-    color: $linkfocus;
-  }
 }
 
 h1,
@@ -39,7 +24,7 @@ h5,
 h6 {
   font-family: $font-title;
   line-height: normal;
-  color: $color-title;
+  color: var(--color-title);
 }
 
 p,
@@ -69,4 +54,113 @@ h5 {
   text-transform: uppercase;
   font-size: 0.8rem;
   color: #a3a3a3;
+}
+
+strong {
+  color: var(--color-title);
+}
+
+// grid et float pour tout le projet
+.textOnly {
+  display: grid;
+  padding: 15px;
+}
+
+.grid {
+  display: grid;
+  gap: 3%;
+  align-items: center;
+
+  img {
+    width: 100%;
+  }
+}
+.grid32 {
+  grid-template-columns: 32% 65%;
+}
+.grid42 {
+  grid-template-columns: 42% 55%;
+}
+.grid60 {
+  grid-template-columns: 60% 37%;
+}
+.gridpicto {
+  grid-template-columns: 17.6% 17.6% 17.6% 17.6% 17.6%;
+  align-items: stretch;
+
+  p {
+    padding: 15px 0;
+  }
+
+  img {
+    width: 80%;
+    height: 80%;
+  }
+}
+.float {
+  float: left;
+  max-width: 50%;
+  margin: 0 20px 4px 0;
+
+  img {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .grid32, 
+  .grid42, 
+  .grid60 {
+    grid-template-columns: 1fr;
+  }
+  .gridpicto {
+    grid-template-columns: 30.3% 30.4% 30.3%;
+  }
+}
+
+.mainPattern {
+  display: grid;
+  grid-template-columns: 74% calc(26% - 20px);
+  gap: 20px;
+
+  @media screen and (max-width: 700px) {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+}
+
+// titre sur une image de fond
+.imgMain {
+  position: relative;
+  object-fit: scale-down;
+
+  // référence de l'article (ex traduction depuis Science)
+  .reference {
+    position: absolute;
+    left: 15px;
+    bottom: 15px;
+    padding: 5px 10px;
+    margin: 0;
+    background: rgba(7, 39, 8, 0.6);
+  }
+
+  .title-pg {
+    position: absolute;
+    left: 50%;
+    top: 30%;
+    transform: translateX(-50%) translateY(-50%);
+    width: 80%;
+    text-align: center;
+    background: rgba(7, 39, 8, 0.5);
+    padding: 15px;
+
+    font-size: max(min(1.6vw, 1.7rem), 1.1rem);
+    letter-spacing: 3px;
+    color: #f5f5f5;
+
+    @media screen and (max-width: 700px) {
+      width: 95%;
+      letter-spacing: 1px;
+    }
+  }
 }

@@ -15,10 +15,9 @@
       content="Initiatives Citoyennes Choletaises | Notre actualité : l'association, les évènements qu'on organise, notre lettre d'information, le lancement d'actions participatives,.." />
     <meta name="og:descrption" content="Association ayant pour objectif : la proposition et la mise en place de projets qui privilégient une démarche de participation citoyenne." />
     <title>Initiatives Citoyennes Choletaises | Notre actualité : l'association, les évènements qu'on organise, notre lettre d'information, le lancement d'actions participatives,..</title>
-    <link rel="stylesheet" href="./assets/styles/index.css" />
-    <link rel="stylesheet" href="./assets/img/logo.svg" />
+    <link rel="stylesheet" href="/assets/styles/style.css" />
   </head>
-  <body>
+  <body class="index">
     <header>
       <div class="header-container">
         <nav>
@@ -30,7 +29,7 @@
               <span></span>
             </div>
           </label>
-          <ul class="menu">
+          <ul class="menu" id="nav" data-active-button="2">
             <li><a href="index.html">À la une</a></li>
             <li><a href="focus.html">Dossiers</a></li>
             <li><a href="event.html">Évènements</a></li>
@@ -46,11 +45,11 @@
       </div>
     </header>
     <!-- <?php include('assets/components/header.php'); ?> -->
-    <main>
-      <div class="title">
-        <h6>À la une</h6>
-        <h1>Notre actualité</h1>
-      </div>
+    <div class="title">
+      <h6>À la une</h6>
+      <h1>Notre actualité</h1>
+    </div>
+    <main class="mainPattern">
       <section id="left">
         <article id="participatif" class="box grid grid60">
           <div>
@@ -67,9 +66,9 @@
           </div>
           <img src="./assets/img/i_001-Façades.gif" alt="Deux types de façades et leur impact" />
         </article>
-        <article id="lettre" class="box puces">
+        <article id="lettre" class="box">
           <h2>Notre lettre d'information</h2>
-          <div class="float"><img src="./assets/img/i_001-Fil-info-blur.png" alt="Fil-info" /></div>
+          <div class="float"><img src="./assets/img/i_001-Fil-info-blur.png" alt="Fil-info" height="90" /></div>
           <div>
             <p>
               Le "<strong>Fil info</strong>" est notre lettre d'information.. Régulièrement, nous mettons le <strong>focus sur un thème</strong> et <strong>enrichissons</strong> à cette occasion
@@ -95,7 +94,7 @@
             recusandae voluptatibus reiciendis voluptate.
           </p>
         </article>
-        <article id="internet" class="box puces">
+        <article id="internet" class="box">
           <h2>Un nouveau site internet</h2>
           <p>
             Pour <strong>échanger</strong> avec vous, il nous fallait un outil. Nous avons d'abord pensé à une <strong>lettre d'information</strong> et, un peu en <strong>complément</strong>, un
@@ -116,12 +115,10 @@
       <section id="right">
         <article id="sommaire" class="box">
           <h3>navigation</h3>
-          <ul>
-            <li><a href="#participatif">Lancement d'une action participative</a></li>
-            <li><a href="#lettre">Notre lettre d'information</a></li>
-            <li><a href="#logo">Notre logo</a></li>
-            <li><a href="#internet">Un nouveau site internet</a></li>
-          </ul>
+          <p><a href="#participatif">Lancement d'une action participative</a></p>
+          <p><a href="#lettre">Notre lettre d'information</a></p>
+          <p><a href="#logo">Notre logo</a></p>
+          <p><a href="#internet">Un nouveau site internet</a></p>
         </article>
         <article id="contact" class="box">
           <h3>contact</h3>

@@ -19,9 +19,9 @@
       name="og:description"
       content="L’inflation, la guerre en Ukraine, la place du vélo et autres mobilités douces, l’intelligence artificielle,. tout ce qui intérroge notre citoyenneté / notre habilité à vivre ensemble." />
     <title>Questionnements des adhérents | Des réactions vis à vis de phénomènes de société, par rapport à un article vu ici ou là, à des changements qui intérrogent notre citoyenneté,..</title>
-    <link rel="stylesheet" href="./assets/styles/quest.css" />
+    <link rel="stylesheet" href="/assets/styles/style.css" />
   </head>
-  <body>
+  <body class="quest">
     <header>
       <div class="header-container">
         <nav>
@@ -49,17 +49,17 @@
       </div>
     </header>
     <!-- <?php include('assets/components/header.php'); ?> -->
-    <main>
-      <div class="title">
-        <h6>Interrogations</h6>
-        <h1>Questionnements divers</h1>
-      </div>
+    <div class="title">
+      <h6>Interrogations</h6>
+      <h1>Questionnements divers</h1>
+    </div>
+    <main class="mainPattern">
       <section id="left">
         <article id="vélo" class="box grid grid60">
           <div>
             <h3>De qui se moque t'on ?</h3>
             <h5>Benoit - Août 2023</h5>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, voluptatibus ipsam deleniti accusamus quia reprehenderit!</p>
+            <p>On utilise des vélos décorés à Marques Avenue pour dire qu'on les aime, mais que penser quand, en même temps, on supprime les seuls endroits où on peut attacher son vélo !</p>
           </div>
           <img src="./assets/img/q_001-Vélo déco Marque Avenue 2.jpg" alt="Des vélos pour décorer" />
         </article>
@@ -68,7 +68,7 @@
           <h5>Benoit - Juin 2023</h5>
           <div>
             <a title="des « Jardins Forestiers » délibérément plantés par les populations autochtones" href="./pg/q002-jardins-forestiers.html"
-              ><img src="./assets/img/q_002-jardins-forestiers.webp" alt="Ancien site d'agro-forestation durable" class="float"
+              ><img src="./assets/img/q_002-jardins-forestiers.webp" alt="Ancien site d'agro-forestation durable" class="float" height="130"
             /></a>
             <div>
               <p>Aujourd'hui, je souhaite partager la <strong>traduction d'un article</strong> paru dans la <strong>revue Science</strong> en avril 2021.</p>
@@ -88,10 +88,8 @@
       <section id="right">
         <article id="sommaire" class="box">
           <h3>navigation</h3>
-          <ul>
-            <li><a href="#vélo">De qui se moque t'on ?</a></li>
-            <li><a href="#jardins">Une vraie agriculture durable ?</a></li>
-          </ul>
+          <p><a href="#vélo">De qui se moque t'on ?</a></p>
+          <p><a href="#jardins">Une vraie agriculture durable ?</a></p>
         </article>
         <article id="contact" class="box">
           <h3>contact</h3>

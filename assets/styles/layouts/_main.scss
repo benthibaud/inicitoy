@@ -1,8 +1,24 @@
+.title {
+  max-width: max(60%, 1200px);
+  position: absolute;
+  top: calc(70px - 1.5vw);
+  left: calc(50% - 570px);
+
+  @media screen and (max-width: 1200px) {
+    left: calc(50% - 44vw);
+  }
+  @media screen and (max-width: 700px) {
+    top: 66px;
+    left: calc(2vw + 15px);
+    h1 {
+      display: none;
+    }
+  }
+}
 main {
   max-width: max(60%, 1200px);
   margin: 10px auto 0;
   min-height: 75vh;
-  @include mainPattern;
 
   @media screen and (max-width: 1200px) {
     margin: 20px 2vw;
@@ -10,10 +26,10 @@ main {
 
   @media screen and (max-width: 700px) {
     margin: 15px 2vw;
-    grid-template-columns: 1fr;
 
-    .title, #sommaire {
+    #sommaire {
       display: none;
+      margin: 0;
     }
 
     .box {
@@ -27,103 +43,17 @@ main {
     text-align: center;
   }
 
-  .title {
-    position: absolute;
-    top: calc(70px - 1.5vw);
-    left: calc(50% - 570px);
-
-    @media screen and (max-width: 1200px) {
-      left: calc(50% - 45vw);
-    }
-  }
-
-  .grid {
-    display: grid;
-    gap: 2%;
-    align-items: center;
-
-    img {
-      width: 100%;
-    }
-  }
-  .grid32 {
-    grid-template-columns: 32% 66%;
-  }
-  .grid42 {
-    grid-template-columns: 42% 56%;
-  }
-  .grid60 {
-    grid-template-columns: 60% 38%;
-  }
-  .gridpicto {
-    grid-template-columns: 18.4% 18.4% 18.4% 18.4% 18.4%;
-    align-items: stretch;
-
-    p {
-      padding: 15px 0;
-    }
-
-    img {
-      width: 80%;
-      height: 80%;
-    }
-  }
-  .float {
-    float: left;
-    width: 23%;
-    margin: 0 20px 4px 0;
-
-    img {
-      width: 100%;
-    }
-  }
-  @media screen and (max-width: 600px) {
-    .grid32, 
-    .grid42, 
-    .grid60 {
-      grid-template-columns: 1fr;
-    }
-    .gridpicto {
-      grid-template-columns: 32% 32% 32%;
-    }
-  }
-
   .box {
     padding: 30px;
     @include theme_box;
     margin-bottom: 20px;
   }
 
-  li {
-    margin: 7px 0;
-  }
-
-  .puces {
-    ul {
-      padding: 0 0 8px 35px;
-    }
-    li {
-      list-style: initial;
-      margin: 0;
-    }
-  }
-  
-  a, a:focus, a:checked {
-    color: $link;
-    font-weight: bold;
-  }
-
-  a:hover {
-    color: $green;
-    font-weight: bold;
-    transform: scale(1.05);
-  }
-
   #sommaire a {
     font-size: smaller;
   }
-  #sommaire li {
+  #sommaire p {
     line-height: normal;
-    margin-bottom: 12px;
+    padding-bottom: 12px;
   }
 }

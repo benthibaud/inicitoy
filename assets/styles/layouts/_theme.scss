@@ -1,0 +1,193 @@
+html {
+  // pas de theme dark définit. Si on en définit un plus loin avec @media, on décommente la ligne suivante
+  // color-scheme: light dark;
+  scroll-behavior: smooth;
+}
+
+@font-face {
+  font-family: 'Noto';
+  src: url(../fonts/NotoSans-Light.ttf);
+}
+@font-face {
+  font-family: 'Noto-b';
+  src: url(../fonts/NotoSans-Regular.ttf);
+}
+$font-normal: 'Noto', sans-serif;
+$font-title: 'Noto-b', sans-serif;
+
+// Variables couleurs
+$gradient: #a5c3a1 linear-gradient(80deg, #a5c3a1 0%, #b2d9ac 14%, #f2fff0 100%);
+$gradient2: #609959 linear-gradient(220deg, #33c138 0%, #759370 29%, #00e309 100%);
+$logo_dark: url(/assets/img/logo_dark.svg);
+$logo_classic: url(/assets/img/logo.svg);
+$white: #eee;
+$black: #111;
+
+$link-dark: #48aeff;
+$linkfocus-dark: blue;
+$link-light: blue;
+$linkfocus-light: darkblue;
+
+// Une classe pour chaque thème (les variables globale css (:root) permettent d'avoir des variables différentes sur chaque classe
+// Ce n'était pas possible avec les variables sass
+// Il suffit pour les appliquer de lier la classe à body dans l'Html
+:root {
+  .index {
+    background: #072508;
+    --color-title: #00d668;
+    --bg-box: #3a3a3a;
+    --shadow-box: none;
+  }
+  .focus {
+    background: #3a3a3a;
+    color: $black;
+    --color-title: #27742a;
+    --bg-box: papayawhip;
+    --shadow-box: none;
+  }
+  .event {
+    background: #592913;
+    color: $black;
+    --color-title: #27742a;
+    --bg-box: antiquewhite;
+    --shadow-box: -1px 17px 20px 10px #bb52227a;
+  }
+  .partners {
+    background: #041429;
+    --color-title: #00d668;
+    --bg-box: #302b3f;
+    --shadow-box: none;
+  }
+  .quest {
+    background: #751111;
+    --color-title: #00d668;
+    --bg-box: #331616;
+    --shadow-box: none;
+  }
+  .about {
+    background: #3a3a3a;
+    --color-title: #00d668;
+    --bg-box: #072508;
+    --shadow-box: none;
+  }
+  
+  .index, .partners, .quest, .about {
+    color: $white;
+    a {
+      color: $link-dark;
+    }
+    a:hover, a:focus, a:active {
+      color: $linkfocus-dark;
+    }
+  }
+
+  .focus, .event {
+    color: $black;
+    a {
+      color: $link-light;
+    }
+    a:hover, a:focus, a:active {
+      color: $linkfocus-light;
+    }
+  }
+
+  a {
+    text-decoration: none;
+    font-weight: bold;
+  }
+    
+  a:hover, a:focus, a:active {
+    text-decoration: underline;
+    transform: scale(1.05);
+  }
+}
+
+// @media (prefers-color-scheme: dark) {
+//   :root {
+//     .index {
+//       background: darkred;
+//     }
+//     color: whitesmoke;
+//     --logo: url(/assets/img/logo_dark.svg);
+//     --navbtn: $gradient;
+//     --navbtn-active: $gradient2;
+//   }
+// }
+
+@mixin theme_box {
+  background: var(--bg-box);
+  box-shadow: var(--shadow-box);
+  border-radius: 2px;
+}
+
+// Le bouton de nav actif
+$navbtn: $gradient;
+$navbtn-active: $gradient2;
+:root {
+  .index {
+    $actif: 1;
+    nav {
+      li:nth-child(#{$actif}), li:hover {
+        background: $navbtn-active;
+        a {
+          color: $white;
+        }
+      }
+    }
+  }
+  .focus {
+    $actif: 2;
+    nav {
+      li:nth-child(#{$actif}), li:hover {
+        background: $navbtn-active;
+        a {
+          color: $white;
+        }        
+      }
+    }
+  }
+  .event {
+    $actif: 3;
+    nav {
+      li:nth-child(#{$actif}), li:hover {
+        background: $navbtn-active;
+        a {
+          color: $white;
+        }        
+      }
+    }
+  }
+  .partners {
+    $actif: 4;
+    nav {
+      li:nth-child(#{$actif}), li:hover {
+        background: $navbtn-active;
+        a {
+          color: $white;
+        }        
+      }
+    }
+  }
+  .quest {
+    $actif: 5;
+    nav {
+      li:nth-child(#{$actif}), li:hover {
+        background: $navbtn-active;
+        a {
+          color: $white;
+        }        
+      }
+    }
+  }
+  .about {
+    $actif: 6;
+    nav {
+      li:nth-child(#{$actif}), li:hover {
+        background: $navbtn-active;
+        a {
+          color: $white;
+        }        
+      }
+    }
+  }
+}

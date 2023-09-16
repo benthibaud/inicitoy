@@ -1,10 +1,9 @@
-@import './layouts/variables';
-@import './layouts/theme1';
+@import './layouts/theme';
 @import 'settings';
 
 @import "./layouts/header";
 
-// @import "./layouts/nav-sub";
+@import "./layouts/nav-sub";
 
 @import "./layouts/main";
 

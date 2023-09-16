@@ -12,52 +12,8 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="../assets/styles/pg.css" />
-    <style>
-      main {
-        .imgMain {
-          position: relative;
-
-          .reference {
-            position: absolute;
-            left: 15px;
-            bottom: 15px;
-            padding: 5px 10px;
-            margin: 0;
-            background: hsla(122, 68%, 9%, 0.6);
-          }
-
-          .title-pg {
-            position: absolute;
-            left: 50%;
-            top: 30%;
-            transform: translateX(-50%) translateY(-50%);
-            width: 80%;
-            text-align: center;
-            background: hsla(122, 68%, 9%, 0.5);
-            padding: 15px;
-
-            font-family: "Noto-b", sans-serif;
-            font-size: max(min(1.6vw, 1.7rem), 1.1rem);
-            font-weight: 800;
-            line-height: normal;
-            letter-spacing: 3px;
-            font-variant-caps: petite-caps;
-            color: #f5f5f5;
-
-            @media screen and (max-width: 700px) {
-              width: 95%;
-              letter-spacing: 1px;
-            }
-          }
-
-          img {
-            height: 200px;
-          }
-        }
-      }
-    </style>
   </head>
-  <body>
+  <body class="quest">
     <div class="body-container">
       <header>
         <div class="nav-pg-retour">
@@ -74,7 +30,7 @@
       </header>
       <main>
         <div class="imgMain grid">
-          <img src="../assets/img/q_002-jardins-forestiers.webp" alt="une vue du dessus d'une forêt jardin plantée il y a plus de 200 ans" />
+          <img src="../assets/img/q_002-jardins-forestiers.webp" alt="une vue du dessus d'une forêt jardin plantée il y a plus de 200 ans" height="300" />
           <div class="reference">
             <div style="width: 60px">
               <img src="../assets/img/q_002-logo-scienceMag.svg" alt="Logo du magazine Science" />
@@ -86,7 +42,7 @@
               >
             </p>
           </div>
-          <div class="title-pg">Zone Pacifique Nord-Ouest : des « Jardins Forestiers » délibérément plantés par les populations autochtones&nbsp;!</div>
+          <h3 class="title-pg">Zone Pacifique Nord-Ouest : des « Jardins Forestiers » délibérément plantés par les populations autochtones&nbsp;!</h3>
         </div>
         <p class="ref">
           site du village ancestral Ts'msyen, dans le nord-ouest de la Colombie-Britannique. Il abrite toujours un mélange distinct d'espèces bénéfiques pour l'homme, au moins 150 ans après avoir été
@@ -95,10 +51,10 @@
         <h2>Des recherches suggèrent que l’homme a apporté de la valeur à ces forêts de manière durable</h2>
         <p>
           Pendant des décennies, les Premières Nations de Colombie-Britannique (Canada) ont su que leurs maisons ancestrales - des villages vidés par la force à la fin des années 1800 - étaient des
-          lieux privilégiés pour la recherche d'aliments traditionnels tels que les noisettes, les pommettes, les cranberries et les aubépines. Une nouvelle étude révèle que des parcelles isolées
-          d'arbres fruitiers et de buissons de baies dans les forêts de ciguës et de cèdres de la région ont été délibérément plantées par les peuples indigènes dans et autour de leurs habitats, il y
-          a plus de 150 ans. C'est l'une des premières fois que de tels «&nbsp;jardins forestiers&nbsp;» ont été identifiés en dehors des tropiques, et cela montre que les populations étaient capables
-          de modifier les forêts de manière durable et productive.
+          <strong>lieux privilégiés</strong> pour la recherche d'<strong>aliments traditionnels</strong> tels que les noisettes, les pommettes, les cranberries et les aubépines. Une nouvelle étude
+          révèle que des parcelles isolées d'arbres fruitiers et de buissons de baies dans les forêts de ciguës et de cèdres de la région ont été
+          <strong>délibérément plantées par les peuples indigènes dans et autour de leurs habitats, il y a plus de 150 ans.</strong> C'est l'une des premières fois que de tels « jardins forestiers »
+          ont été identifiés en dehors des tropiques, et cela montre que <strong>les populations étaient capables de modifier les forêts de manière durable et productive</strong>.
         </p>
         <p>
           «&nbsp;Il s'agit d'un travail très créatif et unique en son genre&nbsp;», déclare Kelly Kindscher, écologiste végétale à l'Université du Kansas, à Lawrence, qui n'a pas participé à la
@@ -106,10 +62,10 @@
           global.&nbsp;»
         </p>
         <p>
-          Comme ces jardins forestiers d'apparence sauvage ne correspondent pas aux notions occidentales conventionnelles d'agriculture, il a fallu beaucoup de temps aux chercheurs pour reconnaître
-          qu'il s'agissait d'un paysage créé par l'homme. Jusqu'à récemment, de nombreux écologistes soutenaient que ces îlots de biodiversité, que l'on retrouve également dans les forêts tropicales
-          humides d'Amérique centrale et d'Amérique du Sud, étaient un sous-produit accidentel et éphémère des incendies, des inondations ou du défrichement. Sans un entretien constant, les
-          écologistes supposaient que la forêt «&nbsp;naturelle&nbsp;» prendrait rapidement le dessus.
+          Comme ces jardins forestiers d'apparence sauvage <strong>ne correspondent pas aux notions occidentales conventionnelles d'agriculture</strong>, il a fallu
+          <strong>beaucoup de temps</strong> aux chercheurs <strong>pour reconnaître qu'il s'agissait d'un paysage créé par l'homme</strong>. Jusqu'à récemment, de nombreux écologistes soutenaient que
+          ces îlots de biodiversité, que l'on retrouve également dans les forêts tropicales humides d'Amérique centrale et d'Amérique du Sud, étaient un sous-produit accidentel et éphémère des
+          incendies, des inondations ou du défrichement. <strong>Sans un entretien constant, les écologistes supposaient que la forêt « naturelle » prendrait rapidement le dessus</strong>.
         </p>
         <p>
           Pour démontrer que les jardins forestiers étaient le résultat de l'activité humaine, Chelsey Geralda Armstrong, écologiste historique de l'Université Simon Fraser, a d'abord identifié des
@@ -117,37 +73,39 @@
         </p>
         <p>
           En comptant et en identifiant les espèces poussant sur et autour de ces anciens sites, elle a découvert qu'ils abritaient un mélange de plantes beaucoup plus diversifié que les forêts de
-          conifères environnantes. Les espèces végétales occupaient également un plus grand nombre de niches écologiques. «&nbsp;Il est frappant de constater à quel point les jardins forestiers
-          étaient différents de la forêt environnante, même après plus d'un siècle&nbsp;», explique Jesse Miller, biologiste à l'Université de Stanford et co-auteur de l'étude.
+          conifères environnantes. Les espèces végétales occupaient également un plus grand nombre de niches écologiques.
+          <strong>« Il est frappant de constater à quel point les jardins forestiers étaient différents de la forêt environnante, même après plus d'un siècle »</strong>, explique Jesse Miller,
+          biologiste à l'Université de Stanford et co-auteur de l'étude.
         </p>
         <p>
-          Dans le même temps, les parcelles de terre exploitées il y a plusieurs décennies (par les colons) et laissées à elles-mêmes étaient couvertes de quelques espèces de conifères et ne
-          présentaient pas le même catalogue d'espèces colorées et comestibles. «&nbsp;Les jardins forestiers s'inscrivent à contre-courant de la tendance&nbsp;», explique M. Armstrong.
+          Dans le même temps, <strong>les parcelles de terre exploitées il y a plusieurs décennies (par les colons)</strong> et laissées à elles-mêmes étaient couvertes de quelques espèces de
+          conifères et <strong>ne présentaient pas le même catalogue d'espèces colorées et comestibles</strong>. « Les jardins forestiers s'inscrivent à contre-courant de la tendance », explique M.
+          Armstrong.
         </p>
         <p>
-          Cela suggère que les jardins forestiers n'ont pas seulement été délibérément cultivés par les jardiniers indigènes, mais qu'ils sont également restés résistants face à la flore locale
-          dominante longtemps après que les gens ont quitté les lieux, rapportent aujourd'hui les chercheurs dans Ecology and Society (Écologie et société). Le mélange d'espèces différentes a
-          probablement joué un rôle clé dans leur persistance, explique M. Miller : «&nbsp;Il y a moins de niches ouvertes, et il est donc plus difficile pour les nouvelles espèces de venir s'y
-          installer.&nbsp;»
+          Cela suggère que les <strong>jardins forestiers</strong> n'ont pas seulement été délibérément cultivés par les jardiniers indigènes, mais qu'ils sont également
+          <strong>restés résistants</strong> face à la flore locale dominante <strong>longtemps après que les gens ont quitté les lieux</strong>, rapportent aujourd'hui les chercheurs dans Ecology and
+          Society (Écologie et société). <strong>Le mélange d'espèces différentes a probablement joué un rôle clé dans leur persistance</strong>, explique M. Miller : « Il y a moins de niches
+          ouvertes, et il est donc plus difficile pour les nouvelles espèces de venir s'y installer. »
         </p>
         <p>
-          Les jardins forestiers étaient remplis de plantes bénéfiques pour l'homme, mais ils continuent également à fournir de la nourriture aux oiseaux, aux ours et aux insectes pollinisateurs, même
-          après 150 ans de négligence. C'est la preuve que l'impact de l'homme sur l'environnement peut avoir des effets positifs durables. «&nbsp;Beaucoup d'études sur la diversité fonctionnelle ont
-          une approche qui consiste à dire que l'homme est mauvais pour l'environnement&nbsp;», explique M. Armstrong. «&nbsp;Cette étude montre que les humains ont la capacité non seulement de
-          permettre à la biodiversité de prospérer, mais aussi d'en faire partie.&nbsp;»
+          Les jardins forestiers étaient remplis de plantes <strong>bénéfiques pour l'homme, mais</strong> ils continuent <strong>également</strong> à fournir de la
+          <strong>nourriture aux oiseaux, aux ours et aux insectes pollinisateurs, même après 150 ans de négligence</strong>. C'est la preuve que l'impact de l'homme sur l'environnement peut avoir des
+          effets positifs durables. « Beaucoup d'études sur la diversité fonctionnelle ont une approche qui consiste à dire que l'homme est mauvais pour l'environnement », explique M. Armstrong.
+          « Cette étude montre que les humains ont la capacité non seulement de permettre à la biodiversité de prospérer, mais aussi d'en faire partie. »
         </p>
         <p>
-          D'autres chercheurs estiment que ces résultats pourraient contribuer à faire valoir l'importance des connaissances autochtones dans les efforts de conservation. «&nbsp;Les anthropologues et
-          les archéologues ont plaidé en ce sens, mais les écologistes se sont montrés très réticents au cours des 20 dernières années&nbsp;», explique Patrick Roberts, archéologue à l'Institut Max
-          Planck pour la science de l'histoire humaine, qui n'a pas participé à l'étude. Selon lui, cette étude est une preuve importante que les modifications apportées par l'homme peuvent apporter
-          une valeur ajoutée aux écosystèmes.
+          D'autres chercheurs estiment que ces résultats pourraient contribuer à faire valoir l'importance des connaissances autochtones dans les efforts de conservation. « Les anthropologues et les
+          archéologues ont plaidé en ce sens, mais <strong>les écologistes se sont montrés très réticents au cours des 20 dernières années</strong> », explique Patrick Roberts, archéologue à
+          l'Institut Max Planck pour la science de l'histoire humaine, qui n'a pas participé à l'étude. Selon lui, cette étude est une preuve importante que
+          <strong>les modifications apportées par l'homme peuvent apporter une valeur ajoutée aux écosystèmes</strong>.
         </p>
         <p>
-          Elle contribue également à expliquer un mystère qui a intrigué de nombreux anthropologues européens lorsqu'ils ont visité pour la première fois le nord-ouest du Pacifique à la fin du XIXe
-          siècle. Malgré l'absence de ce que les Européens considéraient comme «&nbsp;l'agriculture&nbsp;» - champs cultivés et cycles annuels de plantation et de récolte - les tribus qu'ils ont
-          rencontrées étaient socialement complexes, avec de grandes populations sédentaires et des sociétés hiérarchisées. «&nbsp;Cela a déconcerté beaucoup d'anthropologues&nbsp;», qui pensaient que
-          les formes occidentales d'agriculture étaient nécessaires à l'existence de sociétés complexes, explique M. Armstrong. «&nbsp;Aujourd'hui, nous savons qu'il n'y avait pas que le
-          saumon.&nbsp;»
+          Elle contribue également à <strong>expliquer un mystère</strong> qui a intrigué de nombreux anthropologues européens lorsqu'ils ont visité pour la première fois le nord-ouest du Pacifique à
+          la fin du XIXe siècle. <strong>Malgré l'absence</strong> de ce que les Européens considéraient comme « <strong>l'agriculture</strong> » - champs cultivés et cycles annuels de plantation et
+          de récolte - <strong>les tribus</strong> qu'ils ont rencontrées <strong>étaient socialement complexes</strong>, avec de grandes populations sédentaires et des sociétés hiérarchisées. « Cela
+          a déconcerté beaucoup d'anthropologues », qui pensaient que les formes occidentales d'agriculture étaient nécessaires à l'existence de sociétés complexes, explique M. Armstrong.
+          « Aujourd'hui, nous savons qu'il n'y avait pas que le saumon. »
         </p>
       </main>
       <footer></footer>

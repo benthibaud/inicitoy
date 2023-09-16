@@ -1,3 +1,12 @@
+:root {
+  .index, .partners, .quest, .about {
+    --logo: url(/assets/img/logo_dark.svg) center/contain no-repeat;
+  }
+  .focus, .event {
+    --logo: url(/assets/img/logo.svg) center/contain no-repeat;
+  }
+}
+
 header {
   // remplace la navbar principale pour les pg article
   .nav-pg-retour {
@@ -5,8 +14,8 @@ header {
     margin: 15px auto;
     padding: 0;
     display: grid;
-    grid-template-columns: 78% 20%;
-    gap: 2%;
+    grid-template-columns: 77% 20%;
+    gap: 3%;
     align-items: center;
     box-shadow: inset 0px -1px 0px #08590b;
   
@@ -34,6 +43,7 @@ header {
 
         a {
           color: $white;
+          text-decoration: none;
         }
       }
     }
@@ -42,9 +52,10 @@ header {
       padding-bottom: 15px;
     }
 
+
     .site-logo a {
       display: block;
-      background: $logo center/contain no-repeat;
+      background: var(--logo);
       margin: 8px;
       height: 80px;
 
