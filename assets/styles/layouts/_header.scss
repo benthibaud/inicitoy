@@ -122,9 +122,10 @@ header {
             font-family: $font-title;
             font-size: max(1vw, 0.9rem);
             font-weight: normal;
-            color: #002700;
+            color: $black;
 
             &:focus, &:active, &:hover {
+              color: $white;
               text-decoration: none;
             }
           }

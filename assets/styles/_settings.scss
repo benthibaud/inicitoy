@@ -57,7 +57,8 @@ h5 {
 }
 
 strong {
-  color: var(--color-title);
+  color: var(--color-strong);
+  font-family: $font-title;
 }
 
 // grid et float pour tout le projet
@@ -99,8 +100,14 @@ strong {
 }
 .float {
   float: left;
+  margin: 0 20px 3px 0;
+}
+.float-right {
+  float: right;
+  margin: 0 0 3px 20px;
+}
+.float, .float-right {
   max-width: 50%;
-  margin: 0 20px 4px 0;
 
   img {
     width: 100%;

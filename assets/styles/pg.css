@@ -5,16 +5,36 @@ html {
 @font-face {
   font-family: "Noto";
   src: url(../fonts/NotoSans-Light.ttf);
+  font-display: swap;
 }
 @font-face {
   font-family: "Noto-b";
   src: url(../fonts/NotoSans-Regular.ttf);
+  font-display: swap;
+}
+:root .about {
+  background: #3a3a3a;
+  --color-title: #00d668;
+  --bg-box: #072508;
+  --shadow-box: none;
+}
+:root .about nav li:nth-child(1), :root .about nav li:hover {
+  background: #609959 linear-gradient(220deg, #33c138 0%, #759370 29%, #00e309 100%);
+}
+:root .about nav li:nth-child(1) a, :root .about nav li:hover a {
+  color: #eee;
 }
 :root .index {
   background: #072508;
   --color-title: #00d668;
   --bg-box: #3a3a3a;
   --shadow-box: none;
+}
+:root .index nav li:nth-child(2), :root .index nav li:hover {
+  background: #609959 linear-gradient(220deg, #33c138 0%, #759370 29%, #00e309 100%);
+}
+:root .index nav li:nth-child(2) a, :root .index nav li:hover a {
+  color: #eee;
 }
 :root .focus {
   background: #3a3a3a;
@@ -23,6 +43,12 @@ html {
   --bg-box: papayawhip;
   --shadow-box: none;
 }
+:root .focus nav li:nth-child(3), :root .focus nav li:hover {
+  background: #609959 linear-gradient(220deg, #33c138 0%, #759370 29%, #00e309 100%);
+}
+:root .focus nav li:nth-child(3) a, :root .focus nav li:hover a {
+  color: #eee;
+}
 :root .event {
   background: #592913;
   color: #111;
@@ -30,11 +56,23 @@ html {
   --bg-box: antiquewhite;
   --shadow-box: -1px 17px 20px 10px #bb52227a;
 }
+:root .event nav li:nth-child(4), :root .event nav li:hover {
+  background: #609959 linear-gradient(220deg, #33c138 0%, #759370 29%, #00e309 100%);
+}
+:root .event nav li:nth-child(4) a, :root .event nav li:hover a {
+  color: #eee;
+}
 :root .partners {
   background: #041429;
   --color-title: #00d668;
   --bg-box: #302b3f;
   --shadow-box: none;
+}
+:root .partners nav li:nth-child(5), :root .partners nav li:hover {
+  background: #609959 linear-gradient(220deg, #33c138 0%, #759370 29%, #00e309 100%);
+}
+:root .partners nav li:nth-child(5) a, :root .partners nav li:hover a {
+  color: #eee;
 }
 :root .quest {
   background: #751111;
@@ -42,14 +80,15 @@ html {
   --bg-box: #331616;
   --shadow-box: none;
 }
-:root .about {
-  background: #3a3a3a;
-  --color-title: #00d668;
-  --bg-box: #072508;
-  --shadow-box: none;
+:root .quest nav li:nth-child(6), :root .quest nav li:hover {
+  background: #609959 linear-gradient(220deg, #33c138 0%, #759370 29%, #00e309 100%);
+}
+:root .quest nav li:nth-child(6) a, :root .quest nav li:hover a {
+  color: #eee;
 }
 :root .index, :root .partners, :root .quest, :root .about {
   color: #eee;
+  --color-strong: #dbecd1;
 }
 :root .index a, :root .partners a, :root .quest a, :root .about a {
   color: #48aeff;
@@ -59,6 +98,7 @@ html {
 }
 :root .focus, :root .event {
   color: #111;
+  --color-strong: #3d6526;
 }
 :root .focus a, :root .event a {
   color: blue;
@@ -74,43 +114,6 @@ html {
   text-decoration: underline;
   -webkit-transform: scale(1.05);
           transform: scale(1.05);
-}
-
-:root .index nav li:nth-child(1), :root .index nav li:hover {
-  background: #609959 linear-gradient(220deg, #33c138 0%, #759370 29%, #00e309 100%);
-}
-:root .index nav li:nth-child(1) a, :root .index nav li:hover a {
-  color: #eee;
-}
-:root .focus nav li:nth-child(2), :root .focus nav li:hover {
-  background: #609959 linear-gradient(220deg, #33c138 0%, #759370 29%, #00e309 100%);
-}
-:root .focus nav li:nth-child(2) a, :root .focus nav li:hover a {
-  color: #eee;
-}
-:root .event nav li:nth-child(3), :root .event nav li:hover {
-  background: #609959 linear-gradient(220deg, #33c138 0%, #759370 29%, #00e309 100%);
-}
-:root .event nav li:nth-child(3) a, :root .event nav li:hover a {
-  color: #eee;
-}
-:root .partners nav li:nth-child(4), :root .partners nav li:hover {
-  background: #609959 linear-gradient(220deg, #33c138 0%, #759370 29%, #00e309 100%);
-}
-:root .partners nav li:nth-child(4) a, :root .partners nav li:hover a {
-  color: #eee;
-}
-:root .quest nav li:nth-child(5), :root .quest nav li:hover {
-  background: #609959 linear-gradient(220deg, #33c138 0%, #759370 29%, #00e309 100%);
-}
-:root .quest nav li:nth-child(5) a, :root .quest nav li:hover a {
-  color: #eee;
-}
-:root .about nav li:nth-child(6), :root .about nav li:hover {
-  background: #609959 linear-gradient(220deg, #33c138 0%, #759370 29%, #00e309 100%);
-}
-:root .about nav li:nth-child(6) a, :root .about nav li:hover a {
-  color: #eee;
 }
 
 * {
@@ -174,7 +177,8 @@ h5 {
 }
 
 strong {
-  color: var(--color-title);
+  color: var(--color-strong);
+  font-family: "Noto-b", sans-serif;
 }
 
 .textOnly {
@@ -221,10 +225,18 @@ strong {
 
 .float {
   float: left;
-  max-width: 50%;
-  margin: 0 20px 4px 0;
+  margin: 0 20px 3px 0;
 }
-.float img {
+
+.float-right {
+  float: right;
+  margin: 0 0 3px 20px;
+}
+
+.float, .float-right {
+  max-width: 50%;
+}
+.float img, .float-right img {
   width: 100%;
 }
 

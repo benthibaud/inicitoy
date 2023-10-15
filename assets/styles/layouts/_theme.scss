@@ -1,5 +1,5 @@
 html {
-  // pas de theme dark définit. Si on en définit un plus loin avec @media, on décommente la ligne suivante
+  // la ligne suivante est commentée car une seule variante de thème est définie que le navigateur soit en mode normal ou sombre
   // color-scheme: light dark;
   scroll-behavior: smooth;
 }
@@ -7,10 +7,12 @@ html {
 @font-face {
   font-family: 'Noto';
   src: url(../fonts/NotoSans-Light.ttf);
+  font-display: swap;
 }
 @font-face {
   font-family: 'Noto-b';
   src: url(../fonts/NotoSans-Regular.ttf);
+  font-display: swap;
 }
 $font-normal: 'Noto', sans-serif;
 $font-title: 'Noto-b', sans-serif;
@@ -28,15 +30,42 @@ $linkfocus-dark: blue;
 $link-light: blue;
 $linkfocus-light: darkblue;
 
+$navbtn: $gradient;
+$navbtn-active: $gradient2;
+
 // Une classe pour chaque thème (les variables globale css (:root) permettent d'avoir des variables différentes sur chaque classe
-// Ce n'était pas possible avec les variables sass
+// Ce n'était pas possible avec les variables sass car elles disparaissent lors de la compilation
 // Il suffit pour les appliquer de lier la classe à body dans l'Html
 :root {
+  .about {
+    background: #3a3a3a;
+    --color-title: #00d668;
+    --bg-box: #072508;
+    --shadow-box: none;
+    // btn actif: 1;
+    nav {
+      li:nth-child(1), li:hover {
+        background: $navbtn-active;
+        a{
+          color: $white;
+        }
+      }
+    }
+  }
   .index {
     background: #072508;
     --color-title: #00d668;
     --bg-box: #3a3a3a;
     --shadow-box: none;
+    // btn actif: 2;
+    nav {
+      li:nth-child(2), li:hover {
+        background: $navbtn-active;
+        a{
+          color: $white;
+        }
+      }
+    }
   }
   .focus {
     background: #3a3a3a;
@@ -44,6 +73,15 @@ $linkfocus-light: darkblue;
     --color-title: #27742a;
     --bg-box: papayawhip;
     --shadow-box: none;
+    // btn actif: 3;
+    nav {
+      li:nth-child(3), li:hover {
+        background: $navbtn-active;
+        a{
+          color: $white;
+        }
+      }
+    }
   }
   .event {
     background: #592913;
@@ -51,28 +89,51 @@ $linkfocus-light: darkblue;
     --color-title: #27742a;
     --bg-box: antiquewhite;
     --shadow-box: -1px 17px 20px 10px #bb52227a;
+    // btn actif: 4;
+    nav {
+      li:nth-child(4), li:hover {
+        background: $navbtn-active;
+        a{
+          color: $white;
+        }
+      }
+    }
   }
   .partners {
     background: #041429;
     --color-title: #00d668;
     --bg-box: #302b3f;
     --shadow-box: none;
+    // btn actif: 5;
+    nav {
+      li:nth-child(5), li:hover {
+        background: $navbtn-active;
+        a{
+          color: $white;
+        }
+      }
+    }
   }
   .quest {
     background: #751111;
     --color-title: #00d668;
     --bg-box: #331616;
     --shadow-box: none;
-  }
-  .about {
-    background: #3a3a3a;
-    --color-title: #00d668;
-    --bg-box: #072508;
-    --shadow-box: none;
+    // btn actif: 6;
+    nav {
+      li:nth-child(6), li:hover {
+        background: $navbtn-active;
+        a{
+          color: $white;
+        }
+      }
+    }
   }
   
+  // dark background classes (coul des textes, couleurs du "strong" et des ancres par défaut)
   .index, .partners, .quest, .about {
     color: $white;
+    --color-strong: #dbecd1;
     a {
       color: $link-dark;
     }
@@ -81,8 +142,10 @@ $linkfocus-light: darkblue;
     }
   }
 
+  // light background classes (coul des textes, couleurs du "strong" et des ancres par défaut)
   .focus, .event {
     color: $black;
+    --color-strong: #3d6526;
     a {
       color: $link-light;
     }
@@ -95,13 +158,13 @@ $linkfocus-light: darkblue;
     text-decoration: none;
     font-weight: bold;
   }
-    
   a:hover, a:focus, a:active {
     text-decoration: underline;
     transform: scale(1.05);
   }
 }
 
+// Si un jour, je veux un thème clair par défaut et un thème sombre dit "dark" s'il est choisi dans le navigateur de l'internaute
 // @media (prefers-color-scheme: dark) {
 //   :root {
 //     .index {
@@ -118,76 +181,4 @@ $linkfocus-light: darkblue;
   background: var(--bg-box);
   box-shadow: var(--shadow-box);
   border-radius: 2px;
-}
-
-// Le bouton de nav actif
-$navbtn: $gradient;
-$navbtn-active: $gradient2;
-:root {
-  .index {
-    $actif: 1;
-    nav {
-      li:nth-child(#{$actif}), li:hover {
-        background: $navbtn-active;
-        a {
-          color: $white;
-        }
-      }
-    }
-  }
-  .focus {
-    $actif: 2;
-    nav {
-      li:nth-child(#{$actif}), li:hover {
-        background: $navbtn-active;
-        a {
-          color: $white;
-        }        
-      }
-    }
-  }
-  .event {
-    $actif: 3;
-    nav {
-      li:nth-child(#{$actif}), li:hover {
-        background: $navbtn-active;
-        a {
-          color: $white;
-        }        
-      }
-    }
-  }
-  .partners {
-    $actif: 4;
-    nav {
-      li:nth-child(#{$actif}), li:hover {
-        background: $navbtn-active;
-        a {
-          color: $white;
-        }        
-      }
-    }
-  }
-  .quest {
-    $actif: 5;
-    nav {
-      li:nth-child(#{$actif}), li:hover {
-        background: $navbtn-active;
-        a {
-          color: $white;
-        }        
-      }
-    }
-  }
-  .about {
-    $actif: 6;
-    nav {
-      li:nth-child(#{$actif}), li:hover {
-        background: $navbtn-active;
-        a {
-          color: $white;
-        }        
-      }
-    }
-  }
 }
