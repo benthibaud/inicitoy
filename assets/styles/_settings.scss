@@ -70,11 +70,15 @@ strong {
 .grid {
   display: grid;
   gap: 3%;
-  align-items: center;
+  // align-items: center;
 
   img {
     width: 100%;
   }
+}
+.gridSpace {
+  align-content: space-evenly;
+  justify-content: space-evenly;
 }
 .grid32 {
   grid-template-columns: 32% 65%;
