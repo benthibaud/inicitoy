@@ -90,20 +90,20 @@ html {
   color: #eee;
   --color-strong: #dbecd1;
 }
-:root .index a, :root .partners a, :root .quest a, :root .about a {
+:root .index a, :root .index a strong, :root .partners a, :root .partners a strong, :root .quest a, :root .quest a strong, :root .about a, :root .about a strong {
   color: #48aeff;
 }
-:root .index a:hover, :root .index a:focus, :root .index a:active, :root .partners a:hover, :root .partners a:focus, :root .partners a:active, :root .quest a:hover, :root .quest a:focus, :root .quest a:active, :root .about a:hover, :root .about a:focus, :root .about a:active {
-  color: blue;
+:root .index a:hover, :root .index a:focus, :root .index a:active, :root .index a:hover strong, :root .index a:focus strong, :root .index a:active strong, :root .partners a:hover, :root .partners a:focus, :root .partners a:active, :root .partners a:hover strong, :root .partners a:focus strong, :root .partners a:active strong, :root .quest a:hover, :root .quest a:focus, :root .quest a:active, :root .quest a:hover strong, :root .quest a:focus strong, :root .quest a:active strong, :root .about a:hover, :root .about a:focus, :root .about a:active, :root .about a:hover strong, :root .about a:focus strong, :root .about a:active strong {
+  color: #00d668;
 }
 :root .focus, :root .event {
   color: #111;
   --color-strong: #3d6526;
 }
-:root .focus a, :root .event a {
+:root .focus a, :root .focus a strong, :root .event a, :root .event a strong {
   color: blue;
 }
-:root .focus a:hover, :root .focus a:focus, :root .focus a:active, :root .event a:hover, :root .event a:focus, :root .event a:active {
+:root .focus a:hover, :root .focus a:focus, :root .focus a:active, :root .focus a:hover strong, :root .focus a:focus strong, :root .focus a:active strong, :root .event a:hover, :root .event a:focus, :root .event a:active, :root .event a:hover strong, :root .event a:focus strong, :root .event a:active strong {
   color: darkblue;
 }
 :root a {
@@ -131,7 +131,6 @@ body {
   font-family: "Noto", sans-serif;
   font-size: max(1vw, 0.9rem);
   line-height: 1.6;
-  min-height: 100vh;
 }
 
 h1,
@@ -190,8 +189,9 @@ strong {
   display: grid;
   gap: 3%;
 }
-.grid img {
+.grid img, .grid iframe {
   width: 100%;
+  height: 100%;
 }
 
 .gridSpace {
@@ -439,7 +439,7 @@ header .nav-pg-retour .site-logo a {
 main {
   max-width: max(60%, 1200px);
   margin: 10px auto 0;
-  min-height: 75vh;
+  min-height: 72vh;
 }
 @media screen and (max-width: 1200px) {
   main {
@@ -481,7 +481,7 @@ main #sommaire p {
 
 footer {
   max-width: max(60%, 1200px);
-  margin: 20px auto 30px;
+  margin: 20px auto;
   position: relative;
   background: var(--bg-box);
   -webkit-box-shadow: var(--shadow-box);
@@ -496,6 +496,6 @@ footer .copyright-bar {
 }
 @media screen and (max-width: 1200px) {
   footer {
-    margin: 10px 2vw 30px;
+    margin: 10px 2vw 20px;
   }
 }/*# sourceMappingURL=pg.css.map */

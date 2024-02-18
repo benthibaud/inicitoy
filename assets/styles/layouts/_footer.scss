@@ -1,6 +1,6 @@
 footer {
   max-width: max(60%, 1200px);
-  margin: 20px auto 30px;
+  margin: 20px auto;
   // position relative car z-index ne résolvait pas l'ombre des box qui débordait depuis main (theme3).
   position: relative;
   @include theme_box;
@@ -13,6 +13,6 @@ footer {
   }
 
   @media screen and (max-width: 1200px) {
-    margin: 10px 2vw 30px;
+    margin: 10px 2vw 20px;
   }
 }
