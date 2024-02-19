@@ -126,6 +126,9 @@ html {
 ul {
   padding: revert;
 }
+ul li {
+  padding: 0.2rem 0;
+}
 
 body {
   font-family: "Noto", sans-serif;
@@ -148,7 +151,7 @@ p,
 h2,
 h4,
 h5 {
-  padding-bottom: 15px;
+  padding: 0.6rem 0;
 }
 
 h1 {
@@ -476,7 +479,7 @@ main #sommaire a {
 }
 main #sommaire p {
   line-height: normal;
-  padding-bottom: 12px;
+  padding: 0.3rem 0;
 }
 
 footer {

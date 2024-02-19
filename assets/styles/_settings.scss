@@ -7,13 +7,16 @@
 
 ul {
   padding: revert;
+
+  li {
+    padding: 0.2rem 0;
+  }
 }
 
 body {
   font-family: $font-normal;
   font-size: max(1vw, 0.9rem);
   line-height: 1.6;
-  // min-height: 90vh;
 }
 
 h1,
@@ -31,7 +34,7 @@ p,
 h2,
 h4,
 h5 {
-  padding-bottom: 15px;
+  padding: 0.6rem 0;
 }
 
 h1 {
