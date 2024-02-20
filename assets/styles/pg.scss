@@ -8,12 +8,12 @@
   padding: 15px 0;
   background: var(--bg-box);
 
-  p {
-    // text-align: justify;
-    line-height: 1.8;
-    padding-bottom: 30px;
-  }
-
+  @import "./layouts/nav-sub";
+  
+  @import "./layouts/main";
+  
+  @import "./layouts/footer";
+  
   @keyframes fadein {
     0% {
       top: 0;
@@ -26,9 +26,3 @@
     }
   }   
 }
-
-@import "./layouts/nav-sub";
-
-@import "./layouts/main";
-
-@import "./layouts/footer";

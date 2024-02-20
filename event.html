@@ -8,6 +8,7 @@
     <meta property="og:type" content="website" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta property="og:image" content="/assets/img/logo.svg" />
+    <meta http-equiv="cache-control" content="max-age=604800" />
     <meta name="description" content="Échanger avec vous et interroger des experts afin d'éclairer nos connaissances par des éléments concrets." />
     <meta name="keywords" content="Initiatives Citoyennes Choletaises, Cholet, échanges, expert, intervenant, questions, citoyen" />
     <meta name="og:title" content="Rencontres d'Initiatives Citoyennes Choletaises | Nous organisons des rencontres régulièrement pour pouvoir questionner des experts sur certains sujets.." />
@@ -119,7 +120,13 @@
       </section>
     </main>
     <footer>
-      <div class="copyright-bar">© 2023 Initiatives Citoyennes Choletaises</div>
+      <div id="current_date" class="copyright-bar">
+        <script>
+          date = new Date();
+          year = date.getFullYear();
+          document.getElementById("current_date").innerHTML = "© " + year + " Initiatives Citoyennes Choletaises";
+        </script>
+      </div>
     </footer>
   </body>
 </html>

@@ -8,6 +8,7 @@
     <meta property="og:type" content="website" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta property="og:image" content="/assets/img/logo.svg" />
+    <meta http-equiv="cache-control" content="max-age=604800" />
     <meta
       name="description"
       content="L’inflation, la guerre en Ukraine, la place du vélo et autres mobilités douces, l’intelligence artificielle,. tout ce qui intérroge notre citoyenneté / notre habilité à vivre ensemble." />
@@ -82,7 +83,7 @@
                 Le pire est qu'on continue le capitalisme de prédation en Amazonie, en Indonésie, en Afrique,.. avec des gens qui ne veulent rien apprendre de la nature qu'ils envahissent et qui lui
                 font la guerre à coup de déforestations, pesticides et autres pollutions..
               </p>
-              <p>À vous aussi, de <a title="des « Jardins Forestiers » délibérément plantés par les populations autochtones" href="./pg/q002-jardins-forestiers.html">lire ce qu'on a perdu</a>..</p>
+              <p>À vous aussi, de <a title="des « Jardins Forestiers » délibérément plantés par les populations autochtones" href="./pg/q_002-jardins-forestiers.html">lire ce qu'on a perdu</a>..</p>
             </div>
           </div>
         </article>
@@ -109,7 +110,13 @@
       </section>
     </main>
     <footer>
-      <div class="copyright-bar">© 2023 Initiatives Citoyennes Choletaises</div>
+      <div id="current_date" class="copyright-bar">
+        <script>
+          date = new Date();
+          year = date.getFullYear();
+          document.getElementById("current_date").innerHTML = "© " + year + " Initiatives Citoyennes Choletaises";
+        </script>
+      </div>
     </footer>
   </body>
 </html>

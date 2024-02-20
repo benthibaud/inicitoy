@@ -152,6 +152,10 @@ $navbtn-active: $gradient2;
     a:hover, a:focus, a:active, a:hover strong, a:focus strong, a:active strong {
       color: $linkfocus-light;
     }
+    // body-container n'étant utilisé que pour pg, on désactive l'ombre des boxes pour le copyright-bar
+    .body-container {
+      --shadow-box: none;
+    }
   }
 
   a {

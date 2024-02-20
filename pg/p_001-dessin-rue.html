@@ -2,26 +2,29 @@
 <html lang="fr">
   <head>
     <meta charset="UTF-8" />
-    <title>
-      Dessine-moi ta rue | Le projet est de vous consulter sur la manière dont sont transformées votre rue où celles que vous fréquentez régulièrement. Répondent-elles à vos besoin ? Sont-elles
-      sécurisées ? Encouragent-elles l'utilisation de moyens de locomotion autres que la voiture ? Sont-elles adaptées aux modifications du climat en cours ? etc
-    </title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="x-apple-disable-message-reformatting" />
+    <meta name="robots" content="index, follow" />
+    <meta property="og:type" content="website" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta property="og:image" content="../assets/img/logo.svg" />
+    <meta http-equiv="cache-control" content="max-age=604800" />
     <meta
       name="description"
       content="Dessine-moi ta rue | Le projet est de vous consulter sur la manière dont sont transformées votre rue où celles que vous fréquentez régulièrement. Répondent-elles à vos besoin ? Sont-elles sécurisées ? Encouragent-elles l'utilisation de moyens de locomotion autres que la voiture ? Sont-elles adaptées aux modifications du climat en cours ? etc." />
     <meta
       name="keywords"
-      content="Initiatives Citoyennes Choletaises, Cholet, choletais, évaluation, consultation, participatif, rue, perméabilité, sols, accessibilité, confort, sécurité, attractivité, substrat, biotope, ruissellement, rétention, infiltration, humidité, ventilation, température, réfléchissant, ombre" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="robots" content="index, follow" />
-    <meta property="og:type" content="website" />
+      content="Initiatives Citoyennes Choletaises, Cholet, choletais, évaluation, consultation, participatif, rue, perméabilité, sols, accessibilité, confort, sécurité, attractivité, substrat, biotope, ruissellement, rétention, infiltration, humidité, ventilation, température, réfléchissant, ombre, cholet autrement" />
     <meta
       property="og:title"
       content="Dessine-moi ta rue | Le projet est de vous consulter sur la manière dont sont transformées votre rue où celles que vous fréquentez régulièrement. Répondent-elles à vos besoin ? Sont-elles sécurisées ? Encouragent-elles l'utilisation de moyens de locomotion autres que la voiture ? Sont-elles adaptées aux modifications du climat en cours ? etc" />
     <meta
       property="og:description"
       content="Dessine-moi ta rue | Le projet est de vous consulter sur la manière dont sont transformées votre rue où celles que vous fréquentez régulièrement. Répondent-elles à vos besoin ? Sont-elles sécurisées ? Encouragent-elles l'utilisation de moyens de locomotion autres que la voiture ? Sont-elles adaptées aux modifications du climat en cours ? etc" />
+    <title>
+      Dessine-moi ta rue | Le projet est de vous consulter sur la manière dont sont transformées votre rue où celles que vous fréquentez régulièrement. Répondent-elles à vos besoin ? Sont-elles
+      sécurisées ? Encouragent-elles l'utilisation de moyens de locomotion autres que la voiture ? Sont-elles adaptées aux modifications du climat en cours ? etc
+    </title>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
@@ -71,7 +74,15 @@
           <img src="../assets/img/p_001-DessinRue_2.webp" alt="Un trottoir dessiné" />
         </div>
       </main>
-      <footer></footer>
+      <footer>
+        <div id="current_date" class="copyright-bar">
+          <script>
+            date = new Date();
+            year = date.getFullYear();
+            document.getElementById("current_date").innerHTML = "© " + year + " Initiatives Citoyennes Choletaises";
+          </script>
+        </div>
+      </footer>
     </div>
   </body>
 </html>

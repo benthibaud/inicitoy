@@ -8,7 +8,7 @@
     <meta property="og:type" content="website" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta property="og:image" content="/assets/img/logo.svg" />
-    <meta http-equiv="cache-control" content="max-age=31536000" />
+    <meta http-equiv="cache-control" content="max-age=604800" />
     <meta name="description" content="Association ayant pour objectif : la proposition et la mise en place de projets qui privilégient une démarche de participation citoyenne." />
     <meta name="keywords" content="Initiatives Citoyennes Choletaises, Cholet, association, projets, fil-info, participatif, participatif, citoyen" />
     <meta
@@ -76,10 +76,8 @@
               </p>
             </div>
             <iframe
-              width="560"
-              height="315"
               child-src="https://www.youtube.com/embed/ilD-VrGF-Wk"
-              srcdoc="<style>*{overflow:hidden; background:black} img{position:absolute;width:100%;top:0;bottom:0;margin:auto}</style><a href='https://www.youtube.com/embed/ilD-VrGF-Wk?rel=0&amp;amp;showinfo=0&amp;autoplay=1&amp;loop=0&amp;enablejsapi=0&amp;start=1186' title='Accélérer la rénovation de l`éclairage public | Innopolis Expo'><img src=assets/img/i_001-yt_icône.jpg alt='Accélérer la rénovation de l'éclairage public'></a>"
+              srcdoc="<style>*{overflow:hidden; background:black} img{position:absolute;width:100%;top:0;bottom:0;margin:auto}</style><a href='https://www.youtube.com/embed/ilD-VrGF-Wk?rel=0&amp;amp;showinfo=0&amp;autoplay=1&amp;loop=0&amp;enablejsapi=0&amp;start=1186' title='Accélérer la rénovation de l`éclairage public | Innopolis Expo'><img src=assets/img/i_001-yt_icône.webp alt='Accélérer la rénovation de l'éclairage public'></a>"
               frameborder="0"
               allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
               allowfullscreen
@@ -88,7 +86,7 @@
         </article>
         <article id="lettre" class="box">
           <h2>Notre lettre d'information</h2>
-          <div class="float"><img src="./assets/img/i_001-Fil-info-blur.png" alt="Fil-info" height="90" /></div>
+          <div class="float"><img src="./assets/img/i_001-Fil-info-blur.webp" alt="Fil-info" height="90" /></div>
           <div>
             <p>
               Le "<strong>Fil info</strong>" est notre lettre d'information.. Régulièrement, nous mettons le <strong>focus sur un thème</strong> et <strong>enrichissons</strong> à cette occasion
@@ -156,7 +154,13 @@
       </section>
     </main>
     <footer>
-      <div class="copyright-bar">© 2023 Initiatives Citoyennes Choletaises</div>
+      <div id="current_date" class="copyright-bar">
+        <script>
+          date = new Date();
+          year = date.getFullYear();
+          document.getElementById("current_date").innerHTML = "© " + year + " Initiatives Citoyennes Choletaises";
+        </script>
+      </div>
     </footer>
   </body>
 </html>

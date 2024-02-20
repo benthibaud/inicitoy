@@ -80,7 +80,15 @@
           <p><img src="../assets/img/guide/15 Infiltration.jpg" alt="Infiltration" /><br />Infiltration</p>
         </div>
       </main>
-      <footer></footer>
+      <footer>
+        <div id="current_date" class="copyright-bar">
+          <script>
+            date = new Date();
+            year = date.getFullYear();
+            document.getElementById("current_date").innerHTML = "© " + year + " Initiatives Citoyennes Choletaises";
+          </script>
+        </div>
+      </footer>
     </div>
   </body>
 </html>

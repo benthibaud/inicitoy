@@ -106,6 +106,9 @@ html {
 :root .focus a:hover, :root .focus a:focus, :root .focus a:active, :root .focus a:hover strong, :root .focus a:focus strong, :root .focus a:active strong, :root .event a:hover, :root .event a:focus, :root .event a:active, :root .event a:hover strong, :root .event a:focus strong, :root .event a:active strong {
   color: darkblue;
 }
+:root .focus .body-container, :root .event .body-container {
+  --shadow-box: none;
+}
 :root a {
   text-decoration: none;
   font-weight: bold;
@@ -125,6 +128,7 @@ html {
 
 ul {
   padding: revert;
+  margin-bottom: 0.4rem;
 }
 ul li {
   padding: 0.2rem 0;
@@ -133,7 +137,7 @@ ul li {
 body {
   font-family: "Noto", sans-serif;
   font-size: max(1vw, 0.9rem);
-  line-height: 1.6;
+  line-height: 1.8;
 }
 
 h1,
@@ -194,7 +198,10 @@ strong {
 }
 .grid img, .grid iframe {
   width: 100%;
-  height: 100%;
+  margin: auto 0;
+}
+.grid iframe {
+  aspect-ratio: 16/9;
 }
 
 .gridSpace {
@@ -233,12 +240,12 @@ strong {
 
 .float {
   float: left;
-  margin: 0 20px 3px 0;
+  margin: 0.6rem 20px 3px 0;
 }
 
 .float-right {
   float: right;
-  margin: 0 0 3px 20px;
+  margin: 0.6rem 0 3px 20px;
 }
 
 .float, .float-right {
@@ -620,7 +627,6 @@ main #sommaire p {
 footer {
   max-width: max(60%, 1200px);
   margin: 20px auto;
-  position: relative;
   background: var(--bg-box);
   -webkit-box-shadow: var(--shadow-box);
           box-shadow: var(--shadow-box);
