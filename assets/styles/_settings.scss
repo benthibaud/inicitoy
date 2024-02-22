@@ -96,6 +96,10 @@ strong {
 .grid60 {
   grid-template-columns: 60% 37%;
 }
+.grid2img {
+  grid-template-columns: 1fr 1fr;
+  gap: 0;
+}
 .gridpicto {
   grid-template-columns: 17.6% 17.6% 17.6% 17.6% 17.6%;
   align-items: stretch;
@@ -128,8 +132,11 @@ strong {
 @media screen and (max-width: 600px) {
   .grid32, 
   .grid42, 
-  .grid60 {
+  .grid60,
+  .grid2img {
     grid-template-columns: 1fr;
+    // gap: unset;
+    margin-bottom: 4%;
   }
   .gridpicto {
     grid-template-columns: 30.3% 30.4% 30.3%;
