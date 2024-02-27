@@ -187,6 +187,19 @@ strong {
   font-family: "Noto-b", sans-serif;
 }
 
+.titre {
+  font-variant-caps: petite-caps;
+  margin-left: 5px;
+  padding: 2px 13px;
+  background: #a5c3a1 linear-gradient(80deg, #a5c3a1 0%, #b2d9ac 14%, #f2fff0 100%);
+  border: none;
+  color: #111;
+}
+
+.decal {
+  padding-left: 20px;
+}
+
 .textOnly {
   display: grid;
   padding: 15px;

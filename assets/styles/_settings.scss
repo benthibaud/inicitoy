@@ -65,6 +65,19 @@ strong {
   font-family: $font-title;
 }
 
+.titre {
+  font-variant-caps: petite-caps;
+  margin-left: 5px;
+  padding: 2px 13px;
+  background: $navbtn;
+  border: none;
+  color: $black;
+}
+
+.decal {
+  padding-left: 20px;
+}
+
 // grid et float pour tout le projet
 .textOnly {
   display: grid;
@@ -75,7 +88,7 @@ strong {
   display: grid;
   gap: 3%;
   align-items: center;
-
+  
   img, iframe {
     width: 100%;
   }
@@ -103,7 +116,7 @@ strong {
 .gridpicto {
   grid-template-columns: 17.6% 17.6% 17.6% 17.6% 17.6%;
   align-items: stretch;
-
+  
   p {
     padding: 15px 0;
   }
