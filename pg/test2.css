@@ -1,0 +1,43 @@
+* {
+  /* Couleur de l'onglet */
+  --content-color: lightblue;
+  --border-color: darkblue;
+}
+/* Boutons radio côte à côte */
+.tabs {
+  display: flex;
+  gap: 3px;
+}
+
+.tabs input[type="radio"] {
+  display: none;
+}
+
+.tabs label {
+  padding: 8px 20px;
+  border: 1px solid #ccc;
+  border-bottom: none;
+  cursor: pointer;
+  border-radius: 8px 8px 0 0;
+  transition: background 0.3s ease;
+}
+
+.tabs label:hover {
+  background: lightskyblue;
+}
+
+.tab:checked + label {
+  z-index: 100;
+  background: var(--content-color);
+  border-color: var(--border-color);
+}
+
+/* Styles communs */
+.tab-content {
+  z-index: -5;
+  transform: translateY(-1px);
+  background: var(--content-color);
+  padding: 20px;
+  border: 1px solid var(--border-color);
+  display: none;
+}
