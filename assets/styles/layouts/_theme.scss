@@ -99,7 +99,7 @@ $navbtn-active: $gradient2;
       }
     }
   }
-  .partners {
+  .projects {
     background: #041429;
     --color-title: #00d668;
     --bg-box: #302b3f;
@@ -131,7 +131,7 @@ $navbtn-active: $gradient2;
   }
   
   // dark background classes (coul des textes, couleurs du "strong" et des ancres par défaut)
-  .index, .partners, .quest, .about {
+  .index, .projects, .quest, .about {
     color: $white;
     --color-strong: #dbecd1;
     a, a strong {

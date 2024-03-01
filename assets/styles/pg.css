@@ -62,16 +62,16 @@ html {
 :root .event nav li:nth-child(4) a, :root .event nav li:hover a {
   color: #eee;
 }
-:root .partners {
+:root .projects {
   background: #041429;
   --color-title: #00d668;
   --bg-box: #302b3f;
   --shadow-box: none;
 }
-:root .partners nav li:nth-child(5), :root .partners nav li:hover {
+:root .projects nav li:nth-child(5), :root .projects nav li:hover {
   background: #609959 linear-gradient(220deg, #33c138 0%, #759370 29%, #00e309 100%);
 }
-:root .partners nav li:nth-child(5) a, :root .partners nav li:hover a {
+:root .projects nav li:nth-child(5) a, :root .projects nav li:hover a {
   color: #eee;
 }
 :root .quest {
@@ -86,14 +86,14 @@ html {
 :root .quest nav li:nth-child(6) a, :root .quest nav li:hover a {
   color: #eee;
 }
-:root .index, :root .partners, :root .quest, :root .about {
+:root .index, :root .projects, :root .quest, :root .about {
   color: #eee;
   --color-strong: #dbecd1;
 }
-:root .index a, :root .index a strong, :root .partners a, :root .partners a strong, :root .quest a, :root .quest a strong, :root .about a, :root .about a strong {
+:root .index a, :root .index a strong, :root .projects a, :root .projects a strong, :root .quest a, :root .quest a strong, :root .about a, :root .about a strong {
   color: #48aeff;
 }
-:root .index a:hover, :root .index a:focus, :root .index a:active, :root .index a:hover strong, :root .index a:focus strong, :root .index a:active strong, :root .partners a:hover, :root .partners a:focus, :root .partners a:active, :root .partners a:hover strong, :root .partners a:focus strong, :root .partners a:active strong, :root .quest a:hover, :root .quest a:focus, :root .quest a:active, :root .quest a:hover strong, :root .quest a:focus strong, :root .quest a:active strong, :root .about a:hover, :root .about a:focus, :root .about a:active, :root .about a:hover strong, :root .about a:focus strong, :root .about a:active strong {
+:root .index a:hover, :root .index a:focus, :root .index a:active, :root .index a:hover strong, :root .index a:focus strong, :root .index a:active strong, :root .projects a:hover, :root .projects a:focus, :root .projects a:active, :root .projects a:hover strong, :root .projects a:focus strong, :root .projects a:active strong, :root .quest a:hover, :root .quest a:focus, :root .quest a:active, :root .quest a:hover strong, :root .quest a:focus strong, :root .quest a:active strong, :root .about a:hover, :root .about a:focus, :root .about a:active, :root .about a:hover strong, :root .about a:focus strong, :root .about a:active strong {
   color: #00d668;
 }
 :root .focus, :root .event {
@@ -364,7 +364,7 @@ strong {
   }
 }
 
-:root .index, :root .partners, :root .quest, :root .about {
+:root .index, :root .projects, :root .quest, :root .about {
   --logo: url(/assets/img/logo_dark.svg) center/contain no-repeat;
 }
 :root .focus, :root .event {
