@@ -19,17 +19,17 @@ header {
     align-items: center;
     box-shadow: inset 0px -1px 0px #08590b;
   
-    @media screen and (max-width: 1250px) {
-      margin: 15px 4vw;
+    @media (width <= 1250px) {
+      margin: 15px 2vw;
     }
 
     .btn-retour {
       display: inline-block;
       background: $navbtn;
       font-weight: bold;
-      padding: 2px 8px;
+      padding: 2px 9px;
 
-      @media screen and (max-width: 700px) {
+      @media (width <= 760px) {
         font-size: 0.7rem;
         padding: 1px 6px;
       }
@@ -59,7 +59,7 @@ header {
       margin: 8px;
       height: 80px;
 
-      @media screen and (max-width: 700px) {
+      @media (width <= 760px) {
         height: 50px;
         margin: 4px;
       }
@@ -73,7 +73,7 @@ header {
   margin: 0 auto;
   padding: 0;
 
-  @media screen and (max-width: 1250px) {
+  @media (width <= 1250px) {
     margin: O 4vw;
   }
 

@@ -1,0 +1,18 @@
+.body-container {
+  display: block;
+  animation: fadein 1.2s ease-in-out forwards;
+  position: relative;
+  padding: 8px 0;
+  background: var(--bg-box);
+  
+  @keyframes fadein {
+    0% {
+      opacity: 0;
+      transform: translateX(+30%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  } 
+}

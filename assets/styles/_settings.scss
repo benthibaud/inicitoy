@@ -7,7 +7,7 @@
 
 ul {
   padding: revert;
-  margin-bottom: 0.4rem;
+  // margin-bottom: 0.4rem;
 
   li {
     padding: 0.2rem 0;
@@ -16,8 +16,8 @@ ul {
 
 body {
   font-family: $font-normal;
-  font-size: max(1vw, 0.9rem);
-  line-height: 1.8;
+  font-size: clamp(0.95rem, 1.1vw, 1.2rem);
+  line-height: 1.7;
 }
 
 h1,
@@ -27,19 +27,20 @@ h4,
 h5,
 h6 {
   font-family: $font-title;
-  line-height: normal;
   color: var(--color-title);
+  line-height: normal;
 }
 
 p,
 h2,
 h4,
 h5 {
-  padding: 0.6rem 0;
+  padding-bottom: 0.7rem;
 }
 
 h1 {
-  font-size: max(min(1.6vw, 1.7rem), 1.1rem);
+  // font-size: max(min(1.6vw, 1.7rem), 1.1rem);
+  font-size: clamp(1.1rem, 1.8vw, 1.6rem);
   letter-spacing: 3px;
   font-variant-caps: petite-caps;
 }
@@ -52,7 +53,7 @@ h3 {
   font-size: max(1.15vw, 0.9rem);
   letter-spacing: 2px;
   font-variant-caps: petite-caps;
-  padding-bottom: 5px;
+  padding-top: 5px;
 }
 h5 {
   text-transform: uppercase;
@@ -79,9 +80,12 @@ strong {
 }
 
 // grid et float pour tout le projet
+// textOnly pour la page about.
 .textOnly {
   display: grid;
-  padding: 15px;
+  padding: 15px 30px;
+
+  align-items: center;
 }
 
 .grid {
@@ -113,19 +117,19 @@ strong {
   grid-template-columns: 1fr 1fr;
   gap: 0;
 }
-.gridpicto {
-  grid-template-columns: 17.6% 17.6% 17.6% 17.6% 17.6%;
-  align-items: stretch;
+// .gridpicto {
+//   grid-template-columns: 17.6% 17.6% 17.6% 17.6% 17.6%;
+//   align-items: stretch;
   
-  p {
-    padding: 15px 0;
-  }
+//   p {
+//     padding: 15px 0;
+//   }
 
-  img {
-    width: 80%;
-    height: 80%;
-  }
-}
+//   img {
+//     width: 80%;
+//     height: 80%;
+//   }
+// }
 .float {
   float: left;
   margin: 0.6rem 20px 3px 0;
@@ -142,18 +146,18 @@ strong {
   }
 }
 
-@media screen and (max-width: 600px) {
+@media (width <= 600px) {
   .grid32, 
   .grid42, 
   .grid60,
   .grid2img {
     grid-template-columns: 1fr;
-    // gap: unset;
-    margin-bottom: 4%;
+    gap: 0;
+    // margin-bottom: 4%;
   }
-  .gridpicto {
-    grid-template-columns: 30.3% 30.4% 30.3%;
-  }
+  // .gridpicto {
+  //   grid-template-columns: 30.3% 30.4% 30.3%;
+  // }
 }
 
 .mainPattern {
@@ -161,7 +165,7 @@ strong {
   grid-template-columns: 74% calc(26% - 20px);
   gap: 20px;
 
-  @media screen and (max-width: 700px) {
+  @media (width <= 760px) {
     grid-template-columns: 1fr;
     gap: 0;
   }
@@ -196,7 +200,7 @@ strong {
     letter-spacing: 3px;
     color: #f5f5f5;
 
-    @media screen and (max-width: 700px) {
+    @media (width <= 760px) {
       width: 95%;
       letter-spacing: 1px;
     }

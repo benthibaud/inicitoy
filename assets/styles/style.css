@@ -87,6 +87,9 @@ html {
   color: #eee;
 }
 :root .index, :root .projects, :root .quest, :root .about {
+  --tabs_content-bg: lightblue;
+  --tabs_border: darkblue;
+  --tabs-hover: lightskyblue;
   color: #eee;
   --color-strong: #dbecd1;
 }
@@ -97,6 +100,9 @@ html {
   color: #00d668;
 }
 :root .focus, :root .event {
+  --tabs_content-bg: lightblue;
+  --tabs_border: darkblue;
+  --tabs-hover: lightskyblue;
   color: #111;
   --color-strong: #3d6526;
 }
@@ -128,7 +134,6 @@ html {
 
 ul {
   padding: revert;
-  margin-bottom: 0.4rem;
 }
 ul li {
   padding: 0.2rem 0;
@@ -136,8 +141,8 @@ ul li {
 
 body {
   font-family: "Noto", sans-serif;
-  font-size: max(1vw, 0.9rem);
-  line-height: 1.8;
+  font-size: clamp(0.95rem, 1.1vw, 1.2rem);
+  line-height: 1.7;
 }
 
 h1,
@@ -147,19 +152,19 @@ h4,
 h5,
 h6 {
   font-family: "Noto-b", sans-serif;
-  line-height: normal;
   color: var(--color-title);
+  line-height: normal;
 }
 
 p,
 h2,
 h4,
 h5 {
-  padding: 0.6rem 0;
+  padding-bottom: 0.7rem;
 }
 
 h1 {
-  font-size: max(min(1.6vw, 1.7rem), 1.1rem);
+  font-size: clamp(1.1rem, 1.8vw, 1.6rem);
   letter-spacing: 3px;
   font-variant-caps: petite-caps;
 }
@@ -173,7 +178,7 @@ h3 {
   font-size: max(1.15vw, 0.9rem);
   letter-spacing: 2px;
   font-variant-caps: petite-caps;
-  padding-bottom: 5px;
+  padding-top: 5px;
 }
 
 h5 {
@@ -202,7 +207,10 @@ strong {
 
 .textOnly {
   display: grid;
-  padding: 15px;
+  padding: 15px 30px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .grid {
@@ -244,20 +252,6 @@ strong {
   gap: 0;
 }
 
-.gridpicto {
-  grid-template-columns: 17.6% 17.6% 17.6% 17.6% 17.6%;
-  -webkit-box-align: stretch;
-      -ms-flex-align: stretch;
-          align-items: stretch;
-}
-.gridpicto p {
-  padding: 15px 0;
-}
-.gridpicto img {
-  width: 80%;
-  height: 80%;
-}
-
 .float {
   float: left;
   margin: 0.6rem 20px 3px 0;
@@ -275,16 +269,13 @@ strong {
   width: 100%;
 }
 
-@media screen and (max-width: 600px) {
+@media (width <= 600px) {
   .grid32,
   .grid42,
   .grid60,
   .grid2img {
     grid-template-columns: 1fr;
-    margin-bottom: 4%;
-  }
-  .gridpicto {
-    grid-template-columns: 30.3% 30.4% 30.3%;
+    gap: 0;
   }
 }
 .mainPattern {
@@ -292,7 +283,7 @@ strong {
   grid-template-columns: 74% calc(26% - 20px);
   gap: 20px;
 }
-@media screen and (max-width: 700px) {
+@media (width <= 760px) {
   .mainPattern {
     grid-template-columns: 1fr;
     gap: 0;
@@ -326,7 +317,7 @@ strong {
   letter-spacing: 3px;
   color: #f5f5f5;
 }
-@media screen and (max-width: 700px) {
+@media (width <= 760px) {
   .imgMain .title-pg {
     width: 95%;
     letter-spacing: 1px;
@@ -342,20 +333,19 @@ strong {
 
 header {
   max-width: max(60%, 1200px);
-  margin: 20px auto 30px;
+  margin: 20px auto 24px;
   background: var(--bg-box);
   -webkit-box-shadow: var(--shadow-box);
           box-shadow: var(--shadow-box);
   border-radius: 2px;
-  height: 120px;
   position: relative;
 }
-@media screen and (max-width: 1200px) {
+@media (width <= 1250px) {
   header {
     margin: 2vw;
   }
 }
-@media screen and (max-width: 700px) {
+@media (width <= 760px) {
   header {
     height: auto;
   }
@@ -363,9 +353,8 @@ header {
 header .header-container {
   display: grid;
   grid-template-columns: calc(74% + 20px) calc(26% - 20px) 0;
-  height: auto;
 }
-@media screen and (max-width: 700px) {
+@media (width <= 760px) {
   header .header-container {
     grid-template-columns: 34% 32% 34%;
   }
@@ -384,7 +373,7 @@ header .header-container nav .menu-hamburger-container {
           align-items: center;
   padding-bottom: 3px;
 }
-@media (max-width: 700px) {
+@media (width <= 760px) {
   header .header-container nav .menu-hamburger-container {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -442,7 +431,7 @@ header .header-container nav .menu {
 }
 header .header-container nav .menu li {
   margin-left: 5px;
-  padding: 2px 13px;
+  padding: 0 13px 2px;
   background: #a5c3a1 linear-gradient(80deg, #a5c3a1 0%, #b2d9ac 14%, #f2fff0 100%);
   border: none;
   list-style: none;
@@ -451,7 +440,7 @@ header .header-container nav .menu li {
 header .header-container nav .menu li a {
   font-variant-caps: petite-caps;
   font-family: "Noto-b", sans-serif;
-  font-size: max(1vw, 0.9rem);
+  font-size: initial;
   font-weight: normal;
   color: #111;
 }
@@ -459,7 +448,7 @@ header .header-container nav .menu li a:focus, header .header-container nav .men
   color: #eee;
   text-decoration: none;
 }
-@media screen and (max-width: 700px) {
+@media (width <= 760px) {
   header .header-container nav .menu {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -493,10 +482,10 @@ header .header-container nav .menu li a:focus, header .header-container nav .men
 header .header-container .site-logo a {
   display: block;
   margin: 8px;
-  height: 100px;
+  height: clamp(60px, 10vh, 110px);
   background: var(--logo);
 }
-@media screen and (max-width: 700px) {
+@media (width <= 760px) {
   header .header-container .site-logo a {
     height: 70px;
     margin: 4px;
@@ -523,18 +512,18 @@ header .nav-pg-retour {
   -webkit-box-shadow: inset 0px -1px 0px #08590b;
           box-shadow: inset 0px -1px 0px #08590b;
 }
-@media screen and (max-width: 1250px) {
+@media (width <= 1250px) {
   header .nav-pg-retour {
-    margin: 15px 4vw;
+    margin: 15px 2vw;
   }
 }
 header .nav-pg-retour .btn-retour {
   display: inline-block;
   background: #a5c3a1 linear-gradient(80deg, #a5c3a1 0%, #b2d9ac 14%, #f2fff0 100%);
   font-weight: bold;
-  padding: 2px 8px;
+  padding: 2px 9px;
 }
-@media screen and (max-width: 700px) {
+@media (width <= 760px) {
   header .nav-pg-retour .btn-retour {
     font-size: 0.7rem;
     padding: 1px 6px;
@@ -559,7 +548,7 @@ header .nav-pg-retour .site-logo a {
   margin: 8px;
   height: 80px;
 }
-@media screen and (max-width: 700px) {
+@media (width <= 760px) {
   header .nav-pg-retour .site-logo a {
     height: 50px;
     margin: 4px;
@@ -571,7 +560,7 @@ header .nav-pg-retour .site-logo a {
   margin: 0 auto;
   padding: 0;
 }
-@media screen and (max-width: 1250px) {
+@media (width <= 1250px) {
   .nav-sub {
     margin: O 4vw;
   }
@@ -585,15 +574,15 @@ header .nav-pg-retour .site-logo a {
 .title {
   max-width: max(60%, 1200px);
   position: absolute;
-  top: calc(70px - 1.5vw);
+  top: 4.8vh;
   left: calc(50% - 570px);
 }
-@media screen and (max-width: 1200px) {
+@media (width <= 1250px) {
   .title {
     left: calc(50% - 44vw);
   }
 }
-@media screen and (max-width: 700px) {
+@media (width <= 760px) {
   .title {
     top: 66px;
     left: calc(2vw + 15px);
@@ -607,24 +596,6 @@ main {
   max-width: max(60%, 1200px);
   margin: 10px auto 0;
   min-height: 72vh;
-}
-@media screen and (max-width: 1200px) {
-  main {
-    margin: 20px 2vw;
-  }
-}
-@media screen and (max-width: 700px) {
-  main {
-    margin: 15px 2vw;
-  }
-  main #sommaire {
-    display: none;
-    margin: 0;
-  }
-  main .box {
-    margin-bottom: 15px;
-    padding: 20px;
-  }
 }
 main .ref {
   font-size: smaller;
@@ -645,6 +616,59 @@ main #sommaire p {
   line-height: normal;
   padding: 0.3rem 0;
 }
+main .tabs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 3px;
+}
+main .tabs input[type=radio] {
+  display: none;
+}
+main .tabs label {
+  padding: 8px 20px;
+  border: 1px solid #ccc;
+  border-bottom: none;
+  cursor: pointer;
+  border-radius: 8px 8px 0 0;
+  -webkit-transition: background 0.2s ease;
+  transition: background 0.2s ease;
+}
+main .tabs label:hover {
+  background: var(--tabs-hover);
+}
+main .tab:checked + label {
+  z-index: 100;
+  background: var(--tabs_content-bg);
+  border-color: var(--tabs_border);
+}
+main .tab-content {
+  z-index: -5;
+  -webkit-transform: translateY(-1px);
+          transform: translateY(-1px);
+  background: var(--tabs_content-bg);
+  padding: 20px;
+  border: 1px solid var(--tabs_border);
+  display: none;
+}
+@media (width <= 1250px) {
+  main {
+    margin: 20px 2vw;
+  }
+}
+@media (width <= 760px) {
+  main {
+    margin: 15px 2vw;
+  }
+  main #sommaire {
+    display: none;
+    margin: 0;
+  }
+  main .box {
+    margin-bottom: 15px;
+    padding: 20px;
+  }
+}
 
 footer {
   max-width: max(60%, 1200px);
@@ -660,7 +684,7 @@ footer .copyright-bar {
   font-size: smaller;
   font-variant-caps: petite-caps;
 }
-@media screen and (max-width: 1200px) {
+@media (width <= 1250px) {
   footer {
     margin: 10px 2vw 20px;
   }

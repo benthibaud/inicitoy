@@ -132,6 +132,10 @@ $navbtn-active: $gradient2;
   
   // dark background classes (coul des textes, couleurs du "strong" et des ancres par défaut)
   .index, .projects, .quest, .about {
+    // couleurs définies par défaut modifiables par thème
+    --tabs_content-bg: lightblue;
+    --tabs_border: darkblue;
+    --tabs-hover: lightskyblue;
     color: $white;
     --color-strong: #dbecd1;
     a, a strong {
@@ -144,6 +148,10 @@ $navbtn-active: $gradient2;
 
   // light background classes (coul des textes, couleurs du "strong" et des ancres par défaut)
   .focus, .event {
+    // couleurs définies par défaut modifiables par thème
+    --tabs_content-bg: lightblue;
+    --tabs_border: darkblue;
+    --tabs-hover: lightskyblue;
     color: $black;
     --color-strong: #3d6526;
     a, a strong {
@@ -170,15 +178,6 @@ $navbtn-active: $gradient2;
 
 // Si un jour, je veux un thème clair par défaut et un thème sombre dit "dark" s'il est choisi dans le navigateur de l'internaute
 // @media (prefers-color-scheme: dark) {
-//   :root {
-//     .index {
-//       background: darkred;
-//     }
-//     color: whitesmoke;
-//     --logo: url(/assets/img/logo_dark.svg);
-//     --navbtn: $gradient;
-//     --navbtn-active: $gradient2;
-//   }
 // }
 
 @mixin theme_box {

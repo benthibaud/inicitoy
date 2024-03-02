@@ -1,29 +1,10 @@
-@import './layouts/theme';
-@import 'settings';
+@import "./layouts/theme";
+@import "settings";
 
-.body-container {
-  display: block;
-  animation: fadein 2s ease-in-out forwards;
-  position: relative;
-  padding: 15px 0;
-  background: var(--bg-box);
-  
-  @keyframes fadein {
-    0% {
-      top: 0;
-      left: 70%;
-      opacity: 0;
-    }
-    100% {
-      left: 0;
-      opacity: 1;
-    }
-  }   
-}
+@import "./layouts/pg-complement";
 
+@import "./layouts/nav-sub";
 
-  @import "./layouts/nav-sub";
-  
-  @import "./layouts/main";
-  
-  @import "./layouts/footer";
+@import "./layouts/main";
+
+@import "./layouts/footer";

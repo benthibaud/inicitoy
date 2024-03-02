@@ -9,18 +9,17 @@
 
 header {
   max-width: max(60%, 1200px);
-  margin: 20px auto 30px;
+  margin: 20px auto 24px;
   // mixin définie dans le thème 1 à 6
   @include theme_box;
-  height: 120px;
   // position relative pour la nav (title dans main est défini par rapport à body)
   position: relative;
   
-  @media screen and (max-width: 1200px) {
+  @media (width <= 1250px) {
     margin: 2vw;
   }
   
-  @media screen and (max-width: 700px) {
+  @media (width <= 760px) {
     height: auto;
   }
   
@@ -28,9 +27,8 @@ header {
   .header-container {
     display: grid;
     grid-template-columns: calc(74% + 20px) calc(26% - 20px) 0;
-    height: auto;
 
-    @media screen and (max-width: 700px) {
+    @media (width <= 760px) {
       // la case du logo passe au centre (le menu étant en absolute, il ne dépend pas vraiment des cases)
       grid-template-columns: 34% 32% 34%;
     }
@@ -49,7 +47,7 @@ header {
         padding-bottom: 3px;
 
         // le display flex fait apparaitre le menu hamburger et active son comportement à partir de 700px
-        @media (max-width: 700px) {
+        @media (width <= 760px) {
           display: flex;
         }
       }
@@ -111,7 +109,7 @@ header {
         
         li {
           margin-left: 5px;
-          padding: 2px 13px;
+          padding: 0 13px 2px;
           background: $navbtn;
           border: none;
           list-style: none;
@@ -120,7 +118,8 @@ header {
           a {
             font-variant-caps: petite-caps;
             font-family: $font-title;
-            font-size: max(1vw, 0.9rem);
+            // font-size: max(1vw, 0.9rem);
+            font-size: initial;
             font-weight: normal;
             color: $black;
 
@@ -132,7 +131,7 @@ header {
         }
       }
 
-      @media screen and (max-width: 700px) {   
+      @media (width <= 760px) {   
         .menu {
           display: flex;
           flex-direction: column;
@@ -166,10 +165,10 @@ header {
     .site-logo a {
       display: block;
       margin: 8px;
-      height: 100px;
+      height: clamp(60px, 10vh, 110px);
       background: var(--logo);
 
-      @media screen and (max-width: 700px) {
+      @media (width <= 760px) {
         height: 70px;
         margin: 4px;
       }

@@ -4,109 +4,121 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="test.css" />
+    <link rel="stylesheet" href="../assets/styles/pg.css" />
   </head>
-  <body>
-    <header></header>
-    <main>
-      <!-- Liens -->
-      <section>
-        <p><a href="#tab1">lien vers le premier onglet</a></p>
-        <p><a href="#tab2">lien vers le deuxième onglet</a></p>
-        <p><a href="#tab3">lien vers le troisième onglet</a></p>
-      </section>
-      <hr />
-      <section>
-        <div class="tabs">
-          <input type="radio" name="tabs" class="tab" id="tab1" />
-          <label for="tab1">Tab 1</label>
-
-          <input type="radio" name="tabs" class="tab" id="tab2" />
-          <label for="tab2">Tab 2</label>
-
-          <input type="radio" name="tabs" class="tab" id="tab3" />
-          <label for="tab3">Tab 3</label>
+  <body class="focus">
+    <div class="body-container">
+      <header>
+        <div class="nav-pg-retour">
+          <div class="nav-gauche">
+            <div class="btn-retour">
+              <a href="../focus.html" title="retour > Dossiers"><i class="fa-solid fa-angles-left"></i> Retour</a>
+            </div>
+            <h1>Dossier - Design urbain</h1>
+          </div>
+          <div class="site-logo">
+            <div class="img"><a href="https://inicitoy.toile-libre.org" aria-label="accueil"></a></div>
+          </div>
         </div>
+      </header>
+      <main>
+        <section>
+          <p><a href="#tab1">lien vers le premier onglet</a></p>
+          <p><a href="#tab2">lien vers le deuxième onglet</a></p>
+          <p><a href="#tab3">lien vers le troisième onglet</a></p>
+        </section>
+        <section>
+          <div class="tabs">
+            <input type="radio" name="tabs" class="tab" id="tab1" />
+            <label for="tab1">Tab 1</label>
 
-        <div id="tab-content1" class="tab-content">Contenu de l'onglet 1</div>
+            <input type="radio" name="tabs" class="tab" id="tab2" />
+            <label for="tab2">Tab 2</label>
 
-        <div id="tab-content2" class="tab-content">Contenu de l'onglet 2</div>
+            <input type="radio" name="tabs" class="tab" id="tab3" />
+            <label for="tab3">Tab 3</label>
+          </div>
 
-        <div id="tab-content3" class="tab-content">Contenu de l'onglet 3</div>
-      </section>
-      <p id="span_txt" style="height: 15vh">Texte à afficher</p>
-      <button type="button" onclick="toggle_text();">test</button>
-    </main>
-    <footer>
-      <div id="current_date" class="copyright-bar">
-        <script>
-          // année pour le copyright
-          date = new Date();
-          year = date.getFullYear();
-          document.getElementById("current_date").innerHTML = "© " + year + " Initiatives Citoyennes Choletaises";
+          <div id="tab-content1" class="tab-content">Contenu de l'onglet 1</div>
 
-          // const tabs = document.querySelectorAll('input[name="tabs"]');
-          // const tabContents = document.querySelectorAll(".tab-content");
-          // tabs.forEach((tab) => {
-          //   tab.addEventListener("change", () => {
-          //     tabContents.forEach((tabContent) => {
-          //       tabContent.style.display = "none";
-          //     });
-          //     document.getElementById(`tab-content${tab.id.replace("tab", "")}`).style.display = "block";
-          //   });
-          // });
+          <div id="tab-content2" class="tab-content">Contenu de l'onglet 2</div>
 
-          // gestion des onglets: contenu associé au bouton et url avec un hashtag vers une id associée à un contenu
-          // Indexation des éléments
-          const tabs = {
-            "#tab1": document.getElementById("tab1"),
-            "#tab2": document.getElementById("tab2"),
-            "#tab3": document.getElementById("tab3"),
-          };
+          <div id="tab-content3" class="tab-content">Contenu de l'onglet 3</div>
+        </section>
+        <p id="span_txt" style="height: 15vh">Texte à afficher</p>
+        <button type="button" onclick="toggle_text();">test</button>
+      </main>
+      <footer>
+        <div id="current_date" class="copyright-bar">
+          <script>
+            // année pour le copyright
+            date = new Date();
+            year = date.getFullYear();
+            document.getElementById("current_date").innerHTML = "© " + year + " Initiatives Citoyennes Choletaises";
 
-          const contents = {
-            "#tab1": document.getElementById("tab-content1"),
-            "#tab2": document.getElementById("tab-content2"),
-            "#tab3": document.getElementById("tab-content3"),
-          };
+            // const tabs = document.querySelectorAll('input[name="tabs"]');
+            // const tabContents = document.querySelectorAll(".tab-content");
+            // tabs.forEach((tab) => {
+            //   tab.addEventListener("change", () => {
+            //     tabContents.forEach((tabContent) => {
+            //       tabContent.style.display = "none";
+            //     });
+            //     document.getElementById(`tab-content${tab.id.replace("tab", "")}`).style.display = "block";
+            //   });
+            // });
 
-          // Gestion de l'état
-          let activeTab;
+            // gestion des onglets: contenu associé au bouton et url avec un hashtag vers une id associée à un contenu
+            // Indexation des éléments
+            const tabs = {
+              "#tab1": document.getElementById("tab1"),
+              "#tab2": document.getElementById("tab2"),
+              "#tab3": document.getElementById("tab3"),
+            };
 
-          // Fonction de sélection
-          function selectTab(hash) {
-            hash = hash || "#tab1"; // définit tab1 comme valeur par défaut si pas d'ancre
-            // Désélection précédente
-            if (activeTab) {
-              activeTab.checked = false;
-              contents[activeTab].style.display = "none";
+            const contents = {
+              "#tab1": document.getElementById("tab-content1"),
+              "#tab2": document.getElementById("tab-content2"),
+              "#tab3": document.getElementById("tab-content3"),
+            };
+
+            // Gestion de l'état
+            let activeTab;
+
+            // Fonction de sélection
+            function selectTab(hash) {
+              hash = hash || "#tab1"; // définit tab1 comme valeur par défaut si pas d'ancre
+              // Désélection précédente
+              if (activeTab) {
+                activeTab.checked = false;
+                contents[activeTab].style.display = "none";
+              }
+
+              // Sélection courante
+              tabs[hash].checked = true;
+              contents[hash].style.display = "block";
+
+              activeTab = hash;
             }
 
-            // Sélection courante
-            tabs[hash].checked = true;
-            contents[hash].style.display = "block";
-
-            activeTab = hash;
-          }
-
-          // Au chargement
-          selectTab(location.hash);
-
-          // Écoute des changements
-          window.addEventListener("popstate", () => {
+            // Au chargement
             selectTab(location.hash);
-          });
 
-          function toggle_text() {
-            var div = document.getElementById("span_txt");
-            if (div.style.display == "none") {
-              div.style.display = "block";
-            } else {
-              div.style.display = "none";
+            // Écoute des changements
+            window.addEventListener("popstate", () => {
+              selectTab(location.hash);
+            });
+
+            function toggle_text() {
+              var div = document.getElementById("span_txt");
+              if (div.style.display == "none") {
+                div.style.display = "block";
+              } else {
+                div.style.display = "none";
+              }
             }
-          }
-        </script>
-      </div>
-    </footer>
+          </script>
+        </div>
+      </footer>
+    </div>
   </body>
 </html>
