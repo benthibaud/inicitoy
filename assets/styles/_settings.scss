@@ -39,14 +39,14 @@ h5 {
 }
 
 h1 {
-  // font-size: max(min(1.6vw, 1.7rem), 1.1rem);
   font-size: clamp(1.1rem, 1.8vw, 1.6rem);
   letter-spacing: 3px;
   font-variant-caps: petite-caps;
 }
 
 h2 {
-  font-size: max(1.35vw, 1rem);
+  // font-size: max(1.35vw, 1rem);
+  font-size: clamp(1rem, 1.6vw, 1.45rem);
   letter-spacing: 1px;
 }
 h3 {
