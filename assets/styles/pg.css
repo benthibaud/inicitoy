@@ -1,8 +1,17 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300&family=Noto+Sans+Bold:bold,wght@400&display=swap&font-variation-settings="smcp" 1');
 html {
   scroll-behavior: smooth;
 }
 
+@font-face {
+  font-family: "Noto";
+  src: url(../fonts/NotoSans-Light.ttf);
+  font-display: swap;
+}
+@font-face {
+  font-family: "Noto-b";
+  src: url(../fonts/NotoSans-Regular.ttf);
+  font-display: swap;
+}
 :root .about {
   background: #3a3a3a;
   --color-title: #00d668;
@@ -131,7 +140,7 @@ ul li {
 }
 
 body {
-  font-family: "Noto Sans", sans-serif;
+  font-family: "Noto", sans-serif;
   font-size: clamp(0.95rem, 1.1vw, 1.2rem);
   line-height: 1.7;
 }
@@ -142,13 +151,14 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Noto Sans Bold", sans-serif;
+  font-family: "Noto-b", sans-serif;
   color: var(--color-title);
   line-height: normal;
 }
 
 p,
 h2,
+h3,
 h4,
 h5 {
   padding-bottom: 0.7rem;
@@ -180,7 +190,7 @@ h5 {
 
 strong {
   color: var(--color-strong);
-  font-family: "Noto Sans Bold", sans-serif;
+  font-family: "Noto-b", sans-serif;
 }
 
 .titre {
@@ -539,6 +549,10 @@ footer .copyright-bar {
   padding: 1.2vh 0;
   font-size: smaller;
   font-variant-caps: petite-caps;
+  letter-spacing: 1px;
+}
+footer .copyright-bar a, footer .copyright-bar a strong {
+  color: currentColor !important;
 }
 @media (width <= 1250px) {
   footer {

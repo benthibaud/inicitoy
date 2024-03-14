@@ -1,7 +1,11 @@
 <IfModule mod_deflate.c>
-
-<DirectoryMatch "\.(html|htm|txt|css|js|php|xml)$">
-   AddOutputFilterByType DEFLATE text/html text/css text/plain application/javascript application/x-javascript application/xml+rss
-</DirectoryMatch>
-
+  <Directory>
+    AddOutputFilterByType DEFLATE text/html text/css text/plain font/ttf image/svg+xml image/x-icon application/javascript application/x-javascript application/x-font-ttf application/xml+rss
+  </Directory>
+  <ElseifModule mod_gzip.c>
+    mod_gzip_on Yes mod_gzip_dechunk Yes
+    <Directory>
+      AddOutputFilterByType GZIP text/html text/css text/plain font/ttf image/svg+xml image/x-icon application/javascript application/x-javascript application/x-font-ttf application/xml+rss
+    </Directory>
+  </ElseifModule>
 </IfModule>

@@ -10,8 +10,13 @@ footer {
     padding: 1.2vh 0;
     font-size: smaller;
     font-variant-caps: petite-caps;
-  }
+    letter-spacing: 1px;
 
+    a, a strong {
+      color: currentColor !important;
+    }
+  }
+  
   @media (width <= 1250px) {
     margin: 10px 2vw 20px;
   }
