@@ -551,8 +551,9 @@ footer .copyright-bar {
   font-variant-caps: petite-caps;
   letter-spacing: 1px;
 }
-footer .copyright-bar a, footer .copyright-bar a strong {
+footer .copyright-bar a {
   color: currentColor !important;
+  font-weight: normal !important;
 }
 @media (width <= 1250px) {
   footer {

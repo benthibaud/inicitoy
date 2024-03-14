@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Partage entre smartphones ou tablettes</title>
+    <link rel="icon" href="assets/img/favicon.ico" />
+    <link rel="stylesheet" href="assets/styles/style.css" />
+    <style>
+      body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        height: 100vh;
+        cursor: pointer;
+
+        .box img {
+          max-height: 300px;
+        }
+        p {
+          padding-top: 15px;
+        }
+      }
+      .back-transition {
+        opacity: 0.1;
+      }
+    </style>
+  </head>
+  <body onclick="goBack()" class="about box">
+    <img src="assets/img/00_QRCode-site_global.png" alt="QR code pour que vos proches n'aient pas à saisir l'url" />
+    <p>https://inicitoy.toile-libre.org</p>
+    <footer>(pour revenir à la page précédente, cliquer n'importe où)</footer>
+    <script>
+      function goBack() {
+        document.body.classList.add("back-transition");
+
+        // window.history.back();
+        setTimeout(() => {
+          window.history.back();
+        }, 200);
+
+        document.body.addEventListener("transitionend", () => {
+          document.body.classList.remove("back-transition");
+        });
+      }
+    </script>
+  </body>
+</html>

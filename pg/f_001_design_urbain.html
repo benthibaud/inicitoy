@@ -51,21 +51,10 @@
       <footer>
         <div id="current_date" class="copyright-bar">
           <script>
-            // année pour le copyright
             date = new Date();
             year = date.getFullYear();
-            document.getElementById("current_date").innerHTML = "© " + year + " Initiatives Citoyennes Choletaises";
-
-            // const tabs = document.querySelectorAll('input[name="tabs"]');
-            // const tabContents = document.querySelectorAll(".tab-content");
-            // tabs.forEach((tab) => {
-            //   tab.addEventListener("change", () => {
-            //     tabContents.forEach((tabContent) => {
-            //       tabContent.style.display = "none";
-            //     });
-            //     document.getElementById(`tab-content${tab.id.replace("tab", "")}`).style.display = "block";
-            //   });
-            // });
+            document.getElementById("current_date").innerHTML =
+              "© " + year + " <a href='../_QRcode.html' title='QR Code pour partager l`url de notre site avec vos proches'>Initiatives Citoyennes Choletaises</a>";
 
             // gestion des onglets: contenu associé au bouton et url avec un hashtag vers une id associée à un contenu
             // Indexation des éléments

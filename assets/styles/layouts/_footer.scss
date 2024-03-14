@@ -12,8 +12,9 @@ footer {
     font-variant-caps: petite-caps;
     letter-spacing: 1px;
 
-    a, a strong {
+    a {
       color: currentColor !important;
+      font-weight: normal !important;
     }
   }
   

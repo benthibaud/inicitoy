@@ -113,7 +113,7 @@
                 >.
               </p>
             </div>
-            <img src="assets/img/i_002-Guide_de_l_eau_a_la_parcelle.webp" alt="Guide de la gestion des eaux non conventionnelles" style="max-height: 300px; width: fit-content" loading="lazy" />
+            <img src="assets/img/i_002-Guide_de_l_eau_a_la_parcelle.webp" alt="Guide de la gestion des eaux non conventionnelles" style="max-height: 300px; width: auto" loading="lazy" />
           </div>
         </article>
         <article id="arbresfrais" class="box">
@@ -162,7 +162,7 @@
             /></a>
           </div>
         </article>
-        <article id="lettre" class="box">
+        <!-- <article id="lettre" class="box">
           <h2>Notre lettre d'information</h2>
           <div class="float"><img src="./assets/img/i_001-Fil-info-blur.webp" alt="Fil-info" height="90" loading="lazy" /></div>
           <div>
@@ -182,14 +182,7 @@
             </p>
             <p>Pour la recevoir, il suffit de s'inscrire dans l'encadré à droite.</p>
           </div>
-        </article>
-        <article id="logo" class="box">
-          <h2>Notre logo</h2>
-          <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorem magnam cum perspiciatis quod! Corrupti illum, quod, cum officiis est veritatis beatae ex nesciunt facere vitae, ea
-            recusandae voluptatibus reiciendis voluptate.
-          </p>
-        </article>
+        </article> -->
         <article id="internet" class="box">
           <h2>Un nouveau site internet</h2>
           <p>
@@ -212,12 +205,11 @@
         <article id="sommaire" class="box">
           <h3>navigation</h3>
           <p><a href="#titres">En ce moment..</a></p>
+          <!-- <p><a href="#lettre">Notre lettre d'information</a></p> -->
           <p><a href="#ICU">Plus fraîche ma ville</a></p>
           <p><a href="#Assainissement">Assainissement non collectif</a></p>
           <p><a href="#arbresfrais">Arbres : rafraichissant ?</a></p>
           <p><a href="#ZAN">Loi « Zéro artificialisation nette (ZAN) »</a></p>
-          <p><a href="#lettre">Notre lettre d'information</a></p>
-          <p><a href="#logo">Notre logo</a></p>
           <p><a href="#internet">Un nouveau site internet</a></p>
         </article>
         <article id="contact" class="box">
@@ -240,7 +232,8 @@
         <script>
           date = new Date();
           year = date.getFullYear();
-          document.getElementById("current_date").innerHTML = "© " + year + " Initiatives Citoyennes Choletaises";
+          document.getElementById("current_date").innerHTML =
+            "© " + year + " <a href='_QRcode.html' title='QR Code pour partager l`url de notre site avec vos proches'>Initiatives Citoyennes Choletaises</a>";
         </script>
       </div>
     </footer>
