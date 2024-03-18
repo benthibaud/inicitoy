@@ -43,7 +43,8 @@ $navbtn-active: $gradient2;
 // Il suffit pour les appliquer de lier la classe à body dans l'Html
 :root {
   .about {
-    background: #3a3a3a;
+    --bg-body: #3a3a3a;
+    // background: #3a3a3a;
     --color-title: #00d668;
     --bg-box: #072508;
     --shadow-box: none;
@@ -58,7 +59,8 @@ $navbtn-active: $gradient2;
     }
   }
   .index {
-    background: #072508;
+    --bg-body: #072508;
+    // background: #072508;
     --color-title: #00d668;
     --bg-box: #3a3a3a;
     --shadow-box: none;
@@ -73,7 +75,8 @@ $navbtn-active: $gradient2;
     }
   }
   .focus {
-    background: #3a3a3a;
+    --bg-body: #3a3a3a;
+    // background: #3a3a3a;
     color: $black;
     --color-title: #27742a;
     --bg-box: papayawhip;
@@ -89,7 +92,8 @@ $navbtn-active: $gradient2;
     }
   }
   .event {
-    background: #592913;
+    --bg-body: #592913;
+    // background: #592913;
     color: $black;
     --color-title: #27742a;
     --bg-box: antiquewhite;
@@ -105,7 +109,8 @@ $navbtn-active: $gradient2;
     }
   }
   .projects {
-    background: #041429;
+    --bg-body: #041429;
+    // background: #041429;
     --color-title: #00d668;
     --bg-box: #302b3f;
     --shadow-box: none;
@@ -120,7 +125,8 @@ $navbtn-active: $gradient2;
     }
   }
   .quest {
-    background: #751111;
+    --bg-body: #751111;
+    // background: #751111;
     --color-title: #00d668;
     --bg-box: #331616;
     --shadow-box: none;

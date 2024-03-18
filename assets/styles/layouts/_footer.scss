@@ -21,4 +21,7 @@ footer {
   @media (width <= 1250px) {
     margin: 10px 2vw 20px;
   }
+  @media (width <= 760px) {
+    margin-bottom: 60px;
+  }
 }
