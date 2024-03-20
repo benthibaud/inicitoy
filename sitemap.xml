@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+
+<url>
+  <loc>https://inicitoy.toile-libre.org/</loc>
+  <lastmod>2024-03-14T18:19:52+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://inicitoy.toile-libre.org/about.html</loc>
+  <lastmod>2024-03-14T18:19:52+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://inicitoy.toile-libre.org/index.html</loc>
+  <lastmod>2024-03-14T18:19:52+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://inicitoy.toile-libre.org/focus.html</loc>
+  <lastmod>2024-03-18T12:21:11+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://inicitoy.toile-libre.org/event.html</loc>
+  <lastmod>2024-03-18T12:24:06+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://inicitoy.toile-libre.org/projects.html</loc>
+  <lastmod>2024-03-14T18:19:52+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://inicitoy.toile-libre.org/quest.html</loc>
+  <lastmod>2024-03-14T18:19:52+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://inicitoy.toile-libre.org/_QRcode.html</loc>
+  <lastmod>2024-03-14T18:19:51+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://inicitoy.toile-libre.org/pg/f_002_eclairagepublic.html</loc>
+  <lastmod>2024-03-14T18:19:17+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://inicitoy.toile-libre.org/pg/e_001_engagt.html</loc>
+  <lastmod>2024-03-14T18:19:17+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://inicitoy.toile-libre.org/pg/p_001-dessin-rue.html</loc>
+  <lastmod>2024-03-14T18:19:17+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://inicitoy.toile-libre.org/pg/q_002-jardins-forestiers.html</loc>
+  <lastmod>2024-03-14T18:19:17+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+
+
+</urlset>
