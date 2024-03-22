@@ -76,10 +76,6 @@ strong {
   color: $black;
 }
 
-.decal {
-  padding-left: 20px;
-}
-
 // grid et float pour tout le projet
 // textOnly pour la page about.
 .textOnly {
@@ -134,6 +130,16 @@ strong {
   }
 }
 
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &.col {
+    flex-direction: column;
+  }
+}
+
 .float {
   max-width: 50%;
 
@@ -149,7 +155,6 @@ strong {
     width: 100%;
   }
 }
-
 
 .mainPattern {
   display: grid;
@@ -195,5 +200,44 @@ strong {
       width: 95%;
       letter-spacing: 1px;
     }
+  }
+}
+
+.trimTxt {
+  .toggle-input {
+    display: none;
+
+    &:checked ~ .fullTxt {
+      max-height: 1600px; // Ajustez cette valeur en fonction de la longueur de votre contenu
+      transition: max-height 0.5s ease-in-out;
+    }
+
+    &:checked ~ .toggle-label .label-text {
+      &::after {
+        content: "⏶    réduire    ⏶";
+      }
+    }
+  }
+
+  .toggle-label {
+    display: block; // Changé à block pour que l'ancre soit sur une nouvelle ligne
+    cursor: pointer;
+    background: #ff440028;
+    color: #443d3d;
+    font-size: 1rem;
+    text-align: center;
+    margin-top: 10px; // Ajouté une marge supérieure pour séparer l'ancre du texte
+
+    .label-text {
+      &::after {
+        content: "⏷    tout voir    ⏷";
+      }
+    }
+  }
+
+  .fullTxt {
+    max-height: 320px; // Affichage minimum au départ
+    overflow: hidden;
+    transition: max-height 0.5s ease-in-out;
   }
 }

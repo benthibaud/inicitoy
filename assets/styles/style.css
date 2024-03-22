@@ -1,3 +1,4 @@
+@charset "UTF-8";
 html {
   scroll-behavior: smooth;
 }
@@ -205,10 +206,6 @@ strong {
   color: #111;
 }
 
-.decal {
-  padding-left: 20px;
-}
-
 .textOnly {
   display: grid;
   padding: 15px;
@@ -259,6 +256,24 @@ strong {
     grid-template-columns: 1fr;
     gap: 0;
   }
+}
+
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.flex.col {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .float {
@@ -320,6 +335,36 @@ strong {
     width: 95%;
     letter-spacing: 1px;
   }
+}
+
+.trimTxt .toggle-input {
+  display: none;
+}
+.trimTxt .toggle-input:checked ~ .fullTxt {
+  max-height: 1600px;
+  -webkit-transition: max-height 0.5s ease-in-out;
+  transition: max-height 0.5s ease-in-out;
+}
+.trimTxt .toggle-input:checked ~ .toggle-label .label-text::after {
+  content: "⏶    réduire    ⏶";
+}
+.trimTxt .toggle-label {
+  display: block;
+  cursor: pointer;
+  background: rgba(255, 68, 0, 0.1568627451);
+  color: #443d3d;
+  font-size: 1rem;
+  text-align: center;
+  margin-top: 10px;
+}
+.trimTxt .toggle-label .label-text::after {
+  content: "⏷    tout voir    ⏷";
+}
+.trimTxt .fullTxt {
+  max-height: 320px;
+  overflow: hidden;
+  -webkit-transition: max-height 0.5s ease-in-out;
+  transition: max-height 0.5s ease-in-out;
 }
 
 :root .index, :root .projects, :root .quest, :root .about {
