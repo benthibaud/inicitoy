@@ -42,13 +42,13 @@
       padding: 20px 0;
     }
     h2 {
-      font-size: clamp(1.5rem, 1.9vw, 2.2rem);
+      font-size: clamp(1.3rem, 1.9vw, 2.2rem);
       font-family: $font-normal;
       font-weight: 100;
       color: $white;
     }
     p {
-      font-size: clamp(0.9rem, 1.2vw, 1.15rem);
+      font-size: clamp(0.8rem, 1.2vw, 1.15rem);
       font-weight: 400;
       padding-left: 30px;
       padding-bottom: 25px;
@@ -59,6 +59,9 @@
       .small {
         font-size: smaller;
         font-style: italic;
+      }
+      &.right {
+        text-align: right;
       }
     }
     .textOnly > p {
@@ -83,6 +86,7 @@
   }
 
   .parallax-bg {
+    background-image: url(/assets/img/f_002-street-7414680.webp);
     position: absolute;
     left: 0;
     top: 0;
@@ -90,5 +94,9 @@
     height: 100%;
     background-size: cover;
     background-position: center;
+
+    @media (width <= 600px) {
+      background-image: url(/assets/img/f_002-street-7414680_portrait.webp);
+    }
   }
 }

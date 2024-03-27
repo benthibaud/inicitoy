@@ -182,12 +182,6 @@ h3 {
   padding-top: 5px;
 }
 
-h5 {
-  text-transform: uppercase;
-  font-size: 0.8rem;
-  color: #a3a3a3;
-}
-
 h6 {
   padding-bottom: 0;
 }
@@ -204,6 +198,14 @@ strong {
   background: #a5c3a1 linear-gradient(80deg, #a5c3a1 0%, #b2d9ac 14%, #f2fff0 100%);
   border: none;
   color: #111;
+}
+
+.blogger {
+  font-family: "Noto-b", sans-serif;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  color: #a3a3a3;
+  padding: 0 0 0.9rem 0;
 }
 
 .textOnly {
@@ -285,7 +287,7 @@ strong {
 }
 .float-right {
   float: right;
-  margin: 0.6rem 0 3px 20px;
+  margin: 0.6rem 0 0 20px;
 }
 .float img {
   width: 100%;

@@ -1,0 +1,6 @@
+User-agent: *
+Disallow: /cohab/
+Disallow: /courtesy/
+Disallow: /_QRcode.html
+
+Sitemap: https://inicitoy.toile-libre.org/sitemap.xml

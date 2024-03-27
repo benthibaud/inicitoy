@@ -1,0 +1,19 @@
+/* TEAM */
+  UI design, codage, etc: 	Benoit THIBAUD
+  Contact:					frombenny [at] gmail.com
+
+  Lieu:						Cholet (Pays de la Loire) FRANCE
+  
+  Autres membres du groupe:			Sylvie TOLASSY
+									Stéphane BROSSET
+									Anne HARDY
+									Kai-Ulrich HARTWICH
+									
+  mail de contact pour le groupe: 	inicitoy [at] laposte.net
+  
+/* SITE */
+  url:						https://inicitoy.toile-libre.org/
+  Code source dispo sur: 	https://github.com/benthibaud/inicitoy
+  
+  Doctype:		HTML5
+  IDE:			VSCode, FileZilla, Gimp, Inkscape, LibreOffice

@@ -21,7 +21,33 @@
           </div>
         </div>
       </header>
-      <main></main>
+      <main>
+        <section>
+          <p><a href="#tab1">lien vers le premier onglet</a></p>
+          <p><a href="#tab2">lien vers le deuxième onglet</a></p>
+          <p><a href="#tab3">lien vers le troisième onglet</a></p>
+        </section>
+        <section>
+          <div class="tabs">
+            <input type="radio" name="tabs" class="tab" id="tab1" />
+            <label for="tab1">Tab 1</label>
+
+            <input type="radio" name="tabs" class="tab" id="tab2" />
+            <label for="tab2">Tab 2</label>
+
+            <input type="radio" name="tabs" class="tab" id="tab3" />
+            <label for="tab3">Tab 3</label>
+          </div>
+
+          <div id="tab-content1" class="tab-content">Contenu de l'onglet 1</div>
+
+          <div id="tab-content2" class="tab-content">Contenu de l'onglet 2</div>
+
+          <div id="tab-content3" class="tab-content">Contenu de l'onglet 3</div>
+        </section>
+        <p id="span_txt" style="height: 15vh">Texte à afficher</p>
+        <button type="button" onclick="toggle_text();">test</button>
+      </main>
       <footer>
         <div id="current_date" class="copyright-bar">
           <script>

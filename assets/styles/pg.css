@@ -182,12 +182,6 @@ h3 {
   padding-top: 5px;
 }
 
-h5 {
-  text-transform: uppercase;
-  font-size: 0.8rem;
-  color: #a3a3a3;
-}
-
 h6 {
   padding-bottom: 0;
 }
@@ -204,6 +198,14 @@ strong {
   background: #a5c3a1 linear-gradient(80deg, #a5c3a1 0%, #b2d9ac 14%, #f2fff0 100%);
   border: none;
   color: #111;
+}
+
+.blogger {
+  font-family: "Noto-b", sans-serif;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  color: #a3a3a3;
+  padding: 0 0 0.9rem 0;
 }
 
 .textOnly {
@@ -285,7 +287,7 @@ strong {
 }
 .float-right {
   float: right;
-  margin: 0.6rem 0 3px 20px;
+  margin: 0.6rem 0 0 20px;
 }
 .float img {
   width: 100%;
@@ -392,13 +394,13 @@ strong {
   padding: 20px 0;
 }
 .body-container .swiper-slide h2 {
-  font-size: clamp(1.5rem, 1.9vw, 2.2rem);
+  font-size: clamp(1.3rem, 1.9vw, 2.2rem);
   font-family: "Noto", sans-serif;
   font-weight: 100;
   color: #eee;
 }
 .body-container .swiper-slide p {
-  font-size: clamp(0.9rem, 1.2vw, 1.15rem);
+  font-size: clamp(0.8rem, 1.2vw, 1.15rem);
   font-weight: 400;
   padding-left: 30px;
   padding-bottom: 25px;
@@ -409,6 +411,9 @@ strong {
 .body-container .swiper-slide p .small {
   font-size: smaller;
   font-style: italic;
+}
+.body-container .swiper-slide p.right {
+  text-align: right;
 }
 .body-container .swiper-slide .textOnly > p {
   padding-left: initial;
@@ -429,6 +434,7 @@ strong {
   }
 }
 .body-container .parallax-bg {
+  background-image: url(/assets/img/f_002-street-7414680.webp);
   position: absolute;
   left: 0;
   top: 0;
@@ -436,6 +442,11 @@ strong {
   height: 100%;
   background-size: cover;
   background-position: center;
+}
+@media (width <= 600px) {
+  .body-container .parallax-bg {
+    background-image: url(/assets/img/f_002-street-7414680_portrait.webp);
+  }
 }
 
 :root .index, :root .projects, :root .quest, :root .about {
