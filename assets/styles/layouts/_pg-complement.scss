@@ -1,26 +1,20 @@
 .body-container {
   display: block;
   position: relative;
+  animation: fadein 1.2s ease-in-out forwards;
   padding: 8px 0;
   background: var(--bg-box);
 
-  // .innerPopUp {
-  //   width: 100vw;
-  //   height: 100vh;
-  //   display: none;
-  //   overflow-x: auto;
-  //   scroll-snap-type: x mandatory;
-  //   position: absolute;
-  //   top: 0;
-  //   left: 0;
-  //   background: url("/assets/img/f_002-street-7414680.webp") fixed center/cover;
-
-  //   &.active {
-  //     display: block;
-  //   }
-  //   }
-  // }
-
+  @keyframes fadein {
+    0% {
+      opacity: 0;
+      transform: translateX(+30%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
 
   --swiper-pagination-bullet-inactive-color: #89ac78;
   --swiper-pagination-bullet-inactive-opacity: 0.5;

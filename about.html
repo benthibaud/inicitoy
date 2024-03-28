@@ -105,7 +105,6 @@
         <p style="text-align: center"><strong>Initiatives Citoyennes Choletaises ne cède ou vend jamais les données de ses membres.</strong></p>
         <p>Toutes les coordonnées ne sont destinées qu'à un usage interne propre au fonctionnement normal de toute association.</p>
       </section>
-      <a href="_QRcode.html"></a>
     </main>
     <footer>
       <div id="current_date" class="copyright-bar">
@@ -117,5 +116,13 @@
         </script>
       </div>
     </footer>
+    <!-- mise en cache -->
+    <script>
+      if ("serviceWorker" in navigator) {
+        window.addEventListener("load", function () {
+          navigator.serviceWorker.register("/service-worker.js");
+        });
+      }
+    </script>
   </body>
 </html>

@@ -4,13 +4,13 @@ html {
 }
 
 @font-face {
-  font-family: "Noto";
-  src: url(../fonts/NotoSans-Light.ttf);
+  font-family: "noto_sanslight";
+  src: url("/assets/fonts/notosans-light-webfont.woff2") format("woff2"), url("/assets/fonts/notosans-light-webfont.woff") format("woff");
   font-display: swap;
 }
 @font-face {
-  font-family: "Noto-b";
-  src: url(../fonts/NotoSans-Regular.ttf);
+  font-family: "noto_sansregular";
+  src: url("/assets/fonts/notosans-regular.woff2") format("woff2"), url("/assets/fonts/notosans-regular.woff") format("woff");
   font-display: swap;
 }
 :root .about {
@@ -141,7 +141,7 @@ ul li {
 }
 
 body {
-  font-family: "Noto", sans-serif;
+  font-family: "noto_sanslight", sans-serif;
   font-size: clamp(0.95rem, 1.1vw, 1.2rem);
   line-height: 1.7;
   background: var(--bg-body);
@@ -153,7 +153,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Noto-b", sans-serif;
+  font-family: "noto_sansregular", sans-serif;
   color: var(--color-title);
   line-height: normal;
   padding-bottom: 0.9rem;
@@ -164,14 +164,14 @@ p {
 }
 
 h1 {
-  font-size: clamp(1.1rem, 1.8vw, 1.6rem);
+  font-size: clamp(0.9rem, 1.7vw, 1.6rem);
   letter-spacing: 3px;
   font-variant-caps: petite-caps;
   padding-bottom: 0;
 }
 
 h2 {
-  font-size: clamp(1rem, 1.6vw, 1.45rem);
+  font-size: clamp(0.9rem, 1.6vw, 1.5rem);
   letter-spacing: 1px;
 }
 
@@ -188,7 +188,7 @@ h6 {
 
 strong {
   color: var(--color-strong);
-  font-family: "Noto-b", sans-serif;
+  font-family: "noto_sansregular", sans-serif;
 }
 
 .titre {
@@ -201,7 +201,7 @@ strong {
 }
 
 .blogger {
-  font-family: "Noto-b", sans-serif;
+  font-family: "noto_sansregular", sans-serif;
   text-transform: uppercase;
   font-size: 0.8rem;
   color: #a3a3a3;
@@ -484,7 +484,7 @@ header .header-container nav .menu li {
 }
 header .header-container nav .menu li a {
   font-variant-caps: petite-caps;
-  font-family: "Noto-b", sans-serif;
+  font-family: "noto_sansregular", sans-serif;
   font-size: initial;
   font-weight: normal;
   color: #111;

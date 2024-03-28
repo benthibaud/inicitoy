@@ -5,22 +5,21 @@ html {
 }
 
 @font-face {
-  font-family: 'Noto';
-  src: url(../fonts/NotoSans-Light.ttf);
+  font-family: 'noto_sanslight';
+  src: url('/assets/fonts/notosans-light-webfont.woff2') format('woff2'),
+       url('/assets/fonts/notosans-light-webfont.woff') format('woff');
   font-display: swap;
 }
 @font-face {
-  font-family: 'Noto-b';
-  src: url(../fonts/NotoSans-Regular.ttf);
+  font-family: 'noto_sansregular';
+  src: url('/assets/fonts/notosans-regular.woff2') format('woff2'),
+       url('/assets/fonts/notosans-regular.woff') format('woff');
   font-display: swap;
+  // font-feature-settings: "smcp" on;
 }
-$font-normal: 'Noto', sans-serif;
-$font-title: 'Noto-b', sans-serif;
 
-// @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300&family=Noto+Sans+Bold:bold,wght@400&display=swap&font-variation-settings="smcp" 1');
-
-// $font-normal: "Noto Sans", sans-serif;
-// $font-title: "Noto Sans Bold", sans-serif;
+$font-normal: 'noto_sanslight', sans-serif;
+$font-title: 'noto_sansregular', sans-serif;
 
 // Variables couleurs
 $gradient: #a5c3a1 linear-gradient(80deg, #a5c3a1 0%, #b2d9ac 14%, #f2fff0 100%);

@@ -63,15 +63,16 @@
             <h3>De qui se moque t'on ?</h3>
             <div class="blogger">Benoit - Août 2023</div>
             <p>On utilise des vélos décorés à Marques Avenue pour dire qu'on les aime, mais que penser quand, en même temps, on supprime les seuls endroits où on peut attacher son vélo !</p>
+            <p><a href="pg/q_001-decor-velo.html" title="Des vélos : oui pour décorer, non à ceux qui roulent avec..">C'est avec une certaine colère qu..</a></p>
           </div>
-          <img src="./assets/img/q_001-Vélo déco Marque Avenue 2.webp" alt="Des vélos pour décorer" loading="lazy" />
+          <img src="assets/img/q_001-Vélo déco Marque Avenue 2.webp" alt="Des vélos pour décorer" loading="lazy" />
         </article>
         <article id="jardins" class="box">
           <h3>Une vraie agriculture durable ?</h3>
           <div class="blogger">Benoit - Juin 2023</div>
           <div class="float-left">
-            <a title="des « Jardins Forestiers » délibérément plantés par les populations autochtones" href="./pg/q_002-jardins-forestiers.html"
-              ><img src="./assets/img/q_002-jardins-forestiers_250.webp" alt="Ancien site d'agro-forestation durable" height="120" loading="lazy"
+            <a title="des « Jardins Forestiers » délibérément plantés par les populations autochtones" href="pg/q_002-jardins-forestiers.html"
+              ><img src="assets/img/q_002-jardins-forestiers_250.webp" alt="Ancien site d'agro-forestation durable" height="120" loading="lazy"
             /></a>
           </div>
           <p>Aujourd'hui, je souhaite partager la <strong>traduction d'un article</strong> paru dans la <strong>revue Science</strong> en avril 2021.</p>
@@ -83,7 +84,7 @@
             Le pire est qu'on continue le capitalisme de prédation en Amazonie, en Indonésie, en Afrique,.. avec des gens qui ne veulent rien apprendre de la nature qu'ils envahissent et qui lui font
             la guerre à coup de déforestations, pesticides et autres pollutions..
           </p>
-          <p>À vous aussi, de <a title="des « Jardins Forestiers » délibérément plantés par les populations autochtones" href="./pg/q_002-jardins-forestiers.html">lire ce qu'on a perdu</a>..</p>
+          <p>À vous aussi, de <a title="des « Jardins Forestiers » délibérément plantés par les populations autochtones" href="pg/q_002-jardins-forestiers.html">lire ce qu'on a perdu</a>..</p>
         </article>
       </section>
       <section id="right">
@@ -117,5 +118,13 @@
         </script>
       </div>
     </footer>
+    <!-- mise en cache -->
+    <script>
+      if ("serviceWorker" in navigator) {
+        window.addEventListener("load", function () {
+          navigator.serviceWorker.register("/service-worker.js");
+        });
+      }
+    </script>
   </body>
 </html>
