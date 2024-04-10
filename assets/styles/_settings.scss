@@ -142,19 +142,37 @@ strong {
   }
 }
 
-.float {
-  max-width: 50%;
+figure {
+  float: unset; // pour les petits écrans, ne "flotte pas"
 
-  &-left {
-    float: left;
-    margin: 0.6rem 20px 3px 0;
+  @media (min-width: 600px) {
+    max-width: 35%;
+    &.left {
+      float: left;
+      // margin: 0.6rem 20px 3px 0;
+      margin-right: 1rem;
+    }
+    &.right {
+      float: right;
+      // margin: 0.6rem 0 0 20px;
+      margin-left: 1rem;
+    }
   }
-  &-right {
-    float: right;
-    margin: 0.6rem 0 0 20px;
+  // encadrement de l'image
+  .float-img {
+    background: #ff440028;
+    padding: 1rem;
+
+    img {
+      width: 100%;
+    }
   }
-  & img {
-    width: 100%;
+  // légendes des images
+  figcaption {
+    font-size: small;
+    font-style: italic;
+    text-align: center;
+    text-wrap: balance;
   }
 }
 
@@ -205,13 +223,18 @@ strong {
   }
 }
 
+// texte tronqué avec un bouton pour voir la suite
 .trimTxt {
   .toggle-input {
     display: none;
 
     &:checked ~ .fullTxt {
-      max-height: 1600px; // Ajustez cette valeur en fonction de la longueur de votre contenu
+      max-height: fit-content; // Ajustez cette valeur en fonction de la longueur de votre contenu
       transition: max-height 0.5s ease-in-out;
+
+      &::after {
+        background: none;
+      }
     }
 
     &:checked ~ .toggle-label .label-text {
@@ -228,7 +251,6 @@ strong {
     color: #443d3d;
     font-size: 1rem;
     text-align: center;
-    margin-top: 10px; // Ajouté une marge supérieure pour séparer l'ancre du texte
 
     .label-text {
       &::after {
@@ -236,10 +258,21 @@ strong {
       }
     }
   }
-
+  
   .fullTxt {
-    max-height: 320px; // Affichage minimum au départ
+    max-height: 320px;
     overflow: hidden;
+    position: relative;
     transition: max-height 0.5s ease-in-out;
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 4rem; // Adjust the height of the fade-out effect
+      background: linear-gradient(to bottom, rgb(from var(--bg-box) r g b / 20%), rgb(from var(--bg-box) r g b / 80%));
+    }
   }
 }
