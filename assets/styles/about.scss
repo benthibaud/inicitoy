@@ -1,0 +1,33 @@
+:root {
+  @import './layouts/themes';
+  @include themes-dark; // variables pour les thèmes foncés
+  @include theme-about; // variables pour la page portail about
+  @include fonts-noto;  // polices utilisées
+}
+
+@import './layouts/settings';  // Paramètres généraux
+@import './layouts/headerA';
+
+main, footer {
+  @include size;
+}
+main {
+  padding: 15px;
+}
+footer {
+  @include theme_box;
+  margin-bottom: 60px;
+  padding: 0.7em 0;
+
+  .copyright-bar {
+    text-align: center;
+    font-size: smaller;
+    font-variant-caps: petite-caps;
+    letter-spacing: 1px;
+
+    a {
+      color: currentColor !important;
+      font-weight: normal !important;
+    }
+  }
+}

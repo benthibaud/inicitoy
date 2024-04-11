@@ -431,7 +431,7 @@ header .header-container {
 }
 @media (width <= 760px) {
   header .header-container {
-    grid-template-columns: 34% 32% 34%;
+    grid-template-columns: 32% 36% 32%;
   }
 }
 header .header-container nav .menu-hamburger-container {

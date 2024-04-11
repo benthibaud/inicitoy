@@ -1,0 +1,71 @@
+// themes -> variables des couleurs et logos utilisés dans tout le projet
+
+// je pourrais différencier deux color-scheme qui tiendrait compte du paramétrage par défaut du navigateur en mode clair ou sombre
+// color-scheme: light / dark;
+// et une média query pour l'autre color-scheme: @media (prefers-color-scheme: dark) {}
+
+@mixin declare-css-variable($name, $value) {
+  --#{$name}: #{$value};
+}
+
+// variables pour tester les onglets (design-urbain)
+@mixin onglets {
+  @include declare-css-variable('tabs_content-bg', 'lightblue');
+  @include declare-css-variable('tabs_border', 'darkblue');
+  @include declare-css-variable('tabs-hover', 'lightskyblue');
+}
+
+// variables globales
+@include declare-css-variable('white', #eee);
+@include declare-css-variable('black', #111);
+
+// les dégradés qui servent pour la nav
+@include declare-css-variable('navbtn', '#a5c3a1 linear-gradient(80deg, #a5c3a1 0%, #b2d9ac 14%, #f2fff0 100%)');
+@include declare-css-variable('navbtn-active', '#609959 linear-gradient(220deg, #33c138 0%, #759370 29%, #00e309 100%)');
+
+@mixin fonts-noto {
+  @font-face {
+    font-family: 'noto_sanslight';
+    src: url('/assets/fonts/notosans-light-webfont.woff2') format('woff2'),
+         url('/assets/fonts/notosans-light-webfont.woff') format('woff');
+    font-display: swap;
+  }
+  @font-face {
+    font-family: 'noto_sansregular';
+    src: url('/assets/fonts/notosans-regular.woff2') format('woff2'),
+         url('/assets/fonts/notosans-regular.woff') format('woff');
+    font-display: swap;
+  }
+  @include declare-css-variable('font-normal', 'noto_sanslight, sans-serif');
+  @include declare-css-variable('font-title', 'noto_sansregular, sans-serif');
+}
+
+@mixin themes-dark {
+  @include declare-css-variable('logo', 'url(/assets/img/logo_dark.svg)');
+  @include declare-css-variable('link', #48aeff);
+  @include declare-css-variable('linkfocus', #00d668);
+  @include declare-css-variable('strong-color', #dbecd1);
+  @include declare-css-variable('txt-color', 'var(--white)');
+  
+}
+
+@mixin themes-light {
+  @include declare-css-variable('logo', 'url(/assets/img/logo.svg)');
+  @include declare-css-variable('link', blue);
+  @include declare-css-variable('linkfocus', darkblue);
+  @include declare-css-variable('strong-color', #3d6526);
+  @include declare-css-variable('txt-color', 'var(--black)');
+  
+}
+
+@mixin theme-about {
+  @include declare-css-variable('body-bg', #3a3a3a);
+  @include declare-css-variable('title-color', #00d668);
+  @include declare-css-variable('box-bg', #072508);
+  @include declare-css-variable('box-shadow', 'none');
+  @include declare-css-variable('nb', ':nth-child(1)');
+  
+}
+
+// @include declare-css-variable('', '');
+// @include declare-css-variable('', '');

@@ -1,0 +1,90 @@
+html {
+  scroll-behavior: smooth;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--body-bg);
+  color: var(--txt-color);
+  font-family: var(--font-normal);
+  font-size: clamp(0.95rem, 1.1vw, 1.2rem);
+  line-height: 1.7;
+
+  a, a strong {
+    color: var(--link);
+    text-decoration: none;
+    font-weight: bold;
+  }
+  a:hover, a:focus, a:active, a:hover strong, a:focus strong, a:active strong {
+    color: var(--linkfocus);
+    text-decoration: underline;
+    font-size: 105%;
+  }
+}
+
+@mixin theme_box {
+  background: var(--box-bg);
+  box-shadow: var(--box-shadow);
+  border-radius: 2px;
+}
+@mixin size {
+  max-width: max(60%, 1200px);
+  margin: 20px auto 24px;
+
+  @media (width <= 1250px) {
+    margin: 2vw;
+  }
+}
+
+ul {
+  padding: revert;
+  margin-bottom: 0.8em;
+
+  li {
+    padding: 0.4em 0;
+  }
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-title);
+  color: var(--title-color);
+  text-wrap: balance;
+  font-variant: small-caps;
+  line-height: normal;
+}
+h2, h3, h4, h5 {
+  margin: 1em 0 0.5em 0;
+}
+h1 {
+  font-size: 1.35em; // 'em' est proportionnel à la taille définie dans body
+  letter-spacing: 3px;
+}
+h2 {
+  font-size: 1.25em; // 'em' est proportionnel à la taille définie dans body
+  letter-spacing: 2px;
+}
+h3 {
+  font-size: 1.15em; // 'em' est proportionnel à la taille définie dans body
+  letter-spacing: 2px;
+}
+h4 {
+  font-size: 1em; // 'em' est proportionnel à la taille définie dans body
+}
+h5 {
+  font-size: 0.9em; // 'em' est proportionnel à la taille définie dans body
+}
+h6 {
+  font-size: 0.7em; // 'em' est proportionnel à la taille définie dans body
+}
+p {
+  font-size: 1em;
+  margin-bottom: 1em;
+}
+strong {
+  color: var(--strong-color);
+  font-family: var(--font-title);
+}

@@ -38,15 +38,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="x-apple-disable-message-reformatting" />
 
-    <link rel="stylesheet" href="assets/styles/style.css" />
+    <!-- <link rel="stylesheet" href="assets/styles/style.css" /> -->
+    <link rel="stylesheet" href="./assets/styles/about.css" />
   </head>
-  <body class="about">
+  <body>
     <header>
-      <div class="header-container">
+      <div class="header-box">
         <nav>
-          <input id="menu-toggle" type="checkbox" />
-          <label class="menu-hamburger-container" for="menu-toggle">
-            <div class="hamburger-icon">
+          <input id="burgerBtn-toggle" type="checkbox" />
+          <label class="burgerBtn" for="burgerBtn-toggle">
+            <div class="burgerBtn_icon">
               <span></span>
               <span></span>
               <span></span>
@@ -62,17 +63,17 @@
           </ul>
         </nav>
         <div class="site-logo">
-          <a href="https://inicitoy.toile-libre.org" aria-label="accueil"></a>
+          <a href="https://inicitoy.toile-libre.org" title="accueil"></a>
         </div>
         <!-- la classe vide sert pour la troisième case du grid qui sert à centrer le logo en mode responsive -->
         <div class="vide"></div>
       </div>
+      <div class="title">
+        <h6>Qui nous sommes</h6>
+        <h1>L'association</h1>
+      </div>
     </header>
-    <div class="title">
-      <h6>Qui nous sommes</h6>
-      <h1>L'association</h1>
-    </div>
-    <main class="textOnly">
+    <main>
       <section>
         <p>Nous sommes un groupe de citoyens choletais soucieux d’améliorer notre quotidien en contribuant au développement local.</p>
         <h2>Notre mission</h2>
@@ -117,12 +118,12 @@
       </div>
     </footer>
     <!-- mise en cache -->
-    <script>
+    <!-- <script>
       if ("serviceWorker" in navigator) {
         window.addEventListener("load", function () {
-          navigator.serviceWorker.register("service-worker.js");
+          navigator.serviceWorker.register("/service-worker.js");
         });
       }
-    </script>
+    </script> -->
   </body>
 </html>

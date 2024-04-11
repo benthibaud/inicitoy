@@ -2,26 +2,43 @@
 <html lang="fr">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="x-apple-disable-message-reformatting" />
-    <meta name="robots" content="index, follow" />
-    <meta property="og:type" content="website" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta property="og:image" content="/assets/img/logo.svg" />
-    <meta http-equiv="cache-control" content="max-age=604800" />
+
+    <title>Interpellations | Blog et questionnements divers des adhérents</title>
     <meta
       name="description"
-      content="L’inflation, la guerre en Ukraine, la place du vélo et autres mobilités douces, l’intelligence artificielle,. tout ce qui intérroge notre citoyenneté / notre habilité à vivre ensemble." />
-    <meta name="keywords" content="Initiatives Citoyennes Choletaises, Cholet, blog, questions, réaction, citoyen" />
+      content="On crée des pistes cyclables mais on supprime des endroits où les attacher.. Interpeller aussi sur des savoirs disparus.. Ce sont nos ressentis qu’on exprime ici, en gros notre blog !" />
+    <link rel="icon" href="assets/img/favicon.ico" />
+
+    <meta property="og:title" content="Interpellations | Blog et questionnements divers des adhérents" />
     <meta
-      name="og:title"
-      content="Questionnements des adhérents | Des réactions vis à vis de phénomènes de société, par rapport à un article vu ici ou là, à des changements qui intérrogent notre citoyenneté,.." />
+      property="og:description"
+      content="On crée des pistes cyclables mais on supprime des endroits où les attacher.. Interpeller aussi sur des savoirs disparus.. Ce sont nos ressentis qu’on exprime ici, en gros notre blog !" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://inicitoy.toile-libre.org/quest.html" />
+    <meta property="og:image" content="https://inicitoy.toile-libre.org/assets/img/q_000-quest.webp" />
+    <meta property="og:site_name" content="Initiatives Citoyennes Choletaises" />
+    <meta property="og:locale" content="fr_FR" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Interpellations | Blog et questionnements divers des adhérents" />
     <meta
-      name="og:description"
-      content="L’inflation, la guerre en Ukraine, la place du vélo et autres mobilités douces, l’intelligence artificielle,. tout ce qui intérroge notre citoyenneté / notre habilité à vivre ensemble." />
-    <title>Questionnements des adhérents | Des réactions vis à vis de phénomènes de société, par rapport à un article vu ici ou là, à des changements qui intérrogent notre citoyenneté,..</title>
-    <link rel="stylesheet" href="/assets/styles/style.css" />
-    <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon" />
+      name="twitter:description"
+      content="On crée des pistes cyclables mais on supprime des endroits où les attacher.. Interpeller aussi sur des savoirs disparus.. Ce sont nos ressentis qu’on exprime ici, en gros notre blog !" />
+    <meta name="twitter:image" content="https://inicitoy.toile-libre.org/assets/img/q_000-quest.webp" />
+    <meta name="twitter:url" content="https://inicitoy.toile-libre.org/quest.html" />
+
+    <meta
+      name="keywords"
+      content="blog, question, réaction, interpeler, initiatives, initiative, citoyen, citoyenne, citoyens, citoyennes, Cholet, choletais, choletaise, choletaises, maine et loire, pays de la loire, 49300, 49, actualité, carnaval, maire, bourdouleix, caractériel, actualite, mouchoir, textile, mode, economie, économie, service, ouest, mauges, association, environnement, municipal, elu, design, urbain, rue, urbanisme, atmosphère, élu, indeminité, indemnite, anne, hardy, sylvie, tolassy, autrement, opposition, opposant, opposante, opposition municipale, économique, economique" />
+    <meta name="Author" content="Benoit Thibaud" />
+    <link type="text/plain" rel="author" href="https://inicitoy.toile-libre.org/humans.txt" />
+    <meta name="robots" content="all" />
+    <meta http-equiv="cache-control" content="max-age=3 days" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="x-apple-disable-message-reformatting" />
+
+    <link rel="stylesheet" href="assets/styles/style.css" />
   </head>
   <body class="quest">
     <header>
@@ -122,7 +139,7 @@
     <script>
       if ("serviceWorker" in navigator) {
         window.addEventListener("load", function () {
-          navigator.serviceWorker.register("service-worker.js");
+          navigator.serviceWorker.register("/service-worker.js");
         });
       }
     </script>
