@@ -6,7 +6,7 @@
 }
 
 @import './layouts/settings';  // Paramètres généraux
-@import './layouts/headerA';
+@import './layouts/header';
 
 main, footer {
   @include size;
