@@ -1,7 +1,6 @@
 // service-worker.js
 const cacheName = 'inicitoy-cache-v1';
 const filesToCache = [
-  'about.html',
   '_QRcode.html',
   'assets/fonts/',
   'assets/img/',

@@ -6,14 +6,14 @@ html {
 
 @font-face {
   font-family: 'noto_sanslight';
-  src: url('/assets/fonts/notosans-light-webfont.woff2') format('woff2'),
-       url('/assets/fonts/notosans-light-webfont.woff') format('woff');
+  src: url('../fonts/notosans-light-webfont.woff2') format('woff2'),
+       url('../fonts/notosans-light-webfont.woff') format('woff');
   font-display: swap;
 }
 @font-face {
   font-family: 'noto_sansregular';
-  src: url('/assets/fonts/notosans-regular.woff2') format('woff2'),
-       url('/assets/fonts/notosans-regular.woff') format('woff');
+  src: url('../fonts/notosans-regular.woff2') format('woff2'),
+       url('../fonts/notosans-regular.woff') format('woff');
   font-display: swap;
   // font-feature-settings: "smcp" on;
 }
@@ -24,8 +24,8 @@ $font-title: 'noto_sansregular', sans-serif;
 // Variables couleurs
 $gradient: #a5c3a1 linear-gradient(80deg, #a5c3a1 0%, #b2d9ac 14%, #f2fff0 100%);
 $gradient2: #609959 linear-gradient(220deg, #33c138 0%, #759370 29%, #00e309 100%);
-$logo_dark: url(/assets/img/logo_dark.svg);
-$logo_classic: url(/assets/img/logo.svg);
+$logo_dark: url(../img/logo_dark.svg);
+$logo_classic: url(../img/logo.svg);
 $white: #eee;
 $black: #111;
 

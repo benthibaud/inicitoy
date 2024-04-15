@@ -99,7 +99,7 @@ header {
           a {
             font-variant: small-caps;
             font-family: var(--font-title);
-            font-size: initial;
+            font-size: 0.9em;
             font-weight: normal;
             color: var(--black);
 
@@ -108,12 +108,7 @@ header {
             }
           }
 
-          &:nth-child(1), &:hover {
-            background: var(--navbtn-active);
-            a{
-              color: var(--white);
-            }
-          }
+          // activeMenu dans mixins
         }
       }
 
@@ -168,7 +163,7 @@ header {
       left: calc(50% - 44vw);
     }
     @media (width <= 760px) {
-      top: 66px;
+      top: 62px;
       left: calc(2vw + 15px);
       h1 {
         display: none;

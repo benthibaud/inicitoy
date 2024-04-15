@@ -33,41 +33,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="x-apple-disable-message-reformatting" />
 
-    <link rel="stylesheet" href="assets/styles/style.css" cache="only" />
+    <link rel="stylesheet" href="./assets/styles/index.css" cache="only" />
   </head>
-  <body class="index">
+  <body>
     <header>
-      <div class="header-container">
-        <nav>
-          <input id="menu-toggle" type="checkbox" />
-          <label class="menu-hamburger-container" for="menu-toggle">
-            <div class="hamburger-icon">
-              <span></span>
-              <span></span>
-              <span></span>
-            </div>
-          </label>
-          <ul class="menu">
-            <li><a href="about.html">Qui sommes-nous ?</a></li>
-            <li><a href="index.html">À la une</a></li>
-            <li><a href="focus.html">Dossiers</a></li>
-            <li><a href="event.html">Évènements</a></li>
-            <li><a href="projects.html">Projets</a></li>
-            <li><a href="quest.html">Interpellations</a></li>
-          </ul>
-        </nav>
-        <div class="site-logo">
-          <div class="img"><a href="https://inicitoy.toile-libre.org" aria-label="accueil"></a></div>
-        </div>
-        <!-- la classe vide sert pour la troisième case du grid qui sert à centrer le logo en mode responsive -->
-        <div class="vide"></div>
-      </div>
-    </header>
-    <!-- <?php include('assets/components/header.php'); ?> -->
+    <?php include './assets/components/header.php'; ?>
     <div class="title">
       <h6>À la une</h6>
       <h1>Actualité</h1>
     </div>
+    </header>
     <main class="mainPattern">
       <section id="left">
         <article id="titres" class="box">
@@ -173,56 +148,16 @@
             /></a>
           </div>
         </article>
-        <!-- <article id="lettre" class="box">
-          <h2>Notre lettre d'information</h2>
-          <div class="float-left"><img src="./assets/img/i_001-Fil-info-blur.webp" alt="Fil-info" height="90" loading="lazy" /></div>
-          <div>
-            <p>
-              Le "<strong>Fil info</strong>" est notre lettre d'information.. Régulièrement, nous mettons le <strong>focus sur un thème</strong> et <strong>enrichissons</strong> à cette occasion
-              <strong>notre site web</strong>.
-            </p>
-            <p>D'autre part, cela nous permet d'<strong>interagir avec vous</strong> soit :</p>
-            <ul>
-              <li>en organisant un <strong>échange</strong> avec un ou plusieurs intervenants sur le même thème,</li>
-              <li>en organisant un <strong>projet participatif</strong> (action concrète immédiate),</li>
-              <li>ou sous d'autres formes.</li>
-            </ul>
-            <p>
-              Le <strong>premier numéro</strong>, que vous avez peut-être reçu portait sur le "<strong>Design urbain</strong>". Il fait partie d'un thème plus vaste sur les
-              <strong>différentes manières de cohabiter en ville</strong>.
-            </p>
-            <p>Pour la recevoir, il suffit de s'inscrire dans l'encadré à droite.</p>
-          </div>
-        </article> -->
-        <article id="internet" class="box">
-          <h2>Un nouveau site internet</h2>
-          <p>
-            Pour <strong>échanger</strong> avec vous, il nous fallait un outil. Nous avons d'abord pensé à une <strong>lettre d'information</strong> et, un peu en <strong>complément</strong>, un
-            <strong>site internet</strong> nous a semblé pertinent.
-          </p>
-          <p>Nous y présenterons :</p>
-          <ul>
-            <li><strong>Qui nous sommes</strong></li>
-            <li><strong>À la une</strong> : sujets abordés brièvement</li>
-            <li>Des <strong>dossiers</strong> thématiques, des ressources documentaires pour notre action,..</li>
-            <li>Les <strong>évènements</strong> passés et à venir organisés par l'association, les supports et liens fournis par les intervenants,..</li>
-            <li>Les <strong>projets</strong> en cours</li>
-            <li>Des <strong>interpellations</strong> sans réponse : un peu le blog des adhérents</li>
-          </ul>
-          <p>Il évoluera aussi au fil du temps..</p>
-        </article>
       </section>
       <section id="right">
         <article id="sommaire" class="box">
           <h3>navigation</h3>
           <p><a href="#titres">En ce moment..</a></p>
-          <!-- <p><a href="#lettre">Notre lettre d'information</a></p> -->
           <p><a href="#Moineau">Moineau friquet</a></p>
           <p><a href="#ICU">Plus fraîche ma ville</a></p>
           <p><a href="#Assainissement">Assainissement non collectif</a></p>
           <p><a href="#arbresfrais">Arbres : rafraichissant ?</a></p>
           <p><a href="#ZAN">Loi « Zéro artificialisation nette (ZAN) »</a></p>
-          <p><a href="#internet">Un nouveau site internet</a></p>
         </article>
         <article id="contact" class="box">
           <h3>contact</h3>
@@ -240,22 +175,10 @@
       </section>
     </main>
     <footer>
-      <div id="current_date" class="copyright-bar">
-        <script>
-          date = new Date();
-          year = date.getFullYear();
-          document.getElementById("current_date").innerHTML =
-            "© " + year + " <a href='_QRcode.html' title='QR Code pour partager l`url de notre site avec vos proches'>Initiatives Citoyennes Choletaises</a>";
-        </script>
+      <div class="copyright-bar">
+        © <?php echo date('Y'); ?> <a href='_QRcode.html' title='QR Code pour partager l`url de notre site avec vos proches'>Initiatives Citoyennes Choletaises</a>
       </div>
     </footer>
-    <!-- mise en cache -->
-    <script>
-      if ("serviceWorker" in navigator) {
-        window.addEventListener("load", function () {
-          navigator.serviceWorker.register("/service-worker.js");
-        });
-      }
-    </script>
+    <?php include './assets/components/js-cache.php'; ?>
   </body>
 </html>

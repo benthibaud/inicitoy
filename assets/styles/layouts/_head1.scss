@@ -1,9 +1,9 @@
 :root {
   .index, .projects, .quest, .about {
-    --logo: url(/assets/img/logo_dark.svg) center/contain no-repeat;
+    --logo: url(../img/logo_dark.svg) center/contain no-repeat;
   }
   .focus, .event {
-    --logo: url(/assets/img/logo.svg) center/contain no-repeat;
+    --logo: url(../img/logo.svg) center/contain no-repeat;
   }
 }
 

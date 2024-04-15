@@ -26,14 +26,14 @@
 @mixin fonts-noto {
   @font-face {
     font-family: 'noto_sanslight';
-    src: url('/assets/fonts/notosans-light-webfont.woff2') format('woff2'),
-         url('/assets/fonts/notosans-light-webfont.woff') format('woff');
+    src: url('../fonts/notosans-light-webfont.woff2') format('woff2'),
+         url('../fonts/notosans-light-webfont.woff') format('woff');
     font-display: swap;
   }
   @font-face {
     font-family: 'noto_sansregular';
-    src: url('/assets/fonts/notosans-regular.woff2') format('woff2'),
-         url('/assets/fonts/notosans-regular.woff') format('woff');
+    src: url('../fonts/notosans-regular.woff2') format('woff2'),
+         url('../fonts/notosans-regular.woff') format('woff');
     font-display: swap;
   }
   @include declare-css-variable('font-normal', 'noto_sanslight, sans-serif');
@@ -41,7 +41,7 @@
 }
 
 @mixin themes-dark {
-  @include declare-css-variable('logo', 'url(/assets/img/logo_dark.svg)');
+  @include declare-css-variable('logo', 'url(../img/logo_dark.svg)');
   @include declare-css-variable('link', #48aeff);
   @include declare-css-variable('linkfocus', #00d668);
   @include declare-css-variable('strong-color', #dbecd1);
@@ -50,8 +50,8 @@
 }
 
 @mixin themes-light {
-  @include declare-css-variable('logo', 'url(/assets/img/logo.svg)');
-  @include declare-css-variable('link', blue);
+  @include declare-css-variable('logo', 'url(../img/logo.svg)');
+  @include declare-css-variable('link', #0ca7b7);
   @include declare-css-variable('linkfocus', darkblue);
   @include declare-css-variable('strong-color', #3d6526);
   @include declare-css-variable('txt-color', 'var(--black)');
@@ -63,7 +63,7 @@
   @include declare-css-variable('title-color', #00d668);
   @include declare-css-variable('box-bg', #072508);
   @include declare-css-variable('box-shadow', 'none');
-  @include declare-css-variable('nb', ':nth-child(1)');
+  @include declare-css-variable('colored-box', 'var(--white)');
   
 }
 

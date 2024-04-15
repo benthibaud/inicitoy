@@ -11,14 +11,15 @@
 
 
 // menu actif le nth-child() est la position dans la nav
-header .header-box nav .menu li:nth-child(1), header .header-box nav .menu li:hover {
+header .header-box nav .menu li:nth-child(2), header .header-box nav .menu li:hover {
   @include activeMenu;
 }
 
+@include mainPattern;
 main {
   @include size;
-  padding: 15px;
-  @include colored-box; // utilisé pour le paragraphe logo de about.php
+  @include classeBox;
+  @include sommaire;
 }
 footer {
   @include size;

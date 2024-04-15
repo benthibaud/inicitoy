@@ -1,0 +1,86 @@
+@mixin activeMenu { // sert pour le menu actif dans la nav
+  background: var(--navbtn-active);
+  a{
+    color: var(--white);
+  }
+}
+
+@mixin size {
+  max-width: max(60%, 1200px);
+  margin: 20px auto 24px;
+
+  @media (width <= 1250px) {
+    margin: 2vw;
+  }
+}
+
+@mixin mainPattern { // définit les box entre elles sur les portails
+  .mainPattern {
+    display: grid;
+    grid-template-columns: 74% calc(26% - 20px);
+    gap: 20px;
+  
+    @media (width <= 760px) {
+      grid-template-columns: 1fr;
+      gap: 0;
+    }
+  }
+}
+
+@mixin theme_box {
+  background: var(--box-bg);
+  box-shadow: var(--box-shadow);
+  border-radius: 2px;
+}
+@mixin classeBox {
+  .box { // utilisation via l'appel de la classe box dans main
+    padding: 0.8em 2em;
+    @include theme_box;
+    margin-bottom: 20px;
+
+    img { // affichage par défaut à sa taille d'origine mais sans dépasser la box
+      width: initial;
+      max-width: 100%;
+    }
+  }
+}
+
+@mixin sommaire {
+  #sommaire {
+    font-size: smaller;
+
+    & p {
+      line-height: normal;
+      padding: 0.1rem 0 0.3em;
+    }
+  }
+}
+
+@mixin colored-box { // sert pour le logo dans about
+  .colored-box {
+    margin: 0 auto 1em;
+    padding: 1%;
+    width: 40%;
+    background: var(--colored-box);
+    img {
+      width: 100%;
+    }
+  }
+}
+
+@mixin footerDefault {
+  margin-bottom: 60px;
+  padding: 0.7em 0;
+
+  .copyright-bar {
+    text-align: center;
+    font-size: smaller;
+    font-variant: small-caps;
+    letter-spacing: 1px;
+
+    a {
+      color: currentColor !important;
+      font-weight: normal !important;
+    }
+  }
+}
