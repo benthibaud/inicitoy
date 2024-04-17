@@ -1,7 +1,7 @@
 :root {
   @import './layouts/themes';
-  @include themes-dark; // variables pour les thèmes foncés
-  @include theme-index; // variables pour la page portail about.php
+  @include themes-light; // variables pour les thèmes foncés
+  @include theme-links; // variables pour la page portail about.php
   @include fonts-noto;  // polices utilisées
 }
 
@@ -11,16 +11,16 @@
 
 
 // menu actif le nth-child() est la position dans la nav
-header .header-box nav .menu li:nth-child(2), header .header-box nav .menu li:hover {
+header .header-box nav .menu li:nth-child(7), header .header-box nav .menu li:hover {
   @include activeMenu;
 }
 
-@include mainPattern;
 main {
+  @include sousTitre;
+  @include mainPattern;
   @include size;
   @include classeBox;
   @include sommaire;
-  @include btnColor;
 }
 footer {
   @include size;

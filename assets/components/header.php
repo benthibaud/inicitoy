@@ -12,10 +12,10 @@
       <li><a href="about.php">Qui sommes-nous ?</a></li>
       <li><a href="index.php">À la une</a></li>
       <li><a href="focus.html">Dossiers</a></li>
-      <li><a href="event.html">Évènements</a></li>
+      <li><a href="event.php">Évènements</a></li>
       <li><a href="projects.html">Projets</a></li>
       <li><a href="quest.html">Interpellations</a></li>
-      <li><a href="links.html">Liens</a></li>
+      <li><a href="links.php">Liens</a></li>
     </ul>
   </nav>
   <div class="site-logo">

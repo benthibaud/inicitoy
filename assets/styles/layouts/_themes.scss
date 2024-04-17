@@ -42,7 +42,8 @@
 
 @mixin themes-dark {
   @include declare-css-variable('logo', 'url(../img/logo_dark.svg)');
-  @include declare-css-variable('link', #48aeff);
+  @include declare-css-variable('link', #0eb9cc);
+  // @include declare-css-variable('link', #0ca7b7);
   @include declare-css-variable('linkfocus', #00d668);
   @include declare-css-variable('strong-color', #dbecd1);
   @include declare-css-variable('txt-color', 'var(--white)');
@@ -51,8 +52,8 @@
 
 @mixin themes-light {
   @include declare-css-variable('logo', 'url(../img/logo.svg)');
-  @include declare-css-variable('link', #0ca7b7);
-  @include declare-css-variable('linkfocus', darkblue);
+  @include declare-css-variable('link', #4040ff);
+  @include declare-css-variable('linkfocus', #087480);
   @include declare-css-variable('strong-color', #3d6526);
   @include declare-css-variable('txt-color', 'var(--black)');
   
@@ -64,6 +65,36 @@
   @include declare-css-variable('box-bg', #072508);
   @include declare-css-variable('box-shadow', 'none');
   @include declare-css-variable('colored-box', 'var(--white)');
+  
+}
+
+@mixin theme-index {
+  @include declare-css-variable('body-bg', #072508);
+  @include declare-css-variable('title-color', #00d668);
+  @include declare-css-variable('box-bg', #3a3a3a);
+  @include declare-css-variable('box-shadow', 'none');
+  // @include declare-css-variable('colored-box', 'none');
+  
+}
+
+@mixin theme-event {
+  @include declare-css-variable('body-bg', 'radial-gradient(#c7693e, #3e1c0c)');
+  // @include declare-css-variable('body-bg', 'radial-gradient(#c85c2b, #592913)');
+  @include declare-css-variable('title-color', #27742a);
+  @include declare-css-variable('box-bg', antiquewhite);
+  @include declare-css-variable('box-shadow', 'none');
+  // @include declare-css-variable('colored-box', 'none');
+  @include declare-css-variable('strong-color', #068686);
+  
+}
+
+@mixin theme-links {
+  @include declare-css-variable('body-bg', 'radial-gradient(#00fa9a, #001b1b)');
+  @include declare-css-variable('title-color', #068686);
+  @include declare-css-variable('box-bg', #caffee);
+  @include declare-css-variable('box-shadow', 'none');
+  // @include declare-css-variable('colored-box', 'none');
+  @include declare-css-variable('strong-color', #068686);
   
 }
 

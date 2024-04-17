@@ -5,7 +5,7 @@
   --navbtn: #a5c3a1 linear-gradient(80deg, #a5c3a1 0%, #b2d9ac 14%, #f2fff0 100%);
   --navbtn-active: #609959 linear-gradient(220deg, #33c138 0%, #759370 29%, #00e309 100%);
   --logo: url(../img/logo_dark.svg);
-  --link: #48aeff;
+  --link: #0eb9cc;
   --linkfocus: #00d668;
   --strong-color: #dbecd1;
   --txt-color: var(--white);
@@ -52,10 +52,26 @@ body a, body a:visited, body a strong {
   text-decoration: none;
   font-weight: bold;
 }
+body a, body a strong {
+  -webkit-transition: font-size 0.2s ease-in-out;
+  transition: font-size 0.2s ease-in-out;
+}
+body a img, body a strong img {
+  -webkit-transition: -webkit-transform 0.2s ease-in-out;
+  transition: -webkit-transform 0.2s ease-in-out;
+  transition: transform 0.2s ease-in-out;
+  transition: transform 0.2s ease-in-out, -webkit-transform 0.2s ease-in-out;
+  -webkit-transform: scale(1);
+          transform: scale(1); /* Ajout d'un transform initial */
+}
 body a:hover, body a:focus, body a:active, body a:hover strong, body a:focus strong, body a:active strong {
   color: var(--linkfocus);
   text-decoration: underline;
   font-size: 105%;
+}
+body a:hover img, body a:focus img, body a:active img, body a:hover strong img, body a:focus strong img, body a:active strong img {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
 }
 
 main ul {
@@ -227,7 +243,7 @@ header .header-box nav .menu {
 }
 header .header-box nav .menu li {
   margin-left: 5px;
-  padding: 0 13px 2px;
+  padding: 1px 13px 2px;
   background: var(--navbtn);
   border: none;
   list-style: none;

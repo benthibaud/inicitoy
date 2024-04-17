@@ -4,15 +4,16 @@
   --black: #111;
   --navbtn: #a5c3a1 linear-gradient(80deg, #a5c3a1 0%, #b2d9ac 14%, #f2fff0 100%);
   --navbtn-active: #609959 linear-gradient(220deg, #33c138 0%, #759370 29%, #00e309 100%);
-  --logo: url(../img/logo_dark.svg);
-  --link: #0eb9cc;
-  --linkfocus: #00d668;
-  --strong-color: #dbecd1;
-  --txt-color: var(--white);
-  --body-bg: #072508;
-  --title-color: #00d668;
-  --box-bg: #3a3a3a;
+  --logo: url(../img/logo.svg);
+  --link: #4040ff;
+  --linkfocus: #087480;
+  --strong-color: #3d6526;
+  --txt-color: var(--black);
+  --body-bg: radial-gradient(#c7693e, #3e1c0c);
+  --title-color: #27742a;
+  --box-bg: antiquewhite;
   --box-shadow: none;
+  --strong-color: #068686;
   --font-normal: noto_sanslight, sans-serif;
   --font-title: noto_sansregular, sans-serif;
 }
@@ -321,28 +322,42 @@ header .title {
   }
 }
 
-header .header-box nav .menu li:nth-child(2), header .header-box nav .menu li:hover {
+header .header-box nav .menu li:nth-child(4), header .header-box nav .menu li:hover {
   background: var(--navbtn-active);
 }
-header .header-box nav .menu li:nth-child(2) a, header .header-box nav .menu li:hover a {
+header .header-box nav .menu li:nth-child(4) a, header .header-box nav .menu li:hover a {
   color: var(--white);
-}
-
-.mainPattern {
-  display: grid;
-  grid-template-columns: 74% calc(26% - 20px);
-  gap: 20px;
-}
-@media (width <= 760px) {
-  .mainPattern {
-    grid-template-columns: 1fr;
-    gap: 0;
-  }
 }
 
 main {
   max-width: max(60%, 1200px);
   margin: 20px auto 24px;
+}
+main .sous-titre {
+  margin: -0.3em 0 0.4em;
+  padding-left: 15px;
+  color: var(--white);
+  font-weight: bold;
+  font-size: smaller;
+  text-wrap: balance;
+  line-height: normal;
+}
+main .sous-titre .stabilo {
+  background: #faea56 linear-gradient(100deg, #e2d55c 0%, #faea56 29%, #fffc30 100%);
+  padding: 2px 8px;
+  color: var(--black);
+  font-weight: normal;
+}
+main .mainPattern {
+  display: grid;
+  grid-template-columns: 74% calc(26% - 20px);
+  gap: 20px;
+}
+@media (width <= 760px) {
+  main .mainPattern {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
 }
 @media (width <= 1250px) {
   main {
@@ -369,23 +384,6 @@ main #sommaire p {
   line-height: normal;
   padding: 0.2em 0 0;
 }
-main .btnColor {
-  padding: 2px 8px 3px;
-  margin: 0 5px;
-  background: var(--navbtn);
-  border: none;
-  font-variant: small-caps;
-  font-family: var(--font-title);
-  font-size: 0.9em;
-  font-weight: normal;
-  color: var(--black);
-}
-main .retrait {
-  margin-top: -0.7em;
-  padding-left: 1em;
-  line-height: normal;
-  text-wrap: balance;
-}
 
 footer {
   max-width: max(60%, 1200px);
@@ -411,4 +409,4 @@ footer .copyright-bar {
 footer .copyright-bar a {
   color: currentColor !important;
   font-weight: normal !important;
-}/*# sourceMappingURL=index.css.map */
+}/*# sourceMappingURL=event.css.map */

@@ -4,7 +4,7 @@ const filesToCache = [
   '_QRcode.html',
   'assets/fonts/',
   'assets/img/',
-  'assets/styles/'
+  'assets/components/'
 ];
 
 self.addEventListener('install', function(event) {
