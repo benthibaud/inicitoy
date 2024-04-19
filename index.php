@@ -37,11 +37,11 @@
   </head>
   <body>
     <header>
-    <?php include './assets/components/header.php'; ?>
-    <div class="title">
-      <h6>À la une</h6>
-      <h1>Actualité</h1>
-    </div>
+      <?php include './assets/components/header.php'; ?>
+      <div class="title">
+        <h6>À la une</h6>
+        <h1>Vue d'ensemble</h1>
+      </div>
     </header>
     <main class="mainPattern">
       <section id="left">
@@ -57,37 +57,35 @@
           <p class="retrait">Un guide pour la gestion <strong>des eaux de pluie et eaux usées</strong> traitées</p>
           <p class="retrait">Un article sur le <strong>pouvoir rafraichissant des arbres</strong></p>
         </article>
-        <article id="Moineau" class="box">
-          <h2>Moineau friquet</h2>
-          <div class="grid grid42">
-            <div id="leftpart" class="flex col">
-              <p>
-                <strong>Jusqu'au 15 mai</strong> prochain, la LPO-Anjou organise un recensement des <strong>derniers sites de reproduction du « moineau friquet »</strong>. En effet, sa population est
-                en fort déclin..<br />
-              </p>
-              <p>
-                Vous pouvez les aider si vous en voyez en les contactant par mail :
-                <a href="mailto:anjou.accueil@lpo.fr" target="_blank" rel="noopener noreferer" title="mail de l'association LPO-Anjou">anjou.accueil@lpo.fr</a>
-              </p>
-            </div>
-            <div id="rightpart">
-              <img src="assets/img/f_002-Moineau_friquet.webp" alt="description détaillée du Moineau Friquet" loading="lazy" />
-            </div>
-          </div>
+        <article id="message" class="box">
+          <section class="courrier">
+            <strong><p>Qui a t'il de citoyen dans la conception d'une rue ?</p></strong>
+            <p>Content celui qui peut garer ses trois voitures devant chez lui..</p>
+            <p>
+              Pas contente la maman qui ne peut pas tenir un enfant dans chaque main parce que les trottoirs sont devenus trop étroits et c'est pire avec une poussette et les poubelles qui bloquent le
+              passage..
+            </p>
+            <p>Citoyen = partage de la cité</p>
+            <strong><p>Qui a t'il de citoyen dans nos repas ?</p></strong>
+            <p>3 repas x 365 jours</p>
+            <p>Nous avons plus de 1000 occasions par an de dire dans quelle société nous voulons vivre..</p>
+          </section>
         </article>
       </section>
       <section id="right">
         <article id="sommaire" class="box">
           <h3>navigation</h3>
           <p><a href="#titres">En ce moment..</a></p>
-          <p><a href="#Moineau">Moineau friquet</a></p>
+          <p><a href="#message">Message</a></p>
         </article>
         <?php include './assets/components/contact.php'; ?>
       </section>
     </main>
     <footer>
       <div class="copyright-bar">
-        © <?php echo date('Y'); ?> <a href='_QRcode.html' title='QR Code pour partager l`url de notre site avec vos proches'>Initiatives Citoyennes Choletaises</a>
+        ©
+        <?php echo date('Y'); ?>
+        <a href="_QRcode.html" title="QR Code pour partager l`url de notre site avec vos proches">Initiatives Citoyennes Choletaises</a>
       </div>
     </footer>
     <?php include './assets/components/js-cache.php'; ?>

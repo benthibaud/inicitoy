@@ -8,7 +8,7 @@
     <meta
       name="description"
       content="Depuis fin 2022, nous soutenons des projets contribuant au développement social local et qui ont une démarche de participation citoyenne. Une société civile puissante, c’est une démocratie vivante.." />
-    <link rel="icon" href="assets/img/favicon.ico" />
+    <link rel="icon" href="./assets/img/favicon.ico" />
 
     <meta property="og:title" content="Qui nous sommes, nous rejoindre et contrôle de vos données personnelles" />
     <meta
@@ -53,8 +53,8 @@
         <p>Nous sommes un groupe de citoyens choletais soucieux d’améliorer notre quotidien en contribuant au développement local.</p>
         <h2>Notre mission</h2>
         <p>
-          C’est de proposer des projets en collaboration avec les acteurs de la société civile dans les domaines économiques, environnementaux et socioculturels. Ils contribueront au développement
-          social local, privilégiant une démarche de participation citoyenne.
+          C’est mettre à disposition de l'info et des ressources permettant de susciter débat(s) et réflexion(s). Cela nous permet de proposer des projets en collaboration avec les acteurs de la
+          société civile dans les domaines économiques, environnementaux et socioculturels. Ils contribueront au développement social local, privilégiant une démarche de participation citoyenne.
         </p>
         <h2>Nos valeurs</h2>
         <ul>
@@ -72,7 +72,7 @@
         </p>
         <h2>Notre logo</h2>
         <div class="colored-box">
-          <img src="assets/img/logo.svg" alt="logo sur fond blanc" loading="lazy" />
+          <img src="./assets/img/logo.svg" alt="logo sur fond blanc" loading="lazy" />
         </div>
         <p style="text-align: center; text-wrap: balance">D'un dialogue naissent des idées qui prennent leur envol ..</p>
         <h2>Notre site internet</h2>
@@ -104,7 +104,9 @@
     </main>
     <footer>
       <div class="copyright-bar">
-        © <?php echo date('Y'); ?> <a href='_QRcode.html' title='QR Code pour partager l`url de notre site avec vos proches'>Initiatives Citoyennes Choletaises</a>
+        ©
+        <?php echo date('Y'); ?>
+        <a href="_QRcode.html" title="QR Code pour partager l`url de notre site avec vos proches">Initiatives Citoyennes Choletaises</a>
       </div>
     </footer>
     <?php include './assets/components/js-cache.php'; ?>

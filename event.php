@@ -55,15 +55,18 @@
               Deux sociologues, G. Houdeville et J. Launay, ont proposé leurs réflexions sur différentes mesures dédiées à la jeunesse et notamment comment attirer les "décrocheurs scolaires" vers ces
               dispositifs.
             </p>
-            <a class="lien-pg" href="./pg/e_001_engagt.html" title="invitation qui avait été faite à l'époque" target="_top">invitation faite à l'époque</a>
+            <div class="displayBtn">
+              <a href="./pg/e_001_engagt.html" title="invitation qui avait été faite à l'époque" target="_blank"><span class="btn _text">voir</span></a
+              ><em>l'invitation faite à l'époque</em>
+            </div>
           </article>
           <article id="presentAsso" class="box">
             <h3>Lancement officiel de l'association</h3>
             <h5>mars 2023</h5>
             <p>Après une présentation générale de l'association de ses objectifs et son ambition, ont pu adhérer ceux qui le souhaitaient.</p>
             <p>
-              Parmi, les sujets semblant intéresser une partie de l'auditoire, il y a eu ces changements de fonctionnement d'un certain nombre de rues à Cholet. Ils semblent être faits sans concertation
-              de manière arbitraire et avec des choix contestables aboutissant à des situations ubuesques..
+              Parmi, les sujets semblant intéresser une partie de l'auditoire, il y a eu ces changements de fonctionnement d'un certain nombre de rues à Cholet. Ils semblent être faits sans
+              concertation de manière arbitraire et avec des choix contestables aboutissant à des situations ubuesques..
             </p>
           </article>
           <article id="polville" class="box">
@@ -78,15 +81,15 @@
               attendue et les résultats réels obtenus.
             </p>
             <p>
-              A partir de nombreux exemples, notre conférencier nous a montré les limites de cette politique. Malgré les réhabilitations, les améliorations, le sentiment d'exclusion, de déconnexion avec
-              le reste de la ville pour ces quartiers reste fort. La mixité sociale prônée par Jean Louis Borloo, par exemple, se heurte au fait que dès qu'on s'en sort mieux financièrement, on quitte
-              le quartier.
+              A partir de nombreux exemples, notre conférencier nous a montré les limites de cette politique. Malgré les réhabilitations, les améliorations, le sentiment d'exclusion, de déconnexion
+              avec le reste de la ville pour ces quartiers reste fort. La mixité sociale prônée par Jean Louis Borloo, par exemple, se heurte au fait que dès qu'on s'en sort mieux financièrement, on
+              quitte le quartier.
             </p>
             <p>La pauvreté restant ainsi majoritaire à ces endroits, on a des tensions sociales qui éclatent de temps à autre.</p>
             <p>
-              En conclusion, de gouvernement en gouvernement, on a parfois détricoté ce que faisait l'autre, on a eu beaucoup trop de réponses plus politiciennes que répondant au besoin, on est souvent
-              passé d'une ambition d'action à grande échelle à un simple saupoudrage,.. Il y a des freins aussi comme la participation très modeste des citoyens, un manque de rationalisation dans la
-              gestion des quartiers, un ascenseur social quasi à l’arrêt,..
+              En conclusion, de gouvernement en gouvernement, on a parfois détricoté ce que faisait l'autre, on a eu beaucoup trop de réponses plus politiciennes que répondant au besoin, on est
+              souvent passé d'une ambition d'action à grande échelle à un simple saupoudrage,.. Il y a des freins aussi comme la participation très modeste des citoyens, un manque de rationalisation
+              dans la gestion des quartiers, un ascenseur social quasi à l’arrêt,..
             </p>
           </article>
         </section>
@@ -103,7 +106,9 @@
     </main>
     <footer>
       <div class="copyright-bar">
-        © <?php echo date('Y'); ?> <a href='_QRcode.html' title='QR Code pour partager l`url de notre site avec vos proches'>Initiatives Citoyennes Choletaises</a>
+        ©
+        <?php echo date('Y'); ?>
+        <a href="_QRcode.html" title="QR Code pour partager l`url de notre site avec vos proches">Initiatives Citoyennes Choletaises</a>
       </div>
     </footer>
     <?php include './assets/components/js-cache.php'; ?>

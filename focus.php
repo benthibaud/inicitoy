@@ -8,7 +8,7 @@
     <meta
       name="description"
       content="La technologie révolutionne l’éclairage public : plus de possibilités et plus de travail en bureau d’études.. Le Design Urbain redistribue les rôles entre les différents usagers des rues, voyons comment…" />
-    <link rel="icon" href="assets/img/favicon.ico" />
+    <link rel="icon" href="./assets/img/favicon.ico" />
 
     <meta property="og:title" content="Dossiers | Focus et éléments clés pour comprendre" />
     <meta
@@ -39,62 +39,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="x-apple-disable-message-reformatting" />
 
-    <link rel="stylesheet" href="assets/styles/style.css" />
-    <style>
-      html {
-        animation: headerAnim 0.7s forwards;
-      }
-      @keyframes headerAnim {
-        from {
-          opacity: 0.2;
-          transform: scale(0.85);
-          transform: perspective();
-        }
-        to {
-          opacity: 1;
-          transform: scale(1);
-        }
-      }
-    </style>
+    <link rel="stylesheet" href="./assets/styles/focus.css" />
   </head>
-  <body class="focus">
+  <body>
     <header>
-      <div class="header-container">
-        <nav>
-          <input id="menu-toggle" type="checkbox" />
-          <label class="menu-hamburger-container" for="menu-toggle">
-            <div class="hamburger-icon">
-              <span></span>
-              <span></span>
-              <span></span>
-            </div>
-          </label>
-          <ul class="menu">
-            <li><a href="about.php">Qui sommes-nous ?</a></li>
-            <li><a href="index.html">À la une</a></li>
-            <li><a href="focus.html">Dossiers</a></li>
-            <li><a href="event.html">Évènements</a></li>
-            <li><a href="projects.html">Projets</a></li>
-            <li><a href="quest.html">Interpellations</a></li>
-          </ul>
-        </nav>
-        <div class="site-logo">
-          <div class="img"><a href="https://inicitoy.toile-libre.org" aria-label="accueil"></a></div>
-        </div>
-        <!-- la classe vide sert pour la troisième case du grid qui sert à centrer le logo en mode responsive -->
-        <div class="vide"></div>
+      <?php include './assets/components/header.php'; ?>
+      <div class="title">
+        <h6>Dossiers</h6>
+        <h1>Étudier un thème</h1>
       </div>
     </header>
-    <!-- <?php include('assets/components/header.php'); ?> -->
-    <div class="title">
-      <h6>Dossiers</h6>
-      <h1>Étudier un thème</h1>
-    </div>
     <main class="mainPattern">
       <section id="left">
         <article id="eclairagepublic" class="box">
           <h2>Rénovation de l'éclairage public</h2>
-          <div class="grid grid60">
+          <div class="grid g60">
             <div>
               <p>Pau ou Pessac ont obtenu <strong>jusqu'à 91 % d'économies</strong> dans certains de leurs quartiers.</p>
               <p>
@@ -110,20 +69,24 @@
               allowfullscreen
               title="Lecteur vidéo youtube"></iframe>
           </div>
-          <p>
-            <a title="Éléments essentiels de la vidéo" href="pg/f_002_eclairagepublic.html">Dans ce dossier : arguments de la vidéo ... puis ... la LPO sur les choix faits à Cholet</a>
-          </p>
+          <div class="displayBtn">
+            <a href="pg/f_002_eclairagepublic.html" title="Plein d'enseignements à partir de cette vidéo"><span class="btn _text">venir</span></a
+            ><em>tirer les enseignements de cette table ronde</em>
+          </div>
         </article>
-        <article id="Design_rues" class="box grid grid60">
+        <article id="Design_rues" class="box grid g60">
           <div>
             <h2>« Design Urbain »</h2>
             <p>
               Souvent, <strong>par ses aménagements, une rue déterminera l'usage qui en sera fait</strong>. Le coût de l'énergie, la pollution et le dérèglement climatique remettent en cause les choix
               du passé.
             </p>
-            <p>De nombreux acteurs ont mis leurs <a href="pg/f_001_design_urbain.html" title="des guides sur le design urbain très complets">expériences et expérimentations dans des guides</a>.</p>
+            <div class="displayBtn">
+              <a href="pg/f_001_design_urbain.html" title="des guides sur le design urbain très complets"><span class="btn _text">voir</span></a
+              ><em>les guides à notre disposition</em>
+            </div>
           </div>
-          <img src="assets/img/f_001-Design-urbain.webp" alt="Dessiner les rues pour multiplier les usages" loading="lazy" />
+          <img src="./assets/img/f_001-Design-urbain.webp" alt="Dessiner les rues pour multiplier les usages" loading="lazy" />
         </article>
       </section>
       <section id="right">
@@ -132,38 +95,16 @@
           <p><a href="#eclairagepublic">Rénovation de l'éclairage public</a></p>
           <p><a href="#Design_rues">Design urbain</a></p>
         </article>
-        <article id="contact" class="box">
-          <h3>contact</h3>
-          <p>
-            <a
-              href="mailto:inicitoy@laposte.net?subject=Suggestions pour le site&amp;body=Bonjour, ..."
-              target="_blank"
-              rel="noopener noreferer"
-              title="N'hésitez pas à nous faire part de vos suggestions ou critiques.."
-              moz-do-not-send="true"
-              >inicitoy@laposte.net</a
-            >
-          </p>
-        </article>
+        <?php include './assets/components/contact.php'; ?>
       </section>
     </main>
     <footer>
-      <div id="current_date" class="copyright-bar">
-        <script>
-          date = new Date();
-          year = date.getFullYear();
-          document.getElementById("current_date").innerHTML =
-            "© " + year + " <a href='_QRcode.html' title='QR Code pour partager l`url de notre site avec vos proches'>Initiatives Citoyennes Choletaises</a>";
-        </script>
+      <div class="copyright-bar">
+        ©
+        <?php echo date('Y'); ?>
+        <a href="_QRcode.html" title="QR Code pour partager l`url de notre site avec vos proches">Initiatives Citoyennes Choletaises</a>
       </div>
     </footer>
-    <!-- mise en cache -->
-    <script>
-      if ("serviceWorker" in navigator) {
-        window.addEventListener("load", function () {
-          navigator.serviceWorker.register("/service-worker.js");
-        });
-      }
-    </script>
+    <?php include './assets/components/js-cache.php'; ?>
   </body>
 </html>

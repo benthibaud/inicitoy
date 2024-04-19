@@ -1,9 +1,8 @@
 :root {
   @import './layouts/themes';
   @include themes-dark; // variables pour les thèmes foncés
-  @include theme-index; // variables pour la page portail about.php
+  @include theme-projects; // variables pour la page portail about.php
   @include fonts-noto;  // polices utilisées
-  @include fonts-kalam; // utilisé par la mixin courrier
 }
 
 @import './layouts/settings'; // Paramètres généraux
@@ -12,7 +11,7 @@
 
 
 // menu actif le nth-child() est la position dans la nav
-header .header-box nav .menu li:nth-child(2), header .header-box nav .menu li:hover {
+header .header-box nav .menu li:nth-child(5), header .header-box nav .menu li:hover {
   @include activeMenu;
 }
 
@@ -21,8 +20,8 @@ main {
   @include size;
   @include classeBox;
   @include sommaire;
-  @include btnColor;
-  @include courrier;
+  @include grid;
+  @include btnFollow;
 }
 footer {
   @include size;

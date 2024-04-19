@@ -40,6 +40,16 @@
   @include declare-css-variable('font-title', 'noto_sansregular, sans-serif');
 }
 
+@mixin fonts-kalam {
+  @font-face {
+    font-family: 'kalamlight';
+    src: url('../fonts/kalam_light-webfont.woff2') format('woff2'),
+         url('../fonts/kalam_light-webfont.woff') format('woff');
+    font-display: swap;
+  }
+  @include declare-css-variable('font-message', 'kalamlight, cursive');
+}
+
 @mixin themes-dark {
   @include declare-css-variable('logo', 'url(../img/logo_dark.svg)');
   @include declare-css-variable('link', #0eb9cc);
@@ -77,6 +87,15 @@
   
 }
 
+@mixin theme-focus {
+  @include declare-css-variable('body-bg', #3a3a3a);
+  @include declare-css-variable('title-color', #27742a);
+  @include declare-css-variable('box-bg', papayawhip);
+  @include declare-css-variable('box-shadow', 'none');
+  // @include declare-css-variable('colored-box', 'none');
+  
+}
+
 @mixin theme-event {
   @include declare-css-variable('body-bg', 'radial-gradient(#c7693e, #3e1c0c)');
   // @include declare-css-variable('body-bg', 'radial-gradient(#c85c2b, #592913)');
@@ -85,6 +104,24 @@
   @include declare-css-variable('box-shadow', 'none');
   // @include declare-css-variable('colored-box', 'none');
   @include declare-css-variable('strong-color', #068686);
+  
+}
+
+@mixin theme-projects {
+  @include declare-css-variable('body-bg', #041429);
+  @include declare-css-variable('title-color', #00d668);
+  @include declare-css-variable('box-bg', #302b3f);
+  @include declare-css-variable('box-shadow', 'none');
+  // @include declare-css-variable('colored-box', 'none');
+  
+}
+
+@mixin theme-quest {
+  @include declare-css-variable('body-bg', #751111);
+  @include declare-css-variable('title-color', #00d668);
+  @include declare-css-variable('box-bg', #331616);
+  @include declare-css-variable('box-shadow', 'none');
+  // @include declare-css-variable('colored-box', 'none');
   
 }
 

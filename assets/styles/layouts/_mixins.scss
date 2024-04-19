@@ -1,10 +1,5 @@
-@mixin activeMenu { // sert pour le menu actif dans la nav
-  background: var(--navbtn-active);
-  a{
-    color: var(--white);
-  }
-}
-
+// *********** header main et footer ***********
+// ** définit la largeur max sur écran large **
 @mixin size {
   max-width: max(60%, 1200px);
   margin: 20px auto 24px;
@@ -14,6 +9,15 @@
   }
 }
 
+// *********** HEADER ***********
+@mixin activeMenu { // sert pour le menu actif dans la nav
+  background: var(--navbtn-active);
+  a{
+    color: var(--white);
+  }  
+}  
+
+// *********** dans main si MainPattern est dans un div ***********
 @mixin sousTitre {
   .sous-titre {
     margin: -0.3em 0 0.4em;
@@ -33,6 +37,7 @@
   }
 }
 
+// *********** MAIN ***********
 @mixin mainPattern { // définit les box entre elles sur les portails
   .mainPattern {
     display: grid;
@@ -75,6 +80,7 @@
   }
 }
 
+// *********** utilisation ponctuelle ***********
 @mixin colored-box { // sert pour le logo dans about
   .colored-box {
     margin: 0 auto 1em;
@@ -107,6 +113,151 @@
   }
 }
 
+@mixin btnFollow { // mettre la classe follow sur un <button>
+  .btn {
+    display: inline-block;
+    position: relative;
+    padding: 0.5em 1.4em;
+    font-size: 1em;
+    cursor: pointer;
+    border: 0;
+    background: transparent;
+    overflow: hidden;
+    border-radius: 30px;
+    box-shadow: 0 0 0 0 #55555580; // shadow au départ
+    transition: box-shadow 0.2s;
+  
+    &::before {
+      content: '';
+      position: absolute;
+      top: -100px;
+      left: -120px;
+      width: 400px;
+      height: 350px;
+      // background: #33592e linear-gradient(188deg, #041a05 0%, #47753f 39%, #2a2b03 100%);
+      background: #33592e linear-gradient(8deg, #041a05 0%, #70a666 49%, #2a2b03 100%);
+      z-index: -1;
+      transition: transform .5s;
+      transform: rotate(100deg);
+    }
+  
+    &:hover::before { // background au départ
+      transform: rotate(0deg);
+    }
+  
+    &:hover {
+      transform: translate(4px, 0);
+      box-shadow: -6px 11px 20px 5px #55555580; // shadow au moment du survol
+    }
+  
+    &._text {
+      color: var(--white);
+      position: relative;
+      z-index: 1; // texte au-dessus de l'animation
+    }
+  }
+  .displayBtn {
+    display: inline-flex;
+    em {
+      padding: 0.5em 0 0 0.9em;
+    }
+  }
+}
+
+@mixin courrier {
+  .courrier {
+    background: var(--white);
+    max-width: 60%;
+    padding: 60px 30px;
+    margin: 0 auto;
+    aspect-ratio: 21/29.7;
+    
+    p {
+      font-family: var(--font-message);
+      color: var(--black);
+    }
+    @media (width <= 1000px) {
+      max-width: 80%;
+    }
+    @media (width <= 575px) {
+      max-width: unset;
+      padding: 30px 20px;
+    }
+  }
+}
+
+@mixin grid {
+  .grid {
+    display: grid;
+    gap: 3%;
+    align-items: center;
+    
+    img, iframe {
+      width: 100%;
+    }
+  
+    &.g30 {
+      grid-template-columns: 30% 67%;
+    }
+    &.g60 {
+      grid-template-columns: 60% 37%;
+    }  
+    @media (width <= 600px) {
+      &.g30,
+      &.g60 {
+        grid-template-columns: 1fr;
+        gap: 0;
+      }
+    }
+  }
+}
+
+@mixin float {
+  .float {
+    float: unset; // pour les petits écrans, ne "flotte pas"
+  
+    @media (width >= 600px) {
+      max-width: 35%;
+      &.left {
+        float: left;
+        margin-right: 1em;
+      }
+      &.right {
+        float: right;
+        margin-left: 1em;
+      }
+    }
+    
+    &.boxed { // encadrement de l'image
+      background: #ff440028;
+      padding: 1rem;
+  
+      img {
+        width: 100%;
+        overflow: visible;
+      }
+    }
+    // légendes des images
+    figcaption {
+      font-size: small;
+      font-style: italic;
+      text-align: center;
+      text-wrap: balance;
+    }
+  }
+}
+
+@mixin blogger {
+  .blogger {
+    font-family: var(--font-title);
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    color: #a3a3a3;
+    padding: 0 0 0.9rem 0;
+  }
+}
+
+// *********** FOOTER ***********
 @mixin footerDefault {
   margin-bottom: 60px;
   padding: 0.7em 0;

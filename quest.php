@@ -8,7 +8,7 @@
     <meta
       name="description"
       content="On crée des pistes cyclables mais on supprime des endroits où les attacher.. Interpeller aussi sur des savoirs disparus.. Ce sont nos ressentis qu’on exprime ici, en gros notre blog !" />
-    <link rel="icon" href="assets/img/favicon.ico" />
+    <link rel="icon" href="./assets/img/favicon.ico" />
 
     <meta property="og:title" content="Interpellations | Blog et questionnements divers des adhérents" />
     <meta
@@ -38,58 +38,36 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="x-apple-disable-message-reformatting" />
 
-    <link rel="stylesheet" href="assets/styles/style.css" />
+    <link rel="stylesheet" href="./assets/styles/quest.css" />
   </head>
-  <body class="quest">
+  <body>
     <header>
-      <div class="header-container">
-        <nav>
-          <input id="menu-toggle" type="checkbox" />
-          <label class="menu-hamburger-container" for="menu-toggle">
-            <div class="hamburger-icon">
-              <span></span>
-              <span></span>
-              <span></span>
-            </div>
-          </label>
-          <ul class="menu">
-            <li><a href="about.php">Qui sommes-nous ?</a></li>
-            <li><a href="index.html">À la une</a></li>
-            <li><a href="focus.html">Dossiers</a></li>
-            <li><a href="event.html">Évènements</a></li>
-            <li><a href="projects.html">Projets</a></li>
-            <li><a href="quest.html">Interpellations</a></li>
-          </ul>
-        </nav>
-        <div class="site-logo">
-          <div class="img"><a href="https://inicitoy.toile-libre.org" aria-label="accueil"></a></div>
-        </div>
-        <!-- la classe vide sert pour la troisième case du grid qui sert à centrer le logo en mode responsive -->
-        <div class="vide"></div>
+      <?php include './assets/components/header.php'; ?>
+      <div class="title">
+        <h6>Interpellations</h6>
+        <h1>Blog des adhérents</h1>
       </div>
     </header>
-    <!-- <?php include('assets/components/header.php'); ?> -->
-    <div class="title">
-      <h6>Interpellations</h6>
-      <h1>Questionnements divers</h1>
-    </div>
     <main class="mainPattern">
       <section id="left">
-        <article id="vélo" class="box grid grid60">
+        <article id="vélo" class="box grid g60">
           <div>
             <h3>De qui se moque t'on ?</h3>
             <div class="blogger">Benoit - Août 2023</div>
             <p>On utilise des vélos décorés à Marques Avenue pour dire qu'on les aime, mais que penser quand, en même temps, on supprime les seuls endroits où on peut attacher son propre vélo !</p>
-            <p><a href="pg/q_001-decor-velo.html" title="Des vélos : oui pour décorer, non à ceux qui roulent avec..">C'est avec une certaine colère qu..</a></p>
+            <div class="displayBtn">
+              <a href="pg/q_001-decor-velo.html" title="Des vélos : oui pour décorer, non à ceux qui roulent avec.."><span class="btn _text">suite</span></a
+              ><em>C'est avec une certaine colère que ...</em>
+            </div>
           </div>
-          <img src="assets/img/q_001-Vélo déco Marque Avenue 2.webp" alt="Des vélos pour décorer" loading="lazy" />
+          <img src="./assets/img/q_001-Vélo déco Marque Avenue 2.webp" alt="Des vélos pour décorer" loading="lazy" />
         </article>
         <article id="jardins" class="box">
           <h3>Une vraie agriculture durable ?</h3>
           <div class="blogger">Benoit - Juin 2023</div>
-          <div class="float-left">
+          <div class="float left">
             <a title="des « Jardins Forestiers » délibérément plantés par les populations autochtones" href="pg/q_002-jardins-forestiers.html"
-              ><img src="assets/img/q_002-jardins-forestiers_250.webp" alt="Ancien site d'agro-forestation durable" height="120" loading="lazy"
+              ><img src="./assets/img/q_002-jardins-forestiers_250.webp" alt="Ancien site d'agro-forestation durable" height="120" loading="lazy"
             /></a>
           </div>
           <p>Aujourd'hui, je souhaite partager la <strong>traduction d'un article</strong> paru dans la <strong>revue Science</strong> en avril 2021.</p>
@@ -101,7 +79,10 @@
             Le pire est qu'on continue le capitalisme de prédation en Amazonie, en Indonésie, en Afrique,.. avec des gens qui ne veulent rien apprendre de la nature qu'ils envahissent et qui lui font
             la guerre à coup de déforestations, pesticides et autres pollutions..
           </p>
-          <p>À vous aussi, de <a title="des « Jardins Forestiers » délibérément plantés par les populations autochtones" href="pg/q_002-jardins-forestiers.html">lire ce qu'on a perdu</a>..</p>
+          <div class="displayBtn">
+            <a href="pg/q_002-jardins-forestiers.html" title="des « Jardins Forestiers » délibérément plantés par les populations autochtones"><span class="btn _text">voir</span></a
+            ><em>tous ces savoirs perdus ..</em>
+          </div>
         </article>
       </section>
       <section id="right">
@@ -110,38 +91,16 @@
           <p><a href="#vélo">De qui se moque t'on ?</a></p>
           <p><a href="#jardins">Une vraie agriculture durable ?</a></p>
         </article>
-        <article id="contact" class="box">
-          <h3>contact</h3>
-          <p>
-            <a
-              href="mailto:inicitoy@laposte.net?subject=Suggestions pour le site&amp;body=Bonjour, ..."
-              target="_blank"
-              rel="noopener noreferer"
-              title="N'hésitez pas à nous faire part de vos suggestions ou critiques.."
-              moz-do-not-send="true"
-              >inicitoy@laposte.net</a
-            >
-          </p>
-        </article>
+        <?php include './assets/components/contact.php'; ?>
       </section>
     </main>
     <footer>
-      <div id="current_date" class="copyright-bar">
-        <script>
-          date = new Date();
-          year = date.getFullYear();
-          document.getElementById("current_date").innerHTML =
-            "© " + year + " <a href='_QRcode.html' title='QR Code pour partager l`url de notre site avec vos proches'>Initiatives Citoyennes Choletaises</a>";
-        </script>
+      <div class="copyright-bar">
+        ©
+        <?php echo date('Y'); ?>
+        <a href="_QRcode.html" title="QR Code pour partager l`url de notre site avec vos proches">Initiatives Citoyennes Choletaises</a>
       </div>
     </footer>
-    <!-- mise en cache -->
-    <script>
-      if ("serviceWorker" in navigator) {
-        window.addEventListener("load", function () {
-          navigator.serviceWorker.register("/service-worker.js");
-        });
-      }
-    </script>
+    <?php include './assets/components/js-cache.php'; ?>
   </body>
 </html>

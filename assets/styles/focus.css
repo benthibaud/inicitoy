@@ -4,18 +4,17 @@
   --black: #111;
   --navbtn: #a5c3a1 linear-gradient(80deg, #a5c3a1 0%, #b2d9ac 14%, #f2fff0 100%);
   --navbtn-active: #609959 linear-gradient(220deg, #33c138 0%, #759370 29%, #00e309 100%);
-  --logo: url(../img/logo_dark.svg);
-  --link: #0eb9cc;
-  --linkfocus: #00d668;
-  --strong-color: #dbecd1;
-  --txt-color: var(--white);
-  --body-bg: #072508;
-  --title-color: #00d668;
-  --box-bg: #3a3a3a;
+  --logo: url(../img/logo.svg);
+  --link: #4040ff;
+  --linkfocus: #087480;
+  --strong-color: #3d6526;
+  --txt-color: var(--black);
+  --body-bg: #3a3a3a;
+  --title-color: #27742a;
+  --box-bg: papayawhip;
   --box-shadow: none;
   --font-normal: noto_sanslight, sans-serif;
   --font-title: noto_sansregular, sans-serif;
-  --font-message: kalamlight, cursive;
 }
 @font-face {
   font-family: "noto_sanslight";
@@ -25,11 +24,6 @@
 @font-face {
   font-family: "noto_sansregular";
   src: url("../fonts/notosans-regular.woff2") format("woff2"), url("../fonts/notosans-regular.woff") format("woff");
-  font-display: swap;
-}
-@font-face {
-  font-family: "kalamlight";
-  src: url("../fonts/kalam_light-webfont.woff2") format("woff2"), url("../fonts/kalam_light-webfont.woff") format("woff");
   font-display: swap;
 }
 
@@ -327,10 +321,10 @@ header .title {
   }
 }
 
-header .header-box nav .menu li:nth-child(2), header .header-box nav .menu li:hover {
+header .header-box nav .menu li:nth-child(3), header .header-box nav .menu li:hover {
   background: var(--navbtn-active);
 }
-header .header-box nav .menu li:nth-child(2) a, header .header-box nav .menu li:hover a {
+header .header-box nav .menu li:nth-child(3) a, header .header-box nav .menu li:hover a {
   color: var(--white);
 }
 
@@ -375,44 +369,83 @@ main #sommaire p {
   line-height: normal;
   padding: 0.2em 0 0;
 }
-main .btnColor {
-  padding: 2px 8px 3px;
-  margin: 0 5px;
-  background: var(--navbtn);
-  border: none;
-  font-variant: small-caps;
-  font-family: var(--font-title);
-  font-size: 0.9em;
-  font-weight: normal;
-  color: var(--black);
+main .grid {
+  display: grid;
+  gap: 3%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
-main .retrait {
-  margin-top: -0.7em;
-  padding-left: 1em;
-  line-height: normal;
-  text-wrap: balance;
+main .grid img, main .grid iframe {
+  width: 100%;
 }
-main .courrier {
-  background: var(--white);
-  max-width: 60%;
-  padding: 60px 30px;
-  margin: 0 auto;
-  aspect-ratio: 21/29.7;
+main .grid.g30 {
+  grid-template-columns: 30% 67%;
 }
-main .courrier p {
-  font-family: var(--font-message);
-  color: var(--black);
+main .grid.g60 {
+  grid-template-columns: 60% 37%;
 }
-@media (width <= 1000px) {
-  main .courrier {
-    max-width: 80%;
+@media (width <= 600px) {
+  main .grid.g30, main .grid.g60 {
+    grid-template-columns: 1fr;
+    gap: 0;
   }
 }
-@media (width <= 575px) {
-  main .courrier {
-    max-width: unset;
-    padding: 30px 20px;
-  }
+main .btn {
+  display: inline-block;
+  position: relative;
+  padding: 0.5em 1.4em;
+  font-size: 1em;
+  cursor: pointer;
+  border: 0;
+  background: transparent;
+  overflow: hidden;
+  border-radius: 30px;
+  -webkit-box-shadow: 0 0 0 0 rgba(85, 85, 85, 0.5019607843);
+          box-shadow: 0 0 0 0 rgba(85, 85, 85, 0.5019607843);
+  -webkit-transition: -webkit-box-shadow 0.2s;
+  transition: -webkit-box-shadow 0.2s;
+  transition: box-shadow 0.2s;
+  transition: box-shadow 0.2s, -webkit-box-shadow 0.2s;
+}
+main .btn::before {
+  content: "";
+  position: absolute;
+  top: -100px;
+  left: -120px;
+  width: 400px;
+  height: 350px;
+  background: #33592e linear-gradient(8deg, #041a05 0%, #70a666 49%, #2a2b03 100%);
+  z-index: -1;
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: -webkit-transform 0.5s;
+  transition: transform 0.5s;
+  transition: transform 0.5s, -webkit-transform 0.5s;
+  -webkit-transform: rotate(100deg);
+          transform: rotate(100deg);
+}
+main .btn:hover::before {
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+}
+main .btn:hover {
+  -webkit-transform: translate(4px, 0);
+          transform: translate(4px, 0);
+  -webkit-box-shadow: -6px 11px 20px 5px rgba(85, 85, 85, 0.5019607843);
+          box-shadow: -6px 11px 20px 5px rgba(85, 85, 85, 0.5019607843);
+}
+main .btn._text {
+  color: var(--white);
+  position: relative;
+  z-index: 1;
+}
+main .displayBtn {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+main .displayBtn em {
+  padding: 0.5em 0 0 0.9em;
 }
 
 footer {
@@ -439,4 +472,4 @@ footer .copyright-bar {
 footer .copyright-bar a {
   color: currentColor !important;
   font-weight: normal !important;
-}/*# sourceMappingURL=index.css.map */
+}/*# sourceMappingURL=focus.css.map */

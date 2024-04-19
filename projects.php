@@ -6,7 +6,7 @@
 
     <title>Projets | Actions à réaliser ensemble</title>
     <meta name="description" content="En ce moment, nous menons une consultation sur les aménagements de la rue St Louis. Transformer une rue en parking est-il satisfaisant ?" />
-    <link rel="icon" href="assets/img/favicon.ico" />
+    <link rel="icon" href="./assets/img/favicon.ico" />
 
     <meta property="og:title" content="Projets | Actions à réaliser ensemble" />
     <meta property="og:description" content="En ce moment, nous menons une consultation sur les aménagements de la rue St Louis. Transformer une rue en parking est-il satisfaisant ?" />
@@ -33,58 +33,42 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="x-apple-disable-message-reformatting" />
 
-    <link rel="stylesheet" href="assets/styles/style.css" />
+    <link rel="stylesheet" href="./assets/styles/projects.css" />
   </head>
-  <body class="projects">
+  <body>
     <header>
-      <div class="header-container">
-        <nav>
-          <input id="menu-toggle" type="checkbox" />
-          <label class="menu-hamburger-container" for="menu-toggle">
-            <div class="hamburger-icon">
-              <span></span>
-              <span></span>
-              <span></span>
-            </div>
-          </label>
-          <ul class="menu">
-            <li><a href="about.php">Qui sommes-nous ?</a></li>
-            <li><a href="index.html">À la une</a></li>
-            <li><a href="focus.html">Dossiers</a></li>
-            <li><a href="event.html">Évènements</a></li>
-            <li><a href="projects.html">Projets</a></li>
-            <li><a href="quest.html">Interpellations</a></li>
-          </ul>
-        </nav>
-        <div class="site-logo">
-          <div class="img"><a href="https://inicitoy.toile-libre.org" aria-label="accueil"></a></div>
-        </div>
-        <!-- la classe vide sert pour la troisième case du grid qui sert à centrer le logo en mode responsive -->
-        <div class="vide"></div>
+      <?php include './assets/components/header.php'; ?>
+      <div class="title">
+        <h6>Projets</h6>
+        <h1>Agir ensemble</h1>
       </div>
     </header>
-    <!-- <?php include('assets/components/header.php'); ?> -->
-    <div class="title">
-      <h6>Projets</h6>
-      <h1>Agir ensemble</h1>
-    </div>
     <main class="mainPattern">
       <section id="left">
-        <article id="DessinRue" class="box grid grid60">
+        <article id="DessinRue" class="box grid g60">
           <div>
             <h2>Projet  « Dessine-moi ta rue »</h2>
             <p>
               Qu'il s'agisse d'idées pour améliorer la sécurité des piétons ou pour réduire l'accumulation de chaleur en été, ou encore d'aménagements spéciaux pour les enfants, les personnes
               handicapées, les vélos et les trottinettes électriques,... La rue parfaite n'existe probablement pas mais <strong>votre rue vous convient-elle ?</strong>
             </p>
-            <p>
-              Nous <strong>enquêtons</strong> à ce sujet et <a title="Dessine-moi ta rue (article)" href="pg/p_001-dessin-rue.html"><strong>recueillons votre avis</strong></a
-              >.
-            </p>
+            <div class="displayBtn">
+              <a href="./pg/p_001-dessin-rue.html" title="Dessine-moi ta rue (article)"><span class="btn _text">participer</span></a
+              ><em>à notre enquête (lien et modalités)</em>
+            </div>
           </div>
-          <div class="grid gridSpace">
-            <img src="assets/img/p_001-DessinRue.webp" alt="Une rue en dessin" loading="lazy" />
-          </div>
+          <img src="./assets/img/p_001-DessinRue.webp" alt="Une rue en dessin" loading="lazy" />
+        </article>
+        <article id="alimentation" class="box grid g30">
+          <img src="./assets/img/p_002-img-pixabay.webp" alt="pixabay image illustrant la préparation d'un repas" loading="lazy" />
+          <section>
+            <h2>Projet  « Repas citoyen »</h2>
+            <p>Autour d'un repas, nous réfléchissons ensemble à tous les impacts qu'ont nos choix alimentaires sur notre société. Cela va bien au-delà de ce qu'on pense habituellement !</p>
+            <div class="displayBtn">
+              <a href="./pg/p_002-alimentation.html" title="Menu citoyen / durable (article)"><span class="btn _text">voir</span></a
+              ><em>comment cela s'organise</em>
+            </div>
+          </section>
         </article>
       </section>
       <section id="right">
@@ -92,38 +76,16 @@
           <h3>navigation</h3>
           <p><a href="#DessinRue">Dessine-moi ta rue</a></p>
         </article>
-        <article id="contact" class="box">
-          <h3>contact</h3>
-          <p>
-            <a
-              href="mailto:inicitoy@laposte.net?subject=Suggestions pour le site&amp;body=Bonjour, ..."
-              target="_blank"
-              rel="noopener noreferer"
-              title="N'hésitez pas à nous faire part de vos suggestions ou critiques.."
-              moz-do-not-send="true"
-              >inicitoy@laposte.net</a
-            >
-          </p>
-        </article>
+        <?php include './assets/components/contact.php'; ?>
       </section>
     </main>
     <footer>
-      <div id="current_date" class="copyright-bar">
-        <script>
-          date = new Date();
-          year = date.getFullYear();
-          document.getElementById("current_date").innerHTML =
-            "© " + year + " <a href='_QRcode.html' title='QR Code pour partager l`url de notre site avec vos proches'>Initiatives Citoyennes Choletaises</a>";
-        </script>
+      <div class="copyright-bar">
+        ©
+        <?php echo date('Y'); ?>
+        <a href="_QRcode.html" title="QR Code pour partager l`url de notre site avec vos proches">Initiatives Citoyennes Choletaises</a>
       </div>
     </footer>
-    <!-- mise en cache -->
-    <script>
-      if ("serviceWorker" in navigator) {
-        window.addEventListener("load", function () {
-          navigator.serviceWorker.register("/service-worker.js");
-        });
-      }
-    </script>
+    <?php include './assets/components/js-cache.php'; ?>
   </body>
 </html>
