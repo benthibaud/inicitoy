@@ -5,14 +5,14 @@
   margin: 20px auto 24px;
 
   @media (width <= 1250px) {
-    margin: 2vw;
+    margin: 16px 4vw 20px;
   }
 }
 
 // *********** HEADER ***********
 @mixin activeMenu { // sert pour le menu actif dans la nav
-  background: var(--navbtn-active);
   a{
+    background: var(--navbtn-active);
     color: var(--white);
   }  
 }  
@@ -44,7 +44,7 @@
     grid-template-columns: 74% calc(26% - 20px);
     gap: 20px;
   
-    @media (width <= 760px) {
+    @media (width <= 780px) {
       grid-template-columns: 1fr;
       gap: 0;
     }
@@ -68,6 +68,9 @@
     img { // affichage par défaut à sa taille d'origine mais sans dépasser la box
       width: initial;
       max-width: 100%;
+    }
+    @media (width <= 780px) {
+      padding: 1.4em;
     }
   }
 }
@@ -113,7 +116,7 @@
   }
 }
 
-@mixin btnFollow { // mettre la classe follow sur un <button>
+@mixin btnFollow { // mettre les boutons pour naviguer depuis un article d'un portail
   .btn {
     display: inline-block;
     position: relative;
@@ -161,10 +164,13 @@
     em {
       padding: 0.5em 0 0 0.9em;
     }
+    @media (width <= 600px) {
+      margin: 10px 0;
+    }
   }
 }
 
-@mixin courrier {
+@mixin courrier { // message sur index
   .courrier {
     background: var(--white);
     max-width: 60%;
@@ -186,7 +192,7 @@
   }
 }
 
-@mixin grid {
+@mixin grid { // sert souvent pour afficher les images sur les articles des portails
   .grid {
     display: grid;
     gap: 3%;
@@ -259,7 +265,7 @@
 
 // *********** FOOTER ***********
 @mixin footerDefault {
-  margin-bottom: 60px;
+  margin-bottom: 40px;
   padding: 0.7em 0;
 
   .copyright-bar {

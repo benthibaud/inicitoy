@@ -7,16 +7,16 @@
     <title>Interpellations | Blog et questionnements divers des adhérents</title>
     <meta
       name="description"
-      content="On crée des pistes cyclables mais on supprime des endroits où les attacher.. Interpeller aussi sur des savoirs disparus.. Ce sont nos ressentis qu’on exprime ici, en gros notre blog !" />
-    <link rel="icon" href="./assets/img/favicon.ico" />
+      content="Oui un plus de pistes cyclables mais on supprime les endroits où attacher nos vélos.. Alerter sur des savoirs disparus.. Blog à dispo des adhérents, nos ressentis !" />
+    <link rel="icon" href="assets/img/favicon.ico" />
 
     <meta property="og:title" content="Interpellations | Blog et questionnements divers des adhérents" />
     <meta
       property="og:description"
-      content="On crée des pistes cyclables mais on supprime des endroits où les attacher.. Interpeller aussi sur des savoirs disparus.. Ce sont nos ressentis qu’on exprime ici, en gros notre blog !" />
+      content="Oui un plus de pistes cyclables mais on supprime les endroits où attacher nos vélos.. Alerter sur des savoirs disparus.. Blog à dispo des adhérents, nos ressentis !" />
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://inicitoy.toile-libre.org/quest.html" />
-    <meta property="og:image" content="https://inicitoy.toile-libre.org/assets/img/q_000-quest.webp" />
+    <meta property="og:url" content="https://inicitoy.toile-libre.org/quest.php" />
+    <meta property="og:image" content="https://inicitoy.toile-libre.org/assets/img/q_000_quest.webp" />
     <meta property="og:site_name" content="Initiatives Citoyennes Choletaises" />
     <meta property="og:locale" content="fr_FR" />
 
@@ -24,9 +24,9 @@
     <meta name="twitter:title" content="Interpellations | Blog et questionnements divers des adhérents" />
     <meta
       name="twitter:description"
-      content="On crée des pistes cyclables mais on supprime des endroits où les attacher.. Interpeller aussi sur des savoirs disparus.. Ce sont nos ressentis qu’on exprime ici, en gros notre blog !" />
-    <meta name="twitter:image" content="https://inicitoy.toile-libre.org/assets/img/q_000-quest.webp" />
-    <meta name="twitter:url" content="https://inicitoy.toile-libre.org/quest.html" />
+      content="Oui un plus de pistes cyclables mais on supprime les endroits où attacher nos vélos.. Alerter sur des savoirs disparus.. Blog à dispo des adhérents, nos ressentis !" />
+    <meta name="twitter:image" content="https://inicitoy.toile-libre.org/assets/img/q_000_quest.webp" />
+    <meta name="twitter:url" content="https://inicitoy.toile-libre.org/quest.php" />
 
     <meta
       name="keywords"

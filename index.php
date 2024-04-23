@@ -4,39 +4,39 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>Initiatives Citoyennes Choletaises | À la une en ce moment</title>
-    <meta name="description" content="Le ZAN, les arbres rafraîchissants, les eaux venant des pluies et eaux usées traitées, le site plus fraîche ma ville et nouveautés sur le site.." />
-    <link rel="icon" href="assets/img/favicon.ico" cache="only" />
+    <title>À la une | Initiatives Citoyennes Choletaises</title>
+    <meta name="description" content="Vue d’ensemble des ressources disponibles sur le site. Un message permettant de percevoir nos motivations pour ce qu’on entreprend." />
+    <link rel="icon" href="assets/img/favicon.ico" />
 
-    <meta property="og:title" content="Initiatives Citoyennes Choletaises | À la une en ce moment" />
-    <meta property="og:description" content="Le ZAN, les arbres rafraîchissants, les eaux venant des pluies et eaux usées traitées, le site plus fraîche ma ville et nouveautés sur le site.." />
+    <meta property="og:title" content="À la une | Initiatives Citoyennes Choletaises" />
+    <meta property="og:description" content="Vue d’ensemble des ressources disponibles sur le site. Un message permettant de percevoir nos motivations pour ce qu’on entreprend." />
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://inicitoy.toile-libre.org" />
+    <meta property="og:url" content="https://inicitoy.toile-libre.org/index.php" />
     <meta property="og:image" content="https://inicitoy.toile-libre.org/assets/img/i_000_index.webp" />
     <meta property="og:site_name" content="Initiatives Citoyennes Choletaises" />
     <meta property="og:locale" content="fr_FR" />
 
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Initiatives Citoyennes Choletaises | À la une en ce moment" />
-    <meta name="twitter:description" content="Le ZAN, les arbres rafraîchissants, les eaux venant des pluies et eaux usées traitées, le site plus fraîche ma ville et nouveautés sur le site.." />
+    <meta name="twitter:title" content="À la une | Initiatives Citoyennes Choletaises" />
+    <meta name="twitter:description" content="Vue d’ensemble des ressources disponibles sur le site. Un message permettant de percevoir nos motivations pour ce qu’on entreprend." />
     <meta name="twitter:image" content="https://inicitoy.toile-libre.org/assets/img/i_000_index.webp" />
-    <meta name="twitter:url" content="https://inicitoy.toile-libre.org" />
+    <meta name="twitter:url" content="https://inicitoy.toile-libre.org/index.php" />
 
     <meta
       name="keywords"
-      content="assainissement, arbre, rafraichissant, eaux, traitées, usées, pluies, ville fraîche, ZAN, initiatives, initiative, citoyen, citoyenne, citoyens, citoyennes, Cholet, choletais, choletaise, choletaises, maine et loire, pays de la loire, 49300, 49, actualité, carnaval, maire, bourdouleix, caractériel, actualite, mouchoir, textile, mode, economie, économie, service, ouest, mauges, association, environnement, municipal, elu, design, urbain, rue, urbanisme, atmosphère, élu, indeminité, indemnite, anne, hardy, sylvie, tolassy, autrement, opposition, opposant, opposante, opposition municipale, économique, economique" />
+      content="vue d’ensemble, sommaire, message, qu’y a t’il de citoyen, initiatives, initiative, citoyen, citoyenne, citoyens, citoyennes, Cholet, choletais, choletaise, choletaises, maine et loire, pays de la loire, 49300, 49, actualité, carnaval, maire, bourdouleix, caractériel, actualite, mouchoir, textile, mode, economie, économie, service, ouest, mauges, association, environnement, municipal, elu, design, urbain, rue, urbanisme, atmosphère, élu, indeminité, indemnite, anne, hardy, sylvie, tolassy, autrement, opposition, opposant, opposante, opposition municipale, économique, economique" />
     <meta name="Author" content="Benoit Thibaud" />
-    <link type="text/plain" rel="author" href="http://mon-domaine.com/humans.txt" cache="only" />
+    <link type="text/plain" rel="author" href="https://inicitoy.toile-libre.org/humans.txt" />
     <meta name="robots" content="all" />
-    <meta name="REVISIT-AFTER" content="3 days" />
     <meta http-equiv="cache-control" content="max-age=3 days" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="x-apple-disable-message-reformatting" />
 
-    <link rel="stylesheet" href="./assets/styles/index.css" cache="only" />
+    <link rel="stylesheet" href="./assets/styles/index.css" />
   </head>
   <body>
     <header>
+      <!-- <?php $currentPage = basename($_SERVER['PHP_SELF']); ?> -->
       <?php include './assets/components/header.php'; ?>
       <div class="title">
         <h6>À la une</h6>
@@ -59,16 +59,16 @@
         </article>
         <article id="message" class="box">
           <section class="courrier">
-            <strong><p>Qui a t'il de citoyen dans la conception d'une rue ?</p></strong>
+            <strong><p>Qu'y a t'il de citoyen dans la conception d'une rue ?</p></strong>
             <p>Content celui qui peut garer ses trois voitures devant chez lui..</p>
             <p>
               Pas contente la maman qui ne peut pas tenir un enfant dans chaque main parce que les trottoirs sont devenus trop étroits et c'est pire avec une poussette et les poubelles qui bloquent le
               passage..
             </p>
             <p>Citoyen = partage de la cité</p>
-            <strong><p>Qui a t'il de citoyen dans nos repas ?</p></strong>
+            <strong><p>Qu'y a t'il de citoyen dans nos repas ?</p></strong>
             <p>3 repas x 365 jours</p>
-            <p>Nous avons plus de 1000 occasions par an de dire dans quelle société nous voulons vivre..</p>
+            <p>Nous avons plus de 1 000 occasions par an de dire dans quelle société nous voulons vivre..</p>
           </section>
         </article>
       </section>

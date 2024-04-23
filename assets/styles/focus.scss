@@ -9,12 +9,6 @@
 @import './layouts/mixins'; // mixins pour n'activer que les classes utiles à ce css
 @import './layouts/header'; // entête des portails
 
-
-// menu actif le nth-child() est la position dans la nav
-header .header-box nav .menu li:nth-child(3), header .header-box nav .menu li:hover {
-  @include activeMenu;
-}
-
 @include mainPattern;
 main {
   @include size;

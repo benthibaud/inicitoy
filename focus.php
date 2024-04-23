@@ -7,15 +7,15 @@
     <title>Dossiers | Focus et éléments clés pour comprendre</title>
     <meta
       name="description"
-      content="La technologie révolutionne l’éclairage public : plus de possibilités et plus de travail en bureau d’études.. Le Design Urbain redistribue les rôles entre les différents usagers des rues, voyons comment…" />
-    <link rel="icon" href="./assets/img/favicon.ico" />
+      content="La technologie révolutionne l’éclairage public : économies, plus de possibilités,.. Le Design Urbain redistribue les rôles des différents usagers des rues, voyons comment…" />
+    <link rel="icon" href="assets/img/favicon.ico" />
 
     <meta property="og:title" content="Dossiers | Focus et éléments clés pour comprendre" />
     <meta
       property="og:description"
-      content="La technologie révolutionne l’éclairage public : plus de possibilités et plus de travail en bureau d’études.. Le Design Urbain redistribue les rôles entre les différents usagers des rues, voyons comment…" />
+      content="La technologie révolutionne l’éclairage public : économies, plus de possibilités,.. Le Design Urbain redistribue les rôles des différents usagers des rues, voyons comment…" />
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://inicitoy.toile-libre.org/focus.html" />
+    <meta property="og:url" content="https://inicitoy.toile-libre.org/focus.php" />
     <meta property="og:image" content="https://inicitoy.toile-libre.org/assets/img/f_000_focus.webp" />
     <meta property="og:site_name" content="Initiatives Citoyennes Choletaises" />
     <meta property="og:locale" content="fr_FR" />
@@ -24,17 +24,16 @@
     <meta name="twitter:title" content="Dossiers | Focus et éléments clés pour comprendre" />
     <meta
       name="twitter:description"
-      content="La technologie révolutionne l’éclairage public : plus de possibilités et plus de travail en bureau d’études.. Le Design Urbain redistribue les rôles entre les différents usagers des rues, voyons comment…" />
+      content="La technologie révolutionne l’éclairage public : économies, plus de possibilités,.. Le Design Urbain redistribue les rôles des différents usagers des rues, voyons comment…" />
     <meta name="twitter:image" content="https://inicitoy.toile-libre.org/assets/img/f_000_focus.webp" />
-    <meta name="twitter:url" content="https://inicitoy.toile-libre.org/focus.html" />
+    <meta name="twitter:url" content="https://inicitoy.toile-libre.org/focus.php" />
 
     <meta
       name="keywords"
       content="dossier, thème, design urbain, éclairage public, économies, contribuable, énergie, rues, sécurité, initiatives, initiative, citoyen, citoyenne, citoyens, citoyennes, Cholet, choletais, choletaise, choletaises, maine et loire, pays de la loire, 49300, 49, actualité, carnaval, maire, bourdouleix, caractériel, actualite, mouchoir, textile, mode, economie, économie, service, ouest, mauges, association, environnement, municipal, elu, design, urbain, rue, urbanisme, atmosphère, élu, indeminité, indemnite, anne, hardy, sylvie, tolassy, autrement, opposition, opposant, opposante, opposition municipale, économique, economique" />
     <meta name="Author" content="Benoit Thibaud" />
-    <link type="text/plain" rel="author" href="http://mon-domaine.com/humans.txt" />
+    <link type="text/plain" rel="author" href="https://inicitoy.toile-libre.org/humans.txt" />
     <meta name="robots" content="all" />
-    <meta name="REVISIT-AFTER" content="3 days" />
     <meta http-equiv="cache-control" content="max-age=3 days" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="x-apple-disable-message-reformatting" />

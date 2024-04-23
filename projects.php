@@ -5,30 +5,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <title>Projets | Actions à réaliser ensemble</title>
-    <meta name="description" content="En ce moment, nous menons une consultation sur les aménagements de la rue St Louis. Transformer une rue en parking est-il satisfaisant ?" />
-    <link rel="icon" href="./assets/img/favicon.ico" />
+    <meta
+      name="description"
+      content="Quels sont vos ressentis sur les réaménagements de rues (St Louis, Mermoz,..) ? Manger mieux oui mais comment ? Plusieurs projets sont en cours pour agir ensemble.." />
+    <link rel="icon" href="assets/img/favicon.ico" />
 
     <meta property="og:title" content="Projets | Actions à réaliser ensemble" />
-    <meta property="og:description" content="En ce moment, nous menons une consultation sur les aménagements de la rue St Louis. Transformer une rue en parking est-il satisfaisant ?" />
+    <meta
+      property="og:description"
+      content="Quels sont vos ressentis sur les réaménagements de rues (St Louis, Mermoz,..) ? Manger mieux oui mais comment ? Plusieurs projets sont en cours pour agir ensemble.." />
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://inicitoy.toile-libre.org/projects.html" />
+    <meta property="og:url" content="https://inicitoy.toile-libre.org/projects.php" />
     <meta property="og:image" content="https://inicitoy.toile-libre.org/assets/img/p_000_projects.webp" />
     <meta property="og:site_name" content="Initiatives Citoyennes Choletaises" />
     <meta property="og:locale" content="fr_FR" />
 
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="Projets | Actions à réaliser ensemble" />
-    <meta name="twitter:description" content="En ce moment, nous menons une consultation sur les aménagements de la rue St Louis. Transformer une rue en parking est-il satisfaisant ?" />
+    <meta
+      name="twitter:description"
+      content="Quels sont vos ressentis sur les réaménagements de rues (St Louis, Mermoz,..) ? Manger mieux oui mais comment ? Plusieurs projets sont en cours pour agir ensemble.." />
     <meta name="twitter:image" content="https://inicitoy.toile-libre.org/assets/img/p_000_projects.webp" />
-    <meta name="twitter:url" content="https://inicitoy.toile-libre.org/projects.html" />
+    <meta name="twitter:url" content="https://inicitoy.toile-libre.org/projects.php" />
 
     <meta
       name="keywords"
       content="dessin, rue, dessine-moi, collectif, participatif, participative, action, ensemble, initiatives, initiative, citoyen, citoyenne, citoyens, citoyennes, Cholet, choletais, choletaise, choletaises, maine et loire, pays de la loire, 49300, 49, actualité, carnaval, maire, bourdouleix, caractériel, actualite, mouchoir, textile, mode, economie, économie, service, ouest, mauges, association, environnement, municipal, elu, design, urbain, rue, urbanisme, atmosphère, élu, indeminité, indemnite, anne, hardy, sylvie, tolassy, autrement, opposition, opposant, opposante, opposition municipale, économique, economique" />
     <meta name="Author" content="Benoit Thibaud" />
-    <link type="text/plain" rel="author" href="http://mon-domaine.com/humans.txt" />
+    <link type="text/plain" rel="author" href="https://inicitoy.toile-libre.org/humans.txt" />
     <meta name="robots" content="all" />
-    <meta name="REVISIT-AFTER" content="3 days" />
     <meta http-equiv="cache-control" content="max-age=3 days" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="x-apple-disable-message-reformatting" />
@@ -75,6 +80,7 @@
         <article id="sommaire" class="box">
           <h3>navigation</h3>
           <p><a href="#DessinRue">Dessine-moi ta rue</a></p>
+          <p><a href="#alimentation">Repas citoyen</a></p>
         </article>
         <?php include './assets/components/contact.php'; ?>
       </section>

@@ -4,36 +4,39 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>Initiatives Citoyennes Choletaises | À la une en ce moment</title>
-    <meta name="description" content="Le ZAN, les arbres rafraîchissants, les eaux venant des pluies et eaux usées traitées, le site plus fraîche ma ville et nouveautés sur le site.." />
-    <link rel="icon" href="assets/img/favicon.ico" cache="only" />
+    <title>Liens utiles et pertinents | pouvant inspirer notre action</title>
+    <meta name="description" content="Liens concernant la fraîcheur des arbres, des sites très bien documentés, des articles en ligne très pertinents, des décryptages de sujets du moment, etc. " />
+    <link rel="icon" href="assets/img/favicon.ico" />
 
-    <meta property="og:title" content="Initiatives Citoyennes Choletaises | À la une en ce moment" />
-    <meta property="og:description" content="Le ZAN, les arbres rafraîchissants, les eaux venant des pluies et eaux usées traitées, le site plus fraîche ma ville et nouveautés sur le site.." />
+    <meta property="og:title" content="Liens utiles et pertinents | pouvant inspirer notre action" />
+    <meta
+      property="og:description"
+      content="Liens concernant la fraîcheur des arbres, des sites très bien documentés, des articles en ligne très pertinents, des décryptages de sujets du moment, etc. " />
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://inicitoy.toile-libre.org" />
-    <meta property="og:image" content="https://inicitoy.toile-libre.org/assets/img/i_000_index.webp" />
+    <meta property="og:url" content="https://inicitoy.toile-libre.org/links.php" />
+    <meta property="og:image" content="https://inicitoy.toile-libre.org/assets/img/l_000_links.webp" />
     <meta property="og:site_name" content="Initiatives Citoyennes Choletaises" />
     <meta property="og:locale" content="fr_FR" />
 
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Initiatives Citoyennes Choletaises | À la une en ce moment" />
-    <meta name="twitter:description" content="Le ZAN, les arbres rafraîchissants, les eaux venant des pluies et eaux usées traitées, le site plus fraîche ma ville et nouveautés sur le site.." />
-    <meta name="twitter:image" content="https://inicitoy.toile-libre.org/assets/img/i_000_index.webp" />
-    <meta name="twitter:url" content="https://inicitoy.toile-libre.org" />
+    <meta name="twitter:title" content="Liens utiles et pertinents | pouvant inspirer notre action" />
+    <meta
+      name="twitter:description"
+      content="Liens concernant la fraîcheur des arbres, des sites très bien documentés, des articles en ligne très pertinents, des décryptages de sujets du moment, etc. " />
+    <meta name="twitter:image" content="https://inicitoy.toile-libre.org/assets/img/l_000_links.webp" />
+    <meta name="twitter:url" content="https://inicitoy.toile-libre.org/links.php" />
 
     <meta
       name="keywords"
-      content="assainissement, arbre, rafraichissant, eaux, traitées, usées, pluies, ville fraîche, ZAN, initiatives, initiative, citoyen, citoyenne, citoyens, citoyennes, Cholet, choletais, choletaise, choletaises, maine et loire, pays de la loire, 49300, 49, actualité, carnaval, maire, bourdouleix, caractériel, actualite, mouchoir, textile, mode, economie, économie, service, ouest, mauges, association, environnement, municipal, elu, design, urbain, rue, urbanisme, atmosphère, élu, indeminité, indemnite, anne, hardy, sylvie, tolassy, autrement, opposition, opposant, opposante, opposition municipale, économique, economique" />
+      content="lien, utile, pertinent, ilots, chaleur, urbaine, ZAN, artificialisation, zéro, rafraichir, arbre, eau de pluie, eaux usées, initiatives, initiative, citoyen, citoyenne, citoyens, citoyennes, Cholet, choletais, choletaise, choletaises, maine et loire, pays de la loire, 49300, 49, actualité, carnaval, maire, bourdouleix, caractériel, actualite, mouchoir, textile, mode, economie, économie, service, ouest, mauges, association, environnement, municipal, elu, design, urbain, rue, urbanisme, atmosphère, élu, indeminité, indemnite, anne, hardy, sylvie, tolassy, autrement, opposition, opposant, opposante, opposition municipale, économique, economique" />
     <meta name="Author" content="Benoit Thibaud" />
-    <link type="text/plain" rel="author" href="http://mon-domaine.com/humans.txt" cache="only" />
+    <link type="text/plain" rel="author" href="https://inicitoy.toile-libre.org/humans.txt" />
     <meta name="robots" content="all" />
-    <meta name="REVISIT-AFTER" content="3 days" />
     <meta http-equiv="cache-control" content="max-age=3 days" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="x-apple-disable-message-reformatting" />
 
-    <link rel="stylesheet" href="./assets/styles/links.css" cache="only" />
+    <link rel="stylesheet" href="./assets/styles/links.css" />
   </head>
   <body>
     <header>
@@ -72,7 +75,9 @@
                 >L'eau de pluie, une ressource pour la ville</a
               >.
             </p>
-            <a href="https://atep-france.fr/fr/wp-content/uploads/2022/11/Guide_de_l_eau_a_la_parcelle.pdf" target="blank" title="Guide de la gestion des eaux non conventionnelles"><img src="assets/img/L_002-Guide_de_l_eau_a_la_parcelle.webp" alt="Guide de la gestion des eaux non conventionnelles" style="max-height: 300px; width: auto" loading="lazy" /></a>
+            <a href="https://atep-france.fr/fr/wp-content/uploads/2022/11/Guide_de_l_eau_a_la_parcelle.pdf" target="blank" title="Guide de la gestion des eaux non conventionnelles"
+              ><img src="assets/img/L_002-Guide_de_l_eau_a_la_parcelle.webp" alt="Guide de la gestion des eaux non conventionnelles" style="max-height: 300px; width: auto" loading="lazy"
+            /></a>
           </article>
           <article id="arbresfrais" class="box">
             <h2>Arbres : rafraichissant ?</h2>
@@ -86,12 +91,13 @@
               en ville.
             </p>
             <a href="https://theconversation.com/dou-vient-le-pouvoir-rafraichissant-des-arbres-en-ville-199906" target="_blank" title="article paru sur le site 'The Conversation'">
-              <img src="assets/img/L_003-pouvoir_rafraichissant_arbres.webp"
-              srcset="assets/img/L_003-pouvoir_rafraichissant_arbres.avif 1x"
-              type="image/avif"
-              alt="Descriptif de l'impact d'un arbre en ville"
-              style="max-height: 900px"
-              loading="lazy">
+              <img
+                src="assets/img/L_003-pouvoir_rafraichissant_arbres.webp"
+                srcset="assets/img/L_003-pouvoir_rafraichissant_arbres.avif 1x"
+                type="image/avif"
+                alt="Descriptif de l'impact d'un arbre en ville"
+                style="max-height: 900px"
+                loading="lazy" />
             </a>
           </article>
           <article id="ZAN" class="box">
@@ -120,8 +126,8 @@
               </li>
             </ul>
             <a href="https://www.batiweb.com/actualites/publi-redactionnels/magazine-batiweb-mai-2023-42351" target="_blank" title="site Batiweb"
-            ><img src="assets/img/L_001-Batiweb_ZAN.webp" alt="Image d'accroche pour Batiweb mag spécial ZAN" loading="lazy"
-          /></a>
+              ><img src="assets/img/L_001-Batiweb_ZAN.webp" alt="Image d'accroche pour Batiweb mag spécial ZAN" loading="lazy"
+            /></a>
           </article>
         </section>
         <section id="right">
@@ -138,7 +144,9 @@
     </main>
     <footer>
       <div class="copyright-bar">
-        © <?php echo date('Y'); ?> <a href='_QRcode.html' title='QR Code pour partager l`url de notre site avec vos proches'>Initiatives Citoyennes Choletaises</a>
+        ©
+        <?php echo date('Y'); ?>
+        <a href="_QRcode.html" title="QR Code pour partager l`url de notre site avec vos proches">Initiatives Citoyennes Choletaises</a>
       </div>
     </footer>
     <?php include './assets/components/js-cache.php'; ?>

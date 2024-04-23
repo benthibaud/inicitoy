@@ -281,7 +281,7 @@ strong {
 figure {
   float: unset;
 }
-@media (min-width: 600px) {
+@media (width >= 600px) {
   figure {
     max-width: 35%;
   }
@@ -295,6 +295,7 @@ figure {
   }
 }
 figure .float-img {
+  display: grid;
   background: rgba(255, 68, 0, 0.1568627451);
   padding: 1rem;
 }

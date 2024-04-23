@@ -145,7 +145,7 @@ strong {
 figure {
   float: unset; // pour les petits écrans, ne "flotte pas"
 
-  @media (min-width: 600px) {
+  @media (width >= 600px) {
     max-width: 35%;
     &.left {
       float: left;
@@ -158,6 +158,7 @@ figure {
   }
   // encadrement de l'image
   .float-img {
+    display: grid;
     background: #ff440028;
     padding: 1rem;
 

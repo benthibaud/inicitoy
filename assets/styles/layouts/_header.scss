@@ -2,7 +2,7 @@ header {
   @include theme_box; // Mixin définie dans _settings
   @include size; // Mixin définie dans _settings
   
-  @media (width <= 760px) {
+  @media (width <= 780px) {
     height: auto;
   }
     
@@ -11,7 +11,7 @@ header {
     grid-template-columns: calc(74% + 20px) calc(26% - 20px) 0; // le logo semble à droite car la case de droite est à 0
     position: relative;
 
-    @media (width <= 760px) {
+    @media (width <= 780px) {
       grid-template-columns: 32% 36% 32%; // la case du logo passe au centre
     }
     
@@ -28,7 +28,7 @@ header {
         align-items: center;
         padding-bottom: 3px;
 
-        @media (width <= 760px) { // fait apparaitre le menu hamburger à partir de 760px
+        @media (width <= 780px) { // fait apparaitre le menu hamburger à partir de 780px
           display: flex;
         }
         
@@ -77,67 +77,57 @@ header {
         }
       }
 
-      ul { // désactive la marge définie dans settings sinon les boutons de navigation remontent
-        margin-bottom: 0 !important;
-      }
-
       .menu { // affichage soit en ligne soit avec le media query en menu déroulant
         display: flex;
         position: absolute;
         left: 10px;
         bottom: -12px;
         padding: 0;
+        z-index: 10;
         
-        li {
+        a {
           margin-left: 5px;
           padding: 1px 13px 2px;
           background: var(--navbtn);
           border: none;
-          list-style: none;
           cursor: pointer;
+          font-variant: small-caps;
+          font-family: var(--font-title);
+          font-size: 0.9em;
+          font-weight: normal;
+          color: var(--black);
           
-          a {
-            font-variant: small-caps;
-            font-family: var(--font-title);
-            font-size: 0.9em;
-            font-weight: normal;
-            color: var(--black);
-
-            &:focus, &:active, &:hover {
-              text-decoration: none;
-            }
+          &, &:focus, &.active, &:hover {
+            text-decoration: none;
           }
 
-          // activeMenu dans mixins
+          &.active, &:hover {
+            background: var(--navbtn-active);
+            color: var(--white);
+          }
         }
       }
 
-      @media (width <= 760px) {   
+      @media (width <= 780px) {   
         .menu { // menu en colonne
           display: flex;
           flex-direction: column;
           top: calc(100% - 29px);
         }       
         
-        #burgerBtn-toggle ~ .menu li { // caché par défaut
+        #burgerBtn-toggle ~ .menu a { // caché par défaut
           height: 0; // en jouant sur la hauteur on crée une transition sympa
           padding: 0;
           border: 0;
           transition: height 0.4s ease-in-out;
-
-          a {
-            display: none; // les éléments sont cachés
-          }
+          display: none; // les éléments sont cachés
         }
         
-        #burgerBtn-toggle:checked ~ .menu li {
+        #burgerBtn-toggle:checked ~ .menu a {
           height: 40px;
           padding: 5px 14px;
           transition: height 0.4s ease-in-out;
-
-          a {
-            display: initial; // on les affiche
-          }
+          display: initial; // on les affiche
         }
       }
     }
@@ -148,7 +138,7 @@ header {
       height: clamp(60px, 10vh, 90px);
       background: var(--logo) no-repeat center / contain;
 
-      @media (width <= 760px) {
+      @media (width <= 780px) {
         height: 60px;
         margin: 6px;
       }
@@ -162,9 +152,9 @@ header {
     @media (width <= 1250px) {
       left: calc(50% - 44vw);
     }
-    @media (width <= 760px) {
+    @media (width <= 780px) {
       top: 62px;
-      left: calc(2vw + 15px);
+      left: calc(4vw + 15px);
       h1 {
         display: none;
       }

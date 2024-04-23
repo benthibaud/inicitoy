@@ -42,6 +42,7 @@
   </head>
   <body>
     <header>
+      <!-- <?php $currentPage = basename($_SERVER['PHP_SELF']); ?> -->
       <?php include './assets/components/header.php'; ?>
       <div class="title">
         <h6>Qui nous sommes</h6>
@@ -64,8 +65,8 @@
         </ul>
         <h2>Notre philosophie</h2>
         <p>
-          Nous souhaitons encourager la responsabilité citoyenne de chacun qui peut s’exercer de multiples façons. Nous pouvons tous à notre niveau œuvrer pour le bien commun et pour l’intérêt
-          général. Nous croyons au mouvement ascendant des citoyens qui agissent solidairement, en interpellant parfois les institutions trop souvent figées.
+          Nous souhaitons encourager la responsabilité citoyenne de tous qui peut s’exercer de multiples façons. Nous pouvons tous à notre niveau œuvrer pour le bien commun et pour l’intérêt général.
+          Nous croyons au mouvement ascendant des citoyens qui agissent solidairement, en interpellant parfois les institutions trop souvent figées.
         </p>
         <p style="text-align: center">
           <strong>Une démocratie vivante a besoin d’une société civile puissante</strong>
