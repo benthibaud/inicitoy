@@ -5,17 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <title>Qui nous sommes, nous rejoindre et contrôle de vos données personnelles</title>
-    <meta
-      name="description"
-      content="Depuis fin 2022, nous soutenons des projets contribuant au développement social local et qui ont une démarche de participation citoyenne. Une société civile puissante, c’est une démocratie vivante.." />
-    <link rel="icon" href="./assets/img/favicon.ico" />
+    <meta name="description" content="Depuis fin 2022, nous mettons à disposition de l'info et des ressources permettant de susciter débat(s) et réflexion(s) ainsi que des projets participatifs." />
+    <link rel="icon" href="assets/img/favicon.ico" />
 
     <meta property="og:title" content="Qui nous sommes, nous rejoindre et contrôle de vos données personnelles" />
     <meta
       property="og:description"
-      content="Depuis fin 2022, nous soutenons des projets contribuant au développement social local et qui ont une démarche de participation citoyenne. Une société civile puissante, c’est une démocratie vivante.." />
+      content="Depuis fin 2022, nous mettons à disposition de l'info et des ressources permettant de susciter débat(s) et réflexion(s) ainsi que des projets participatifs." />
     <meta property="og:type" content="profile" />
-    <meta property="og:url" content="https://inicitoy.toile-libre.org/about.html" />
+    <meta property="og:url" content="https://inicitoy.toile-libre.org/about.php" />
     <meta property="og:image" content="https://inicitoy.toile-libre.org/assets/img/a_000_about.webp" />
     <meta property="og:site_name" content="Initiatives Citoyennes Choletaises" />
     <meta property="og:locale" content="fr_FR" />
@@ -24,9 +22,9 @@
     <meta name="twitter:title" content="Qui nous sommes, nous rejoindre et contrôle de vos données personnelles" />
     <meta
       name="twitter:description"
-      content="Depuis fin 2022, nous soutenons des projets contribuant au développement social local et qui ont une démarche de participation citoyenne. Une société civile puissante, c’est une démocratie vivante.." />
+      content="Depuis fin 2022, nous mettons à disposition de l'info et des ressources permettant de susciter débat(s) et réflexion(s) ainsi que des projets participatifs." />
     <meta name="twitter:image" content="https://inicitoy.toile-libre.org/assets/img/a_000_about.webp" />
-    <meta name="twitter:url" content="https://inicitoy.toile-libre.org/about.html" />
+    <meta name="twitter:url" content="https://inicitoy.toile-libre.org/about.php" />
 
     <meta
       name="keywords"
@@ -34,7 +32,7 @@
     <meta name="Author" content="Benoit Thibaud" />
     <link type="text/plain" rel="author" href="https://inicitoy.toile-libre.org/humans.txt" />
     <meta name="robots" content="all" />
-    <meta http-equiv="cache-control" content="max-age=3 days" />
+    <meta http-equiv="cache-control" content="max-age=259200" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="x-apple-disable-message-reformatting" />
 
@@ -42,7 +40,6 @@
   </head>
   <body>
     <header>
-      <!-- <?php $currentPage = basename($_SERVER['PHP_SELF']); ?> -->
       <?php include './assets/components/header.php'; ?>
       <div class="title">
         <h6>Qui nous sommes</h6>
@@ -98,7 +95,7 @@
         </p>
         <p><strong>Rejoignez-nous</strong> et faites adhérer vos proches. La cotisation annuelle est à <strong>5€</strong>.</p>
         <p>La prise de contact se fait par mail sur <a href="mailto:incitoy@laposte.net">incitoy@laposte.net</a> où lors des évènements que nous organisons.</p>
-        <h2 class="widget-title">Vos données vous appartiennent !</h2>
+        <h2>Vos données vous appartiennent !</h2>
         <p style="text-align: center"><strong>Initiatives Citoyennes Choletaises ne cède ou vend jamais les données de ses membres.</strong></p>
         <p>Toutes les coordonnées ne sont destinées qu'à un usage interne propre au fonctionnement normal de toute association.</p>
       </section>

@@ -36,14 +36,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="x-apple-disable-message-reformatting" />
 
-    <link rel="stylesheet" href="./assets/styles/links.css" />
+    <link rel="stylesheet" href="./assets/styles/test20.css" />
   </head>
   <body>
     <header>
       <?php include './assets/components/header.php'; ?>
-      <div class="title">
-        <h6>Liens</h6>
-        <h1>Utiles et pertinents</h1>
+      <div class="header-box">
+        <div class="title">
+          <h6>Liens</h6>
+          <h1>Utiles et pertinents</h1>
+        </div>
       </div>
     </header>
     <main>
@@ -150,5 +152,10 @@
       </div>
     </footer>
     <?php include './assets/components/js-cache.php'; ?>
+    <script>
+      window.addEventListener("load", function () {
+        document.body.classList.add("loaded");
+      });
+    </script>
   </body>
 </html>

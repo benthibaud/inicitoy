@@ -34,7 +34,7 @@
     <meta name="Author" content="Benoit Thibaud" />
     <link type="text/plain" rel="author" href="https://inicitoy.toile-libre.org/humans.txt" />
     <meta name="robots" content="all" />
-    <meta http-equiv="cache-control" content="max-age=3 days" />
+    <meta http-equiv="cache-control" content="max-age=259200" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="x-apple-disable-message-reformatting" />
 

@@ -6,12 +6,12 @@
 
     <title>Évènements | rencontres, visites, retours d’expériences,..</title>
     <meta name="description" content="Résumés des interventions et/ou les liens et documents promis, les prochains évènements à l’agenda, des visites et rencontres faites ou à venir, etc." />
-    <link rel="icon" href="./assets/img/favicon.ico" cache="only" />
+    <link rel="icon" href="assets/img/favicon.ico" />
 
     <meta property="og:title" content="Évènements | rencontres, visites, retours d’expériences,.." />
     <meta property="og:description" content="Résumés des interventions et/ou les liens et documents promis, les prochains évènements à l’agenda, des visites et rencontres faites ou à venir, etc." />
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://inicitoy.toile-libre.org/event.html" />
+    <meta property="og:url" content="https://inicitoy.toile-libre.org/event.php" />
     <meta property="og:image" content="https://inicitoy.toile-libre.org/assets/img/e_000_event.webp" />
     <meta property="og:site_name" content="Initiatives Citoyennes Choletaises" />
     <meta property="og:locale" content="fr_FR" />
@@ -20,20 +20,19 @@
     <meta name="twitter:title" content="Évènements | rencontres, visites, retours d’expériences,.." />
     <meta name="twitter:description" content="Résumés des interventions et/ou les liens et documents promis, les prochains évènements à l’agenda, des visites et rencontres faites ou à venir, etc." />
     <meta name="twitter:image" content="https://inicitoy.toile-libre.org/assets/img/e_000_event.webp" />
-    <meta name="twitter:url" content="https://inicitoy.toile-libre.org/event.html" />
+    <meta name="twitter:url" content="https://inicitoy.toile-libre.org/event.php" />
 
     <meta
       name="keywords"
       content="échanges, expert, intervenant, questions, engagement, jeunes, politique de la ville, sociologue, initiatives, initiative, citoyen, citoyenne, citoyens, citoyennes, Cholet, choletais, choletaise, choletaises, maine et loire, pays de la loire, 49300, 49, actualité, carnaval, maire, bourdouleix, caractériel, actualite, mouchoir, textile, mode, economie, économie, service, ouest, mauges, association, environnement, municipal, elu, design, urbain, rue, urbanisme, atmosphère, élu, indeminité, indemnite, anne, hardy, sylvie, tolassy, autrement, opposition, opposant, opposante, opposition municipale, économique, economique" />
     <meta name="Author" content="Benoit Thibaud" />
-    <link type="text/plain" rel="author" href="http://mon-domaine.com/humans.txt" cache="only" />
+    <link type="text/plain" rel="author" href="https://inicitoy.toile-libre.org/humans.txt" />
     <meta name="robots" content="all" />
-    <meta name="REVISIT-AFTER" content="3 days" />
-    <meta http-equiv="cache-control" content="max-age=3 days" />
+    <meta http-equiv="cache-control" content="max-age=259200" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="x-apple-disable-message-reformatting" />
 
-    <link rel="stylesheet" href="./assets/styles/event.css" cache="only" />
+    <link rel="stylesheet" href="./assets/styles/event.css" />
   </head>
   <body>
     <header>
@@ -45,7 +44,6 @@
     </header>
     <main>
       <div class="sous-titre">Nous organisons plusieurs fois par an des rencontres autour d'un thème</div>
-      <!-- <div class="sous-titre"><span class="stabilo">Nous organisons plusieurs fois par an des rencontres autour d'un thème</span></div> -->
       <div class="mainPattern">
         <section id="left">
           <article id="engagt" class="box">

@@ -5,9 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Partage entre smartphones ou tablettes</title>
     <link rel="icon" href="assets/img/favicon.ico" />
-    <link rel="stylesheet" href="assets/styles/style.css" />
+    <link rel="stylesheet" href="./assets/styles/index.css" />
     <style>
       body {
+        font-family: var(--font-normal);
         display: flex;
         align-items: center;
         justify-content: center;
@@ -25,10 +26,13 @@
       .back-transition {
         opacity: 0.1;
       }
+      footer {
+        padding: 2em;
+      }
     </style>
   </head>
-  <body onclick="goBack()" class="about box">
-    <img src="assets/img/00_QRCode-site_global.png" alt="QR code pour que vos proches n'aient pas à saisir l'url" />
+  <body onclick="goBack()">
+    <img src="./assets/img/00_QRCode-site_global.png" alt="QR code pour que vos proches n'aient pas à saisir l'url" />
     <p>https://inicitoy.toile-libre.org</p>
     <footer>(pour revenir à la page précédente, cliquer n'importe où)</footer>
     <script>

@@ -5,12 +5,12 @@ header {
   @media (width <= 780px) {
     height: auto;
   }
-    
+  
   .header-box { // un container avec 3 cases de grid pour que le logo ne soit cliquable que là où il est affiché
     display: grid;
     grid-template-columns: calc(74% + 20px) calc(26% - 20px) 0; // le logo semble à droite car la case de droite est à 0
     position: relative;
-
+    
     @media (width <= 780px) {
       grid-template-columns: 32% 36% 32%; // la case du logo passe au centre
     }
@@ -145,16 +145,16 @@ header {
     }
   }
   .title {
-    position: absolute;
-    top: 4.8vh;
-    left: calc(50% - 570px);
-  
-    @media (width <= 1250px) {
-      left: calc(50% - 44vw);
-    }
+    position: fixed;
+    // top: 1.9em;
+    bottom: 89.6%;
+    left: auto;
+    padding-left: 30px;
+
     @media (width <= 780px) {
-      top: 62px;
-      left: calc(4vw + 15px);
+      left: 4vw;
+      padding-left: 15px;
+      top: 4.2em;
       h1 {
         display: none;
       }

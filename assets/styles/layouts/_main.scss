@@ -29,6 +29,11 @@ main {
     padding: 30px;
     @include theme_box;
     margin-bottom: 20px;
+
+    img {
+      width: 100%;
+      max-width: max-content;
+    }
   }
 
   #sommaire a {

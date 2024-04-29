@@ -623,6 +623,12 @@ main .box {
   border-radius: 2px;
   margin-bottom: 20px;
 }
+main .box img {
+  width: 100%;
+  max-width: -webkit-max-content;
+  max-width: -moz-max-content;
+  max-width: max-content;
+}
 main #sommaire a {
   font-size: smaller;
 }

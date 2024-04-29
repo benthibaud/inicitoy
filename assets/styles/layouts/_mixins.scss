@@ -9,14 +9,6 @@
   }
 }
 
-// *********** HEADER ***********
-@mixin activeMenu { // sert pour le menu actif dans la nav
-  a{
-    background: var(--navbtn-active);
-    color: var(--white);
-  }  
-}  
-
 // *********** dans main si MainPattern est dans un div ***********
 @mixin sousTitre {
   .sous-titre {

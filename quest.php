@@ -34,7 +34,7 @@
     <meta name="Author" content="Benoit Thibaud" />
     <link type="text/plain" rel="author" href="https://inicitoy.toile-libre.org/humans.txt" />
     <meta name="robots" content="all" />
-    <meta http-equiv="cache-control" content="max-age=3 days" />
+    <meta http-equiv="cache-control" content="max-age=259200" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="x-apple-disable-message-reformatting" />
 
@@ -52,7 +52,7 @@
       <section id="left">
         <article id="vélo" class="box grid g60">
           <div>
-            <h3>De qui se moque t'on ?</h3>
+            <h2>De qui se moque t'on ?</h2>
             <div class="blogger">Benoit - Août 2023</div>
             <p>On utilise des vélos décorés à Marques Avenue pour dire qu'on les aime, mais que penser quand, en même temps, on supprime les seuls endroits où on peut attacher son propre vélo !</p>
             <div class="displayBtn">
@@ -63,7 +63,7 @@
           <img src="./assets/img/q_001-Vélo déco Marque Avenue 2.webp" alt="Des vélos pour décorer" loading="lazy" />
         </article>
         <article id="jardins" class="box">
-          <h3>Une vraie agriculture durable ?</h3>
+          <h2>Une vraie agriculture durable ?</h2>
           <div class="blogger">Benoit - Juin 2023</div>
           <div class="float left">
             <a title="des « Jardins Forestiers » délibérément plantés par les populations autochtones" href="pg/q_002-jardins-forestiers.html"

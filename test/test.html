@@ -7,17 +7,15 @@
     <link rel="stylesheet" href="stylePositivr.css" />
   </head>
   <body>
-    <header id="masthead" class="site-header sticky-top">
-      <div class="wrapper flex align-center flex-center flex-wrap relative p-4 mw-xxl mx-auto">
-        <div class="site-branding order-1">
-          <a href="#" class="custom-logo-link" rel="home"><img width="200" height="40" alt="POSITIVR" src="https://static.positivr.fr/wp-content/uploads/2021/12/positivr-new-400x80-1.png" /></a>
-          <p class="site-title screen-reader-text"><a href="#/" rel="home">POSITIVR</a></p>
-          <p class="site-description screen-reader-text">Initiatives, causes, innovations et inspirations</p>
+    <header class="site-header">
+      <div class="flex flex-center flex-wrap relative p-4 mw-xxl mx-auto">
+        <div class="site-branding">
+          <a href="#" rel="home"><img width="200" height="40" alt="POSITIVR" src="https://static.positivr.fr/wp-content/uploads/2021/12/positivr-new-400x80-1.png" /></a>
         </div>
-        <nav id="main-navigation" class="main-navigation flex align-center order-0">
+        <nav id="main-navigation" class="main-navigation flex align-center">
           <button
             id="menu-toggle"
-            class="overlay-toggle menu-toggle naked grey-6"
+            class="menu-toggle naked"
             aria-expanded="false"
             [aria-expanded]="menuOverlayExpanded ? 'true' : 'false'"
             aria-controls="menu-overlay"
@@ -103,26 +101,6 @@
             </div>
           </div>
         </nav>
-        <div class="newsletter-header-cta">
-          <div class="positivr-newsletter-cta mt-4">
-            <div class="cta-header flex">
-              <button class="cta-close naked ml-auto p-1">
-                <svg class="icon icon-close" aria-hidden="true" viewBox="0 0 16 16"><path d="M12.7 4.7l-1.4-1.4L8 6.6 4.7 3.3 3.3 4.7 6.6 8l-3.3 3.3 1.4 1.4L8 9.4l3.3 3.3 1.4-1.4L9.4 8" /></svg>
-                <span class="screen-reader-text">Fermer l&#039;appel à l&#039;action</span>
-              </button>
-            </div>
-            <div class="cta-content text-center">
-              <p class="mb-1 has-orange-4-color has-text-color"><strong>Vous aimez nos actualités ?</strong></p>
-              <p><strong>Abonnez-vous à notre newsletter !</strong></p>
-              <a class="button mail overlay-toggle newsletter-toggle mb-1 inline-flex align-center" href="#"
-                ><svg class="icon icon-email" aria-hidden="true" viewBox="0 0 24 24">
-                  <path d="M20 4H4a2 2 0 00-2 2v12a2 2 0 002 2h16a2 2 0 002-2V6a2 2 0 00-2-2zm0 4.236l-8 4.882-8-4.882V6h16v2.236z" /></svg
-                ><span class="ml-1">RECEVOIR LA NEWSLETTER</span></a
-              >
-              <p class="mb-0">- Newsletter GRATUITE -</p>
-            </div>
-          </div>
-        </div>
       </div>
     </header>
   </body>
