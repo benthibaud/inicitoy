@@ -42,11 +42,12 @@
   </head>
   <body>
     <header>
-      <?php include './assets/components/header.php'; ?>
-      <div class="title">
-        <h6>Dossiers</h6>
-        <h1>Étudier un thème</h1>
-      </div>
+      <?php
+      $pgName = "Dossiers";
+      $pgTitle = "Étudier un thème";
+      
+      include './assets/components/header.php';
+      ?>
     </header>
     <main class="mainPattern">
       <section id="left">

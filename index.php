@@ -36,11 +36,12 @@
   </head>
   <body>
     <header>
-      <?php include './assets/components/header.php'; ?>
-      <div class="title">
-        <h6>À la une</h6>
-        <h1>Vue d'ensemble</h1>
-      </div>
+      <?php
+      $pgName = "À la une";
+      $pgTitle = "Vue d'ensemble";
+      
+      include './assets/components/header.php';
+      ?>
     </header>
     <main class="mainPattern">
       <section id="left">

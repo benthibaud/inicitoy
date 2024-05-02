@@ -1,7 +1,7 @@
 // service-worker.js
 const filesToCache = [
   '_QRcode.html',
-  './pg/_afficher_image.php'
+  './pg/_afficher_image.php',
   './assets/components/contact.php',
   './assets/components/header.php'
 ];

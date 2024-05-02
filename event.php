@@ -36,11 +36,12 @@
   </head>
   <body>
     <header>
-      <?php include './assets/components/header.php'; ?>
-      <div class="title">
-        <h6>Évènements</h6>
-        <h1>Rencontres / Échanges</h1>
-      </div>
+      <?php
+      $pgName = "Évènements";
+      $pgTitle = "Rencontres / Échanges";
+      
+      include './assets/components/header.php';
+      ?>
     </header>
     <main>
       <div class="sous-titre">Nous organisons plusieurs fois par an des rencontres autour d'un thème</div>

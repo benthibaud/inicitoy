@@ -183,6 +183,21 @@ header .header-box {
     grid-template-columns: 32% 36% 32%;
   }
 }
+header .header-box .title {
+  position: absolute;
+  top: 25px;
+  left: 15px;
+  padding-left: 12px;
+}
+@media (width <= 780px) {
+  header .header-box .title {
+    padding-left: 3px;
+    top: 48px;
+  }
+  header .header-box .title h1 {
+    display: none;
+  }
+}
 header .header-box nav .burgerBtn {
   display: none;
   position: absolute;
@@ -306,29 +321,13 @@ header .header-box nav .menu a.active, header .header-box nav .menu a:hover {
 header .header-box .site-logo a {
   display: block;
   margin: 8px;
-  height: clamp(60px, 10vh, 90px);
+  height: clamp(50px, 5em, 90px);
   background: var(--logo) no-repeat center/contain;
 }
 @media (width <= 780px) {
   header .header-box .site-logo a {
     height: 60px;
     margin: 6px;
-  }
-}
-header .title {
-  position: fixed;
-  bottom: 89.6%;
-  left: auto;
-  padding-left: 30px;
-}
-@media (width <= 780px) {
-  header .title {
-    left: 4vw;
-    padding-left: 15px;
-    top: 4.2em;
-  }
-  header .title h1 {
-    display: none;
   }
 }
 

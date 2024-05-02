@@ -40,11 +40,12 @@
   </head>
   <body>
     <header>
-      <?php include './assets/components/header.php'; ?>
-      <div class="title">
-        <h6>Qui nous sommes</h6>
-        <h1>L'association</h1>
-      </div>
+      <?php
+      $pgName = "Qui nous sommes";
+      $pgTitle = "L'association";
+      
+      include './assets/components/header.php';
+      ?>
     </header>
     <main>
       <section>

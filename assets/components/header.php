@@ -1,4 +1,8 @@
 <div class="header-box">
+  <div class="title">
+    <?php echo "<h6>$pgName</h6>"; ?>
+    <?php echo "<h1>$pgTitle</h1>"; ?>
+  </div>
   <?php $currentPage = basename($_SERVER['PHP_SELF']); ?>
   <nav>
     <input id="burgerBtn-toggle" type="checkbox" />

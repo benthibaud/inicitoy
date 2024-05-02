@@ -40,18 +40,19 @@
   </head>
   <body>
     <header>
-      <?php include './assets/components/header.php'; ?>
-      <div class="title">
-        <h6>Liens</h6>
-        <h1>Utiles et pertinents</h1>
-      </div>
+      <?php
+      $pgName = "Liens";
+      $pgTitle = "Utiles et pertinents";
+      
+      include './assets/components/header.php';
+      ?>
     </header>
     <main>
       <div class="sous-titre"><span class="stabilo">Ce sont des sites ou des documents qui peuvent nous inspirer</span></div>
       <div class="mainPattern">
         <section id="left">
           <article id="ICU" class="box">
-            <h2>Plus fraîche ma ville</h2>
+            <h2>Plus fraiche ma ville</h2>
             <p>
               Pour lutter contre les <strong>îlots de chaleur urbaine</strong>, il existe maintenant
               <strong><a href="https://plusfraichemaville.fr/aide-decision" target="_blank" title="Site qui recense les solutions pour rafraîchir la ville">ce site internet</a></strong
