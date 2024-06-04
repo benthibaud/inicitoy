@@ -7,8 +7,7 @@
 * {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 * img {
   width: 100%;
@@ -64,9 +63,7 @@ header .img-title {
   grid-template-columns: 30% 65%;
   gap: 5%;
   margin: 20px 0;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: end;
+  align-items: end;
 }
 
 h1 {
@@ -99,15 +96,9 @@ h3 {
 }
 
 .flex {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
 }
 
 .item1 {
@@ -154,9 +145,7 @@ h3 {
   grid-template-columns: 49% 49%;
   gap: 2%;
   text-wrap: balance;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
 @media screen and (max-width: 900px) {
   .grid {
@@ -204,21 +193,12 @@ h3 {
 
 main .conseillers {
   margin: 2% 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  flex-direction: column;
+  justify-content: space-between;
   gap: 20px;
 }
 main .conseillers .elu {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   gap: 1%;
 }
@@ -230,19 +210,10 @@ main .conseillers .elu {
 main .contact {
   width: 90%;
   margin: 40px auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: normal;
-      -ms-flex-pack: normal;
-          justify-content: normal;
+  flex-direction: column;
+  align-items: center;
+  justify-content: normal;
   text-align: center;
   gap: 5%;
 }
