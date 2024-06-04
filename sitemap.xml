@@ -9,62 +9,77 @@
 
 <url>
   <loc>https://inicitoy.toile-libre.org/</loc>
-  <lastmod>2024-03-14T18:19:52+00:00</lastmod>
+  <lastmod>2024-05-02T22:28:50+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
-  <loc>https://inicitoy.toile-libre.org/about.html</loc>
-  <lastmod>2024-03-14T18:19:52+00:00</lastmod>
+  <loc>https://inicitoy.toile-libre.org/about.php</loc>
+  <lastmod>2024-05-02T22:28:50+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://inicitoy.toile-libre.org/index.html</loc>
-  <lastmod>2024-03-14T18:19:52+00:00</lastmod>
+  <loc>https://inicitoy.toile-libre.org/focus.php</loc>
+  <lastmod>2024-05-02T22:28:50+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://inicitoy.toile-libre.org/focus.html</loc>
-  <lastmod>2024-03-18T12:21:11+00:00</lastmod>
+  <loc>https://inicitoy.toile-libre.org/event.php</loc>
+  <lastmod>2024-05-02T22:28:50+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://inicitoy.toile-libre.org/event.html</loc>
-  <lastmod>2024-03-18T12:24:06+00:00</lastmod>
+  <loc>https://inicitoy.toile-libre.org/projects.php</loc>
+  <lastmod>2024-05-02T22:28:50+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://inicitoy.toile-libre.org/projects.html</loc>
-  <lastmod>2024-03-14T18:19:52+00:00</lastmod>
+  <loc>https://inicitoy.toile-libre.org/quest.php</loc>
+  <lastmod>2024-05-02T22:28:50+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://inicitoy.toile-libre.org/quest.html</loc>
-  <lastmod>2024-03-14T18:19:52+00:00</lastmod>
+  <loc>https://inicitoy.toile-libre.org/links.php</loc>
+  <lastmod>2024-05-02T22:28:50+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://inicitoy.toile-libre.org/_QRcode.html</loc>
-  <lastmod>2024-03-14T18:19:51+00:00</lastmod>
+  <loc>https://inicitoy.toile-libre.org/index.php</loc>
+  <lastmod>2024-05-02T22:28:50+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://inicitoy.toile-libre.org/pg/f_002_eclairagepublic.html</loc>
-  <lastmod>2024-03-14T18:19:17+00:00</lastmod>
+  <lastmod>2024-04-18T17:10:03+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://inicitoy.toile-libre.org/pg/f_001_design_urbain.html</loc>
+  <lastmod>2024-04-18T16:53:07+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://inicitoy.toile-libre.org/pg/e_001_engagt.html</loc>
-  <lastmod>2024-03-14T18:19:17+00:00</lastmod>
+  <lastmod>2024-04-18T16:53:07+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://inicitoy.toile-libre.org/pg/p_001-dessin-rue.html</loc>
-  <lastmod>2024-03-14T18:19:17+00:00</lastmod>
+  <lastmod>2024-04-18T16:53:08+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://inicitoy.toile-libre.org/pg/p_002-alimentation.html</loc>
+  <lastmod>2024-05-01T13:35:00+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://inicitoy.toile-libre.org/pg/q_001-decor-velo.html</loc>
+  <lastmod>2024-04-22T13:42:27+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://inicitoy.toile-libre.org/pg/q_002-jardins-forestiers.html</loc>
-  <lastmod>2024-03-14T18:19:17+00:00</lastmod>
+  <lastmod>2024-04-18T16:53:08+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 
