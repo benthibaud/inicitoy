@@ -4,6 +4,7 @@
   --navbtn: #a5c3a1 linear-gradient(80deg, #a5c3a1 0%, #b2d9ac 14%, #f2fff0 100%);
   --navbtn-active: #609959 linear-gradient(220deg, #33c138 0%, #759370 29%, #00e309 100%);
   --logo: url(../img/logo_dark.svg);
+  --logoSmall: url(../img/logo-small-dark.svg);
   --link: #0eb9cc;
   --linkfocus: #00d668;
   --strong-color: #dbecd1;
@@ -421,7 +422,7 @@ footer {
   background: var(--box-bg);
   box-shadow: var(--box-shadow);
   border-radius: 2px;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
   padding: 0.7em 0;
 }
 @media (width <= 1250px) {

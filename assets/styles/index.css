@@ -4,6 +4,7 @@
   --navbtn: #a5c3a1 linear-gradient(80deg, #a5c3a1 0%, #b2d9ac 14%, #f2fff0 100%);
   --navbtn-active: #609959 linear-gradient(220deg, #33c138 0%, #759370 29%, #00e309 100%);
   --logo: url(../img/logo_dark.svg);
+  --logoSmall: url(../img/logo-small-dark.svg);
   --link: #0eb9cc;
   --linkfocus: #00d668;
   --strong-color: #dbecd1;
@@ -352,16 +353,25 @@ main #sommaire p {
   line-height: normal;
   padding: 0.2em 0 0;
 }
-main .btnColor {
-  padding: 2px 8px 3px;
-  margin: 0 5px;
+main .btnColor a {
+  margin-left: 5px;
+  padding: 1px 13px 2px;
   background: var(--navbtn);
   border: none;
+  border-radius: 3px;
+  cursor: pointer;
   font-variant: small-caps;
   font-family: var(--font-title);
   font-size: 0.9em;
   font-weight: normal;
   color: var(--black);
+}
+main .btnColor a, main .btnColor a:focus, main .btnColor a.active, main .btnColor a:hover {
+  text-decoration: none;
+}
+main .btnColor a.active, main .btnColor a:hover {
+  background: var(--navbtn-active);
+  color: var(--white);
 }
 main .retrait {
   margin-top: -0.7em;
@@ -398,7 +408,7 @@ footer {
   background: var(--box-bg);
   box-shadow: var(--box-shadow);
   border-radius: 2px;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
   padding: 0.7em 0;
 }
 @media (width <= 1250px) {

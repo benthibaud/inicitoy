@@ -1,24 +1,22 @@
 :root {
   @import './layouts/themes';
   @include themes-light; // variables pour les thèmes clairs
-  @include theme-event; // variables pour la page portail event.php
+  @include theme-focus; // variables pour la page portail focus.php
   @include fonts-noto;  // polices utilisées
 }
-
+  
 @import './layouts/settings'; // Paramètres généraux
 @import './layouts/mixins'; // mixins pour n'activer que les classes utiles à ce css
-@import './layouts/header'; // entête des portails
+@import './layouts/header-pg'; // entête des portails
+
+@import './layouts/animPages'; // mixins d'animation pour les transitions
+@include transitRight;
 
 main {
-  @include sousTitre;
-  @include mainPattern;
   @include size;
   @include classeBox;
   @include sommaire;
-  @include btnFollow;
 }
 footer {
-  @include size;
-  @include theme_box;
-  @include footerDefault;
+  @include footerPg;
 }

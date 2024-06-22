@@ -1,0 +1,51 @@
+header {
+  background: var(--box-bg);
+  
+  .header-box {
+    @include size-pg; // Mixin définie dans _mixins
+    
+    @media (width <= 780px) {
+      height: auto;
+    }
+    display: grid;
+    grid-template-columns: 74% 24%; // une case pour bouton retour + titre et une pour le logo
+    gap: 2%;
+
+    @media (width <= 780px) {
+      grid-template-columns: 58% 40%;
+      gap: 1%;
+    }
+
+    .left {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+
+      @include btnColor; // amène la classe btnColor pour le bouton retour
+      .btnColor {
+        margin-right: 10px;
+      }
+
+      .title {
+        padding-left: 5px;
+    
+        @media (width <= 480px) {
+          h1 {
+            font-size: x-small;
+          }
+        }
+      }
+    }
+    
+    .site-logo a {
+      display: block;
+      margin: 8px 8px 8px 0;
+      height: clamp(45px, 2.4em, 90px);
+      background: var(--logoSmall) no-repeat right / contain;
+
+      @media (width <= 780px) {
+        margin: 4px 6px 4px 0;
+      }
+    }
+  }
+}

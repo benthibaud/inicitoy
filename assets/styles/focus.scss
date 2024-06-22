@@ -1,7 +1,7 @@
 :root {
   @import './layouts/themes';
-  @include themes-light; // variables pour les thèmes foncés
-  @include theme-focus; // variables pour la page portail about.php
+  @include themes-light; // variables pour les thèmes clairs
+  @include theme-focus; // variables pour la page portail focus.php
   @include fonts-noto;  // polices utilisées
 }
 

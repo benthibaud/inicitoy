@@ -1,6 +1,6 @@
 header {
-  @include theme_box; // Mixin définie dans _settings
-  @include size; // Mixin définie dans _settings
+  @include theme_box; // Mixin définie dans _mixins
+  @include size; // Mixin définie dans _mixins
   
   @media (width <= 780px) {
     height: auto;

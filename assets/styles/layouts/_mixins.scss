@@ -8,6 +8,14 @@
     margin: 16px 4vw 20px;
   }
 }
+@mixin size-pg {
+  max-width: max(60%, 1200px);
+  margin: 0 auto;
+
+  @media (width <= 1250px) {
+    margin: 0 4vw 20px;
+  }
+}
 
 // *********** dans main si MainPattern est dans un div ***********
 @mixin sousTitre {
@@ -90,15 +98,28 @@
 
 @mixin btnColor { // utilisé dans index pour le récap contenu du site
   .btnColor {
-    padding: 2px 8px 3px;
-    margin: 0 5px;
-    background: var(--navbtn);
-    border: none;
-    font-variant: small-caps;
-    font-family: var(--font-title);
-    font-size: 0.9em;
-    font-weight: normal;
-    color: var(--black);
+    a {
+      margin-left: 5px;
+      padding: 1px 13px 2px;
+      background: var(--navbtn);
+      border: none;
+      border-radius: 3px;
+      cursor: pointer;
+      font-variant: small-caps;
+      font-family: var(--font-title);
+      font-size: 0.9em;
+      font-weight: normal;
+      color: var(--black);
+      
+      &, &:focus, &.active, &:hover {
+        text-decoration: none;
+      }
+
+      &.active, &:hover {
+        background: var(--navbtn-active);
+        color: var(--white);
+      }
+    }
   }
   .retrait {
     margin-top: -0.7em;
@@ -129,7 +150,6 @@
       left: -120px;
       width: 400px;
       height: 350px;
-      // background: #33592e linear-gradient(188deg, #041a05 0%, #47753f 39%, #2a2b03 100%);
       background: #33592e linear-gradient(8deg, #041a05 0%, #70a666 49%, #2a2b03 100%);
       z-index: -1;
       transition: transform .5s;
@@ -256,19 +276,26 @@
 }
 
 // *********** FOOTER ***********
-@mixin footerDefault {
-  margin-bottom: 40px;
-  padding: 0.7em 0;
-
+@mixin classCopyright {
   .copyright-bar {
     text-align: center;
     font-size: smaller;
     font-variant: small-caps;
     letter-spacing: 1px;
-
+  
     a {
       color: currentColor !important;
       font-weight: normal !important;
     }
   }
+}
+@mixin footerDefault {
+  margin-bottom: 30px;
+  padding: 0.7em 0;
+  @include classCopyright;
+}
+@mixin footerPg {
+  padding: 0.7em 0 30px;
+  @include classCopyright;
+  background: var(--box-bg);
 }

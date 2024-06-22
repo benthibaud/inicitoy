@@ -82,7 +82,7 @@
               du passé.
             </p>
             <div class="displayBtn">
-              <a href="pg/f_001_design_urbain.html" title="des guides sur le design urbain très complets"><span class="btn _text">voir</span></a
+              <a href="pg/f_001_design_urbain.php" title="des guides sur le design urbain très complets"><span class="btn _text">voir</span></a
               ><em>les guides à notre disposition</em>
             </div>
           </div>

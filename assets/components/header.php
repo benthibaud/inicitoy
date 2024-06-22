@@ -21,7 +21,6 @@
       <a href="<?php echo ($currentPage == 'projects.php') ? '#' : 'projects.php'; ?>" <?php if($currentPage == 'projects.php') echo 'class="active"'; ?> >Projets</a>
       <a href="<?php echo ($currentPage == 'quest.php') ? '#' : 'quest.php'; ?>" <?php if($currentPage == 'quest.php') echo 'class="active"'; ?> >Interpellations</a>
       <a href="<?php echo ($currentPage == 'links.php') ? '#' : 'links.php'; ?>" <?php if($currentPage == 'links.php') echo 'class="active"'; ?> >Liens</a>
-      <!-- <a href="<?php echo ($currentPage == 'test20.php') ? '#' : 'test20.php'; ?>" <?php if($currentPage == 'test20.php') echo 'class="active"'; ?> >Test</a> -->
     </div>
   </nav>
   <div class="site-logo">

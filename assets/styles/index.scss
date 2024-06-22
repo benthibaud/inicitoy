@@ -1,7 +1,7 @@
 :root {
   @import './layouts/themes';
   @include themes-dark; // variables pour les thèmes foncés
-  @include theme-index; // variables pour la page portail about.php
+  @include theme-index; // variables pour la page portail index.php
   @include fonts-noto;  // polices utilisées
   @include fonts-kalam; // utilisé par la mixin courrier
 }

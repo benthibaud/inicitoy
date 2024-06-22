@@ -1,26 +1,23 @@
 :root {
   @import './layouts/themes';
-  @include themes-light; // variables pour les thèmes clairs
-  @include theme-links; // variables pour la page portail links.php
+  @include themes-dark; // variables pour les thèmes foncés
+  @include theme-quest; // variables pour la page portail quest.php
   @include fonts-noto;  // polices utilisées
 }
-
+  
 @import './layouts/settings'; // Paramètres généraux
 @import './layouts/mixins'; // mixins pour n'activer que les classes utiles à ce css
-@import './layouts/header'; // entête des portails
+@import './layouts/header-pg'; // entête des portails
 
 @import './layouts/animPages'; // mixins d'animation pour les transitions
-@include transitZoom;
+@include transitRight;
 
 main {
   @include size;
-  @include sousTitre;
-  @include mainPattern;
   @include classeBox;
-  @include sommaire;
+  @include grid;
+  @include float;
 }
 footer {
-  @include size;
-  @include theme_box;
-  @include footerDefault;
+  @include footerPg;
 }
