@@ -255,12 +255,11 @@
         overflow: visible;
       }
     }
-    // légendes des images
-    figcaption {
-      font-size: small;
+    .quote {
+      font-size: 1.2em;
       font-style: italic;
-      text-align: center;
-      text-wrap: balance;
+      color: var(--title-color);
+      font-family: serif;
     }
   }
 }

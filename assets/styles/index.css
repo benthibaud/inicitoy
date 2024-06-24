@@ -133,6 +133,13 @@ p {
   margin-bottom: 1em;
 }
 
+figcaption {
+  font-size: small;
+  font-style: italic;
+  text-align: center;
+  text-wrap: pretty;
+}
+
 strong {
   color: var(--strong-color);
   font-family: var(--font-title);

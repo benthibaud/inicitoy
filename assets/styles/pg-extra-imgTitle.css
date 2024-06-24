@@ -1,0 +1,44 @@
+body { /* sert pour l'article sur les jardins forestiers pour aérer la lecture voir si utile pour d'autres articles */
+  line-height: 2;
+
+  p {
+    padding-bottom: 1.5em;
+  }
+}
+main {
+  .titleImg {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background: var(--img-bg); /* fixed ne fonctionne pas à cause de l'animation d'_animPages et center/cover n'apporte rien de plus */
+  
+    h2 {
+      background: var(--lisibility-bg);
+      width: 80%;
+      font-size: 1.5em;
+      color: var(--white);
+      text-align: center;
+      padding: 20px 10px;
+      margin: 50px auto;
+    }
+
+    h3 {
+      text-wrap: pretty;
+    }
+  
+    .ref {
+      display: flex;
+      align-items: baseline;
+      padding: 10px;
+      background: var(--lisibility-bg);
+      margin-bottom: 10px;
+  
+      p { /* penser à enlever le padding gauche s'il n'y a pas d'image avant le texte */
+        font-size: 0.7em;
+        padding: 0 0 0 15px;
+        margin: 0 !important;
+      }
+    }
+  }
+
+}

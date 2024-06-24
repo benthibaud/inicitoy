@@ -127,6 +127,13 @@ p {
   margin-bottom: 1em;
 }
 
+figcaption {
+  font-size: small;
+  font-style: italic;
+  text-align: center;
+  text-wrap: pretty;
+}
+
 strong {
   color: var(--strong-color);
   font-family: var(--font-title);
@@ -227,9 +234,8 @@ header .header-box .site-logo a {
 
 html::before {
   content: "";
-  position: fixed;
   width: 100%;
-  z-index: -10;
+  z-index: -1;
   top: 0;
 }
 
@@ -245,7 +251,7 @@ body.loaded {
 }
 
 main {
-  min-height: 44em;
+  min-height: 81.5vh;
 }
 
 main {
@@ -320,11 +326,11 @@ main .float.boxed img {
   width: 100%;
   overflow: visible;
 }
-main .float figcaption {
-  font-size: small;
+main .float .quote {
+  font-size: 1.2em;
   font-style: italic;
-  text-align: center;
-  text-wrap: balance;
+  color: var(--title-color);
+  font-family: serif;
 }
 
 footer {

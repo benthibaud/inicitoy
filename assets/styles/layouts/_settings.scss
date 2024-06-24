@@ -94,6 +94,13 @@ p {
   font-size: 1em;
   margin-bottom: 1em;
 }
+// légendes des images
+figcaption {
+  font-size: small;
+  font-style: italic;
+  text-align: center;
+  text-wrap: pretty;
+}
 strong {
   color: var(--strong-color);
   font-family: var(--font-title);

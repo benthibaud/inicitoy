@@ -1,11 +1,9 @@
 @mixin transitZoom {
   html::before {
     content: "";
-    position: fixed;
     width: 100%;
-    z-index: -10;
+    z-index: -1;
     top: 0;
-    background: var(--body-bg);
   }
   body {
     opacity: 0.01; /* Initial opacity set to 0 */
@@ -20,15 +18,13 @@
 @mixin transitRight {
   html::before {
     content: "";
-    position: fixed;
     width: 100%;
-    z-index: -10;
+    z-index: -1;
     top: 0;
   }
   body {
     opacity: 0.01; /* Initial opacity set to 0 */
     transform: translateX(+50%);
-    // transition: all 0.9s ease-in-out; /* Transition rule for opacity */
   }
   body.loaded {
     transition: all 0.9s ease-in-out;
@@ -36,6 +32,6 @@
     opacity: 1; /* Final opacity set to 1 */
   }
   main {
-    min-height: 44em; // pour que le footer soit toujours en bas de page
+    min-height: 81.5vh // pour que le footer soit toujours en bas de page
   }
 }

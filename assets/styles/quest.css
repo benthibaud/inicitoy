@@ -127,6 +127,13 @@ p {
   margin-bottom: 1em;
 }
 
+figcaption {
+  font-size: small;
+  font-style: italic;
+  text-align: center;
+  text-wrap: pretty;
+}
+
 strong {
   color: var(--strong-color);
   font-family: var(--font-title);
@@ -398,11 +405,11 @@ main .float.boxed img {
   width: 100%;
   overflow: visible;
 }
-main .float figcaption {
-  font-size: small;
+main .float .quote {
+  font-size: 1.2em;
   font-style: italic;
-  text-align: center;
-  text-wrap: balance;
+  color: var(--title-color);
+  font-family: serif;
 }
 main .btn {
   display: inline-block;

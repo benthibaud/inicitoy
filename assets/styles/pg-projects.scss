@@ -1,0 +1,23 @@
+:root {
+  @import './layouts/themes';
+  @include themes-dark; // variables pour les thèmes foncés
+  @include theme-projects; // variables pour la page portail projects.php
+  @include fonts-noto;  // polices utilisées
+}
+  
+@import './layouts/settings'; // Paramètres généraux
+@import './layouts/mixins'; // mixins pour n'activer que les classes utiles à ce css
+@import './layouts/header-pg'; // entête des portails
+
+@import './layouts/animPages'; // mixins d'animation pour les transitions
+@include transitRight;
+
+main {
+  @include size;
+  @include classeBox;
+  @include grid;
+  @include float;
+}
+footer {
+  @include footerPg;
+}

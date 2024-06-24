@@ -84,7 +84,7 @@
           la guerre à coup de déforestations, pesticides et autres pollutions..
         </p>
         <div class="displayBtn">
-          <a href="pg/q_002-jardins-forestiers.html"
+          <a href="pg/q_002-jardins-forestiers.php"
             title="des « Jardins Forestiers » délibérément plantés par les populations autochtones"><span
               class="btn _text">voir</span></a><em>tous ces savoirs perdus ..</em>
         </div>
