@@ -9,7 +9,7 @@
   <meta name="description"
     content="Deux sociologues, G. Houdeville et J. Launay, proposent leurs réflexions sur différentes mesures dédiées à la jeunesse et notamment comment attirer les "
     décrocheurs scolaires" vers ces dispositifs." />
-  <link rel="icon" href="../assets/img/favicon.ico" cache="only" />
+  <link rel="icon" href="../assets/img/favicon.ico"/>
 
   <meta property="og:title" content="Engagement des jeunes" />
   <meta property="og:description"

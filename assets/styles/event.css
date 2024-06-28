@@ -372,14 +372,12 @@ main #sommaire p {
 main .btn {
   display: inline-block;
   position: relative;
-  padding: 0.5em 1.4em;
+  padding: 0.3em 1.1em;
   font-size: 1em;
   cursor: pointer;
   border: 0;
-  background: transparent;
   overflow: hidden;
   border-radius: 30px;
-  box-shadow: 0 0 0 0 rgba(85, 85, 85, 0.5019607843);
   transition: box-shadow 0.2s;
 }
 main .btn::before {
@@ -397,10 +395,6 @@ main .btn::before {
 main .btn:hover::before {
   transform: rotate(0deg);
 }
-main .btn:hover {
-  transform: translate(4px, 0);
-  box-shadow: -6px 11px 20px 5px rgba(85, 85, 85, 0.5019607843);
-}
 main .btn._text {
   color: var(--white);
   position: relative;
@@ -408,13 +402,23 @@ main .btn._text {
 }
 main .displayBtn {
   display: inline-flex;
+  margin: 8px 0 0 8px;
 }
 main .displayBtn em {
-  padding: 0.5em 0 0 0.9em;
+  padding: 0.4em 0 0 0.9em;
 }
-@media (width <= 600px) {
+main .displayBtn h1 {
+  padding: 0.1em 0 0 0.5em;
+}
+@media (width <= 640px) {
+  main .displayBtn h1 {
+    padding: 0 0 15px 0;
+    font-size: small;
+  }
+}
+@media (width <= 640px) {
   main .displayBtn {
-    margin: 10px 0;
+    flex-direction: column;
   }
 }
 

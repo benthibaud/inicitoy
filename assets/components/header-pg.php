@@ -11,12 +11,10 @@
 ?>
 <div class="header-box">
   <div class="left">
-    <div class="btnColor">
-      <a href="../<?php echo isset($pages[$retour]) ? $pages[$retour] . $interTxt . $retour : '#'; ?>">« Retour</a>
+    <div class="displayBtn">
+      <a href="../<?php echo isset($pages[$retour]) ? $pages[$retour] . $interTxt . $retour : '#'; ?>"><span class="btn _text">« Retour</span></a><?php echo "<h1>$pgTitle</h1>"; ?>
     </div>
-    <div class="title">
-      <?php echo "<h1>$pgTitle</h1>"; ?>
-    </div>
+    
   </div>
   <div class="site-logo">
     <a href="https://inicitoy.toile-libre.org" title="accueil" rel="home"></a>

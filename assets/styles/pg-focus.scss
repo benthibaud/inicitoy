@@ -12,10 +12,13 @@
 @import './layouts/animPages'; // mixins d'animation pour les transitions
 @include transitRight;
 
+@include mainPattern;
 main {
   @include size;
   @include classeBox;
   @include sommaire;
+  @include grid;
+  @include maskedTxt;
 }
 footer {
   @include footerPg;

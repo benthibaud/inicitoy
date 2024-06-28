@@ -133,14 +133,12 @@
   .btn {
     display: inline-block;
     position: relative;
-    padding: 0.5em 1.4em;
+    padding: 0.3em 1.1em;
     font-size: 1em;
     cursor: pointer;
     border: 0;
-    background: transparent;
     overflow: hidden;
     border-radius: 30px;
-    box-shadow: 0 0 0 0 #55555580; // shadow au départ
     transition: box-shadow 0.2s;
   
     &::before {
@@ -160,11 +158,6 @@
       transform: rotate(0deg);
     }
   
-    &:hover {
-      transform: translate(4px, 0);
-      box-shadow: -6px 11px 20px 5px #55555580; // shadow au moment du survol
-    }
-  
     &._text {
       color: var(--white);
       position: relative;
@@ -173,11 +166,21 @@
   }
   .displayBtn {
     display: inline-flex;
+    margin: 8px 0 0 8px;
+
     em {
-      padding: 0.5em 0 0 0.9em;
+      padding: 0.4em 0 0 0.9em;
     }
-    @media (width <= 600px) {
-      margin: 10px 0;
+    & h1 {
+      padding: 0.1em 0 0 0.5em;
+
+      @media (width <= 640px) {
+        padding: 0 0 15px 0;
+        font-size: small;
+      }
+    }
+    @media (width <= 640px) {
+      flex-direction: column;
     }
   }
 }
@@ -217,12 +220,21 @@
     &.g30 {
       grid-template-columns: 30% 67%;
     }
+    &.g42 {
+      grid-template-columns: 42% 55%;
+    }
     &.g60 {
       grid-template-columns: 60% 37%;
-    }  
+    }
+    &.twin-img {
+      grid-template-columns: 1fr 1fr;
+      gap: 0;
+    }
     @media (width <= 600px) {
       &.g30,
-      &.g60 {
+      &.g42,
+      &.g60,
+      &.twin-img {
         grid-template-columns: 1fr;
         gap: 0;
       }
@@ -271,6 +283,62 @@
     font-size: 0.8rem;
     color: #a3a3a3;
     padding: 0 0 0.9rem 0;
+  }
+}
+
+@mixin maskedTxt {
+  // texte tronqué avec un bouton pour voir la suite
+  .trimTxt {
+    .toggle-input {
+      display: none;
+  
+      &:checked ~ .fullTxt {
+        max-height: fit-content; // Ajustez cette valeur en fonction de la longueur de votre contenu
+        transition: max-height 0.5s ease-in-out;
+  
+        &::after {
+          background: none;
+        }
+      }
+  
+      &:checked ~ .toggle-label .label-text {
+        &::after {
+          content: "↑    réduire    ↑";
+        }
+      }
+    }
+  
+    .toggle-label {
+      display: block; // Changé à block pour que l'ancre soit sur une nouvelle ligne
+      cursor: pointer;
+      background: #ff440028;
+      color: #443d3d;
+      font-size: 1rem;
+      text-align: center;
+  
+      .label-text {
+        &::after {
+          content: "↓    tout voir    ↓";
+        }
+      }
+    }
+    
+    .fullTxt {
+      max-height: 320px;
+      overflow: hidden;
+      position: relative;
+      transition: max-height 0.5s ease-in-out;
+  
+      &::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 4rem; // Adjust the height of the fade-out effect
+        background: linear-gradient(to bottom, rgb(from var(--box-bg) r g b / 20%), rgb(from var(--box-bg) r g b / 80%));
+      }
+    }
   }
 }
 

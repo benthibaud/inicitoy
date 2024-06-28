@@ -168,57 +168,63 @@ header .header-box {
     margin: 0 4vw 20px;
   }
 }
+header .header-box .btn {
+  display: inline-block;
+  position: relative;
+  padding: 0.3em 1.1em;
+  font-size: 1em;
+  cursor: pointer;
+  border: 0;
+  overflow: hidden;
+  border-radius: 30px;
+  transition: box-shadow 0.2s;
+}
+header .header-box .btn::before {
+  content: "";
+  position: absolute;
+  top: -100px;
+  left: -120px;
+  width: 400px;
+  height: 350px;
+  background: #33592e linear-gradient(8deg, #041a05 0%, #70a666 49%, #2a2b03 100%);
+  z-index: -1;
+  transition: transform 0.5s;
+  transform: rotate(100deg);
+}
+header .header-box .btn:hover::before {
+  transform: rotate(0deg);
+}
+header .header-box .btn._text {
+  color: var(--white);
+  position: relative;
+  z-index: 1;
+}
+header .header-box .displayBtn {
+  display: inline-flex;
+  margin: 8px 0 0 8px;
+}
+header .header-box .displayBtn em {
+  padding: 0.4em 0 0 0.9em;
+}
+header .header-box .displayBtn h1 {
+  padding: 0.1em 0 0 0.5em;
+}
+@media (width <= 640px) {
+  header .header-box .displayBtn h1 {
+    padding: 0 0 15px 0;
+    font-size: small;
+  }
+}
+@media (width <= 640px) {
+  header .header-box .displayBtn {
+    flex-direction: column;
+  }
+}
 @media (width <= 780px) {
   header .header-box {
     height: auto;
-  }
-}
-@media (width <= 780px) {
-  header .header-box {
     grid-template-columns: 58% 40%;
     gap: 1%;
-  }
-}
-header .header-box .left {
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-}
-header .header-box .left .btnColor a {
-  margin-left: 5px;
-  padding: 1px 13px 2px;
-  background: var(--navbtn);
-  border: none;
-  border-radius: 3px;
-  cursor: pointer;
-  font-variant: small-caps;
-  font-family: var(--font-title);
-  font-size: 0.9em;
-  font-weight: normal;
-  color: var(--black);
-}
-header .header-box .left .btnColor a, header .header-box .left .btnColor a:focus, header .header-box .left .btnColor a.active, header .header-box .left .btnColor a:hover {
-  text-decoration: none;
-}
-header .header-box .left .btnColor a.active, header .header-box .left .btnColor a:hover {
-  background: var(--navbtn-active);
-  color: var(--white);
-}
-header .header-box .left .retrait {
-  margin-top: -0.7em;
-  padding-left: 1em;
-  line-height: normal;
-  text-wrap: balance;
-}
-header .header-box .left .btnColor {
-  margin-right: 10px;
-}
-header .header-box .left .title {
-  padding-left: 5px;
-}
-@media (width <= 480px) {
-  header .header-box .left .title h1 {
-    font-size: x-small;
   }
 }
 header .header-box .site-logo a {
@@ -294,11 +300,18 @@ main .grid img, main .grid iframe {
 main .grid.g30 {
   grid-template-columns: 30% 67%;
 }
+main .grid.g42 {
+  grid-template-columns: 42% 55%;
+}
 main .grid.g60 {
   grid-template-columns: 60% 37%;
 }
+main .grid.twin-img {
+  grid-template-columns: 1fr 1fr;
+  gap: 0;
+}
 @media (width <= 600px) {
-  main .grid.g30, main .grid.g60 {
+  main .grid.g30, main .grid.g42, main .grid.g60, main .grid.twin-img {
     grid-template-columns: 1fr;
     gap: 0;
   }

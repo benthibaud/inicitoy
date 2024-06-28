@@ -1,0 +1,73 @@
+:root {
+  --swiper-pagination-bullet-inactive-color: #89ac78;
+  --swiper-pagination-bullet-inactive-opacity: 0.5;
+  --swiper-pagination-bullet-horizontal-gap: 6px;
+}
+
+.swiper {
+  width: 100%;
+  max-height: 600px;
+  background: url(../../assets/img/f_002-street-7414680.webp) center/cover;
+}
+
+.swiper-slide {
+  color: #fff;
+  box-sizing: border-box;
+  padding: 0 40px;
+  text-wrap: balance;
+
+  .subtitle {
+    padding: 20px 0;
+  }
+  h2 {
+    font-size: clamp(1.3rem, 1.9vw, 2.2rem);
+    font-family: var(--font-normal);
+    font-weight: 100;
+    color: var(--white);
+  }
+  p {
+    font-size: clamp(0.8rem, 1.2vw, 1.15rem);
+    font-weight: 400;
+    padding-left: 30px;
+    padding-bottom: 15px;
+    
+    &.top {
+      margin-top: 0.8rem;
+    }
+    .small {
+      font-size: smaller;
+      font-style: italic;
+    }
+    &.right {
+      text-align: right;
+    }
+  }
+  .tableau {
+    display: grid;
+    grid-template-columns: 60% 38%;
+    gap: 1%;
+    background: var(--swiper-tabl-bg);
+    padding: 15px;
+
+    p {
+      padding: initial;
+      color: var(--black);
+    }
+  } 
+    
+    
+  @media (width <= 600px) {
+    padding: 20px;
+    
+    .subtitle {
+      padding: 10px 0;
+    }
+    p {
+      padding-left: 20px;
+
+      &.top {
+        margin-top: 0.5rem;
+      }
+    }
+  }
+}

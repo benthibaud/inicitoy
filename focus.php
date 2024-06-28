@@ -70,7 +70,7 @@
               title="Lecteur vidéo youtube"></iframe>
           </div>
           <div class="displayBtn">
-            <a href="pg/f_002_eclairagepublic.html" title="Plein d'enseignements à partir de cette vidéo"><span class="btn _text">venir</span></a
+            <a href="pg/f_002_eclairagepublic.php" title="Plein d'enseignements à partir de cette vidéo"><span class="btn _text">venir</span></a
             ><em>tirer les enseignements de cette table ronde</em>
           </div>
         </article>

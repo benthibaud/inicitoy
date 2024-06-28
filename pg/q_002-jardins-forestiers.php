@@ -39,7 +39,7 @@
   <link rel="stylesheet" href="../assets/styles/pg-quest.css" />
   <style>
     :root {
-      --img-bg: url(../../assets/img/q_002-jardins-forestiers.webp);
+      --img-bg: url(../../assets/img/q_002-jardins-forestiers.webp) fixed top;
       --lisibility-bg: #07270880;
     }
   </style>

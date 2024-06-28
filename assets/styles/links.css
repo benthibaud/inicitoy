@@ -319,12 +319,12 @@ html::before {
 
 body {
   opacity: 0.01; /* Initial opacity set to 0 */
-  scale: 0.8;
+  transform: scale(0.8);
   transition: all 0.9s ease-in-out; /* Transition rule for opacity */
 }
 
 body.loaded {
-  scale: 1;
+  transform: scale(1);
   opacity: 1; /* Final opacity set to 1 */
 }
 
