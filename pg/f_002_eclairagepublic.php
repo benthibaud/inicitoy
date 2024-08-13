@@ -2,44 +2,21 @@
 <html lang="fr">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <?php
+  $headTitle = "Éclairage public | Comment le rénover ?";
+  $headKeywords = "éclairage, public, économies, LED, électronique, trames noires, LPO, méthode, extinction, éteindre, la ville éteint ses lumières, détection, Jean-Michel Tricoire, ";
+  $headDescription = "Avec les LED, on divise sa conso par 3. Mais avec l’électronique, on peut encore diviser ce chiffre par 3 ! Une « nouvelle culture » du juste éclairage dès la conception d’un projet…";
+  $headType = "article";  // article, website, event ou profile
+  $headImage = "f_002-SEO";
+  $headUrl = "pg/f_002_eclairagepublic";
+  $headStyle = "pg-focus";
+  $assetPath = "../assets";
 
-  <title>Éclairage public | Comment le rénover ?</title>
-  <meta name="description"
-    content="Quand on passe aux LED, on divise sa conso par 3. Mais avec l’électronique, on peut encore diviser ce chiffre par 3 soit 9 fois moins qu’avant ! Une « nouvelle culture » du juste éclairage dès la conception d’un projet…" />
-  <link rel="icon" href="../assets/img/favicon.ico" />
+  include '../assets/components/head-SEO.php';
+  ?>
 
-  <meta property="og:title" content="Éclairage public | Comment le rénover ?" />
-  <meta property="og:description"
-    content="Quand on passe aux LED, on divise sa conso par 3. Mais avec l’électronique, on peut encore diviser ce chiffre par 3 soit 9 fois moins qu’avant ! Une « nouvelle culture » du juste éclairage dès la conception d’un projet…" />
-  <meta property="og:type" content="article" />
-  <meta property="og:url" content="https://inicitoy.toile-libre.org/pg/f_002_eclairagepublic.html" />
-  <meta property="og:image" content="https://inicitoy.toile-libre.org/assets/img/f_002-SEO.webp" />
-  <meta property="og:site_name" content="Initiatives Citoyennes Choletaises" />
-  <meta property="og:locale" content="fr_FR" />
-
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Éclairage public | Comment le rénover ?" />
-  <meta name="twitter:description"
-    content="Quand on passe aux LED, on divise sa conso par 3. Mais avec l’électronique, on peut encore diviser ce chiffre par 3 soit 9 fois moins qu’avant ! Une « nouvelle culture » du juste éclairage dès la conception d’un projet…" />
-  <meta name="twitter:image" content="https://inicitoy.toile-libre.org/assets/img/f_002-SEO.webp" />
-  <meta name="twitter:url" content="https://inicitoy.toile-libre.org/pg/f_002_eclairagepublic.html" />
-
-  <meta name="keywords"
-    content="éclairage, public, économies, LED, électronique, trames noires, LPO, méthode, extinction, éteindre, la ville éteint ses lumières, détection, Jean-Michel Tricoire, initiatives, initiative, citoyen, citoyenne, citoyens, citoyennes, Cholet, choletais, choletaise, choletaises, maine et loire, pays de la loire, 49300, 49, actualité, carnaval, maire, bourdouleix, caractériel, actualite, mouchoir, textile, mode, economie, économie, service, ouest, mauges, association, environnement, municipal, elu, design, urbain, rue, urbanisme, atmosphère, élu, indeminité, indemnite, anne, hardy, sylvie, tolassy, autrement, opposition, opposant, opposante, opposition municipale, économique, economique" />
-  <meta name="Author" content="Benoit Thibaud" />
-  <link type="text/plain" rel="author" href="http://mon-domaine.com/humans.txt" />
-  <meta name="robots" content="all" />
-  <meta name="REVISIT-AFTER" content="3 days" />
-  <meta http-equiv="cache-control" content="max-age=3 days" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="x-apple-disable-message-reformatting" />
-
-  <link rel="stylesheet" href="../assets/styles/pg-focus.css" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   <link rel="stylesheet" href="../assets/styles/pg-extra-swiper.css" />
-
 </head>
 
 <body>

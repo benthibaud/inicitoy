@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="749.99988"
+   height="749.99988"
+   viewBox="0 0 198.43746 198.43747"
+   version="1.1"
+   id="svg935"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs932">
+    <linearGradient
+       xlink:href="#linearGradient8952"
+       id="linearGradient8954"
+       x1="337.08459"
+       y1="8.0505285"
+       x2="443.40143"
+       y2="289.50797"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="translate(-307.0819,1.0364241)" />
+    <linearGradient
+       id="linearGradient8952">
+      <stop
+         style="stop-color:#780cff;stop-opacity:1;"
+         offset="0"
+         id="stop8948" />
+      <stop
+         style="stop-color:#e603df;stop-opacity:1"
+         offset="0.22854419"
+         id="stop9054" />
+      <stop
+         style="stop-color:#ff2e31;stop-opacity:1"
+         offset="1"
+         id="stop8950" />
+    </linearGradient>
+    <radialGradient
+       id="f-8"
+       cx="160.27972"
+       cy="584.07965"
+       r="52.351501"
+       xlink:href="#a"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(0,-4.03418,4.28018,0,-2403.6776,923.54262)"
+       fx="160.27972"
+       fy="584.07965" />
+    <linearGradient
+       id="a">
+      <stop
+         offset="0"
+         stop-color="#fc0"
+         id="stop62018" />
+      <stop
+         offset=".1242"
+         stop-color="#fc0"
+         id="stop62020" />
+      <stop
+         offset=".5672"
+         stop-color="#fe4a05"
+         id="stop62022" />
+      <stop
+         offset=".6942"
+         stop-color="#ff0f3f"
+         id="stop62024" />
+      <stop
+         offset="1"
+         stop-color="#fe0657"
+         stop-opacity="0"
+         id="stop62026" />
+    </linearGradient>
+  </defs>
+  <g
+     id="layer1"
+     transform="translate(-24.946425,47.866479)">
+    <g
+       id="g847"
+       transform="matrix(0.74999996,0,0,0.74999996,24.946417,-47.866487)">
+      <g
+         id="g62043">
+        <rect
+           style="mix-blend-mode:normal;fill:url(#linearGradient8954);fill-opacity:1;stroke-width:0.186191;stop-color:#000000"
+           id="rect1038"
+           width="264.58331"
+           height="264.58331"
+           x="1.0172526e-05"
+           y="1.0172526e-05"
+           ry="78.231049"
+           rx="78.231049" />
+        <rect
+           style="font-variation-settings:normal;mix-blend-mode:normal;vector-effect:none;fill:url(#f-8);fill-opacity:1;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;stop-color:#000000"
+           id="rect60662"
+           width="264.58331"
+           height="264.58331"
+           x="1.0172526e-05"
+           y="1.0172526e-05"
+           ry="78.231049"
+           rx="78.231049" />
+        <g
+           id="layer1-9"
+           transform="translate(27.479411,-16.208333)"
+           style="fill:#ffffff">
+          <path
+             id="circle3677"
+             style="fill:#ffffff;fill-opacity:1;stroke-width:0.183366;stop-color:#000000"
+             d="m 63.355361,49.28126 c -32.00013,0 -57.76184,25.761707 -57.76184,57.76184 v 82.9138 c 0,32.00014 25.76171,57.76184 57.76184,57.76184 h 82.913789 c 32.00013,0 57.76184,-25.7617 57.76184,-57.76184 v -82.9138 c 0,-32.000133 -25.76171,-57.76184 -57.76184,-57.76184 z m 0.74156,18.488792 H 145.5276 c 22.16807,0 40.0146,17.846536 40.0146,40.014608 v 81.43068 c 0,22.16806 -17.84653,40.01461 -40.0146,40.01461 H 64.096921 c -22.16807,0 -40.01461,-17.84655 -40.01461,-40.01461 v -81.43068 c 0,-22.168072 17.84654,-40.014608 40.01461,-40.014608 z M 157.84777,83.623863 A 11.906249,11.906249 0 0 0 145.94153,95.530112 11.906249,11.906249 0 0 0 157.84777,107.43636 11.906249,11.906249 0 0 0 169.75402,95.530112 11.906249,11.906249 0 0 0 157.84777,83.623863 Z M 104.81226,98.229171 A 50.270827,50.270827 0 0 0 54.541431,148.5 50.270827,50.270827 0 0 0 104.81226,198.77083 50.270827,50.270827 0 0 0 155.08308,148.5 50.270827,50.270827 0 0 0 104.81226,98.229171 Z m 0,17.594789 A 32.676038,32.676038 0 0 1 137.4883,148.5 32.676038,32.676038 0 0 1 104.81226,181.17604 32.676038,32.676038 0 0 1 72.136221,148.5 32.676038,32.676038 0 0 1 104.81226,115.82396 Z" />
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

@@ -2,11 +2,18 @@
 <html lang="fr">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="icon" href="../assets/img/favicon.ico"/>
-  <title>Document</title>
-  <link rel="stylesheet" href="../assets/styles/pg-quest.css" />
+  <?php
+  $headTitle = "Blog | On se fout des utilisateurs de vélos et trotinettes";
+  $headKeywords = "vélo, trotinette, électrique, attacher son vélo, Séguinière, Marques Avenue, ";
+  $headDescription = "Comme toujours à Cholet et son agglo, la communication passe avant tout. Tous les budgets ne servent qu'à communiquer qu'on fait beaucoup alors qu'on ne fait rien voire même qu'on régresse !!! Des emplacements déjà peu nombreux pour attacher son vélo disparaissent et on ose faire de la déco avec des vélos « pots-de-fleurs » !";
+  $headType = "article";  // article, website, event ou profile
+  $headImage = "q_001-SEO";
+  $headUrl = "pg/q_001-decor-velo";
+  $headStyle = "pg-quest";
+  $assetPath = "../assets";
+
+  include '../assets/components/head-SEO.php';
+  ?>
 </head>
 
 <body>
@@ -20,12 +27,16 @@
   <main>
     <article class="box">
       <h2>Les vélos c'est pour la déco, les cyclistes, on s'en fout..</h2>
-      <p>Alors que j'arrive à Marques Avenue, à La Séguinière, c'est avec une certaine colère, oui, colère que je dois
-        me rendre à l'évidence. Les emplacements pour attacher nos vélos ont disparu !</p>
       <div class="float right boxed">
         <img src="../assets/img/q_001-Suppr empl vélos.webp"
           alt="la machine qui a pris la place de nos quelques emplacements vélos" loading="lazy" />
         <figcaption>Voilà ce qui remplace les seuls emplacements vélo qu'on avait !</figcaption>
+      </div>
+      <p>Alors que j'arrive à Marques Avenue, à La Séguinière, c'est avec une certaine colère, oui, colère que je dois
+        me rendre à l'évidence. Les emplacements pour attacher nos vélos ont disparu !</p>
+      <div class="float left" style="max-width: 20%;">
+        <img src="../assets/img/q_001-panneau.webp"
+          alt="panneau stationnement impossible pour les vélos et trottinettes" loading="lazy">
       </div>
       <p>Et puis je cherche.. cherche encore et encore.. Ils n'ont même pas eu la délicatesse de les mettre ailleurs !!
       </p>

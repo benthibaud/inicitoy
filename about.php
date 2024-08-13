@@ -1,42 +1,18 @@
 <!DOCTYPE html>
 <html lang="fr">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <?php
+      $headTitle = "Qui nous sommes, nous rejoindre et contrôle de vos données personnelles";
+      $headKeywords = "about us, à propos de nous, adhésion, confidentialité, ";
+      $headDescription = "Depuis fin 2022, nous mettons à disposition de l'info et des ressources permettant de susciter débat(s) et réflexion(s) ainsi que des projets participatifs.";
+      $headType = "profile";  // article, website, event ou profile
+      $headImage = "a_000_about";
+      $headUrl = "about";
+      $headStyle = "about";
+      $assetPath = "./assets";
 
-    <title>Qui nous sommes, nous rejoindre et contrôle de vos données personnelles</title>
-    <meta name="description" content="Depuis fin 2022, nous mettons à disposition de l'info et des ressources permettant de susciter débat(s) et réflexion(s) ainsi que des projets participatifs." />
-    <link rel="icon" href="assets/img/favicon.ico" />
-
-    <meta property="og:title" content="Qui nous sommes, nous rejoindre et contrôle de vos données personnelles" />
-    <meta
-      property="og:description"
-      content="Depuis fin 2022, nous mettons à disposition de l'info et des ressources permettant de susciter débat(s) et réflexion(s) ainsi que des projets participatifs." />
-    <meta property="og:type" content="profile" />
-    <meta property="og:url" content="https://inicitoy.toile-libre.org/about.php" />
-    <meta property="og:image" content="https://inicitoy.toile-libre.org/assets/img/a_000_about.webp" />
-    <meta property="og:site_name" content="Initiatives Citoyennes Choletaises" />
-    <meta property="og:locale" content="fr_FR" />
-
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Qui nous sommes, nous rejoindre et contrôle de vos données personnelles" />
-    <meta
-      name="twitter:description"
-      content="Depuis fin 2022, nous mettons à disposition de l'info et des ressources permettant de susciter débat(s) et réflexion(s) ainsi que des projets participatifs." />
-    <meta name="twitter:image" content="https://inicitoy.toile-libre.org/assets/img/a_000_about.webp" />
-    <meta name="twitter:url" content="https://inicitoy.toile-libre.org/about.php" />
-
-    <meta
-      name="keywords"
-      content="about us, à propos de nous, adhésion, confidentialité, initiatives, initiative, citoyen, citoyenne, citoyens, citoyennes, Cholet, choletais, choletaise, choletaises, maine et loire, pays de la loire, 49300, 49, actualité, carnaval, maire, bourdouleix, caractériel, actualite, mouchoir, textile, mode, economie, économie, service, ouest, mauges, association, environnement, municipal, elu, design, urbain, rue, urbanisme, atmosphère, élu, indeminité, indemnite, anne, hardy, sylvie, tolassy, autrement, opposition, opposant, opposante, opposition municipale, économique, economique" />
-    <meta name="Author" content="Benoit Thibaud" />
-    <link type="text/plain" rel="author" href="https://inicitoy.toile-libre.org/humans.txt" />
-    <meta name="robots" content="all" />
-    <meta http-equiv="cache-control" content="max-age=259200" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="x-apple-disable-message-reformatting" />
-
-    <link rel="stylesheet" href="./assets/styles/about.css" />
+      include './assets/components/head-SEO.php';
+      ?>
   </head>
   <body>
     <header>

@@ -2,41 +2,18 @@
 <html lang="fr">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <?php
+  $headTitle = "Jardins forestiers | des autochtones pas si ignorants que ça";
+  $headKeywords = "forêt, jardin, jardins forestiers, premières nations, autochtone, revue Science, agriculture, durable, colonisation, indigène, ";
+  $headDescription = "Cette nourriture abondante, à deux pas de leur habitat, n’avait aucunement besoin de l’homme pour continuer à produire d’année en année 150 ans après.. Malgré l'absence d'agriculture au sens des colons européens, les tribus rencontrées étaient socialement complexes, avec de grandes populations sédentaires et des sociétés hiérarchisées.";
+  $headType = "article";  // article, website, event ou profile
+  $headImage = "q_002-SEO";
+  $headUrl = "pg/q_002-jardins-forestiers";
+  $headStyle = "pg-quest";
+  $assetPath = "../assets";
 
-  <title>Jardins forestiers | des autochtones pas si ignorants que ça</title>
-  <meta name="description"
-    content="Cette nourriture abondante, à deux pas de leur habitat, n’avait aucunement besoin de l’homme pour continuer à produire d’année en année 150 ans après.." />
-  <link rel="icon" href="../assets/img/favicon.ico" />
-
-  <meta property="og:title" content="Jardins forestiers | des autochtones pas si ignorants que ça" />
-  <meta property="og:description"
-    content="Cette nourriture abondante, à deux pas de leur habitat, n’avait aucunement besoin de l’homme pour continuer à produire d’année en année 150 ans après.." />
-  <meta property="og:type" content="article" />
-  <meta property="og:url" content="https://inicitoy.toile-libre.org/pg/q_002-jardins-forestiers.html" />
-  <meta property="og:image" content="https://inicitoy.toile-libre.org/assets/img/q_002-SEO.webp" />
-  <meta property="og:site_name" content="Initiatives Citoyennes Choletaises" />
-  <meta property="og:locale" content="fr_FR" />
-
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Jardins forestiers | des autochtones pas si ignorants que ça" />
-  <meta name="twitter:description"
-    content="Cette nourriture abondante, à deux pas de leur habitat, n’avait aucunement besoin de l’homme pour continuer à produire d’année en année 150 ans après.." />
-  <meta name="twitter:image" content="https://inicitoy.toile-libre.org/assets/img/q_002-SEO.webp" />
-  <meta name="twitter:url" content="https://inicitoy.toile-libre.org/pg/q_002-jardins-forestiers.html" />
-
-  <meta name="keywords"
-    content="forêt, jardin, jardins forestiers, premières nations, autochtone, revue Science, agriculture, durable, colonisation, indigène, initiatives, initiative, citoyen, citoyenne, citoyens, citoyennes, Cholet, choletais, choletaise, choletaises, maine et loire, pays de la loire, 49300, 49, actualité, carnaval, maire, bourdouleix, caractériel, actualite, mouchoir, textile, mode, economie, économie, service, ouest, mauges, association, environnement, municipal, elu, design, urbain, rue, urbanisme, atmosphère, élu, indeminité, indemnite, anne, hardy, sylvie, tolassy, autrement, opposition, opposant, opposante, opposition municipale, économique, economique" />
-  <meta name="Author" content="Benoit Thibaud" />
-  <link type="text/plain" rel="author" href="http://mon-domaine.com/humans.txt" />
-  <meta name="robots" content="all" />
-  <meta name="REVISIT-AFTER" content="3 days" />
-  <meta http-equiv="cache-control" content="max-age=3 days" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="x-apple-disable-message-reformatting" />
-
-  <link rel="stylesheet" href="../assets/styles/pg-quest.css" />
+  include '../assets/components/head-SEO.php';
+  ?>
   <style>
     :root {
       --img-bg: url(../../assets/img/q_002-jardins-forestiers.webp) fixed top;
@@ -44,7 +21,6 @@
     }
   </style>
   <link rel="stylesheet" href="../assets/styles/pg-extra-imgTitle.css" />
-
 </head>
 
 <body>
@@ -77,7 +53,8 @@
         distinct d'espèces bénéfiques pour l'homme, au moins 150 ans après avoir été
         planté.
       </figcaption>
-      <h3>Des recherches suggèrent que l’homme a apporté de la valeur à ces forêts de manière durable</h3>
+      <h3 style="text-wrap: unset;">Des recherches suggèrent que l’homme a apporté de la valeur à ces forêts de manière
+        durable</h3>
       <div class="float right boxed">
         <div class="quote">
           “ des parcelles isolées d'arbres fruitiers et de buissons de baies (..) délibérément plantées par les peuples
@@ -86,15 +63,13 @@
       </div>
       <p>
         Pendant des décennies, les Premières Nations de Colombie-Britannique (Canada) ont su que leurs maisons
-        ancestrales - des villages vidés par la force à la fin des années 1800 - étaient des
-        lieux privilégiés pour la recherche d'aliments traditionnels tels que les
-        noisettes, les pommettes, les cranberries et les aubépines. Une nouvelle étude
-        révèle que des parcelles isolées d'arbres fruitiers et de buissons de baies dans les forêts de ciguës et de
-        cèdres de la région ont été
-        délibérément plantées par les peuples indigènes dans et autour de leurs habitats, il y a plus de 150
-        ans. C'est l'une des premières fois que de tels « jardins forestiers »
-        ont été identifiés en dehors des tropiques, et cela montre que les populations étaient capables de
-        modifier les forêts de manière durable et productive.
+        ancestrales - des villages vidés par la force à la fin des années 1800 - étaient des lieux privilégiés pour la
+        recherche d'aliments traditionnels tels que les noisettes, les pommettes, les cranberries et les aubépines. Une
+        nouvelle étude révèle que des parcelles isolées d'arbres fruitiers et de buissons de baies dans les forêts de
+        ciguës et de cèdres de la région ont été délibérément plantées par les peuples indigènes dans et autour de leurs
+        habitats, il y a plus de 150 ans. C'est l'une des premières fois que de tels « jardins forestiers » ont été
+        identifiés en dehors des tropiques, et cela montre que les populations étaient capables de modifier les forêts
+        de manière durable et productive.
       </p>
       <p>
         « Il s'agit d'un travail très créatif et unique en son genre », déclare Kelly Kindscher, écologiste
@@ -106,7 +81,7 @@
       <div class="float left boxed">
         <div class="quote">
           “ beaucoup de temps aux chercheurs pour reconnaître qu'il s'agissait d'un paysage créé par l'homme (..) Sans
-          un entretien constant, les écologistes supposaient que la forêt « naturelle » prendrait rapidement le
+          un entretien constant, les écologistes supposaient que la forêt « naturelle » prendrait rapidement le
           dessus. ”
         </div>
       </div>

@@ -2,41 +2,18 @@
 <html lang="fr">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <?php
+  $headTitle = "Repas citoyen | Nous choisissons notre société par notre alimentation";
+  $headKeywords = "repas, citoyen, alimentation, saine, permaculture, saison, fruits, légumes, moins de viande, ";
+  $headDescription = "Un repas « citoyen » est une occasion de s'interroger sur nos choix alimentaires et leurs conséquences. C'est aussi un lieu d'échange entre nous des solutions possibles localement.";
+  $headType = "article";  // article, website, event ou profile
+  $headImage = "p_002-img-pixabay";
+  $headUrl = "pg/p_002-alimentation";
+  $headStyle = "pg-projects";
+  $assetPath = "../assets";
 
-  <title>Repas citoyen | Nous choisissons notre société par notre alimentation</title>
-  <meta name="description"
-    content="‘Dessine moi ta rue' a pour objectif de  sensibiliser au partage  de nos rues entre les différents usagers et de proposer des idées. Quelle serait pour vous la rue ‘idéale’?" />
-  <link rel="icon" href="../assets/img/favicon.ico" />
-
-  <meta property="og:title" content="Dessine-moi ta rue | Projet participatif" />
-  <meta property="og:description"
-    content="‘Dessine moi ta rue' a pour objectif de  sensibiliser au partage  de nos rues entre les différents usagers et de proposer des idées. Quelle serait pour vous la rue ‘idéale’?" />
-  <meta property="og:type" content="article" />
-  <meta property="og:url" content="https://inicitoy.toile-libre.org/pg/p_001-dessin-rue.html" />
-  <meta property="og:image" content="https://inicitoy.toile-libre.org/assets/img/p_001-SEO.webp" />
-  <meta property="og:site_name" content="Initiatives Citoyennes Choletaises" />
-  <meta property="og:locale" content="fr_FR" />
-
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Dessine-moi ta rue | Projet participatif" />
-  <meta name="twitter:description"
-    content="‘Dessine moi ta rue' a pour objectif de  sensibiliser au partage  de nos rues entre les différents usagers et de proposer des idées. Quelle serait pour vous la rue ‘idéale’?" />
-  <meta name="twitter:image" content="https://inicitoy.toile-libre.org/assets/img/p_001-SEO.webp" />
-  <meta name="twitter:url" content="https://inicitoy.toile-libre.org/pg/p_001-dessin-rue.html" />
-
-  <meta name="keywords"
-    content="consultation, participatif, participative, rue, confort, sécurité, attractivité, bitume, parkinginitiatives, initiative, citoyen, citoyenne, citoyens, citoyennes, Cholet, choletais, choletaise, choletaises, maine et loire, pays de la loire, 49300, 49, actualité, carnaval, maire, bourdouleix, caractériel, actualite, mouchoir, textile, mode, economie, économie, service, ouest, mauges, association, environnement, municipal, elu, design, urbain, rue, urbanisme, atmosphère, élu, indeminité, indemnite, anne, hardy, sylvie, tolassy, autrement, opposition, opposant, opposante, opposition municipale, économique, economique" />
-  <meta name="Author" content="Benoit Thibaud" />
-  <link type="text/plain" rel="author" href="http://mon-domaine.com/humans.txt" />
-  <meta name="robots" content="all" />
-  <meta name="REVISIT-AFTER" content="3 days" />
-  <meta http-equiv="cache-control" content="max-age=3 days" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="x-apple-disable-message-reformatting" />
-
-  <link rel="stylesheet" href="../assets/styles/pg-projects.css" />
+  include '../assets/components/head-SEO.php';
+  ?>
 </head>
 
 <body>

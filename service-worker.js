@@ -3,7 +3,8 @@ const filesToCache = [
   '_QRcode.html',
   './pg/_afficher_image.php',
   './assets/components/contact.php',
-  './assets/components/header.php'
+  './assets/components/header.php',
+  './assets/components/header-pg.php'
 ];
 
 self.addEventListener('install', function(event) {
