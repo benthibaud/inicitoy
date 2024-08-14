@@ -2,18 +2,24 @@
 <html lang="fr">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <?php
+  $headTitle = "Dossier | Design urbain : un partage de la rue entre les usagers mieux réfléchi";
+  $headKeywords = "rue, aménagement, urbain, usager, mobilité réduite, communs, transport public, sécurité, enfant, bébé, ados, ";
+  $headDescription = "Autour de trois guides très complets, nous explorons les principales tendances d'aménagement des rues pour que tous usagers y trouvent leur place et pas seulement les voitures.. La technologie fait évoluer les possibilités mais le dérèglement climatique doit aussi être pris en compte..";
+  $headType = "article";  // article, website, event ou profile
+  $headImage = "f_001-SEO";
+  $headUrl = "pg/f_001_design_urbain";
+  $headStyle = "pg-focus";
+  $assetPath = "../assets";
 
-  <link rel="icon" href="../assets/img/favicon.ico" />
-  <title>Design urbain</title>
-  <link rel="stylesheet" href="../assets/styles/pg-focus.css" />
+  include '../assets/components/head-SEO.php';
+  ?>
 </head>
 
 <body>
   <header>
     <?php
-          $pgTitle = "Design Urbain";
+          $pgTitle = "Dossier : Design Urbain";
           $retour = "Dossiers";
           include "../assets/components/header-pg.php";
           ?>

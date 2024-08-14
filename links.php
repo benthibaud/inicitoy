@@ -1,42 +1,20 @@
 <!DOCTYPE html>
 <html lang="fr">
+  
+  <head>
+    <?php
+    $headTitle = "Liens utiles et pertinents | pouvant inspirer notre action";
+    $headKeywords = "lien, utile, pertinent, ilots, chaleur, urbaine, ZAN, artificialisation, zéro, rafraichir, arbre, eau de pluie, eaux usées, ";
+    $headDescription = "Liens concernant la fraîcheur des arbres, des sites très bien documentés, des articles en ligne très pertinents, des décryptages de sujets du moment, etc. ";
+    $headType = "website";  // article, website, event ou profile
+    $headImage = "L_000_links";
+    $headUrl = "links";
+    $headStyle = "links";
+    $assetPath = "./assets";
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-  <title>Liens utiles et pertinents | pouvant inspirer notre action</title>
-  <meta name="description"
-    content="Liens concernant la fraîcheur des arbres, des sites très bien documentés, des articles en ligne très pertinents, des décryptages de sujets du moment, etc. " />
-  <link rel="icon" href="assets/img/favicon.ico" />
-
-  <meta property="og:title" content="Liens utiles et pertinents | pouvant inspirer notre action" />
-  <meta property="og:description"
-    content="Liens concernant la fraîcheur des arbres, des sites très bien documentés, des articles en ligne très pertinents, des décryptages de sujets du moment, etc. " />
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://inicitoy.toile-libre.org/links.php" />
-  <meta property="og:image" content="https://inicitoy.toile-libre.org/assets/img/l_000_links.webp" />
-  <meta property="og:site_name" content="Initiatives Citoyennes Choletaises" />
-  <meta property="og:locale" content="fr_FR" />
-
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Liens utiles et pertinents | pouvant inspirer notre action" />
-  <meta name="twitter:description"
-    content="Liens concernant la fraîcheur des arbres, des sites très bien documentés, des articles en ligne très pertinents, des décryptages de sujets du moment, etc. " />
-  <meta name="twitter:image" content="https://inicitoy.toile-libre.org/assets/img/l_000_links.webp" />
-  <meta name="twitter:url" content="https://inicitoy.toile-libre.org/links.php" />
-
-  <meta name="keywords"
-    content="lien, utile, pertinent, ilots, chaleur, urbaine, ZAN, artificialisation, zéro, rafraichir, arbre, eau de pluie, eaux usées, initiatives, initiative, citoyen, citoyenne, citoyens, citoyennes, Cholet, choletais, choletaise, choletaises, maine et loire, pays de la loire, 49300, 49, actualité, carnaval, maire, bourdouleix, caractériel, actualite, mouchoir, textile, mode, economie, économie, service, ouest, mauges, association, environnement, municipal, elu, design, urbain, rue, urbanisme, atmosphère, élu, indeminité, indemnite, anne, hardy, sylvie, tolassy, autrement, opposition, opposant, opposante, opposition municipale, économique, economique" />
-  <meta name="Author" content="Benoit Thibaud" />
-  <link type="text/plain" rel="author" href="https://inicitoy.toile-libre.org/humans.txt" />
-  <meta name="robots" content="all" />
-  <meta http-equiv="cache-control" content="max-age=259200" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="x-apple-disable-message-reformatting" />
-
-  <link rel="stylesheet" href="./assets/styles/links.css" />
-</head>
+    include './assets/components/head-SEO.php';
+    ?>
+  </head>
 
 <body>
   <header>

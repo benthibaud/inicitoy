@@ -1,45 +1,21 @@
 <!DOCTYPE html>
 <html lang="fr">
+  
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <?php
+      $headTitle = "Dossiers | Focus et éléments clés pour comprendre";
+      $headKeywords = "dossier, thème, design urbain, éclairage public, économies, contribuable, énergie, rues, sécurité, ";
+      $headDescription = "Pour aller plus loin dans l'exploration d'un thème, des ressources en ligne permettent de comprendre les enjeux, on peut aussi trouver un certain nombre de solutions expérimentées dans le monde, etc. Cela peut prendre la forme d'un webinaire spécialisé, de guides pdf ou autres, etc..";
+      $headType = "website";  // article, website, event ou profile
+      $headImage = "f_000_focus";
+      $headUrl = "focus";
+      $headStyle = "focus";
+      $assetPath = "./assets";
 
-    <title>Dossiers | Focus et éléments clés pour comprendre</title>
-    <meta
-      name="description"
-      content="La technologie révolutionne l’éclairage public : économies, plus de possibilités,.. Le Design Urbain redistribue les rôles des différents usagers des rues, voyons comment…" />
-    <link rel="icon" href="assets/img/favicon.ico" />
-
-    <meta property="og:title" content="Dossiers | Focus et éléments clés pour comprendre" />
-    <meta
-      property="og:description"
-      content="La technologie révolutionne l’éclairage public : économies, plus de possibilités,.. Le Design Urbain redistribue les rôles des différents usagers des rues, voyons comment…" />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://inicitoy.toile-libre.org/focus.php" />
-    <meta property="og:image" content="https://inicitoy.toile-libre.org/assets/img/f_000_focus.webp" />
-    <meta property="og:site_name" content="Initiatives Citoyennes Choletaises" />
-    <meta property="og:locale" content="fr_FR" />
-
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Dossiers | Focus et éléments clés pour comprendre" />
-    <meta
-      name="twitter:description"
-      content="La technologie révolutionne l’éclairage public : économies, plus de possibilités,.. Le Design Urbain redistribue les rôles des différents usagers des rues, voyons comment…" />
-    <meta name="twitter:image" content="https://inicitoy.toile-libre.org/assets/img/f_000_focus.webp" />
-    <meta name="twitter:url" content="https://inicitoy.toile-libre.org/focus.php" />
-
-    <meta
-      name="keywords"
-      content="dossier, thème, design urbain, éclairage public, économies, contribuable, énergie, rues, sécurité, initiatives, initiative, citoyen, citoyenne, citoyens, citoyennes, Cholet, choletais, choletaise, choletaises, maine et loire, pays de la loire, 49300, 49, actualité, carnaval, maire, bourdouleix, caractériel, actualite, mouchoir, textile, mode, economie, économie, service, ouest, mauges, association, environnement, municipal, elu, design, urbain, rue, urbanisme, atmosphère, élu, indeminité, indemnite, anne, hardy, sylvie, tolassy, autrement, opposition, opposant, opposante, opposition municipale, économique, economique" />
-    <meta name="Author" content="Benoit Thibaud" />
-    <link type="text/plain" rel="author" href="https://inicitoy.toile-libre.org/humans.txt" />
-    <meta name="robots" content="all" />
-    <meta http-equiv="cache-control" content="max-age=259200" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="x-apple-disable-message-reformatting" />
-
-    <link rel="stylesheet" href="./assets/styles/focus.css" />
+      include './assets/components/head-SEO.php';
+      ?>
   </head>
+
   <body>
     <header>
       <?php

@@ -1,5 +1,4 @@
 User-agent: *
-Disallow: /cohab/
 Disallow: /courtesy/
 Disallow: /pg/_afficher_image.php
 Disallow: /_QRcode.html
