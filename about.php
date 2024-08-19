@@ -67,14 +67,17 @@
         <p>Il évoluera aussi au fil du temps..</p>
         <h2>Pour adhérer</h2>
         <p>
-          Recruter de <strong>nouveaux adhérents</strong> est <strong>essentiel</strong> pour le développement de notre association. Cela <strong>donne du poids</strong> aux
-          <strong>idées</strong> défendues ici et à nos <strong>actions</strong> collectives/ participatives.
+          Recruter de <strong>nouveaux adhérents</strong> est <strong>essentiel</strong> pour le développement de notre association. Cela <strong>donne du poids</strong> aux <strong>idées</strong> défendues ici et à nos <strong>actions</strong> collectives/ participatives.
         </p>
         <p><strong>Rejoignez-nous</strong> et faites adhérer vos proches. La cotisation annuelle est à <strong>5€</strong>.</p>
-        <p>La prise de contact se fait par mail sur <a href="mailto:incitoy@laposte.net">incitoy@laposte.net</a> où lors des évènements que nous organisons.</p>
-        <h2>Vos données vous appartiennent !</h2>
-        <p style="text-align: center"><strong>Initiatives Citoyennes Choletaises ne cède ou vend jamais les données de ses membres.</strong></p>
-        <p>Toutes les coordonnées ne sont destinées qu'à un usage interne propre au fonctionnement normal de toute association.</p>
+        <p>L'adhésion peut se faire lors des évènements que nous organisons ou ci-dessous :</p>
+        <!-- intégration du formulaire de Hello Asso -->
+        <iframe id="haWidget" allowtransparency="true" scrolling="auto" src="https://www.helloasso.com/associations/initiatives-citoyennes-choletaises/adhesions/adhesion/widget" style="width: 100%; height: 750px; border: none;"></iframe>
+        <div class="box">
+          <h2>Vos données vous appartiennent !</h2>
+          <p style="text-align: center"><strong>Initiatives Citoyennes Choletaises ne cède ou vend jamais les données de ses membres.</strong></p>
+          <p>Toutes les coordonnées ne sont destinées qu'à un usage interne propre au fonctionnement normal de toute association.</p>
+        </div>
       </section>
     </main>
     <footer>

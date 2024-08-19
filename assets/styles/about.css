@@ -329,6 +329,25 @@ main .colored-box {
 main .colored-box img {
   width: 100%;
 }
+main .box {
+  padding: 2em;
+  background: var(--box-bg);
+  box-shadow: var(--box-shadow);
+  border-radius: 2px;
+  margin-bottom: 20px;
+}
+main .box h2, main .box h3 {
+  margin-top: 0;
+}
+main .box img {
+  width: initial;
+  max-width: 100%;
+}
+@media (width <= 780px) {
+  main .box {
+    padding: 1.4em;
+  }
+}
 
 footer {
   max-width: max(60%, 1200px);

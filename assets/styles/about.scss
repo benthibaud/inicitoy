@@ -13,6 +13,7 @@ main {
   @include size;
   padding: 15px;
   @include colored-box; // utilisé pour le paragraphe logo de about.php
+  @include classeBox;
 }
 footer {
   @include size;
