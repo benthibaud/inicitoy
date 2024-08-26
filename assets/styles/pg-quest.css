@@ -199,7 +199,7 @@ header .header-box .btn._text {
   z-index: 1;
 }
 header .header-box .displayBtn {
-  display: inline-flex;
+  display: flex;
   margin: 8px 0 0 8px;
 }
 header .header-box .displayBtn em {
@@ -229,7 +229,7 @@ header .header-box .displayBtn h1 {
 header .header-box .site-logo a {
   display: block;
   margin: 8px 8px 8px 0;
-  height: clamp(45px, 2.4em, 90px);
+  height: max(45px, 2.4em);
   background: var(--logoSmall) no-repeat right/contain;
 }
 @media (width <= 780px) {
@@ -263,6 +263,8 @@ main {
 main {
   max-width: max(60%, 1200px);
   margin: 20px auto 24px;
+  --maxW: 35%;
+  --defaultW: 80%;
 }
 @media (width <= 1250px) {
   main {
@@ -316,11 +318,14 @@ main .grid.twin-img {
   }
 }
 main .float {
-  float: unset;
+  float: none;
+  display: block;
+  margin: 0 auto;
+  max-width: var(--defaultW);
 }
 @media (width >= 600px) {
   main .float {
-    max-width: 35%;
+    max-width: var(--maxW);
   }
   main .float.left {
     float: left;
@@ -337,7 +342,6 @@ main .float.boxed {
 }
 main .float.boxed img {
   width: 100%;
-  overflow: visible;
 }
 main .float .quote {
   font-size: 1.2em;

@@ -85,9 +85,10 @@
   <footer>
     <div class="copyright-bar">
       ©
-      <?php echo date('Y'); ?><a href="../_QRcode.html"
-        title="QR Code pour partager l`url de notre site avec vos proches">Initiatives
-        Citoyennes Choletaises</a>
+      <?php echo date('Y'); ?>
+      <a href="../_QRcode.html" title="QR Code pour partager l`url de notre site avec vos proches">Initiatives
+        Citoyennes
+        Choletaises</a>
     </div>
   </footer>
   <?php include '../assets/components/js-pgTransition.php'; ?>

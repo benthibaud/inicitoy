@@ -150,11 +150,10 @@ header {
     .site-logo a {
       display: block;
       margin: 8px;
-      height: clamp(50px, 5em, 90px);
+      height: max(55px, 4.8em);
       background: var(--logo) no-repeat center / contain;
 
       @media (width <= 780px) {
-        height: 60px;
         margin: 6px;
       }
     }

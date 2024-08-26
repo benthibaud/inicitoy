@@ -72,8 +72,8 @@
     <section id="right">
       <article id="sommaire" class="box">
         <h3>navigation</h3>
-        <p><a href="#vélo">De qui se moque t'on ?</a></p>
-        <p><a href="#jardins">Une vraie agriculture durable ?</a></p>
+        <p><a href="#vélo">De qui se moque t'on ?</a></p>
+        <p><a href="#jardins">Une vraie agriculture durable ?</a></p>
       </article>
       <?php include './assets/components/contact.php'; ?>
     </section>

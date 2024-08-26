@@ -27,6 +27,19 @@
   </header>
   <main class="mainPattern">
     <section id="left">
+      <article id="alimentation" class="box grid g30">
+        <img src="./assets/img/p_002-img-pixabay.webp" alt="pixabay image illustrant la préparation d'un repas"
+          loading="lazy" />
+        <section>
+          <h2>Projet  « Repas citoyen »</h2>
+          <p>Autour d'un repas, nous réfléchissons ensemble à tous les impacts qu'ont nos choix alimentaires sur notre
+            société. Cela va bien au-delà de ce qu'on pense habituellement !</p>
+          <div class="displayBtn">
+            <a href="./pg/p_002-alimentation.php" title="Repas citoyen / durable (article)"><span
+                class="btn _text">voir</span></a><em>ce que c'est - et - date du prochain en sept</em>
+          </div>
+        </section>
+      </article>
       <article id="DessinRue" class="box grid g60">
         <div>
           <h2>Projet  « Dessine-moi ta rue »</h2>
@@ -43,25 +56,12 @@
         </div>
         <img src="./assets/img/p_001-DessinRue.webp" alt="Une rue en dessin" loading="lazy" />
       </article>
-      <article id="alimentation" class="box grid g30">
-        <img src="./assets/img/p_002-img-pixabay.webp" alt="pixabay image illustrant la préparation d'un repas"
-          loading="lazy" />
-        <section>
-          <h2>Projet  « Repas citoyen »</h2>
-          <p>Autour d'un repas, nous réfléchissons ensemble à tous les impacts qu'ont nos choix alimentaires sur notre
-            société. Cela va bien au-delà de ce qu'on pense habituellement !</p>
-          <div class="displayBtn">
-            <a href="./pg/p_002-alimentation.php" title="Menu citoyen / durable (article)"><span
-                class="btn _text">voir</span></a><em>comment cela s'organise</em>
-          </div>
-        </section>
-      </article>
     </section>
     <section id="right">
       <article id="sommaire" class="box">
         <h3>navigation</h3>
-        <p><a href="#DessinRue">Dessine-moi ta rue</a></p>
         <p><a href="#alimentation">Repas citoyen</a></p>
+        <p><a href="#DessinRue">Dessine-moi ta rue</a></p>
       </article>
       <?php include './assets/components/contact.php'; ?>
     </section>

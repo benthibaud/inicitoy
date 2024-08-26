@@ -165,7 +165,8 @@
     }
   }
   .displayBtn {
-    display: inline-flex;
+    // display: inline-flex;
+    display: flex;
     margin: 8px 0 0 8px;
 
     em {
@@ -243,11 +244,16 @@
 }
 
 @mixin float {
+  --maxW: 35%;
+  --defaultW: 80%;
   .float {
-    float: unset; // pour les petits écrans, ne "flotte pas"
+    float: none; // pour les petits écrans, ne "flotte pas"
+    display: block;
+    margin: 0 auto;
+    max-width: var(--defaultW);
   
     @media (width >= 600px) {
-      max-width: 35%;
+      max-width: var(--maxW);
       &.left {
         float: left;
         margin-right: 1em;
@@ -264,7 +270,7 @@
   
       img {
         width: 100%;
-        overflow: visible;
+        // overflow: visible;
       }
     }
     .quote {

@@ -14,46 +14,64 @@
 
   include '../assets/components/head-SEO.php';
   ?>
+  <style>
+    :root {
+      --img-bg: url(../../assets/img/p_002-vegetables-2338824.webp) fixed top;
+      --lisibility-bg: #07270880;
+    }
+  </style>
+  <link rel="stylesheet" href="../assets/styles/pg-extra-imgTitle.css" />
 </head>
 
 <body>
   <header>
     <?php
-      $pgTitle = "Projet « Repas citoyen / durable »";
+      $pgTitle = "Projet « Repas citoyen »";
       $retour = "Projets";
       include "../assets/components/header-pg.php";
       ?>
   </header>
   <main>
     <article class="box">
-      <div class="small">(page en construction)</div>
-      <h2>Le projet</h2>
-      <p>
-        Avec un groupe de six à huit personnes, nous commençons par réfléchir à l'impact de notre consommation. Cela va
-        bien au-delà de notre santé, du bio, du local, etc. et de tout ce qui est
-        communément dit à ce sujet.
-      </p>
-      <div class="float right boxed">
-        <a href="_afficher_image.php?image=p_002-Menu_durable_(longue-version).svg&width=305.69&height=410"
-          target="_blank" title="Cliquez sur l'image pour voir la version longue"><img
-            src="../assets/img/p_002-Menu_durable.webp" alt="implication de notre alimentation (version courte)"
-            loading="lazy" /></a>
-        <figcaption>Voici la version courte de l'influence de notre alimentation sur la société<br />(clic sur l'image
-          -> version longue)</figcaption>
+      <div class="titleImg">
+        <h2>En matière d'alimentation, faisons-nous les bons choix ?</h2>
       </div>
-      <p>Parallèlement, nous préparons un repas que nous dégusterons ensemble à la fin de la soirée.</p>
-      <p>
-        Pour le moment, les demandes d'inscription (places limitées) se font par mail sur <a
-          href="mailto:incitoy@laposte.net">incitoy@laposte.net</a> en attendant de vous fournir une inscription en
-        ligne.
-      </p>
-      <h2>De quoi parle-t'on ?</h2>
-      <p>Trois fois par jour et tous les jours de l'année, nous votons sans le savoir pour le type de société que nous
-        souhaitons !</p>
-      <p>En effet, les implications sont multiples et nous vous invitons à cliquer sur la carte mentale ci-jointe pour
-        voir sa version détaillée.</p>
-      <p>C'est de cela dont nous parlerons ensemble mais aussi comment on s'en sort localement pour appliquer du mieux
-        qu'on peut nos bonnes résolutions !</p>
+      <div class="box" style="background: var(--lisibility-bg); padding-bottom: 10px;">
+        <h3>Nous sommes hyper-informés (médias, internet, étiquetage,..) et pourtant sommes-nous prêts ou capables de
+          changer nos habitudes alimentaires au quotidien ?
+        </h3>
+        <div class="grid g60">
+          <div>
+            <p style="padding-bottom: 0;">Le repas citoyen est une opportunité pour réfléchir aux impacts de notre
+              alimentation sur :
+            </p>
+            <ul>
+              <li>Notre santé,</li>
+              <li>Notre environnement</li>
+              <li>Notre budget</li>
+            </ul>
+          </div>
+          <a href="_afficher_image.php?image=p_002-Repas citoyen complet.webp&width=100%&height=100%" target="_blank"
+            title="Cliquez sur l'image pour voir la version longue"><img style="width: inherit;"
+              src="../assets/img/p_002-Repas_citoyen.webp" alt="implication de notre alimentation (version courte)"
+              loading="lazy" height="350" /></a>
+        </div>
+      </div>
+      <div class="titleImg" style="--img-bg: url(../../assets/img/p_002-olive-oil-1412361.webp);">
+        <h2>Invitation : dimanche 29 septembre 2024</h2>
+      </div>
+      <div class="box" style="background: var(--lisibility-bg); padding-bottom: 10px;">
+        <div style="display: flex;justify-content: center;"><img src="../assets/img/logo-txt-dark.svg"
+            alt="Initiatives Citoyennes (même police que le logo)"></div>
+        <h3 style="text-align: center;">organise son prochain « Repas
+          Citoyen »<br><br>le
+          dimanche 29 septembre à midi<br>au Puy-Saint-Bonnet
+        </h3>
+        <div class="displayBtn" style="justify-content: center; margin-top: 20px;">
+          <a href="e_002_repas_citoyen.php" title="Page pour s'inscrire au prochain repas citoyen"><span
+              class="btn _text">inscription</span></a><em>(nombre de places limitées)</em>
+        </div>
+      </div>
     </article>
   </main>
   <footer>

@@ -300,12 +300,11 @@ header .header-box nav .menu a.active, header .header-box nav .menu a:hover {
 header .header-box .site-logo a {
   display: block;
   margin: 8px;
-  height: clamp(50px, 5em, 90px);
+  height: max(55px, 4.8em);
   background: var(--logo) no-repeat center/contain;
 }
 @media (width <= 780px) {
   header .header-box .site-logo a {
-    height: 60px;
     margin: 6px;
   }
 }
@@ -401,7 +400,7 @@ main .btn._text {
   z-index: 1;
 }
 main .displayBtn {
-  display: inline-flex;
+  display: flex;
   margin: 8px 0 0 8px;
 }
 main .displayBtn em {

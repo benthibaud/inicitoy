@@ -300,12 +300,11 @@ header .header-box nav .menu a.active, header .header-box nav .menu a:hover {
 header .header-box .site-logo a {
   display: block;
   margin: 8px;
-  height: clamp(50px, 5em, 90px);
+  height: max(55px, 4.8em);
   background: var(--logo) no-repeat center/contain;
 }
 @media (width <= 780px) {
   header .header-box .site-logo a {
-    height: 60px;
     margin: 6px;
   }
 }

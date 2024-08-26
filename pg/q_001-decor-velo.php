@@ -34,7 +34,7 @@
       </div>
       <p>Alors que j'arrive à Marques Avenue, à La Séguinière, c'est avec une certaine colère, oui, colère que je dois
         me rendre à l'évidence. Les emplacements pour attacher nos vélos ont disparu !</p>
-      <div class="float left" style="max-width: 20%;">
+      <div class="float left" style="--maxW: 20%; --defaultW: 40%;">
         <img src="../assets/img/q_001-panneau.webp"
           alt="panneau stationnement impossible pour les vélos et trottinettes" loading="lazy">
       </div>

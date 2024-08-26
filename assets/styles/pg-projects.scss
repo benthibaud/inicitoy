@@ -17,6 +17,7 @@ main {
   @include classeBox;
   @include grid;
   @include float;
+  @include btnFollow;
 }
 footer {
   @include footerPg;

@@ -17,7 +17,7 @@ header {
     .site-logo a {
       display: block;
       margin: 8px 8px 8px 0;
-      height: clamp(45px, 2.4em, 90px);
+      height: max(45px, 2.4em);
       background: var(--logoSmall) no-repeat right / contain;
 
       @media (width <= 780px) {
