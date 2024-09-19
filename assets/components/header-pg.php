@@ -12,7 +12,7 @@
 <div class="header-box">
   <div class="left">
     <div class="displayBtn">
-      <a href="../<?php echo isset($pages[$retour]) ? $pages[$retour] . $interTxt . $retour : (isset($retour2) ? $retour2 . $interTxt . $retour : '#'); ?>"><span class="btn _text">« Retour</span></a><?php echo "<h1>$pgTitle</h1>"; ?>
+      <a href="https://inicitoy.toile-libre.org/<?php echo isset($pages[$retour]) ? $pages[$retour] . $interTxt . $retour : (isset($retour2) ? $retour2 . $interTxt . $retour : '#'); ?>"><span class="btn _text">« Retour</span></a><?php echo "<h1>$pgTitle</h1>"; ?>
     </div>
     
   </div>

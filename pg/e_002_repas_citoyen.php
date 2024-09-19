@@ -50,15 +50,41 @@
       </div>
     </article>
     <article class="box">
-      <p>Indiquez le <strong>nombre de participants</strong>. Ensuite, il vous est demandé d'indiquer un
-        <strong>montant</strong> <span style="font-size: small;">(pour les paiements en
-          ligne)</span>. Si vous souhaitez faire un <strong>versement en espèces</strong> dans la cagnotte le jour du
-        repas,
-        <strong>mettez « 0 € »</strong> !
-      </p>
-      <iframe id="haWidget" allowtransparency="true" scrolling="auto"
-        src="https://www.helloasso.com/associations/initiatives-citoyennes-choletaises/evenements/repas-citoyen/widget"
-        style="width: 100%; height: 780px; border: none;"></iframe>
+      <h2>Comment s'inscrire ?</h2>
+      <ul>
+        <li>activez le formulaire</li>
+        <li><strong>montant par participant</strong><br><small>(qui peut être 0 € si vous préférez participer à la
+            cagnotte
+            sur place)</small></li>
+        <li><strong>+ / - pour le nombre de participants</strong><br><small>(important pour nous pour calculer les
+            achats)</small></li>
+        <li>suivant: le <strong>nom des participants</strong><br>et <strong>celui qui fera le paiement</strong>
+          (uniquement
+          en cas de paiement en ligne)</li>
+        <li>suivant: le <strong>mail de celui qui recevra la confirmation d'inscription</strong></li>
+      </ul>
+      <iframe id="haWidget" title="Widget HelloAsso pour l'événement Repas Citoyen" srcdoc="
+        <style>
+          * {
+            overflow:hidden;
+            margin:0;
+            padding:0;
+          }
+          img {
+            width:100%;
+            height:100%;
+            object-fit:contain;
+          }
+          a {
+            display:block;
+            width:100%;
+            height:100%;
+          }
+        </style>
+        <a href='https://www.helloasso.com/associations/initiatives-citoyennes-choletaises/evenements/repas-citoyen/widget' 
+        title='Accéder au widget HelloAsso'>
+          <img src='../assets/img/e_002-HelloAsso-widget-factice.webp' alt='image factice pour Widget HelloAsso du Repas Citoyen' loading='lazy'>
+        </a>" style="width: 100%; height: auto; min-height: 455px; border: none;" loading="lazy"></iframe>
     </article>
   </main>
   <footer>

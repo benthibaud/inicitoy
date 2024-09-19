@@ -72,7 +72,7 @@
         <p><strong>Rejoignez-nous</strong> et faites adhérer vos proches. La cotisation annuelle est à <strong>5€</strong>.</p>
         <p>L'adhésion peut se faire lors des évènements que nous organisons ou ci-dessous :</p>
         <!-- intégration du formulaire de Hello Asso -->
-        <iframe id="haWidget" allowtransparency="true" scrolling="auto" src="https://www.helloasso.com/associations/initiatives-citoyennes-choletaises/adhesions/adhesion/widget" style="width: 100%; height: 750px; border: none;"></iframe>
+        <iframe id="haWidget" src="https://www.helloasso.com/associations/initiatives-citoyennes-choletaises/adhesions/adhesion/widget" style="width: 100%; height: 750px; border: none;"></iframe>
         <div class="box">
           <h2>Vos données vous appartiennent !</h2>
           <p style="text-align: center"><strong>Initiatives Citoyennes Choletaises ne cède ou vend jamais les données de ses membres.</strong></p>

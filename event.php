@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="fr">
-  
-  <head>
-    <?php
+
+<head>
+  <?php
       $headTitle = "Évènements | rencontres, visites, retours d’expériences,..";
       $headKeywords = "échanges, expert, intervenant, questions, engagement, jeunes, politique de la ville, sociologue, ";
       $headDescription = "Résumés des interventions et/ou les liens et documents promis, les prochains évènements à l’agenda, des visites et rencontres faites ou à venir, etc.";
@@ -14,7 +14,7 @@
 
       include './assets/components/head-SEO.php';
       ?>
-  </head>
+</head>
 
 <body>
   <header>
@@ -29,6 +29,19 @@
     <div class="sous-titre">Nous organisons plusieurs fois par an des rencontres autour d'un thème</div>
     <div class="mainPattern">
       <section id="left">
+        <article class="box" id="RDV">
+          <h3>Repas Citoyen</h3>
+          <h5>dimanche 29 sept 2024</h5>
+          <p>Nous vous donnons rendez-vous pour notre prochain « Repas Citoyen » du 29 septembre 2024.</p>
+          <div class="displayBtn">
+            <a href="./pg/p_002-alimentation.php" title="vers la page qui explique ce que c'est"><span
+                class="btn _text">renseignements</span></a>
+          </div>
+          <div class="displayBtn">
+            <a href="./pg/e_002_repas_citoyen.php" title="vers la page d'inscription"><span
+                class="btn _text">inscription</span></a>
+          </div>
+        </article>
         <article id="engagt" class="box">
           <h3>L'engagement des jeunes</h3>
           <h5>mai 2023</h5>
@@ -87,6 +100,7 @@
       <section id="right">
         <article id="sommaire" class="box">
           <h3>navigation</h3>
+          <p><a href="#RDV">Repas Citoyen</a></p>
           <p><a href="#engagt">L'engagement des jeunes</a></p>
           <p><a href="#presentAsso">Lancement de l'association</a></p>
           <p><a href="#polville">Politique de la ville</a></p>
