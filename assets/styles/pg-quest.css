@@ -90,8 +90,8 @@ h1, h2, h3, h4, h5, h6 {
   line-height: normal;
 }
 
-h2, h3, h4, h5 {
-  margin: 1em 0 0.5em 0;
+h2, h3, h4 {
+  margin: 1em 0 0.5em;
 }
 
 h1 {
@@ -115,6 +115,7 @@ h4 {
 
 h5 {
   font-size: 0.9em;
+  margin: -0.6em 0 0.5em;
 }
 
 h6 {
@@ -200,7 +201,6 @@ header .header-box .btn._text {
 }
 header .header-box .displayBtn {
   display: flex;
-  margin: 8px 0 0 8px;
 }
 header .header-box .displayBtn em {
   padding: 0.4em 0 0 0.9em;
@@ -307,12 +307,28 @@ main .grid.g42 {
 main .grid.g60 {
   grid-template-columns: 60% 37%;
 }
+main .grid.event {
+  grid-template-columns: 37% 63%;
+  gap: 0;
+  border-radius: 6px;
+  background: #3e1c0c;
+  margin-bottom: 1em;
+  box-shadow: 5px 4px 8px 3px #b1aba8;
+}
+main .grid.event p {
+  font-size: 90%;
+  color: var(--white);
+  text-align: center;
+  font-weight: bold;
+  padding: 15px 15px 8px;
+  margin: 0;
+}
 main .grid.twin-img {
   grid-template-columns: 1fr 1fr;
   gap: 0;
 }
 @media (width <= 600px) {
-  main .grid.g30, main .grid.g42, main .grid.g60, main .grid.twin-img {
+  main .grid.g30, main .grid.g42, main .grid.g60, main .grid.event, main .grid.twin-img {
     grid-template-columns: 1fr;
     gap: 0;
   }

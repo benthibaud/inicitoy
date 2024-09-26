@@ -2,6 +2,7 @@
   --swiper-pagination-bullet-inactive-color: #89ac78;
   --swiper-pagination-bullet-inactive-opacity: 0.5;
   --swiper-pagination-bullet-horizontal-gap: 6px;
+  --swiper-navigation-size: 34px;
 }
 
 .swiper {
@@ -14,26 +15,39 @@
   color: #fff;
   box-sizing: border-box;
   padding: 0 40px;
-  text-wrap: balance;
 
+  @media (width <= 550px) {
+    line-height: 1.4;
+
+    p {
+      margin-bottom: 0.8em;
+    }
+    h2, h3 {
+      line-height: 1.1;
+    }
+  }
   .subtitle {
     padding: 20px 0;
   }
-  h2 {
-    font-size: clamp(1.3rem, 1.9vw, 2.2rem);
+  h2, h3 {
+    text-wrap: balance;
     font-family: var(--font-normal);
-    font-weight: 100;
     color: var(--white);
   }
+  h2 {
+    font-size: 1.6em;
+    font-weight: 100;
+  }
+  h3 {
+    font-size: 1.2em;
+    padding-left: 10px;
+    margin-bottom: 0.2em;
+  }
   p {
-    font-size: clamp(0.8rem, 1.2vw, 1.15rem);
+    font-size: 1em;
     font-weight: 400;
     padding-left: 30px;
-    padding-bottom: 15px;
     
-    &.top {
-      margin-top: 0.8rem;
-    }
     .small {
       font-size: smaller;
       font-style: italic;

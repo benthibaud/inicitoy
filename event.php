@@ -29,18 +29,52 @@
     <div class="sous-titre">Nous organisons plusieurs fois par an des rencontres autour d'un thème</div>
     <div class="mainPattern">
       <section id="left">
+        <article id="ateliers" class="box">
+          <h3>Ateliers « cuisine »</h3>
+          <h5>oct 2024</h5>
+          <section class="grid event">
+            <img src="./assets/img/e_003-atelier cuisine CEREALES.webp" alt="image date événement">
+            <div>
+              <p>Pizza, crumble, farçis, burgers... Apprenez à cuisiner les céréales complètes et semi complètes avec
+                ou
+                sans gluten sous
+                différentes formes avec des recettes inédites inspirées de G. Daveau. N'oubiez pas votre tablier, des
+                boîtes pour le
+                partage de fin d'atelier et de quoi écrire.<br>
+                A bientôt.</p>
+              <div class="displayBtn" style="justify-content: center;">
+                <a href="https://www.helloasso.com/associations/initiatives-citoyennes-choletaises/evenements/ateliers-cuisine-cereales"
+                  title="Page d'inscription sur HelloAsso"><span class="btn _text">inscriptions</span></a>
+              </div>
+            </div>
+          </section>
+          <section class="grid event">
+            <img src="./assets/img/e_003-atelier cuisine LEGUMINEUSES.webp" alt="image date événement">
+            <div>
+              <p>Cakes, terrines, tartinades, sauces, gâteaux, chili... Vous découvrirez la richesse des légumineuses
+                dans des plats
+                étonnants. N'oubliez pas votre tablier, vos boîtes pour emmener vos réalisations et de quoi écrire.<br>
+                A bientôt.</p>
+              <div class="displayBtn" style="justify-content: center;">
+                <a href="hhttps://www.helloasso.com/associations/initiatives-citoyennes-choletaises/evenements/atelier-cuisine-legumineuses"
+                  title="Page d'inscription sur HelloAsso"><span class="btn _text">inscriptions</span></a>
+              </div>
+            </div>
+          </section>
+        </article>
         <article class="box" id="RDV">
           <h3>Repas Citoyen</h3>
           <h5>dimanche 29 sept 2024</h5>
-          <p>Nous vous donnons rendez-vous pour notre prochain « Repas Citoyen » du 29 septembre 2024.</p>
-          <div class="displayBtn">
-            <a href="./pg/p_002-alimentation.php" title="vers la page qui explique ce que c'est"><span
-                class="btn _text">renseignements</span></a>
-          </div>
-          <div class="displayBtn">
-            <a href="./pg/e_002_repas_citoyen.php" title="vers la page d'inscription"><span
-                class="btn _text">inscription</span></a>
-          </div>
+          <section class="grid g60">
+            <div>
+              <p>Nous vous donnons rendez-vous pour notre prochain « Repas Citoyen » du 29 septembre 2024.</p>
+              <div class="displayBtn">
+                <a href="./pg/p_002-alimentation.php" title="vers la page qui explique ce que c'est"><span
+                    class="btn _text">renseignements</span></a><em>(inscriptions closes)</em>
+              </div>
+            </div>
+            <img src="./assets/img/e_002-SEO.webp" alt="image date événement">
+          </section>
         </article>
         <article id="engagt" class="box">
           <h3>L'engagement des jeunes</h3>
@@ -100,6 +134,7 @@
       <section id="right">
         <article id="sommaire" class="box">
           <h3>navigation</h3>
+          <p><a href="#ateliers">Ateliers cuisine</a></p>
           <p><a href="#RDV">Repas Citoyen</a></p>
           <p><a href="#engagt">L'engagement des jeunes</a></p>
           <p><a href="#presentAsso">Lancement de l'association</a></p>

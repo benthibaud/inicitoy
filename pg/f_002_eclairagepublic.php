@@ -46,7 +46,7 @@
       </div>
     </section>
     <section id="slideshow" class="box">
-      <h2>Éléments clés de la vidéo</h2>
+      <h2>Quelques enseignements tirés de la vidéo</h2>
       <!-- Swiper -->
       <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff" class="swiper mySwiper">
         <div class="parallax-bg" data-swiper-parallax="-23%"></div>
@@ -54,45 +54,47 @@
           <div class="swiper-slide">
             <div class="subtitle" data-swiper-parallax="-200">
               <h2>...Enjeux</h2>
-              <p class="top">
+              <p>
                 41 % de la consommation des collectivités<br />
                 <span class="small">soit 5,6 TW/h en 2021</span>
               </p>
-              <p>
-                un parc vieillissant <br />
+              <p>un parc vieillissant <br />
                 <span class="small">taux de renouvellement de 3 à 4 % par an</span>
               </p>
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="subtitle" data-swiper-parallax="-200">
               <h2>...Un nouveau contexte</h2>
-              <p class="top">augmentation rapide du prix de l’énergie</p>
-              <p>disponibilité des technologies LED et de l’électronique qui l’accompagne</p>
+              <p>augmentation rapide du prix de l’énergie</p>
+              <p>disponibilité des technologies LED et tout se que permet l'électronique pour un pilotage à la carte</p>
               <p>nouveau cadre règlementaire (loi 2018) autour de la biodiversité (trames noires,..)</p>
-              <p class="top">
-                <span class="small"><br /><br />note: les financements trop changeants d'une année à l'autre ne sont
-                  pas abordés dans cette présentation</span>
+              <p style="text-align: center;">
+                <span class="small"><br />( note: les financements trop changeants d'une année à l'autre ne sont
+                  pas abordés dans cette présentation )</span>
               </p>
             </div>
           </div>
           <div class="swiper-slide">
             <div class="subtitle" data-swiper-parallax="-200">
-              <h2>Notons ceci..</h2>
-              <p class="top">l'objectif d'un éclairage public,<br />c'est de prolonger l'activité économique,
-                professionnelle, touristique, sportive et culturelle durant la nuit</p>
+              <h2>...Phase étude énergivore mais indispensable</h2>
+              <h3>..L'existant</h3>
+              <p>Comment fonctionne et est structurée la ville de jour et de nuit ?<br>
+              État du parc matériel et sa capacité d'adaptation aux LED<br>
+              Capacité d'intervention et de maintenance des équipes</p>
+              <h3>..Lister les besoins d'éclairage</h3>
+              <p>Prolonger nos activités la nuit <small>(travail, loisirs, shopping, déplacements,..)</small><br>
+              Définir les zones de vie nocturne <small>(différentes selon les saisons)</small><br>
+              Mettre en valeur <small>un monument</small>, répondre à un usage <small>ponctuel d'une salle</small>, repérer <small>les transports en commun</small>,..<br>
+              Réglementer l'éclairage privé pour les trames noires <small>(commerces, co-propriétés,..)</small></p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="subtitle" data-swiper-parallax="-200">
+              <h3>..Urbanisme « Lumières »</h3>
               <p>
-                l’ère électronique permet d’avoir un pilotage plus fin du réseau<br />
+                l’ère électronique permet d’avoir un pilotage très fin du réseau<br />
                 <span class="small">plages d'extinction et/ou niveaux d'éclairement différenciés selon les quartiers
                   et leur fréquentation, télésurveillance des pannes,..</span>
               </p>
-              <p>ce fonctionnement « à la carte » requiert un aspect « études » très important</p>
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="subtitle" data-swiper-parallax="-200">
               <h2>La mise en oeuvre peut se faire..</h2>
-              <p class="top">en mode régie : la collectivité assume elle-même le travail</p>
+              <p>en mode régie : la collectivité assume elle-même le travail</p>
               <p>via des marchés de travaux et/ou de maintenance</p>
               <p>ou via des marchés de performances énergétiques avec des obligations d’économies d’énergie</p>
             </div>
@@ -121,7 +123,7 @@
           <div class="swiper-slide">
             <div class="subtitle" data-swiper-parallax="-200">
               <h2>...Méthode</h2>
-              <p class="top">diagnostic photométrique électrique interne (2009) et transposé sur cartographie</p>
+              <p>diagnostic photométrique électrique interne (2009) et transposé sur cartographie</p>
               <p>évaluation des compétences internes et plan de formation</p>
               <p>définition de priorités d’intervention</p>
               <p style="padding-bottom: 10px"><br /><em>Après un succès mitigé en 2013,</em></p>
@@ -139,7 +141,7 @@
           <div class="swiper-slide">
             <div class="subtitle" data-swiper-parallax="-200">
               <h2>Quelques remarques</h2>
-              <p class="top">un parc vétuste : c’est lui qui décide vos interventions</p>
+              <p>un parc vétuste : c’est lui qui décide vos interventions</p>
               <p>la maintenance préventive diminue les pannes et dégage du temps pour la réflexion</p>
               <p style="padding-bottom: 10px">en régie,</p>
               <p style="margin-left: 30px">
@@ -161,11 +163,16 @@
               </div>
             </div>
           </div>
+          <!-- <div class="swiper-slide">
+            <div class="subtitle" data-swiper-parallax="-200">
+            </div>
+          </div> -->
         </div>
         <div class="swiper-button-next"></div>
         <div class="swiper-button-prev"></div>
         <div class="swiper-pagination"></div>
       </div>
+      <a href="https://www.fnccr.asso.fr/" target="_blank"><small>* lien vers la FNCCR citée en fin de vidéo</small></a>
     </section>
     <div class="mainPattern">
       <section id="interview" class="box">

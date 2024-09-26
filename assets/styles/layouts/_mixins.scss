@@ -167,7 +167,7 @@
   .displayBtn {
     // display: inline-flex;
     display: flex;
-    margin: 8px 0 0 8px;
+    // margin: 8px 0 0 8px;
 
     em {
       padding: 0.4em 0 0 0.9em;
@@ -227,6 +227,22 @@
     &.g60 {
       grid-template-columns: 60% 37%;
     }
+    &.event {
+      grid-template-columns: 37% 63%;
+      gap: 0;
+      border-radius: 6px;
+      background: #3e1c0c;
+      margin-bottom: 1em;
+      box-shadow: 5px 4px 8px 3px #b1aba8;
+      p {
+        font-size: 90%;
+        color: var(--white);
+        text-align: center;
+        font-weight: bold;
+        padding: 15px 15px 8px;
+        margin: 0;
+      }
+    }
     &.twin-img {
       grid-template-columns: 1fr 1fr;
       gap: 0;
@@ -235,6 +251,7 @@
       &.g30,
       &.g42,
       &.g60,
+      &.event,
       &.twin-img {
         grid-template-columns: 1fr;
         gap: 0;

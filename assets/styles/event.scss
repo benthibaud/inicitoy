@@ -16,6 +16,7 @@ main {
   @include classeBox;
   @include sommaire;
   @include btnFollow;
+  @include grid;
 }
 footer {
   @include size;

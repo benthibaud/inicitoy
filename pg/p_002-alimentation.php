@@ -51,8 +51,7 @@
               <li>Notre budget</li>
             </ul>
           </div>
-          <a href="_afficher_image.php?image=p_002-Repas citoyen complet.webp&width=100%&height=100%" target="_blank"
-            title="Cliquez sur l'image pour voir la version longue"><img style="width: inherit;"
+          <a href="../assets/img/p_002-Repas citoyen complet.webp" target="_blank" title="Cliquez sur l'image pour voir la version longue"><img style="width: inherit;"
               src="../assets/img/p_002-Repas_citoyen.webp" alt="implication de notre alimentation (version courte)"
               loading="lazy" height="350" /></a>
         </div>
