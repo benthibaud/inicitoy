@@ -123,6 +123,11 @@ h6 {
   font-size: 0.7em;
   font-variant: unset;
 }
+@media (width <= 780px) {
+  h6 {
+    margin: 1em 0 0;
+  }
+}
 
 p {
   font-size: 1em;

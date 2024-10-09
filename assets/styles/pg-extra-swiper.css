@@ -3,6 +3,7 @@
   --swiper-pagination-bullet-inactive-opacity: 0.5;
   --swiper-pagination-bullet-horizontal-gap: 6px;
   --swiper-navigation-size: 34px;
+  --strong-color: unset;
 }
 
 .swiper {
@@ -15,10 +16,10 @@
   color: #fff;
   box-sizing: border-box;
   padding: 0 40px;
-
+  
   @media (width <= 550px) {
     line-height: 1.4;
-
+    
     p {
       margin-bottom: 0.8em;
     }
@@ -51,6 +52,12 @@
     .small {
       font-size: smaller;
       font-style: italic;
+    }
+    .retrait {
+      padding-left: 20px;
+      margin-left: 10px;
+      font-size: smaller;
+      border-left: #fff solid 6px;
     }
     &.right {
       text-align: right;

@@ -90,6 +90,10 @@ h5 {
 h6 {
   font-size: 0.7em; // 'em' est proportionnel à la taille définie dans body
   font-variant: unset;
+
+  @media (width <= 780px) {
+    margin: 1em 0 0;
+  }
 }
 p {
   font-size: 1em;

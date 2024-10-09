@@ -56,21 +56,22 @@
                 étonnants. N'oubliez pas votre tablier, vos boîtes pour emmener vos réalisations et de quoi écrire.<br>
                 A bientôt.</p>
               <div class="displayBtn" style="justify-content: center;">
-                <a href="hhttps://www.helloasso.com/associations/initiatives-citoyennes-choletaises/evenements/atelier-cuisine-legumineuses"
+                <a href="https://www.helloasso.com/associations/initiatives-citoyennes-choletaises/evenements/atelier-cuisine-legumineuses"
                   title="Page d'inscription sur HelloAsso"><span class="btn _text">inscriptions</span></a>
               </div>
             </div>
           </section>
         </article>
         <article class="box" id="RDV">
-          <h3>Repas Citoyen</h3>
-          <h5>dimanche 29 sept 2024</h5>
+          <h3>Assiette Citoyenne</h3>
+          <h5>sept 2024</h5>
           <section class="grid g60">
             <div>
-              <p>Nous vous donnons rendez-vous pour notre prochain « Repas Citoyen » du 29 septembre 2024.</p>
+              <p>Nous avons réuni quelques convives autour d’un repas selon le concept d'« assiette citoyenne ». Nous
+                vous en disons plus dans le lien ci-dessous :</p>
               <div class="displayBtn">
-                <a href="./pg/p_002-alimentation.php" title="vers la page qui explique ce que c'est"><span
-                    class="btn _text">renseignements</span></a><em>(inscriptions closes)</em>
+                <a href="./pg/p_002-alimentation.php" title="vers le compte rendu de la journée"><span
+                    class="btn _text">voir</span></a><em>ce qui s'y est passé</em>
               </div>
             </div>
             <img src="./assets/img/e_002-SEO.webp" alt="image date événement">

@@ -31,12 +31,12 @@
         <img src="./assets/img/p_002-img-pixabay.webp" alt="pixabay image illustrant la préparation d'un repas"
           loading="lazy" />
         <section>
-          <h2>Projet  « Repas citoyen »</h2>
+          <h2>Action  « Assiette citoyenne »</h2>
           <p>Autour d'un repas, nous réfléchissons ensemble à tous les impacts qu'ont nos choix alimentaires sur notre
             société. Cela va bien au-delà de ce qu'on pense habituellement !</p>
           <div class="displayBtn">
-            <a href="./pg/p_002-alimentation.php" title="Repas citoyen / durable (article)"><span
-                class="btn _text">voir</span></a><em>ce que c'est - et - date du prochain en sept</em>
+            <a href="./pg/p_002-alimentation.php" title="Lien vers la page explicative"><span
+                class="btn _text">voir</span></a><em>ce qu'a été notre action en sept 24</em>
           </div>
         </section>
       </article>

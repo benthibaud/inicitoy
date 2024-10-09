@@ -81,22 +81,36 @@
               <h3>..Lister les besoins d'éclairage</h3>
               <p>Prolonger nos activités la nuit <small>(travail, loisirs, shopping, déplacements,..)</small><br>
               Définir les zones de vie nocturne <small>(différentes selon les saisons)</small><br>
-              Mettre en valeur <small>un monument</small>, répondre à un usage <small>ponctuel d'une salle</small>, repérer <small>les transports en commun</small>,..<br>
+              Mettre en valeur <small>un monument</small>, répondre à un usage <small>ponctuel d'une salle</small>, repérer <small>les transports en commun</small>,..<br>na
               Réglementer l'éclairage privé pour les trames noires <small>(commerces, co-propriétés,..)</small></p>
             </div>
           </div>
           <div class="swiper-slide">
             <div class="subtitle" data-swiper-parallax="-200">
-              <h3>..Urbanisme « Lumières »</h3>
-              <p>
-                l’ère électronique permet d’avoir un pilotage très fin du réseau<br />
-                <span class="small">plages d'extinction et/ou niveaux d'éclairement différenciés selon les quartiers
-                  et leur fréquentation, télésurveillance des pannes,..</span>
+              <h2>..Urbanisme « Lumières »</h2>
+              <p>Des <strong>orientations politiques</strong> seront définies<br>
+              On rédigera un <strong>« Schéma Directeur d'Aménagement Lumière / Nocturne »</strong><br>
+             Organisation de <strong>marches nocturnes</strong> les élus, les associations, les riverains, etc, (mieux qu'une réunion dans une salle)<br>
+              <span class="retrait">se rendre compte qu'un niveau d'éclairement de 2 ou 3 lux peut être acceptable pour se repérer</span><br>
+              <span class="retrait">un bouton poussoir pour sécuriser les piétons plutôt qu'une détection car les véhicules ont leurs phares</span><br>
+              <span class="retrait">valider les usages et recommandations (pilotage électronique ou pas, télésurveillancce des pannes ou non,..)</span><br>
+              <span class="retrait">sur certains secteurs dangereux, on peut prévoir d'autres types d'aménagement voiries (catadiodes, balisages réfléchissants,..)</span><br>
+              <span class="retrait">des températures de couleur adaptées aux usages, etc</span><br>
               </p>
-              <h2>La mise en oeuvre peut se faire..</h2>
-              <p>en mode régie : la collectivité assume elle-même le travail</p>
-              <p>via des marchés de travaux et/ou de maintenance</p>
-              <p>ou via des marchés de performances énergétiques avec des obligations d’économies d’énergie</p>
+              <h2>Objectif : lier l'élairage à nos usages et à ceux de la bio-diversité</h2>
+              <p>revivre la nuit vraiment autrement</p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="subtitle" data-swiper-parallax="-200">
+              <h2>...Mise en oeuvre</h2>
+              <p>Le degré d'investissement devra être cohérent, pas uniforme partout mais adapté à la fréquentation et les usages.</p>
+              <p>Avec des notions de réversibilité car les technologies évoluent</p>
+              <p>Ne plus éclairer quand il n'y a personne à éclairer.</p>
+              <p>Mode de fonctionnement<br>
+              <span class="retrait">en mode régie : la collectivité assume elle-même le travail</span><br>
+              <span class="retrait">via des marchés de travaux et/ou de maintenance</span><br>
+              <span class="retrait">ou via des marchés de performances énergétiques avec des obligations d’économies d’énergie</span></p>
             </div>
           </div>
           <div class="swiper-slide">

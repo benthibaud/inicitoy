@@ -247,12 +247,17 @@
       grid-template-columns: 1fr 1fr;
       gap: 0;
     }
+    &.triple {
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 1%;;
+    }
     @media (width <= 600px) {
       &.g30,
       &.g42,
       &.g60,
       &.event,
-      &.twin-img {
+      &.twin-img,
+      &.triple {
         grid-template-columns: 1fr;
         gap: 0;
       }
