@@ -61,6 +61,7 @@
               </div>
             </div>
           </section>
+          Autres dates à venir pour ces ateliers (nous consulter)
         </article>
         <article class="box" id="RDV">
           <h3>Assiette Citoyenne</h3>

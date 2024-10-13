@@ -333,7 +333,6 @@ main .grid.twin-img {
 }
 main .grid.triple {
   grid-template-columns: 1fr 1fr 1fr;
-  gap: 1%;
 }
 @media (width <= 600px) {
   main .grid.g30, main .grid.g42, main .grid.g60, main .grid.event, main .grid.twin-img, main .grid.triple {
