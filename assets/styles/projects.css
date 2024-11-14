@@ -379,10 +379,8 @@ main .grid.g60 {
 main .grid.event {
   grid-template-columns: 37% 63%;
   gap: 0;
-  border-radius: 6px;
-  background: #3e1c0c;
+  background: #552610;
   margin-bottom: 1em;
-  box-shadow: 5px 4px 8px 3px #b1aba8;
 }
 main .grid.event p {
   font-size: 90%;
@@ -391,6 +389,31 @@ main .grid.event p {
   font-weight: bold;
   padding: 15px 15px 8px;
   margin: 0;
+}
+main .grid.event p.dark {
+  font-size: 80%;
+  margin: 10px;
+  background: rgba(4, 26, 5, 0.8);
+  line-height: 1.4;
+}
+main .grid.event strong {
+  font-variant: small-caps;
+  font-size: 1.3em;
+  letter-spacing: 2px;
+  color: #00c5c5;
+}
+main .grid.event small {
+  font-size: small;
+  letter-spacing: normal;
+  font-variant: normal;
+}
+main .grid.event .displayBtn {
+  justify-content: center;
+}
+@media (width <= 640px) {
+  main .grid.event .displayBtn {
+    flex-direction: unset;
+  }
 }
 main .grid.twin-img {
   grid-template-columns: 1fr 1fr;
@@ -433,14 +456,18 @@ main .btn:hover::before {
 }
 main .btn._text {
   color: var(--white);
+  text-align: center;
+  line-height: normal;
+  font-size: 0.9em;
   position: relative;
   z-index: 1;
 }
 main .displayBtn {
   display: flex;
+  margin-top: 0.4em;
 }
 main .displayBtn em {
-  padding: 0.4em 0 0 0.9em;
+  padding: 0.2em 0 0 0.9em;
 }
 main .displayBtn h1 {
   padding: 0.1em 0 0 0.5em;

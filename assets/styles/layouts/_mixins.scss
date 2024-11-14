@@ -160,17 +160,19 @@
   
     &._text {
       color: var(--white);
+      text-align: center;
+      line-height: normal;
+      font-size: 0.9em;
       position: relative;
       z-index: 1; // texte au-dessus de l'animation
     }
   }
   .displayBtn {
-    // display: inline-flex;
     display: flex;
-    // margin: 8px 0 0 8px;
+    margin-top: 0.4em;
 
     em {
-      padding: 0.4em 0 0 0.9em;
+      padding: 0.2em 0 0 0.9em;
     }
     & h1 {
       padding: 0.1em 0 0 0.5em;
@@ -208,6 +210,61 @@
   }
 }
 
+@mixin eventColor {
+  background: #552610;
+  p {
+    font-size: 90%;
+    color: var(--white);
+    text-align: center;
+    font-weight: bold;
+    padding: 15px 15px 8px;
+    margin: 0;
+    &.dark {
+      font-size: 80%;
+      margin: 10px;
+      background: #041a05cc;
+      line-height: 1.4;
+    }
+  }
+  strong {
+    font-variant: small-caps;
+    font-size: 1.3em;
+    letter-spacing: 2px;
+    color: #00c5c5;
+  }
+  small {
+    font-size: small;
+    letter-spacing: normal;
+    font-variant: normal;
+  }
+  .displayBtn {
+    justify-content: center;
+    
+    @media (width <= 640px) {
+      flex-direction: unset;
+    }
+  }
+}
+
+@mixin eventBox {
+  .eventBox {
+    @include eventColor;
+    max-width: 330px;
+    margin-bottom: 1em;
+    
+    .txtBox {
+      padding: 15px;
+    }
+  }
+  .wrap {
+    display: flex;
+    gap: 2%;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 10px;
+  }
+}
+
 @mixin grid { // sert souvent pour afficher les images sur les articles des portails
   .grid {
     display: grid;
@@ -229,18 +286,8 @@
     &.event {
       grid-template-columns: 37% 63%;
       gap: 0;
-      border-radius: 6px;
-      background: #3e1c0c;
+      @include eventColor;
       margin-bottom: 1em;
-      box-shadow: 5px 4px 8px 3px #b1aba8;
-      p {
-        font-size: 90%;
-        color: var(--white);
-        text-align: center;
-        font-weight: bold;
-        padding: 15px 15px 8px;
-        margin: 0;
-      }
     }
     &.twin-img {
       grid-template-columns: 1fr 1fr;

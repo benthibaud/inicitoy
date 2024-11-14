@@ -4,7 +4,7 @@
 <head>
   <?php
       $headTitle = "Évènements | rencontres, visites, retours d’expériences,..";
-      $headKeywords = "échanges, expert, intervenant, questions, engagement, jeunes, politique de la ville, sociologue, ";
+      $headKeywords = "atelier, cuisine, Gilles, Daveau, échanges, expert, intervenant, questions, engagement, jeunes, politique de la ville, sociologue, ";
       $headDescription = "Résumés des interventions et/ou les liens et documents promis, les prochains évènements à l’agenda, des visites et rencontres faites ou à venir, etc.";
       $headType = "website";  // article, website, event ou profile
       $headImage = "e_000_event";
@@ -29,39 +29,41 @@
     <div class="sous-titre">Nous organisons plusieurs fois par an des rencontres autour d'un thème</div>
     <div class="mainPattern">
       <section id="left">
+        <article id="ateliers_next" class="box">
+          <h3>Prochains ateliers cuisine</h3>
+          <h5>nov & déc 2024, janv 2025</h5>
+          <section class="grid event">
+            <div>
+              <p>Ateliers à Cholet basés sur la cuisine alternative définie par Gilles DAVEAU..</p>
+              <div class="displayBtn" style="justify-content: center;">
+                <a href="./pg/e_003-ateliers cuisine.php"
+                title="Page d'infos complémentaires sur les ateliers cuisine"><span class="btn _text">infos &<br>inscriptions</span></a>
+              </div>
+            </div>
+            <div>
+              <p class="dark">samedi 16 nov 2024    9h30-14h <br><strong>Légumineuses<small> 1ère partie</small></strong></p>
+              <p class="dark">samedi 7 déc 2024    9h30-14h <br><strong>Légumineuses<small> 2ème partie</small></strong></p>
+              <p class="dark">mercredi 22 janv 2024    9h30-14h <br><strong>Tartes & Tourtes</small></strong></p>
+            </div>
+          </section>
+        </article>
         <article id="ateliers" class="box">
-          <h3>Ateliers « cuisine »</h3>
+          <h3>Deux ateliers cuisine</h3>
           <h5>oct 2024</h5>
           <section class="grid event">
             <img src="./assets/img/e_003-atelier cuisine CEREALES.webp" alt="image date événement">
             <div>
-              <p>Pizza, crumble, farçis, burgers... Apprenez à cuisiner les céréales complètes et semi complètes avec
-                ou
-                sans gluten sous
-                différentes formes avec des recettes inédites inspirées de G. Daveau. N'oubiez pas votre tablier, des
-                boîtes pour le
-                partage de fin d'atelier et de quoi écrire.<br>
-                A bientôt.</p>
-              <div class="displayBtn" style="justify-content: center;">
-                <a href="https://www.helloasso.com/associations/initiatives-citoyennes-choletaises/evenements/ateliers-cuisine-cereales"
-                  title="Page d'inscription sur HelloAsso"><span class="btn _text">inscriptions</span></a>
-              </div>
+              <p><strong>atelier « Céréales »</strong></p>
+              <p>Au menu : crumble d'automne, légumes farcis, galettes aux flocons d'avoine et pizza polenta. Des céréales bio complètes ou semi complètes : millet, sarrasin, maïs et avoine.</p>
             </div>
           </section>
           <section class="grid event">
             <img src="./assets/img/e_003-atelier cuisine LEGUMINEUSES.webp" alt="image date événement">
             <div>
-              <p>Cakes, terrines, tartinades, sauces, gâteaux, chili... Vous découvrirez la richesse des légumineuses
-                dans des plats
-                étonnants. N'oubliez pas votre tablier, vos boîtes pour emmener vos réalisations et de quoi écrire.<br>
-                A bientôt.</p>
-              <div class="displayBtn" style="justify-content: center;">
-                <a href="https://www.helloasso.com/associations/initiatives-citoyennes-choletaises/evenements/atelier-cuisine-legumineuses"
-                  title="Page d'inscription sur HelloAsso"><span class="btn _text">inscriptions</span></a>
-              </div>
+              <p><strong>atelier « Légumineuses <small>(1ère partie)</small> »</strong></p>
+              <p>Au menu : dhal et pain à base de lentilles, chili, cake aux pois chiches et autres utilisations surprenantes des légumineuses.</p>
             </div>
           </section>
-          Autres dates à venir pour ces ateliers (nous consulter)
         </article>
         <article class="box" id="RDV">
           <h3>Assiette Citoyenne</h3>
@@ -136,7 +138,8 @@
       <section id="right">
         <article id="sommaire" class="box">
           <h3>navigation</h3>
-          <p><a href="#ateliers">Ateliers cuisine</a></p>
+          <p><a href="#ateliers_next">Prochains ateliers</a></p>
+          <p><a href="#ateliers">Ateliers cuisine d'octobre</a></p>
           <p><a href="#RDV">Repas Citoyen</a></p>
           <p><a href="#engagt">L'engagement des jeunes</a></p>
           <p><a href="#presentAsso">Lancement de l'association</a></p>

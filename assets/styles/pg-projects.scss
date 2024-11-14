@@ -18,6 +18,7 @@ main {
   @include grid;
   @include float;
   @include btnFollow;
+  @include eventBox;
 }
 footer {
   @include footerPg;

@@ -1,4 +1,4 @@
-<div class="header-box">
+<div class="header-box" id="top">
   <div class="title">
     <?php echo "<h6>$pgName</h6>"; ?>
     <?php echo "<h1>$pgTitle</h1>"; ?>
