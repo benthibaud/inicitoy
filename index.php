@@ -35,7 +35,7 @@
         <p>Sur <span class="btnColor"><a href="./projects.php">Projets</a></span></p>
         <p class="retrait">L'action <strong>« Dessine-moi ta rue »</strong></p>
         <p>Sur <span class="btnColor"><a href="./event.php">Évènements</a></span></p>
-        <p class="retrait">Des <strong>ateliers cuisine</strong> selon les recettes de <strong>Gilles DAVEAU</strong></p>
+        <p class="retrait">Des <a href="./pg/e_003-ateliers cuisine.php" title="accès direct à la page des ateliers cuisine"><strong>ateliers cuisine</strong></a> selon les recettes de <strong>Gilles DAVEAU</strong></p>
         <p>Sur <span class="btnColor"><a href="./links.php">Liens</a></span></p>
         <p class="retrait">Le site <strong>« Plus fraîche ma ville »</strong></p>
         <p class="retrait">Un guide pour la gestion <strong>des eaux de pluie et eaux usées</strong> traitées</p>

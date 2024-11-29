@@ -14,6 +14,15 @@
 
   include '../assets/components/head-SEO.php';
   ?>
+  <style>
+    .christmas {
+      margin: -30px;
+
+      @media (width <= 780px) {
+        margin: -20px;
+      }
+    }
+  </style>
 </head>
 
 <body>
@@ -25,27 +34,75 @@
       ?>
   </header>
   <main>
-    <article class="box">
+    <article class="box"">
+      <div class="christmas">
+        <img src="../assets/img/christmas-bg.webp" alt="bandeau spécial noël" loading="lazy">
+      </div>
       <small>Pour en savoir plus sur comment sont organisés ces ateliers     <a href="#Organisation">↓    voir plus bas    ↓</a></small>
-      <h2>Prochain rendez-vous</h2>
+      <div class="grid twin-img" style="z-index: 5;">
+        <h2>Prochains rendez-vous</h2>
+        <small style="text-align: right;">Lieu : Cholet      9h30-14h00</small>
+      </div>
       <div class="wrap">
         <section class="eventBox">
-          <img src="../assets/img/e_004-atelier cuisine LEGUMINEUSES.webp" alt="image date événement" width="10vw">
+          <img src="../assets/img/e_005-atelier cuisine CEREALES.webp" alt="image date événement" width="10vw">
           <div class="txtBox">
-            <p>Autour de 5 préparations inspirées des recettes de Gilles Daveau, il vous sera possible de requestionner vos habitudes alimentaires en laissant plus de places aux légumineuses bio.</p>
+            <p>Pizza, crumble, farçis, burgers... Apprenez à cuisiner les céréales complètes et semi complètes avec ou sans gluten sous différentes formes avec des recettes inédites inspirées de Gilles Daveau.</p>
             <div class="displayBtn">
-              <a href="https://www.helloasso.com/associations/initiatives-citoyennes-choletaises/evenements/atelier-cuisine-equilibre-alimentaire"
-                title="Page d'inscription sur HelloAsso"><span class="btn _text">inscriptions</span></a>
+              <a href="https://www.helloasso.com/associations/initiatives-citoyennes-choletaises/evenements/atelier-cuisine-cereales-dec"
+              title="Page d'inscription sur HelloAsso"><span class="btn _text">mercredi 11 déc 2024</span></a>
+            </div>
+            <div class="displayBtn">
+              <a href="https://www.helloasso.com/associations/initiatives-citoyennes-choletaises/evenements/atelier-cuisine-cereales-mars"
+              title="Page d'inscription sur HelloAsso"><span class="btn _text">samedi 1er mars 2025</span></a>
+            </div>
+            <div class="displayBtn">
+              <a href="https://www.helloasso.com/associations/initiatives-citoyennes-choletaises/evenements/atelier-cuisine-cereales-avril"
+              title="Page d'inscription sur HelloAsso"><span class="btn _text">mercredi 30 avril 2025</span></a>
+            </div>
+            <div class="displayBtn">
+              <a href="https://www.helloasso.com/associations/initiatives-citoyennes-choletaises/evenements/atelier-cuisine-cereales-mai-1"
+              title="Page d'inscription sur HelloAsso"><span class="btn _text">samedi 17 mai 2025</span></a>
+            </div>
+            <div class="displayBtn">
+              <a href="https://www.helloasso.com/associations/initiatives-citoyennes-choletaises/evenements/atelier-cuisine-cereales-mai-2"
+              title="Page d'inscription sur HelloAsso"><span class="btn _text">mercredi 21 mai 2025</span></a>
             </div>
           </div>
         </section>
         <section class="eventBox">
-          <img src="../assets/img/e_005-atelier cuisine LEGUMINEUSES.webp" alt="image date événement">
+          <img src="../assets/img/e_004-atelier cuisine LEGUMINEUSES 1.webp" alt="image date événement" width="10vw">
+          <div class="txtBox">
+            <p>Autour de 5 préparations inspirées des recettes de Gilles Daveau, il vous sera possible de requestionner vos habitudes alimentaires en laissant plus de places aux légumineuses bio.</p>
+            <div class="displayBtn">
+              <a href="https://www.helloasso.com/associations/initiatives-citoyennes-choletaises/evenements/atelier-cuisine-legumineuses-1"
+              title="Page d'inscription sur HelloAsso"><span class="btn _text">samedi 4 janv 2025</span></a>
+            </div>
+            <div class="displayBtn">
+              <a href="https://www.helloasso.com/associations/initiatives-citoyennes-choletaises/evenements/atelier-cuisine-legumineuses-1-fevr"
+              title="Page d'inscription sur HelloAsso"><span class="btn _text">samedi 8 févr 2025</span></a>
+            </div>
+            <div class="displayBtn">
+              <a href="https://www.helloasso.com/associations/initiatives-citoyennes-choletaises/evenements/atelier-cuisine-legumineuses-1-juin"
+              title="Page d'inscription sur HelloAsso"><span class="btn _text">samedi 7 juin 2025</span></a>
+            </div>
+          </div>
+        </section>
+        <section class="eventBox">
+          <img src="../assets/img/e_004-atelier cuisine LEGUMINEUSES 2.webp" alt="image date événement">
           <div class="txtBox">
             <p>C'est incroyable tout ce que l'on peut faire avec des légumineuses. Ce deuxième atelier vous permettra de découvrir d'autres idées autour de ces aliments incontournables pour une alimentation durable.</p>
             <div class="displayBtn">
-              <a href="https://www.helloasso.com/associations/initiatives-citoyennes-choletaises/evenements/atelier-cuisine-equilibre-alimentaire"
-                title="Page d'inscription sur HelloAsso"><span class="btn _text">inscriptions</span></a>
+              <a href="https://www.helloasso.com/associations/initiatives-citoyennes-choletaises/evenements/atelier-cuisine-legumineuses-2eme-partie"
+              title="Page d'inscription sur HelloAsso"><span class="btn _text">samedi 7 déc 2024</span></a>
+            </div>
+            <div class="displayBtn">
+              <a href="https://www.helloasso.com/associations/initiatives-citoyennes-choletaises/evenements/atelier-cuisine-legumineuses-2"
+              title="Page d'inscription sur HelloAsso"><span class="btn _text">mercredi 19 févr 2025</span></a>
+            </div>
+            <div class="displayBtn">
+              <a href="https://www.helloasso.com/associations/initiatives-citoyennes-choletaises/evenements/atelier-cuisine-legumineuses-2-juil"
+              title="Page d'inscription sur HelloAsso"><span class="btn _text">mercredi 2 juil 2025</span></a>
             </div>
           </div>
         </section>
@@ -55,7 +112,15 @@
             <p>Autour d'une recette de pâte simple, rapide et inratable nous revisiterons tous les formats des quiches, tartes, et tourtes , sucrées ou salées.</p>
             <div class="displayBtn">
               <a href="https://www.helloasso.com/associations/initiatives-citoyennes-choletaises/evenements/atelier-tartes-et-tourtes"
-                title="Page d'inscription sur HelloAsso"><span class="btn _text">inscriptions</span></a>
+                title="Page d'inscription sur HelloAsso"><span class="btn _text">mercredi 22 janv 2025</span></a>
+            </div>
+            <div class="displayBtn">
+              <a href="https://www.helloasso.com/associations/initiatives-citoyennes-choletaises/evenements/atelier-tartes-et-tourtes-mars"
+                title="Page d'inscription sur HelloAsso"><span class="btn _text">mercredi 19 mars 2025</span></a>
+            </div>
+            <div class="displayBtn">
+              <a href="https://www.helloasso.com/associations/initiatives-citoyennes-choletaises/evenements/atelier-tartes-et-tourtes-avril"
+                title="Page d'inscription sur HelloAsso"><span class="btn _text">samedi 5 avril 2025</span></a>
             </div>
           </div>
         </section>

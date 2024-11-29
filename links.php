@@ -37,7 +37,9 @@
                 title="Site qui recense les solutions pour rafraîchir la ville">ce site internet</a></strong>.
           </p>
           <p>Sa vocation est d'aider les collectivités dans le choix de solutions de rafraîchissement urbain pérennes et
-            durables.</p>
+            durables.
+          </p>
+          <p>Et nous sommes pas tous égaux face à ce phénomène selon <a href="https://www.insee.fr/fr/statistiques/8283129" title="En milieu urbain, les ménages modestes sont en général plus exposés aux îlots de chaleur">cette étude de l'INSEE</a>..</p>
         </article>
         <article id="Assainissement" class="box">
           <h2>Eau : assainissement non collectif</h2>

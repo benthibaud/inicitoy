@@ -31,7 +31,7 @@
       <section id="left">
         <article id="ateliers_next" class="box">
           <h3>Prochains ateliers cuisine</h3>
-          <h5>nov & déc 2024, janv 2025</h5>
+          <h5>déc 2024 et 1er semestre 2025</h5>
           <section class="grid event">
             <div>
               <p>Ateliers à Cholet basés sur la cuisine alternative définie par Gilles DAVEAU..</p>
@@ -41,15 +41,16 @@
               </div>
             </div>
             <div>
-              <p class="dark">samedi 16 nov 2024    9h30-14h <br><strong>Légumineuses<small> 1ère partie</small></strong></p>
-              <p class="dark">samedi 7 déc 2024    9h30-14h <br><strong>Légumineuses<small> 2ème partie</small></strong></p>
-              <p class="dark">mercredi 22 janv 2024    9h30-14h <br><strong>Tartes & Tourtes</small></strong></p>
+              <p class="dark">samedi 7 déc 2024    9h30-14h <br><strong>Légumineuses 2</strong></p>
+              <p class="dark">mercredi 11 déc 2024    9h30-14h <br><strong>Céréales</strong></p>
+              <p class="dark">samedi 4 janv 2025    9h30-14h <br><strong>Légumineuses 1</strong></p>
+              <p class="dark">mercredi 22 janv 2025    9h30-14h <br><strong>Tartes & Tourtes</small></strong></p>
             </div>
           </section>
         </article>
         <article id="ateliers" class="box">
-          <h3>Deux ateliers cuisine</h3>
-          <h5>oct 2024</h5>
+          <h3>Précédents ateliers cuisine</h3>
+          <h5>automne 2024</h5>
           <section class="grid event">
             <img src="./assets/img/e_003-atelier cuisine CEREALES.webp" alt="image date événement">
             <div>
@@ -60,7 +61,7 @@
           <section class="grid event">
             <img src="./assets/img/e_003-atelier cuisine LEGUMINEUSES.webp" alt="image date événement">
             <div>
-              <p><strong>atelier « Légumineuses <small>(1ère partie)</small> »</strong></p>
+              <p><strong>atelier « Légumineuses 1 »</strong></p>
               <p>Au menu : dhal et pain à base de lentilles, chili, cake aux pois chiches et autres utilisations surprenantes des légumineuses.</p>
             </div>
           </section>
@@ -139,7 +140,7 @@
         <article id="sommaire" class="box">
           <h3>navigation</h3>
           <p><a href="#ateliers_next">Prochains ateliers</a></p>
-          <p><a href="#ateliers">Ateliers cuisine d'octobre</a></p>
+          <p><a href="#ateliers">Précédents ateliers cuisine</a></p>
           <p><a href="#RDV">Repas Citoyen</a></p>
           <p><a href="#engagt">L'engagement des jeunes</a></p>
           <p><a href="#presentAsso">Lancement de l'association</a></p>
