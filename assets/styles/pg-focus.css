@@ -306,6 +306,14 @@ main .box img {
   width: initial;
   max-width: 100%;
 }
+main .box .navmobile {
+  display: none;
+}
+@media (width <= 830px) {
+  main .box .navmobile {
+    display: block;
+  }
+}
 @media (width <= 780px) {
   main .box {
     padding: 1.4em;

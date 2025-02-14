@@ -31,7 +31,7 @@
       <section id="left">
         <article id="ateliers_next" class="box">
           <h3>Prochains ateliers cuisine</h3>
-          <h5>déc 2024 et 1er semestre 2025</h5>
+          <h5>1er semestre 2025</h5>
           <section class="grid event">
             <div>
               <p>Ateliers à Cholet basés sur la cuisine alternative définie par Gilles DAVEAU..</p>
@@ -41,16 +41,15 @@
               </div>
             </div>
             <div>
-              <p class="dark">samedi 7 déc 2024    9h30-14h <br><strong>Légumineuses 2</strong></p>
-              <p class="dark">mercredi 11 déc 2024    9h30-14h <br><strong>Céréales</strong></p>
-              <p class="dark">samedi 4 janv 2025    9h30-14h <br><strong>Légumineuses 1</strong></p>
-              <p class="dark">mercredi 22 janv 2025    9h30-14h <br><strong>Tartes & Tourtes</small></strong></p>
+              <p class="dark">mercredi 19 févr 2025    9h30-14h <br><strong>Légumineuses 2</strong></p>
+              <p class="dark">mercredi 19 mars 2025    9h30-14h <br><strong>Tartes & Tourtes</small></strong></p>
+              <p class="dark">vendredi 21 mars 2025    9h30-15h <br><strong>Yoga + Cuisine</strong></p>
             </div>
           </section>
         </article>
         <article id="ateliers" class="box">
           <h3>Précédents ateliers cuisine</h3>
-          <h5>automne 2024</h5>
+          <h5>automne/hiver 2024</h5>
           <section class="grid event">
             <img src="./assets/img/e_003-atelier cuisine CEREALES.webp" alt="image date événement">
             <div>

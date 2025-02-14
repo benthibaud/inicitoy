@@ -69,6 +69,12 @@
       width: initial;
       max-width: 100%;
     }
+    .navmobile {
+      display: none;
+      @media (width <= 830px) {
+        display: block;
+      }
+    }
     @media (width <= 780px) {
       padding: 1.4em;
     }
