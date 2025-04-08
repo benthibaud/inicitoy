@@ -41,11 +41,11 @@
       <small>Pour en savoir plus sur comment sont organisés ces ateliers     <a href="#Organisation">↓    voir plus bas    ↓</a></small>
       <div class="grid twin-img" style="z-index: 5;">
         <h2>Prochains rendez-vous</h2>
-        <small style="text-align: right;">Lieu : Cholet      9h30-14h00*<br><em>* sauf yoga & cuisine jusqu'à 15h00</em></small>
+        <small style="text-align: right;">Lieu : Cholet      9h30-14h00</small>
       </div>
       <div class="navmobile">
         <small>
-          <a href="#box1">» céréales</a>   <a href="#box2">» légumineuses1</a>   <a href="#box3">» légumineuses2</a>   <a href="#box4">» tartes & tourtes</a>   <a href="#box5">» yoga & cuisine</a>
+          <a href="#box1">» céréales</a>   <a href="#box2">» légumineuses1</a>   <a href="#box3">» légumineuses2</a>   <a href="#box4">» tartes & tourtes</a>
         </small>
       </div>
       <div class="wrap">
@@ -61,20 +61,12 @@
               <a href="https://www.helloasso.com/associations/initiatives-citoyennes-choletaises/evenements/atelier-cuisine-cereales-mai-1"
               title="Page d'inscription sur HelloAsso"><span class="btn _text">samedi 17 mai 2025</span></a>
             </div>
-            <div class="displayBtn">
-              <a href="https://www.helloasso.com/associations/initiatives-citoyennes-choletaises/evenements/atelier-cuisine-cereales-mai-2"
-              title="Page d'inscription sur HelloAsso"><span class="btn _text">mercredi 21 mai 2025</span></a>
-            </div>
           </div>
         </section>
         <section class="eventBox" id="box2">
           <img src="../assets/img/e_004-atelier cuisine LEGUMINEUSES 1.webp" alt="image date événement" width="10vw">
           <div class="txtBox">
             <p>Autour de 5 préparations inspirées des recettes de Gilles Daveau, il vous sera possible de requestionner vos habitudes alimentaires en laissant plus de places aux légumineuses bio.</p>
-            <div class="displayBtn">
-              <a href="https://www.helloasso.com/associations/initiatives-citoyennes-choletaises/evenements/atelier-cuisine-legumineuses-1-fevr"
-              title="Page d'inscription sur HelloAsso"><span class="btn _text">samedi 8 févr 2025</span></a>
-            </div>
             <div class="displayBtn">
               <a href="https://www.helloasso.com/associations/initiatives-citoyennes-choletaises/evenements/atelier-cuisine-legumineuses-1-juin"
               title="Page d'inscription sur HelloAsso"><span class="btn _text">samedi 7 juin 2025</span></a>
@@ -86,10 +78,6 @@
           <div class="txtBox">
             <p>C'est incroyable tout ce que l'on peut faire avec des légumineuses. Ce deuxième atelier vous permettra de découvrir d'autres idées autour de ces aliments incontournables pour une alimentation durable.</p>
             <div class="displayBtn">
-              <a href="https://www.helloasso.com/associations/initiatives-citoyennes-choletaises/evenements/atelier-cuisine-legumineuses-2"
-              title="Page d'inscription sur HelloAsso"><span class="btn _text">mercredi 19 févr 2025</span></a>
-            </div>
-            <div class="displayBtn">
               <a href="https://www.helloasso.com/associations/initiatives-citoyennes-choletaises/evenements/atelier-cuisine-legumineuses-2-juil"
               title="Page d'inscription sur HelloAsso"><span class="btn _text">mercredi 2 juil 2025</span></a>
             </div>
@@ -100,16 +88,12 @@
           <div class="txtBox">
             <p>Autour d'une recette de pâte simple, rapide et inratable nous revisiterons tous les formats des quiches, tartes, et tourtes , sucrées ou salées.</p>
             <div class="displayBtn">
-              <a href="https://www.helloasso.com/associations/initiatives-citoyennes-choletaises/evenements/atelier-tartes-et-tourtes-mars"
-                title="Page d'inscription sur HelloAsso"><span class="btn _text">mercredi 19 mars 2025</span></a>
-            </div>
-            <div class="displayBtn">
               <a href="https://www.helloasso.com/associations/initiatives-citoyennes-choletaises/evenements/atelier-tartes-et-tourtes-avril"
                 title="Page d'inscription sur HelloAsso"><span class="btn _text">samedi 5 avril 2025</span></a>
             </div>
           </div>
         </section>
-        <section class="eventBox" id="box5">
+        <!-- <section class="eventBox" id="box5">
           <img src="../assets/img/e_006-atelier cuisine YOGA.webp" alt="image date événement">
           <div class="txtBox">
             <p>Après une séance de yoga accessible et complète, qui vous permettra de vous reconnecter à votre corps, vous cuisinerez et partagerez en toute convivialité quelques plats à base de céréales et de légumineuses bio.</p>
@@ -118,11 +102,10 @@
                 title="Page d'inscription sur HelloAsso"><span class="btn _text">vendredi 21 mars 2025</span></a>
             </div>
           </div>
-        </section>
+        </section> -->
       </div>
       <p style="text-align: center;">
-        N'oubliez pas votre tablier, des contenants pour le partage de fin d'atelier et de quoi écrire.    A bientôt.<br>
-        <small>( atelier yoga : prévoir un tapis )</small>
+        N'oubliez pas votre tablier, des contenants pour le partage de fin d'atelier et de quoi écrire.    A bientôt.
       </p>
     </article>
     <article class="box" id="Organisation">

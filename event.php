@@ -41,9 +41,10 @@
               </div>
             </div>
             <div>
-              <p class="dark">mercredi 19 févr 2025    9h30-14h <br><strong>Légumineuses 2</strong></p>
-              <p class="dark">mercredi 19 mars 2025    9h30-14h <br><strong>Tartes & Tourtes</small></strong></p>
-              <p class="dark">vendredi 21 mars 2025    9h30-15h <br><strong>Yoga + Cuisine</strong></p>
+              <p class="dark">mercredi 30 avril 2025    9h30-14h <br><strong>Céréales</strong></p>
+              <p class="dark">samedi 17 mai 2025    9h30-14h <br><strong>Céréales</strong></p>
+              <p class="dark">samedi 7 juin 2025    9h30-14h <br><strong>Légumineuses 1</strong></p>
+              <p class="dark">mercredi 2 juillet 2025    9h30-14h <br><strong>Légumineuses 2</strong></p>
             </div>
           </section>
         </article>
