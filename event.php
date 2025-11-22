@@ -31,7 +31,7 @@
       <section id="left">
         <article id="ateliers_next" class="box">
           <h3>Prochains ateliers cuisine</h3>
-          <h5>1er semestre 2025</h5>
+          <h5>2ème semestre 2025</h5>
           <section class="grid event">
             <div>
               <p>Ateliers à Cholet basés sur la cuisine alternative définie par Gilles DAVEAU..</p>
@@ -41,16 +41,14 @@
               </div>
             </div>
             <div>
-              <p class="dark">mercredi 30 avril 2025    9h30-14h <br><strong>Céréales</strong></p>
-              <p class="dark">samedi 17 mai 2025    9h30-14h <br><strong>Céréales</strong></p>
-              <p class="dark">samedi 7 juin 2025    9h30-14h <br><strong>Légumineuses 1</strong></p>
-              <p class="dark">mercredi 2 juillet 2025    9h30-14h <br><strong>Légumineuses 2</strong></p>
+              <p class="dark">samedi 8 novembre 2025    9h30-14h00 <br><strong>CEREALES et LEGUMINEUSES</strong></p>
+              <p class="dark">samedi 13 décembre 2025    9h30-14h00 <br><strong>Désserts, Snacks & p'tits déj</strong></p>
             </div>
           </section>
         </article>
         <article id="ateliers" class="box">
           <h3>Précédents ateliers cuisine</h3>
-          <h5>automne/hiver 2024</h5>
+          <h5>2024 / 2025</h5>
           <section class="grid event">
             <img src="./assets/img/e_003-atelier cuisine CEREALES.webp" alt="image date événement">
             <div>
@@ -61,8 +59,15 @@
           <section class="grid event">
             <img src="./assets/img/e_003-atelier cuisine LEGUMINEUSES.webp" alt="image date événement">
             <div>
-              <p><strong>atelier « Légumineuses 1 »</strong></p>
+              <p><strong>atelier « Légumineuses »</strong></p>
               <p>Au menu : dhal et pain à base de lentilles, chili, cake aux pois chiches et autres utilisations surprenantes des légumineuses.</p>
+            </div>
+          </section>
+          <section class="grid event">
+            <img src="./assets/img/e_003-atelier cuisine TARTES et TOURTES.webp" alt="image date événement">
+            <div>
+              <p><strong>atelier « Tartes & Tourtes »</strong></p>
+              <p>Une pate rapide, simple et inratable qui offre tellement de possibilités.</p>
             </div>
           </section>
         </article>
